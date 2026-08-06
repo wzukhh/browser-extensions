@@ -1,0 +1,47 @@
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f6f8fa;
+  --bg-tertiary: #eaeef2;
+  --bg-hover: #e1e4e8;
+  --text-primary: #1f2328;
+  --text-secondary: #656d76;
+  --text-muted: #9ea7b3;
+  --border-color: #d0d7de;
+  --accent-primary: #0969da;
+  --accent-success: #1a7f37;
+  --accent-warning: #9a6700;
+  --accent-danger: #cf222e;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08);
+  --code-font: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  --editor-bg: #ffffff;
+  --toolbar-bg: #f6f8fa;
+  --header-height: 42px;
+  --border-radius: 6px;
+}
+
+[data-theme="light"] .cm-editor .cm-content {
+  color: #1f2328;
+  caret-color: #0969da;
+}
+[data-theme="light"] .cm-editor .cm-gutters {
+  color: #9ea7b3;
+  background: #ffffff;
+  border-right: 1px solid #d0d7de;
+}
+[data-theme="light"] .cm-editor .cm-activeLine {
+  background: rgba(0,0,0,0.02);
+}
+[data-theme="light"] .cm-editor .cm-activeLineGutter {
+  background: rgba(0,0,0,0.04);
+}
+[data-theme="light"] .cm-editor .cm-selectionBackground,
+[data-theme="light"] .cm-editor.cm-focused .cm-selectionBackground {
+  background: rgba(9,105,218,0.12) !important;
+}
+[data-theme="light"] .cm-editor .cm-keyword { color: #cf222e; }
+[data-theme="light"] .cm-editor .cm-number { color: #0550ae; }
+[data-theme="light"] .cm-editor .cm-string { color: #116329; }
+[data-theme="light"] .cm-editor .cm-comment { color: #656d76; font-style: italic; }
+[data-theme="light"] .cm-editor .cm-operator { color: #953800; }
+[data-theme="light"] .cm-editor .cm-typeName { color: #8250df; }
+[data-theme="light"] .cm-editor .cm-label { color: #9a6700; }

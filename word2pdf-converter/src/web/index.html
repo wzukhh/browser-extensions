@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word → PDF 转换器</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ═══════ Status Header ═══════ -->
+  <header class="app-header">
+    <h1>📄 Word → PDF 转换器</h1>
+    <span id="status-badge" class="badge badge-ready">就绪</span>
+  </header>
+
+  <p class="platform-banner">🪟 本工具仅支持 Windows 系统，需安装 Microsoft Office 或 WPS Office。</p>
+
+  <!-- ═══════ View: Detection ═══════ -->
+  <section id="view-detection" class="view">
+    <div class="card center">
+      <div class="spinner"></div>
+      <p>正在检测 Office / WPS 环境…</p>
+    </div>
+  </section>
+
+  <!-- ═══════ View: Office Not Found ═══════ -->
+  <section id="view-no-office" class="view hidden">
+    <div class="card center error-card">
+      <div class="big-icon">⚠️</div>
+      <h2>未检测到 Office 或 WPS</h2>
+      <p>请先安装 Microsoft Office 或 WPS Office 后重试。</p>
+    </div>
+  </section>
+
+  <!-- ═══════ View: Service Stopped ═══════ -->
+  <section id="view-service-stopped" class="view hidden">
+    <div class="card center error-card">
+      <div class="big-icon">⏱️</div>
+      <h2>本地服务已退出</h2>
+      <p id="service-stopped-msg">连接本地转换服务失败，可能因长时间无操作已自动关闭。</p>
+      <p class="muted" style="margin-top:12px">请点击浏览器工具栏上的 <strong>Word2PDF</strong> 扩展图标重新启动。</p>
+    </div>
+  </section>
+
+  <!-- ═══════ View: Setup ═══════ -->
+  <section id="view-setup" class="view hidden">
+
+    <!-- Folder selection -->
+    <div class="folder-row">
+      <div class="folder-group">
+        <label>📂 源文件夹</label>
+        <div class="folder-input-row">
+          <input type="text" id="source-folder" placeholder="选择 Word 文件夹…" readonly>
+          <button class="btn btn-browse" id="browse-source">选择文件夹</button>
+        </div>
+        <div class="file-hint" id="source-hint">仅支持选择文件夹，文件夹内所有 .doc/.docx 文件将自动识别</div>
+      </div>
+      <div class="folder-group">
+        <label>📂 目标文件夹</label>
+        <div class="folder-input-row">
+          <input type="text" id="output-folder" placeholder="选填，默认在源文件夹下创建 word2pdf_output" readonly>
+          <button class="btn btn-browse" id="browse-output">浏览…</button>
+        </div>
+        <div class="file-hint">未选择时，默认保存到源文件夹下的 word2pdf_output</div>
+      </div>
+    </div>
+
+    <div id="engine-info" class="engine-info"></div>
+
+    <div class="warning-banner">
+      ⚠️ 扩展运行期间请勿手动打开 WPS 或 Word 文档，否则退出扩展时这些进程会被一并关闭。
+    </div>
+
+    <!-- File list: uses calc height so it fills available space -->
+    <div class="file-list-section">
+      <div class="file-list-header">
+        <span>待转换文件</span>
+        <span id="file-count">0 个</span>
+        <label class="checkbox-label" id="select-all-wrap">
+          <input type="checkbox" id="select-all" checked> 全选
+        </label>
+      </div>
+      <div class="file-list-body" id="file-list-body">
+        <div class="file-list-empty">请先选择源文件夹</div>
+      </div>
+    </div>
+
+    <div class="action-bar">
+      <span id="engine-label" class="engine-label"></span>
+      <button class="btn btn-primary" id="btn-convert" disabled>开始转换</button>
+    </div>
+  </section>
+
+  <!-- ═══════ View: Converting ═══════ -->
+  <section id="view-converting" class="view hidden">
+    <div class="progress-card">
+      <div class="progress-bar-track">
+        <div class="progress-bar-fill" id="progress-fill" style="width:0%"></div>
+      </div>
+      <div class="progress-stats">
+        <span><strong id="progress-text">0 / 0</strong></span>
+        <span>成功 <strong id="prog-ok">0</strong> · 失败 <strong id="prog-fail">0</strong></span>
+        <span id="progress-time" class="muted">00:00</span>
+      </div>
+      <div id="progress-file" class="progress-file muted">准备中…</div>
+      <div class="progress-actions">
+        <button class="btn btn-danger" id="btn-abort">中止转换</button>
+        <button class="btn btn-primary hidden" id="btn-view-results">查看结果</button>
+      </div>
+    </div>
+
+    <div class="log-section">
+      <div class="log-header">转换记录</div>
+      <div class="log-body" id="log-body"></div>
+    </div>
+  </section>
+
+  <!-- ═══════ View: Complete ═══════ -->
+  <section id="view-complete" class="view hidden">
+    <div class="result-summary">
+      <div class="big-icon">✅</div>
+      <h2>转换完成</h2>
+      <p id="result-text" class="muted"></p>
+      <p id="output-path-label" class="output-path"></p>
+    </div>
+
+    <div class="split-results">
+      <div class="result-column success-col">
+        <h3>✅ 成功 (<span id="success-count">0</span>)</h3>
+        <div class="result-list" id="success-list"></div>
+      </div>
+      <div class="result-column fail-col">
+        <h3>❌ 失败 (<span id="fail-count">0</span>)</h3>
+        <div class="result-list" id="fail-list"></div>
+      </div>
+    </div>
+
+    <div class="action-bar">
+      <button class="btn" id="btn-back">返回首页</button>
+      <button class="btn btn-secondary" id="btn-open-output">📂 打开输出文件夹</button>
+    </div>
+  </section>
+
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

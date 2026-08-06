@@ -1,0 +1,1202 @@
+{
+  "province": {
+    "code": "43",
+    "name": "湖南省"
+  },
+  "cities": [
+    {
+      "code": "4301",
+      "name": "长沙市",
+      "provinceCode": "43",
+      "areas": [
+        {
+          "code": "430102",
+          "name": "芙蓉区",
+          "cityCode": "4301",
+          "provinceCode": "43",
+          "lng": 113.026736,
+          "lat": 28.188576
+        },
+        {
+          "code": "430103",
+          "name": "天心区",
+          "cityCode": "4301",
+          "provinceCode": "43",
+          "lng": 112.984172,
+          "lat": 28.117733
+        },
+        {
+          "code": "430104",
+          "name": "岳麓区",
+          "cityCode": "4301",
+          "provinceCode": "43",
+          "lng": 112.925391,
+          "lat": 28.237747
+        },
+        {
+          "code": "430105",
+          "name": "开福区",
+          "cityCode": "4301",
+          "provinceCode": "43",
+          "lng": 112.979558,
+          "lat": 28.260711
+        },
+        {
+          "code": "430111",
+          "name": "雨花区",
+          "cityCode": "4301",
+          "provinceCode": "43",
+          "lng": 113.032255,
+          "lat": 28.138438
+        },
+        {
+          "code": "430112",
+          "name": "望城区",
+          "cityCode": "4301",
+          "provinceCode": "43",
+          "lng": 112.825938,
+          "lat": 28.356896
+        },
+        {
+          "code": "430121",
+          "name": "长沙县",
+          "cityCode": "4301",
+          "provinceCode": "43",
+          "lng": 113.074992,
+          "lat": 28.250196
+        },
+        {
+          "code": "430181",
+          "name": "浏阳市",
+          "cityCode": "4301",
+          "provinceCode": "43",
+          "lng": 113.637725,
+          "lat": 28.167061
+        },
+        {
+          "code": "430182",
+          "name": "宁乡市",
+          "cityCode": "4301",
+          "provinceCode": "43",
+          "lng": 112.546557,
+          "lat": 28.281143
+        }
+      ],
+      "lng": 112.933436,
+      "lat": 28.231767
+    },
+    {
+      "code": "4302",
+      "name": "株洲市",
+      "provinceCode": "43",
+      "areas": [
+        {
+          "code": "430202",
+          "name": "荷塘区",
+          "cityCode": "4302",
+          "provinceCode": "43",
+          "lng": 113.16736,
+          "lat": 27.859896
+        },
+        {
+          "code": "430203",
+          "name": "芦淞区",
+          "cityCode": "4302",
+          "provinceCode": "43",
+          "lng": 113.147497,
+          "lat": 27.788563
+        },
+        {
+          "code": "430204",
+          "name": "石峰区",
+          "cityCode": "4302",
+          "provinceCode": "43",
+          "lng": 113.111975,
+          "lat": 27.878706
+        },
+        {
+          "code": "430211",
+          "name": "天元区",
+          "cityCode": "4302",
+          "provinceCode": "43",
+          "lng": 113.076716,
+          "lat": 27.830291
+        },
+        {
+          "code": "430212",
+          "name": "渌口区",
+          "cityCode": "4302",
+          "provinceCode": "43",
+          "lng": 113.138431,
+          "lat": 27.700893
+        },
+        {
+          "code": "430223",
+          "name": "攸县",
+          "cityCode": "4302",
+          "provinceCode": "43",
+          "lng": 113.339251,
+          "lat": 27.003355
+        },
+        {
+          "code": "430224",
+          "name": "茶陵县",
+          "cityCode": "4302",
+          "provinceCode": "43",
+          "lng": 113.532546,
+          "lat": 26.781481
+        },
+        {
+          "code": "430225",
+          "name": "炎陵县",
+          "cityCode": "4302",
+          "provinceCode": "43",
+          "lng": 113.766904,
+          "lat": 26.493479
+        },
+        {
+          "code": "430281",
+          "name": "醴陵市",
+          "cityCode": "4302",
+          "provinceCode": "43",
+          "lng": 113.491351,
+          "lat": 27.649203
+        }
+      ],
+      "lng": 113.128146,
+      "lat": 27.830939
+    },
+    {
+      "code": "4303",
+      "name": "湘潭市",
+      "provinceCode": "43",
+      "areas": [
+        {
+          "code": "430302",
+          "name": "雨湖区",
+          "cityCode": "4303",
+          "provinceCode": "43",
+          "lng": 112.901623,
+          "lat": 27.859693
+        },
+        {
+          "code": "430304",
+          "name": "岳塘区",
+          "cityCode": "4303",
+          "provinceCode": "43",
+          "lng": 112.963495,
+          "lat": 27.8754
+        },
+        {
+          "code": "430321",
+          "name": "湘潭县",
+          "cityCode": "4303",
+          "provinceCode": "43",
+          "lng": 112.945284,
+          "lat": 27.783082
+        },
+        {
+          "code": "430371",
+          "name": "湖南湘潭高新技术产业园区",
+          "cityCode": "4303",
+          "provinceCode": "43",
+          "lng": 112.945556,
+          "lat": 27.782428
+        },
+        {
+          "code": "430372",
+          "name": "湘潭昭山示范区",
+          "cityCode": "4303",
+          "provinceCode": "43",
+          "lng": 113.02186,
+          "lat": 27.954977
+        },
+        {
+          "code": "430373",
+          "name": "湘潭九华示范区",
+          "cityCode": "4303",
+          "provinceCode": "43",
+          "lng": 112.945556,
+          "lat": 27.782428
+        },
+        {
+          "code": "430381",
+          "name": "湘乡市",
+          "cityCode": "4303",
+          "provinceCode": "43",
+          "lng": 112.545198,
+          "lat": 27.721771
+        },
+        {
+          "code": "430382",
+          "name": "韶山市",
+          "cityCode": "4303",
+          "provinceCode": "43",
+          "lng": 112.519956,
+          "lat": 27.918196
+        }
+      ],
+      "lng": 112.940004,
+      "lat": 27.834798
+    },
+    {
+      "code": "4304",
+      "name": "衡阳市",
+      "provinceCode": "43",
+      "areas": [
+        {
+          "code": "430405",
+          "name": "珠晖区",
+          "cityCode": "4304",
+          "provinceCode": "43",
+          "lng": 112.615026,
+          "lat": 26.898366
+        },
+        {
+          "code": "430406",
+          "name": "雁峰区",
+          "cityCode": "4304",
+          "provinceCode": "43",
+          "lng": 112.608625,
+          "lat": 26.844469
+        },
+        {
+          "code": "430407",
+          "name": "石鼓区",
+          "cityCode": "4304",
+          "provinceCode": "43",
+          "lng": 112.592699,
+          "lat": 26.948184
+        },
+        {
+          "code": "430408",
+          "name": "蒸湘区",
+          "cityCode": "4304",
+          "provinceCode": "43",
+          "lng": 112.562143,
+          "lat": 26.916065
+        },
+        {
+          "code": "430412",
+          "name": "南岳区",
+          "cityCode": "4304",
+          "provinceCode": "43",
+          "lng": 112.731751,
+          "lat": 27.234828
+        },
+        {
+          "code": "430421",
+          "name": "衡阳县",
+          "cityCode": "4304",
+          "provinceCode": "43",
+          "lng": 112.364985,
+          "lat": 26.97319
+        },
+        {
+          "code": "430422",
+          "name": "衡南县",
+          "cityCode": "4304",
+          "provinceCode": "43",
+          "lng": 112.67236,
+          "lat": 26.743123
+        },
+        {
+          "code": "430423",
+          "name": "衡山县",
+          "cityCode": "4304",
+          "provinceCode": "43",
+          "lng": 112.862987,
+          "lat": 27.233743
+        },
+        {
+          "code": "430424",
+          "name": "衡东县",
+          "cityCode": "4304",
+          "provinceCode": "43",
+          "lng": 112.947845,
+          "lat": 27.084812
+        },
+        {
+          "code": "430426",
+          "name": "祁东县",
+          "cityCode": "4304",
+          "provinceCode": "43",
+          "lng": 112.084346,
+          "lat": 26.802953
+        },
+        {
+          "code": "430473",
+          "name": "湖南衡阳松木经济开发区",
+          "cityCode": "4304",
+          "provinceCode": "43",
+          "lng": 112.339004,
+          "lat": 27.27869
+        },
+        {
+          "code": "430476",
+          "name": "湖南衡阳高新技术产业园区",
+          "cityCode": "4304",
+          "provinceCode": "43"
+        },
+        {
+          "code": "430481",
+          "name": "耒阳市",
+          "cityCode": "4304",
+          "provinceCode": "43",
+          "lng": 112.85441,
+          "lat": 26.425946
+        },
+        {
+          "code": "430482",
+          "name": "常宁市",
+          "cityCode": "4304",
+          "provinceCode": "43",
+          "lng": 112.39464,
+          "lat": 26.425077
+        }
+      ],
+      "lng": 112.364985,
+      "lat": 26.97319
+    },
+    {
+      "code": "4305",
+      "name": "邵阳市",
+      "provinceCode": "43",
+      "areas": [
+        {
+          "code": "430502",
+          "name": "双清区",
+          "cityCode": "4305",
+          "provinceCode": "43",
+          "lng": 111.491518,
+          "lat": 27.236229
+        },
+        {
+          "code": "430503",
+          "name": "大祥区",
+          "cityCode": "4305",
+          "provinceCode": "43",
+          "lng": 111.433432,
+          "lat": 27.225636
+        },
+        {
+          "code": "430511",
+          "name": "北塔区",
+          "cityCode": "4305",
+          "provinceCode": "43",
+          "lng": 111.446401,
+          "lat": 27.248706
+        },
+        {
+          "code": "430522",
+          "name": "新邵县",
+          "cityCode": "4305",
+          "provinceCode": "43",
+          "lng": 111.452407,
+          "lat": 27.324204
+        },
+        {
+          "code": "430523",
+          "name": "邵阳县",
+          "cityCode": "4305",
+          "provinceCode": "43",
+          "lng": 111.268803,
+          "lat": 26.994186
+        },
+        {
+          "code": "430524",
+          "name": "隆回县",
+          "cityCode": "4305",
+          "provinceCode": "43",
+          "lng": 111.027753,
+          "lat": 27.117281
+        },
+        {
+          "code": "430525",
+          "name": "洞口县",
+          "cityCode": "4305",
+          "provinceCode": "43",
+          "lng": 110.571352,
+          "lat": 27.064031
+        },
+        {
+          "code": "430527",
+          "name": "绥宁县",
+          "cityCode": "4305",
+          "provinceCode": "43",
+          "lng": 110.151638,
+          "lat": 26.586208
+        },
+        {
+          "code": "430528",
+          "name": "新宁县",
+          "cityCode": "4305",
+          "provinceCode": "43",
+          "lng": 110.852223,
+          "lat": 26.437165
+        },
+        {
+          "code": "430529",
+          "name": "城步苗族自治县",
+          "cityCode": "4305",
+          "provinceCode": "43",
+          "lng": 110.317277,
+          "lat": 26.393727
+        },
+        {
+          "code": "430581",
+          "name": "武冈市",
+          "cityCode": "4305",
+          "provinceCode": "43",
+          "lng": 110.627527,
+          "lat": 26.730905
+        },
+        {
+          "code": "430582",
+          "name": "邵东市",
+          "cityCode": "4305",
+          "provinceCode": "43",
+          "lng": 111.738703,
+          "lat": 27.263077
+        }
+      ],
+      "lng": 111.268803,
+      "lat": 26.994186
+    },
+    {
+      "code": "4306",
+      "name": "岳阳市",
+      "provinceCode": "43",
+      "areas": [
+        {
+          "code": "430602",
+          "name": "岳阳楼区",
+          "cityCode": "4306",
+          "provinceCode": "43",
+          "lng": 113.123502,
+          "lat": 29.374229
+        },
+        {
+          "code": "430603",
+          "name": "云溪区",
+          "cityCode": "4306",
+          "provinceCode": "43",
+          "lng": 113.26618,
+          "lat": 29.476248
+        },
+        {
+          "code": "430611",
+          "name": "君山区",
+          "cityCode": "4306",
+          "provinceCode": "43",
+          "lng": 113.0006,
+          "lat": 29.46377
+        },
+        {
+          "code": "430621",
+          "name": "岳阳县",
+          "cityCode": "4306",
+          "provinceCode": "43",
+          "lng": 113.110404,
+          "lat": 29.146852
+        },
+        {
+          "code": "430623",
+          "name": "华容县",
+          "cityCode": "4306",
+          "provinceCode": "43",
+          "lng": 112.535299,
+          "lat": 29.533525
+        },
+        {
+          "code": "430624",
+          "name": "湘阴县",
+          "cityCode": "4306",
+          "provinceCode": "43",
+          "lng": 112.903568,
+          "lat": 28.693254
+        },
+        {
+          "code": "430626",
+          "name": "平江县",
+          "cityCode": "4306",
+          "provinceCode": "43",
+          "lng": 113.575813,
+          "lat": 28.705379
+        },
+        {
+          "code": "430671",
+          "name": "岳阳市屈原管理区",
+          "cityCode": "4306",
+          "provinceCode": "43",
+          "lng": 112.902289,
+          "lat": 28.857732
+        },
+        {
+          "code": "430681",
+          "name": "汨罗市",
+          "cityCode": "4306",
+          "provinceCode": "43",
+          "lng": 113.061102,
+          "lat": 28.809372
+        },
+        {
+          "code": "430682",
+          "name": "临湘市",
+          "cityCode": "4306",
+          "provinceCode": "43",
+          "lng": 113.444219,
+          "lat": 29.478872
+        }
+      ],
+      "lng": 113.122794,
+      "lat": 29.358688
+    },
+    {
+      "code": "4307",
+      "name": "常德市",
+      "provinceCode": "43",
+      "areas": [
+        {
+          "code": "430702",
+          "name": "武陵区",
+          "cityCode": "4307",
+          "provinceCode": "43",
+          "lng": 111.677635,
+          "lat": 29.058087
+        },
+        {
+          "code": "430703",
+          "name": "鼎城区",
+          "cityCode": "4307",
+          "provinceCode": "43",
+          "lng": 111.675223,
+          "lat": 29.022092
+        },
+        {
+          "code": "430721",
+          "name": "安乡县",
+          "cityCode": "4307",
+          "provinceCode": "43",
+          "lng": 112.165221,
+          "lat": 29.414376
+        },
+        {
+          "code": "430722",
+          "name": "汉寿县",
+          "cityCode": "4307",
+          "provinceCode": "43",
+          "lng": 111.965038,
+          "lat": 28.908718
+        },
+        {
+          "code": "430723",
+          "name": "澧县",
+          "cityCode": "4307",
+          "provinceCode": "43",
+          "lng": 111.753286,
+          "lat": 29.63572
+        },
+        {
+          "code": "430724",
+          "name": "临澧县",
+          "cityCode": "4307",
+          "provinceCode": "43",
+          "lng": 111.641961,
+          "lat": 29.443974
+        },
+        {
+          "code": "430725",
+          "name": "桃源县",
+          "cityCode": "4307",
+          "provinceCode": "43",
+          "lng": 111.483524,
+          "lat": 28.9055
+        },
+        {
+          "code": "430726",
+          "name": "石门县",
+          "cityCode": "4307",
+          "provinceCode": "43",
+          "lng": 111.373763,
+          "lat": 29.586966
+        },
+        {
+          "code": "430771",
+          "name": "常德市西洞庭管理区",
+          "cityCode": "4307",
+          "provinceCode": "43",
+          "lng": 111.9761,
+          "lat": 29.210838
+        },
+        {
+          "code": "430781",
+          "name": "津市市",
+          "cityCode": "4307",
+          "provinceCode": "43",
+          "lng": 111.871983,
+          "lat": 29.608262
+        }
+      ],
+      "lng": 111.693192,
+      "lat": 29.034304
+    },
+    {
+      "code": "4308",
+      "name": "张家界市",
+      "provinceCode": "43",
+      "areas": [
+        {
+          "code": "430802",
+          "name": "永定区",
+          "cityCode": "4308",
+          "provinceCode": "43",
+          "lng": 110.532514,
+          "lat": 29.123229
+        },
+        {
+          "code": "430811",
+          "name": "武陵源区",
+          "cityCode": "4308",
+          "provinceCode": "43",
+          "lng": 110.545647,
+          "lat": 29.349374
+        },
+        {
+          "code": "430821",
+          "name": "慈利县",
+          "cityCode": "4308",
+          "provinceCode": "43",
+          "lng": 111.13398,
+          "lat": 29.432773
+        },
+        {
+          "code": "430822",
+          "name": "桑植县",
+          "cityCode": "4308",
+          "provinceCode": "43",
+          "lng": 110.199941,
+          "lat": 29.416804
+        }
+      ],
+      "lng": 110.474172,
+      "lat": 29.119861
+    },
+    {
+      "code": "4309",
+      "name": "益阳市",
+      "provinceCode": "43",
+      "areas": [
+        {
+          "code": "430902",
+          "name": "资阳区",
+          "cityCode": "4309",
+          "provinceCode": "43",
+          "lng": 112.318609,
+          "lat": 28.594404
+        },
+        {
+          "code": "430903",
+          "name": "赫山区",
+          "cityCode": "4309",
+          "provinceCode": "43",
+          "lng": 112.36826,
+          "lat": 28.582413
+        },
+        {
+          "code": "430921",
+          "name": "南县",
+          "cityCode": "4309",
+          "provinceCode": "43",
+          "lng": 112.390538,
+          "lat": 29.364163
+        },
+        {
+          "code": "430922",
+          "name": "桃江县",
+          "cityCode": "4309",
+          "provinceCode": "43",
+          "lng": 112.150121,
+          "lat": 28.52147
+        },
+        {
+          "code": "430923",
+          "name": "安化县",
+          "cityCode": "4309",
+          "provinceCode": "43",
+          "lng": 111.207569,
+          "lat": 28.377599
+        },
+        {
+          "code": "430971",
+          "name": "益阳市大通湖管理区",
+          "cityCode": "4309",
+          "provinceCode": "43",
+          "lng": 112.633477,
+          "lat": 29.19502
+        },
+        {
+          "code": "430972",
+          "name": "湖南益阳高新技术产业园区",
+          "cityCode": "4309",
+          "provinceCode": "43",
+          "lng": 112.349434,
+          "lat": 28.815673
+        },
+        {
+          "code": "430981",
+          "name": "沅江市",
+          "cityCode": "4309",
+          "provinceCode": "43",
+          "lng": 112.348871,
+          "lat": 28.848149
+        }
+      ],
+      "lng": 112.349291,
+      "lat": 28.55695
+    },
+    {
+      "code": "4310",
+      "name": "郴州市",
+      "provinceCode": "43",
+      "areas": [
+        {
+          "code": "431002",
+          "name": "北湖区",
+          "cityCode": "4310",
+          "provinceCode": "43",
+          "lng": 113.005433,
+          "lat": 25.787502
+        },
+        {
+          "code": "431003",
+          "name": "苏仙区",
+          "cityCode": "4310",
+          "provinceCode": "43",
+          "lng": 113.036644,
+          "lat": 25.803261
+        },
+        {
+          "code": "431021",
+          "name": "桂阳县",
+          "cityCode": "4310",
+          "provinceCode": "43",
+          "lng": 112.728677,
+          "lat": 25.75667
+        },
+        {
+          "code": "431022",
+          "name": "宜章县",
+          "cityCode": "4310",
+          "provinceCode": "43",
+          "lng": 112.943595,
+          "lat": 25.402898
+        },
+        {
+          "code": "431023",
+          "name": "永兴县",
+          "cityCode": "4310",
+          "provinceCode": "43",
+          "lng": 113.11088,
+          "lat": 26.130259
+        },
+        {
+          "code": "431024",
+          "name": "嘉禾县",
+          "cityCode": "4310",
+          "provinceCode": "43",
+          "lng": 112.373792,
+          "lat": 25.618646
+        },
+        {
+          "code": "431025",
+          "name": "临武县",
+          "cityCode": "4310",
+          "provinceCode": "43",
+          "lng": 112.55887,
+          "lat": 25.279202
+        },
+        {
+          "code": "431026",
+          "name": "汝城县",
+          "cityCode": "4310",
+          "provinceCode": "43",
+          "lng": 113.67967,
+          "lat": 25.553257
+        },
+        {
+          "code": "431027",
+          "name": "桂东县",
+          "cityCode": "4310",
+          "provinceCode": "43",
+          "lng": 113.939331,
+          "lat": 26.080937
+        },
+        {
+          "code": "431028",
+          "name": "安仁县",
+          "cityCode": "4310",
+          "provinceCode": "43",
+          "lng": 113.264047,
+          "lat": 26.712541
+        },
+        {
+          "code": "431081",
+          "name": "资兴市",
+          "cityCode": "4310",
+          "provinceCode": "43",
+          "lng": 113.230308,
+          "lat": 25.980188
+        }
+      ],
+      "lng": 113.009491,
+      "lat": 25.773558
+    },
+    {
+      "code": "4311",
+      "name": "永州市",
+      "provinceCode": "43",
+      "areas": [
+        {
+          "code": "431102",
+          "name": "零陵区",
+          "cityCode": "4311",
+          "provinceCode": "43",
+          "lng": 111.624566,
+          "lat": 26.225682
+        },
+        {
+          "code": "431103",
+          "name": "冷水滩区",
+          "cityCode": "4311",
+          "provinceCode": "43",
+          "lng": 111.587037,
+          "lat": 26.465041
+        },
+        {
+          "code": "431122",
+          "name": "东安县",
+          "cityCode": "4311",
+          "provinceCode": "43",
+          "lng": 111.310508,
+          "lat": 26.39564
+        },
+        {
+          "code": "431123",
+          "name": "双牌县",
+          "cityCode": "4311",
+          "provinceCode": "43",
+          "lng": 111.654678,
+          "lat": 25.964848
+        },
+        {
+          "code": "431124",
+          "name": "道县",
+          "cityCode": "4311",
+          "provinceCode": "43",
+          "lng": 111.595617,
+          "lat": 25.529507
+        },
+        {
+          "code": "431125",
+          "name": "江永县",
+          "cityCode": "4311",
+          "provinceCode": "43",
+          "lng": 111.338077,
+          "lat": 25.277095
+        },
+        {
+          "code": "431126",
+          "name": "宁远县",
+          "cityCode": "4311",
+          "provinceCode": "43",
+          "lng": 111.940646,
+          "lat": 25.573921
+        },
+        {
+          "code": "431127",
+          "name": "蓝山县",
+          "cityCode": "4311",
+          "provinceCode": "43",
+          "lng": 112.191301,
+          "lat": 25.372226
+        },
+        {
+          "code": "431128",
+          "name": "新田县",
+          "cityCode": "4311",
+          "provinceCode": "43",
+          "lng": 112.197996,
+          "lat": 25.90705
+        },
+        {
+          "code": "431129",
+          "name": "江华瑶族自治县",
+          "cityCode": "4311",
+          "provinceCode": "43",
+          "lng": 111.573845,
+          "lat": 25.18823
+        },
+        {
+          "code": "431171",
+          "name": "永州经济技术开发区",
+          "cityCode": "4311",
+          "provinceCode": "43",
+          "lng": 111.587037,
+          "lat": 26.465041
+        },
+        {
+          "code": "431173",
+          "name": "永州市回龙圩管理区",
+          "cityCode": "4311",
+          "provinceCode": "43",
+          "lng": 111.340457,
+          "lat": 25.170454
+        },
+        {
+          "code": "431181",
+          "name": "祁阳市",
+          "cityCode": "4311",
+          "provinceCode": "43"
+        }
+      ],
+      "lng": 111.608307,
+      "lat": 26.423119
+    },
+    {
+      "code": "4312",
+      "name": "怀化市",
+      "provinceCode": "43",
+      "areas": [
+        {
+          "code": "431202",
+          "name": "鹤城区",
+          "cityCode": "4312",
+          "provinceCode": "43",
+          "lng": 110.035189,
+          "lat": 27.5821
+        },
+        {
+          "code": "431221",
+          "name": "中方县",
+          "cityCode": "4312",
+          "provinceCode": "43",
+          "lng": 109.941316,
+          "lat": 27.444073
+        },
+        {
+          "code": "431222",
+          "name": "沅陵县",
+          "cityCode": "4312",
+          "provinceCode": "43",
+          "lng": 110.389,
+          "lat": 28.45587
+        },
+        {
+          "code": "431223",
+          "name": "辰溪县",
+          "cityCode": "4312",
+          "provinceCode": "43",
+          "lng": 110.179201,
+          "lat": 28.009794
+        },
+        {
+          "code": "431224",
+          "name": "溆浦县",
+          "cityCode": "4312",
+          "provinceCode": "43",
+          "lng": 110.589781,
+          "lat": 27.912396
+        },
+        {
+          "code": "431225",
+          "name": "会同县",
+          "cityCode": "4312",
+          "provinceCode": "43",
+          "lng": 109.730776,
+          "lat": 26.890662
+        },
+        {
+          "code": "431226",
+          "name": "麻阳苗族自治县",
+          "cityCode": "4312",
+          "provinceCode": "43",
+          "lng": 109.798348,
+          "lat": 27.868995
+        },
+        {
+          "code": "431227",
+          "name": "新晃侗族自治县",
+          "cityCode": "4312",
+          "provinceCode": "43",
+          "lng": 109.170424,
+          "lat": 27.355953
+        },
+        {
+          "code": "431228",
+          "name": "芷江侗族自治县",
+          "cityCode": "4312",
+          "provinceCode": "43",
+          "lng": 109.680407,
+          "lat": 27.446592
+        },
+        {
+          "code": "431229",
+          "name": "靖州苗族侗族自治县",
+          "cityCode": "4312",
+          "provinceCode": "43",
+          "lng": 109.691442,
+          "lat": 26.578614
+        },
+        {
+          "code": "431230",
+          "name": "通道侗族自治县",
+          "cityCode": "4312",
+          "provinceCode": "43",
+          "lng": 109.77943,
+          "lat": 26.161315
+        },
+        {
+          "code": "431271",
+          "name": "怀化市洪江管理区",
+          "cityCode": "4312",
+          "provinceCode": "43",
+          "lng": 109.998327,
+          "lat": 27.112728
+        },
+        {
+          "code": "431281",
+          "name": "洪江市",
+          "cityCode": "4312",
+          "provinceCode": "43",
+          "lng": 109.832051,
+          "lat": 27.212504
+        }
+      ],
+      "lng": 109.997497,
+      "lat": 27.573228
+    },
+    {
+      "code": "4313",
+      "name": "娄底市",
+      "provinceCode": "43",
+      "areas": [
+        {
+          "code": "431302",
+          "name": "娄星区",
+          "cityCode": "4313",
+          "provinceCode": "43",
+          "lng": 111.996318,
+          "lat": 27.73372
+        },
+        {
+          "code": "431321",
+          "name": "双峰县",
+          "cityCode": "4313",
+          "provinceCode": "43",
+          "lng": 112.168734,
+          "lat": 27.461149
+        },
+        {
+          "code": "431322",
+          "name": "新化县",
+          "cityCode": "4313",
+          "provinceCode": "43",
+          "lng": 111.322141,
+          "lat": 27.728585
+        },
+        {
+          "code": "431381",
+          "name": "冷水江市",
+          "cityCode": "4313",
+          "provinceCode": "43",
+          "lng": 111.453183,
+          "lat": 27.659245
+        },
+        {
+          "code": "431382",
+          "name": "涟源市",
+          "cityCode": "4313",
+          "provinceCode": "43",
+          "lng": 111.658931,
+          "lat": 27.695988
+        }
+      ],
+      "lng": 111.989481,
+      "lat": 27.700612
+    },
+    {
+      "code": "4331",
+      "name": "湘西土家族苗族自治州",
+      "provinceCode": "43",
+      "areas": [
+        {
+          "code": "433101",
+          "name": "吉首市",
+          "cityCode": "4331",
+          "provinceCode": "43",
+          "lng": 109.693435,
+          "lat": 28.265877
+        },
+        {
+          "code": "433122",
+          "name": "泸溪县",
+          "cityCode": "4331",
+          "provinceCode": "43",
+          "lng": 110.215422,
+          "lat": 28.219805
+        },
+        {
+          "code": "433123",
+          "name": "凤凰县",
+          "cityCode": "4331",
+          "provinceCode": "43",
+          "lng": 109.576184,
+          "lat": 27.960981
+        },
+        {
+          "code": "433124",
+          "name": "花垣县",
+          "cityCode": "4331",
+          "provinceCode": "43",
+          "lng": 109.477235,
+          "lat": 28.575368
+        },
+        {
+          "code": "433125",
+          "name": "保靖县",
+          "cityCode": "4331",
+          "provinceCode": "43",
+          "lng": 109.655946,
+          "lat": 28.703148
+        },
+        {
+          "code": "433126",
+          "name": "古丈县",
+          "cityCode": "4331",
+          "provinceCode": "43",
+          "lng": 109.946442,
+          "lat": 28.620545
+        },
+        {
+          "code": "433127",
+          "name": "永顺县",
+          "cityCode": "4331",
+          "provinceCode": "43",
+          "lng": 109.852004,
+          "lat": 28.983937
+        },
+        {
+          "code": "433130",
+          "name": "龙山县",
+          "cityCode": "4331",
+          "provinceCode": "43",
+          "lng": 109.438873,
+          "lat": 29.46022
+        }
+      ],
+      "lng": 109.733701,
+      "lat": 28.315291
+    }
+  ]
+}

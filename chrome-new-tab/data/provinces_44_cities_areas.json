@@ -1,0 +1,1189 @@
+{
+  "province": {
+    "code": "44",
+    "name": "广东省"
+  },
+  "cities": [
+    {
+      "code": "4401",
+      "name": "广州市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "440103",
+          "name": "荔湾区",
+          "cityCode": "4401",
+          "provinceCode": "44",
+          "lng": 113.238676,
+          "lat": 23.128581
+        },
+        {
+          "code": "440104",
+          "name": "越秀区",
+          "cityCode": "4401",
+          "provinceCode": "44",
+          "lng": 113.261741,
+          "lat": 23.131376
+        },
+        {
+          "code": "440105",
+          "name": "海珠区",
+          "cityCode": "4401",
+          "provinceCode": "44",
+          "lng": 113.311995,
+          "lat": 23.086659
+        },
+        {
+          "code": "440106",
+          "name": "天河区",
+          "cityCode": "4401",
+          "provinceCode": "44",
+          "lng": 113.355873,
+          "lat": 23.127482
+        },
+        {
+          "code": "440111",
+          "name": "白云区",
+          "cityCode": "4401",
+          "provinceCode": "44",
+          "lng": 113.267858,
+          "lat": 23.159648
+        },
+        {
+          "code": "440112",
+          "name": "黄埔区",
+          "cityCode": "4401",
+          "provinceCode": "44",
+          "lng": 113.475187,
+          "lat": 23.18439
+        },
+        {
+          "code": "440113",
+          "name": "番禺区",
+          "cityCode": "4401",
+          "provinceCode": "44",
+          "lng": 113.37841,
+          "lat": 22.942056
+        },
+        {
+          "code": "440114",
+          "name": "花都区",
+          "cityCode": "4401",
+          "provinceCode": "44",
+          "lng": 113.214817,
+          "lat": 23.406545
+        },
+        {
+          "code": "440115",
+          "name": "南沙区",
+          "cityCode": "4401",
+          "provinceCode": "44",
+          "lng": 113.520015,
+          "lat": 22.804424
+        },
+        {
+          "code": "440117",
+          "name": "从化区",
+          "cityCode": "4401",
+          "provinceCode": "44",
+          "lng": 113.581885,
+          "lat": 23.551066
+        },
+        {
+          "code": "440118",
+          "name": "增城区",
+          "cityCode": "4401",
+          "provinceCode": "44",
+          "lng": 113.805514,
+          "lat": 23.264148
+        }
+      ],
+      "lng": 113.805514,
+      "lat": 23.264148
+    },
+    {
+      "code": "4402",
+      "name": "韶关市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "440203",
+          "name": "武江区",
+          "cityCode": "4402",
+          "provinceCode": "44",
+          "lng": 113.581555,
+          "lat": 24.796278
+        },
+        {
+          "code": "440204",
+          "name": "浈江区",
+          "cityCode": "4402",
+          "provinceCode": "44",
+          "lng": 113.605812,
+          "lat": 24.807458
+        },
+        {
+          "code": "440205",
+          "name": "曲江区",
+          "cityCode": "4402",
+          "provinceCode": "44",
+          "lng": 113.599532,
+          "lat": 24.685545
+        },
+        {
+          "code": "440222",
+          "name": "始兴县",
+          "cityCode": "4402",
+          "provinceCode": "44",
+          "lng": 114.056599,
+          "lat": 24.956556
+        },
+        {
+          "code": "440224",
+          "name": "仁化县",
+          "cityCode": "4402",
+          "provinceCode": "44",
+          "lng": 113.742846,
+          "lat": 25.088197
+        },
+        {
+          "code": "440229",
+          "name": "翁源县",
+          "cityCode": "4402",
+          "provinceCode": "44",
+          "lng": 114.124898,
+          "lat": 24.35345
+        },
+        {
+          "code": "440232",
+          "name": "乳源瑶族自治县",
+          "cityCode": "4402",
+          "provinceCode": "44",
+          "lng": 113.270546,
+          "lat": 24.778869
+        },
+        {
+          "code": "440233",
+          "name": "新丰县",
+          "cityCode": "4402",
+          "provinceCode": "44",
+          "lng": 114.201768,
+          "lat": 24.062635
+        },
+        {
+          "code": "440281",
+          "name": "乐昌市",
+          "cityCode": "4402",
+          "provinceCode": "44",
+          "lng": 113.341977,
+          "lat": 25.133111
+        },
+        {
+          "code": "440282",
+          "name": "南雄市",
+          "cityCode": "4402",
+          "provinceCode": "44",
+          "lng": 114.306746,
+          "lat": 25.120805
+        }
+      ],
+      "lng": 113.592112,
+      "lat": 24.814134
+    },
+    {
+      "code": "4403",
+      "name": "深圳市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "440303",
+          "name": "罗湖区",
+          "cityCode": "4403",
+          "provinceCode": "44",
+          "lng": 114.126584,
+          "lat": 22.55106
+        },
+        {
+          "code": "440304",
+          "name": "福田区",
+          "cityCode": "4403",
+          "provinceCode": "44",
+          "lng": 114.050088,
+          "lat": 22.525609
+        },
+        {
+          "code": "440305",
+          "name": "南山区",
+          "cityCode": "4403",
+          "provinceCode": "44",
+          "lng": 113.925659,
+          "lat": 22.536485
+        },
+        {
+          "code": "440306",
+          "name": "宝安区",
+          "cityCode": "4403",
+          "provinceCode": "44",
+          "lng": 113.878763,
+          "lat": 22.557445
+        },
+        {
+          "code": "440307",
+          "name": "龙岗区",
+          "cityCode": "4403",
+          "provinceCode": "44",
+          "lng": 114.242059,
+          "lat": 22.72375
+        },
+        {
+          "code": "440308",
+          "name": "盐田区",
+          "cityCode": "4403",
+          "provinceCode": "44",
+          "lng": 114.231778,
+          "lat": 22.559881
+        },
+        {
+          "code": "440309",
+          "name": "龙华区",
+          "cityCode": "4403",
+          "provinceCode": "44",
+          "lng": 114.039491,
+          "lat": 22.699627
+        },
+        {
+          "code": "440310",
+          "name": "坪山区",
+          "cityCode": "4403",
+          "provinceCode": "44",
+          "lng": 114.34591,
+          "lat": 22.71174
+        },
+        {
+          "code": "440311",
+          "name": "光明区",
+          "cityCode": "4403",
+          "provinceCode": "44",
+          "lng": 113.93124,
+          "lat": 22.751708
+        }
+      ],
+      "lng": 113.925659,
+      "lat": 22.536485
+    },
+    {
+      "code": "4404",
+      "name": "珠海市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "440402",
+          "name": "香洲区",
+          "cityCode": "4404",
+          "provinceCode": "44",
+          "lng": 113.537894,
+          "lat": 22.2688
+        },
+        {
+          "code": "440403",
+          "name": "斗门区",
+          "cityCode": "4404",
+          "provinceCode": "44",
+          "lng": 113.291691,
+          "lat": 22.212084
+        },
+        {
+          "code": "440404",
+          "name": "金湾区",
+          "cityCode": "4404",
+          "provinceCode": "44",
+          "lng": 113.358107,
+          "lat": 22.149447
+        }
+      ],
+      "lng": 113.57096,
+      "lat": 22.273915
+    },
+    {
+      "code": "4405",
+      "name": "汕头市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "440507",
+          "name": "龙湖区",
+          "cityCode": "4405",
+          "provinceCode": "44",
+          "lng": 116.712459,
+          "lat": 23.374597
+        },
+        {
+          "code": "440511",
+          "name": "金平区",
+          "cityCode": "4405",
+          "provinceCode": "44",
+          "lng": 116.698903,
+          "lat": 23.368359
+        },
+        {
+          "code": "440512",
+          "name": "濠江区",
+          "cityCode": "4405",
+          "provinceCode": "44",
+          "lng": 116.722174,
+          "lat": 23.289137
+        },
+        {
+          "code": "440513",
+          "name": "潮阳区",
+          "cityCode": "4405",
+          "provinceCode": "44",
+          "lng": 116.597095,
+          "lat": 23.26832
+        },
+        {
+          "code": "440514",
+          "name": "潮南区",
+          "cityCode": "4405",
+          "provinceCode": "44",
+          "lng": 116.434864,
+          "lat": 23.242207
+        },
+        {
+          "code": "440515",
+          "name": "澄海区",
+          "cityCode": "4405",
+          "provinceCode": "44",
+          "lng": 116.751418,
+          "lat": 23.468565
+        },
+        {
+          "code": "440523",
+          "name": "南澳县",
+          "cityCode": "4405",
+          "provinceCode": "44",
+          "lng": 117.018241,
+          "lat": 23.424048
+        }
+      ],
+      "lng": 116.752017,
+      "lat": 23.470163
+    },
+    {
+      "code": "4406",
+      "name": "佛山市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "440604",
+          "name": "禅城区",
+          "cityCode": "4406",
+          "provinceCode": "44",
+          "lng": 113.117519,
+          "lat": 23.01206
+        },
+        {
+          "code": "440605",
+          "name": "南海区",
+          "cityCode": "4406",
+          "provinceCode": "44",
+          "lng": 113.137676,
+          "lat": 23.031556
+        },
+        {
+          "code": "440606",
+          "name": "顺德区",
+          "cityCode": "4406",
+          "provinceCode": "44",
+          "lng": 113.287915,
+          "lat": 22.808029
+        },
+        {
+          "code": "440607",
+          "name": "三水区",
+          "cityCode": "4406",
+          "provinceCode": "44",
+          "lng": 112.892438,
+          "lat": 23.159592
+        },
+        {
+          "code": "440608",
+          "name": "高明区",
+          "cityCode": "4406",
+          "provinceCode": "44",
+          "lng": 112.88741,
+          "lat": 22.902983
+        }
+      ],
+      "lng": 113.116217,
+      "lat": 23.023915
+    },
+    {
+      "code": "4407",
+      "name": "江门市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "440703",
+          "name": "蓬江区",
+          "cityCode": "4407",
+          "provinceCode": "44",
+          "lng": 113.073435,
+          "lat": 22.59794
+        },
+        {
+          "code": "440704",
+          "name": "江海区",
+          "cityCode": "4407",
+          "provinceCode": "44",
+          "lng": 113.105581,
+          "lat": 22.563949
+        },
+        {
+          "code": "440705",
+          "name": "新会区",
+          "cityCode": "4407",
+          "provinceCode": "44",
+          "lng": 113.0288,
+          "lat": 22.461168
+        },
+        {
+          "code": "440781",
+          "name": "台山市",
+          "cityCode": "4407",
+          "provinceCode": "44",
+          "lng": 112.788582,
+          "lat": 22.254554
+        },
+        {
+          "code": "440783",
+          "name": "开平市",
+          "cityCode": "4407",
+          "provinceCode": "44",
+          "lng": 112.693018,
+          "lat": 22.380279
+        },
+        {
+          "code": "440784",
+          "name": "鹤山市",
+          "cityCode": "4407",
+          "provinceCode": "44",
+          "lng": 112.95916,
+          "lat": 22.768761
+        },
+        {
+          "code": "440785",
+          "name": "恩平市",
+          "cityCode": "4407",
+          "provinceCode": "44",
+          "lng": 112.299845,
+          "lat": 22.185569
+        }
+      ],
+      "lng": 113.075766,
+      "lat": 22.582103
+    },
+    {
+      "code": "4408",
+      "name": "湛江市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "440802",
+          "name": "赤坎区",
+          "cityCode": "4408",
+          "provinceCode": "44",
+          "lng": 110.361492,
+          "lat": 21.268572
+        },
+        {
+          "code": "440803",
+          "name": "霞山区",
+          "cityCode": "4408",
+          "provinceCode": "44",
+          "lng": 110.39346,
+          "lat": 21.194246
+        },
+        {
+          "code": "440804",
+          "name": "坡头区",
+          "cityCode": "4408",
+          "provinceCode": "44",
+          "lng": 110.450825,
+          "lat": 21.247132
+        },
+        {
+          "code": "440811",
+          "name": "麻章区",
+          "cityCode": "4408",
+          "provinceCode": "44",
+          "lng": 110.320516,
+          "lat": 21.269052
+        },
+        {
+          "code": "440823",
+          "name": "遂溪县",
+          "cityCode": "4408",
+          "provinceCode": "44",
+          "lng": 110.245636,
+          "lat": 21.379944
+        },
+        {
+          "code": "440825",
+          "name": "徐闻县",
+          "cityCode": "4408",
+          "provinceCode": "44",
+          "lng": 110.171601,
+          "lat": 20.328371
+        },
+        {
+          "code": "440881",
+          "name": "廉江市",
+          "cityCode": "4408",
+          "provinceCode": "44",
+          "lng": 110.281918,
+          "lat": 21.612371
+        },
+        {
+          "code": "440882",
+          "name": "雷州市",
+          "cityCode": "4408",
+          "provinceCode": "44",
+          "lng": 110.092191,
+          "lat": 20.917094
+        },
+        {
+          "code": "440883",
+          "name": "吴川市",
+          "cityCode": "4408",
+          "provinceCode": "44",
+          "lng": 110.774806,
+          "lat": 21.443327
+        }
+      ],
+      "lng": 110.450825,
+      "lat": 21.247132
+    },
+    {
+      "code": "4409",
+      "name": "茂名市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "440902",
+          "name": "茂南区",
+          "cityCode": "4409",
+          "provinceCode": "44",
+          "lng": 110.914118,
+          "lat": 21.644319
+        },
+        {
+          "code": "440904",
+          "name": "电白区",
+          "cityCode": "4409",
+          "provinceCode": "44",
+          "lng": 111.00974,
+          "lat": 21.516432
+        },
+        {
+          "code": "440981",
+          "name": "高州市",
+          "cityCode": "4409",
+          "provinceCode": "44",
+          "lng": 110.848718,
+          "lat": 21.920955
+        },
+        {
+          "code": "440982",
+          "name": "化州市",
+          "cityCode": "4409",
+          "provinceCode": "44",
+          "lng": 110.635257,
+          "lat": 21.667238
+        },
+        {
+          "code": "440983",
+          "name": "信宜市",
+          "cityCode": "4409",
+          "provinceCode": "44",
+          "lng": 110.942217,
+          "lat": 22.357904
+        }
+      ],
+      "lng": 110.920946,
+      "lat": 21.665494
+    },
+    {
+      "code": "4412",
+      "name": "肇庆市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "441202",
+          "name": "端州区",
+          "cityCode": "4412",
+          "provinceCode": "44",
+          "lng": 112.479803,
+          "lat": 23.054475
+        },
+        {
+          "code": "441203",
+          "name": "鼎湖区",
+          "cityCode": "4412",
+          "provinceCode": "44",
+          "lng": 112.562184,
+          "lat": 23.162318
+        },
+        {
+          "code": "441204",
+          "name": "高要区",
+          "cityCode": "4412",
+          "provinceCode": "44",
+          "lng": 112.452692,
+          "lat": 23.027943
+        },
+        {
+          "code": "441223",
+          "name": "广宁县",
+          "cityCode": "4412",
+          "provinceCode": "44",
+          "lng": 112.434939,
+          "lat": 23.637615
+        },
+        {
+          "code": "441224",
+          "name": "怀集县",
+          "cityCode": "4412",
+          "provinceCode": "44",
+          "lng": 112.161539,
+          "lat": 23.923254
+        },
+        {
+          "code": "441225",
+          "name": "封开县",
+          "cityCode": "4412",
+          "provinceCode": "44",
+          "lng": 111.50723,
+          "lat": 23.426797
+        },
+        {
+          "code": "441226",
+          "name": "德庆县",
+          "cityCode": "4412",
+          "provinceCode": "44",
+          "lng": 111.780329,
+          "lat": 23.147796
+        },
+        {
+          "code": "441284",
+          "name": "四会市",
+          "cityCode": "4412",
+          "provinceCode": "44",
+          "lng": 112.7288,
+          "lat": 23.329324
+        }
+      ],
+      "lng": 112.459745,
+      "lat": 23.049421
+    },
+    {
+      "code": "4413",
+      "name": "惠州市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "441302",
+          "name": "惠城区",
+          "cityCode": "4413",
+          "provinceCode": "44",
+          "lng": 114.377566,
+          "lat": 23.087226
+        },
+        {
+          "code": "441303",
+          "name": "惠阳区",
+          "cityCode": "4413",
+          "provinceCode": "44",
+          "lng": 114.450943,
+          "lat": 22.791554
+        },
+        {
+          "code": "441322",
+          "name": "博罗县",
+          "cityCode": "4413",
+          "provinceCode": "44",
+          "lng": 114.284772,
+          "lat": 23.175768
+        },
+        {
+          "code": "441323",
+          "name": "惠东县",
+          "cityCode": "4413",
+          "provinceCode": "44",
+          "lng": 114.715114,
+          "lat": 22.987827
+        },
+        {
+          "code": "441324",
+          "name": "龙门县",
+          "cityCode": "4413",
+          "provinceCode": "44",
+          "lng": 114.249918,
+          "lat": 23.730363
+        }
+      ],
+      "lng": 114.410628,
+      "lat": 23.114806
+    },
+    {
+      "code": "4414",
+      "name": "梅州市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "441402",
+          "name": "梅江区",
+          "cityCode": "4414",
+          "provinceCode": "44",
+          "lng": 116.111853,
+          "lat": 24.313306
+        },
+        {
+          "code": "441403",
+          "name": "梅县区",
+          "cityCode": "4414",
+          "provinceCode": "44",
+          "lng": 116.076168,
+          "lat": 24.269458
+        },
+        {
+          "code": "441422",
+          "name": "大埔县",
+          "cityCode": "4414",
+          "provinceCode": "44",
+          "lng": 116.690437,
+          "lat": 24.350666
+        },
+        {
+          "code": "441423",
+          "name": "丰顺县",
+          "cityCode": "4414",
+          "provinceCode": "44",
+          "lng": 116.177221,
+          "lat": 23.7419
+        },
+        {
+          "code": "441424",
+          "name": "五华县",
+          "cityCode": "4414",
+          "provinceCode": "44",
+          "lng": 115.77137,
+          "lat": 23.935165
+        },
+        {
+          "code": "441426",
+          "name": "平远县",
+          "cityCode": "4414",
+          "provinceCode": "44",
+          "lng": 115.88654,
+          "lat": 24.569653
+        },
+        {
+          "code": "441427",
+          "name": "蕉岭县",
+          "cityCode": "4414",
+          "provinceCode": "44",
+          "lng": 116.16625,
+          "lat": 24.661464
+        },
+        {
+          "code": "441481",
+          "name": "兴宁市",
+          "cityCode": "4414",
+          "provinceCode": "44",
+          "lng": 115.72616,
+          "lat": 24.139469
+        }
+      ],
+      "lng": 116.117188,
+      "lat": 24.291328
+    },
+    {
+      "code": "4415",
+      "name": "汕尾市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "441502",
+          "name": "城区",
+          "cityCode": "4415",
+          "provinceCode": "44",
+          "lng": 115.360169,
+          "lat": 22.781837
+        },
+        {
+          "code": "441521",
+          "name": "海丰县",
+          "cityCode": "4415",
+          "provinceCode": "44",
+          "lng": 115.318198,
+          "lat": 22.969757
+        },
+        {
+          "code": "441523",
+          "name": "陆河县",
+          "cityCode": "4415",
+          "provinceCode": "44",
+          "lng": 115.65546,
+          "lat": 23.30506
+        },
+        {
+          "code": "441581",
+          "name": "陆丰市",
+          "cityCode": "4415",
+          "provinceCode": "44",
+          "lng": 115.647551,
+          "lat": 22.921636
+        }
+      ],
+      "lng": 115.370059,
+      "lat": 22.788235
+    },
+    {
+      "code": "4416",
+      "name": "河源市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "441602",
+          "name": "源城区",
+          "cityCode": "4416",
+          "provinceCode": "44",
+          "lng": 114.697298,
+          "lat": 23.736746
+        },
+        {
+          "code": "441621",
+          "name": "紫金县",
+          "cityCode": "4416",
+          "provinceCode": "44",
+          "lng": 115.179145,
+          "lat": 23.637905
+        },
+        {
+          "code": "441622",
+          "name": "龙川县",
+          "cityCode": "4416",
+          "provinceCode": "44",
+          "lng": 115.25516,
+          "lat": 24.102934
+        },
+        {
+          "code": "441623",
+          "name": "连平县",
+          "cityCode": "4416",
+          "provinceCode": "44",
+          "lng": 114.483492,
+          "lat": 24.372355
+        },
+        {
+          "code": "441624",
+          "name": "和平县",
+          "cityCode": "4416",
+          "provinceCode": "44",
+          "lng": 114.934359,
+          "lat": 24.445107
+        },
+        {
+          "code": "441625",
+          "name": "东源县",
+          "cityCode": "4416",
+          "provinceCode": "44",
+          "lng": 114.741989,
+          "lat": 23.792435
+        }
+      ],
+      "lng": 114.695621,
+      "lat": 23.747131
+    },
+    {
+      "code": "4417",
+      "name": "阳江市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "441702",
+          "name": "江城区",
+          "cityCode": "4417",
+          "provinceCode": "44",
+          "lng": 111.949996,
+          "lat": 21.864604
+        },
+        {
+          "code": "441704",
+          "name": "阳东区",
+          "cityCode": "4417",
+          "provinceCode": "44",
+          "lng": 112.001094,
+          "lat": 21.871477
+        },
+        {
+          "code": "441721",
+          "name": "阳西县",
+          "cityCode": "4417",
+          "provinceCode": "44",
+          "lng": 111.612809,
+          "lat": 21.756715
+        },
+        {
+          "code": "441781",
+          "name": "阳春市",
+          "cityCode": "4417",
+          "provinceCode": "44",
+          "lng": 111.786372,
+          "lat": 22.173304
+        }
+      ],
+      "lng": 111.786372,
+      "lat": 22.173304
+    },
+    {
+      "code": "4418",
+      "name": "清远市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "441802",
+          "name": "清城区",
+          "cityCode": "4418",
+          "provinceCode": "44",
+          "lng": 113.057137,
+          "lat": 23.700704
+        },
+        {
+          "code": "441803",
+          "name": "清新区",
+          "cityCode": "4418",
+          "provinceCode": "44",
+          "lng": 113.012313,
+          "lat": 23.736758
+        },
+        {
+          "code": "441821",
+          "name": "佛冈县",
+          "cityCode": "4418",
+          "provinceCode": "44",
+          "lng": 113.52626,
+          "lat": 23.882274
+        },
+        {
+          "code": "441823",
+          "name": "阳山县",
+          "cityCode": "4418",
+          "provinceCode": "44",
+          "lng": 112.636104,
+          "lat": 24.46827
+        },
+        {
+          "code": "441825",
+          "name": "连山壮族瑶族自治县",
+          "cityCode": "4418",
+          "provinceCode": "44",
+          "lng": 112.088509,
+          "lat": 24.573309
+        },
+        {
+          "code": "441826",
+          "name": "连南瑶族自治县",
+          "cityCode": "4418",
+          "provinceCode": "44",
+          "lng": 112.281705,
+          "lat": 24.728469
+        },
+        {
+          "code": "441881",
+          "name": "英德市",
+          "cityCode": "4418",
+          "provinceCode": "44",
+          "lng": 113.396196,
+          "lat": 24.209817
+        },
+        {
+          "code": "441882",
+          "name": "连州市",
+          "cityCode": "4418",
+          "provinceCode": "44",
+          "lng": 112.371753,
+          "lat": 24.783662
+        }
+      ],
+      "lng": 113.050518,
+      "lat": 23.68446
+    },
+    {
+      "code": "4419",
+      "name": "东莞市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "441900",
+          "name": "东莞市",
+          "cityCode": "4419",
+          "provinceCode": "44",
+          "lng": 113.74657,
+          "lat": 23.02373
+        }
+      ],
+      "lng": 114.078047,
+      "lat": 22.917478
+    },
+    {
+      "code": "4420",
+      "name": "中山市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "442000",
+          "name": "中山市",
+          "cityCode": "4420",
+          "provinceCode": "44",
+          "lng": 113.387011,
+          "lat": 22.519713
+        }
+      ],
+      "lng": 113.387518,
+      "lat": 22.51869
+    },
+    {
+      "code": "4451",
+      "name": "潮州市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "445102",
+          "name": "湘桥区",
+          "cityCode": "4451",
+          "provinceCode": "44",
+          "lng": 116.623978,
+          "lat": 23.677971
+        },
+        {
+          "code": "445103",
+          "name": "潮安区",
+          "cityCode": "4451",
+          "provinceCode": "44",
+          "lng": 116.672327,
+          "lat": 23.466445
+        },
+        {
+          "code": "445122",
+          "name": "饶平县",
+          "cityCode": "4451",
+          "provinceCode": "44",
+          "lng": 116.999759,
+          "lat": 23.665748
+        }
+      ],
+      "lng": 116.617101,
+      "lat": 23.660372
+    },
+    {
+      "code": "4452",
+      "name": "揭阳市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "445202",
+          "name": "榕城区",
+          "cityCode": "4452",
+          "provinceCode": "44",
+          "lng": 116.3623,
+          "lat": 23.527204
+        },
+        {
+          "code": "445203",
+          "name": "揭东区",
+          "cityCode": "4452",
+          "provinceCode": "44",
+          "lng": 116.40733,
+          "lat": 23.569622
+        },
+        {
+          "code": "445222",
+          "name": "揭西县",
+          "cityCode": "4452",
+          "provinceCode": "44",
+          "lng": 115.837248,
+          "lat": 23.434093
+        },
+        {
+          "code": "445224",
+          "name": "惠来县",
+          "cityCode": "4452",
+          "provinceCode": "44",
+          "lng": 116.290472,
+          "lat": 23.036261
+        },
+        {
+          "code": "445281",
+          "name": "普宁市",
+          "cityCode": "4452",
+          "provinceCode": "44",
+          "lng": 116.160894,
+          "lat": 23.300241
+        }
+      ],
+      "lng": 116.367292,
+      "lat": 23.552098
+    },
+    {
+      "code": "4453",
+      "name": "云浮市",
+      "provinceCode": "44",
+      "areas": [
+        {
+          "code": "445302",
+          "name": "云城区",
+          "cityCode": "4453",
+          "provinceCode": "44",
+          "lng": 112.03868,
+          "lat": 22.930653
+        },
+        {
+          "code": "445303",
+          "name": "云安区",
+          "cityCode": "4453",
+          "provinceCode": "44",
+          "lng": 111.99769,
+          "lat": 23.073237
+        },
+        {
+          "code": "445321",
+          "name": "新兴县",
+          "cityCode": "4453",
+          "provinceCode": "44",
+          "lng": 112.219744,
+          "lat": 22.698433
+        },
+        {
+          "code": "445322",
+          "name": "郁南县",
+          "cityCode": "4453",
+          "provinceCode": "44",
+          "lng": 111.529775,
+          "lat": 23.237762
+        },
+        {
+          "code": "445381",
+          "name": "罗定市",
+          "cityCode": "4453",
+          "provinceCode": "44",
+          "lng": 111.56493,
+          "lat": 22.771473
+        }
+      ],
+      "lng": 112.039679,
+      "lat": 22.917656
+    }
+  ]
+}

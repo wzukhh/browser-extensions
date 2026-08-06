@@ -1,0 +1,1659 @@
+{
+  "province": {
+    "code": "51",
+    "name": "四川省"
+  },
+  "cities": [
+    {
+      "code": "5101",
+      "name": "成都市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "510104",
+          "name": "锦江区",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 104.114776,
+          "lat": 30.600633
+        },
+        {
+          "code": "510105",
+          "name": "青羊区",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 104.058502,
+          "lat": 30.676321
+        },
+        {
+          "code": "510106",
+          "name": "金牛区",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 104.049878,
+          "lat": 30.693745
+        },
+        {
+          "code": "510107",
+          "name": "武侯区",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 104.040548,
+          "lat": 30.644871
+        },
+        {
+          "code": "510108",
+          "name": "成华区",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 104.0988,
+          "lat": 30.662641
+        },
+        {
+          "code": "510112",
+          "name": "龙泉驿区",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 104.272607,
+          "lat": 30.559009
+        },
+        {
+          "code": "510113",
+          "name": "青白江区",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 104.24912,
+          "lat": 30.881201
+        },
+        {
+          "code": "510114",
+          "name": "新都区",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 104.156512,
+          "lat": 30.825481
+        },
+        {
+          "code": "510115",
+          "name": "温江区",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 103.85427,
+          "lat": 30.684766
+        },
+        {
+          "code": "510116",
+          "name": "双流区",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 103.921334,
+          "lat": 30.577677
+        },
+        {
+          "code": "510117",
+          "name": "郫都区",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 103.898481,
+          "lat": 30.797921
+        },
+        {
+          "code": "510118",
+          "name": "新津区",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 103.809307,
+          "lat": 30.412932
+        },
+        {
+          "code": "510121",
+          "name": "金堂县",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 104.409491,
+          "lat": 30.864678
+        },
+        {
+          "code": "510129",
+          "name": "大邑县",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 103.510926,
+          "lat": 30.574468
+        },
+        {
+          "code": "510131",
+          "name": "蒲江县",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 103.50435,
+          "lat": 30.19947
+        },
+        {
+          "code": "510181",
+          "name": "都江堰市",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 103.645112,
+          "lat": 30.991315
+        },
+        {
+          "code": "510182",
+          "name": "彭州市",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 103.956819,
+          "lat": 30.992223
+        },
+        {
+          "code": "510183",
+          "name": "邛崃市",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 103.46174,
+          "lat": 30.412868
+        },
+        {
+          "code": "510184",
+          "name": "崇州市",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 103.670897,
+          "lat": 30.632876
+        },
+        {
+          "code": "510185",
+          "name": "简阳市",
+          "cityCode": "5101",
+          "provinceCode": "51",
+          "lng": 104.544796,
+          "lat": 30.414114
+        }
+      ],
+      "lng": 104.063774,
+      "lat": 30.575383
+    },
+    {
+      "code": "5103",
+      "name": "自贡市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "510302",
+          "name": "自流井区",
+          "cityCode": "5103",
+          "provinceCode": "51",
+          "lng": 104.774304,
+          "lat": 29.340159
+        },
+        {
+          "code": "510303",
+          "name": "贡井区",
+          "cityCode": "5103",
+          "provinceCode": "51",
+          "lng": 104.712642,
+          "lat": 29.348345
+        },
+        {
+          "code": "510304",
+          "name": "大安区",
+          "cityCode": "5103",
+          "provinceCode": "51",
+          "lng": 104.771596,
+          "lat": 29.366405
+        },
+        {
+          "code": "510311",
+          "name": "沿滩区",
+          "cityCode": "5103",
+          "provinceCode": "51",
+          "lng": 104.871456,
+          "lat": 29.275706
+        },
+        {
+          "code": "510321",
+          "name": "荣县",
+          "cityCode": "5103",
+          "provinceCode": "51",
+          "lng": 104.414806,
+          "lat": 29.4474
+        },
+        {
+          "code": "510322",
+          "name": "富顺县",
+          "cityCode": "5103",
+          "provinceCode": "51",
+          "lng": 104.972099,
+          "lat": 29.184305
+        }
+      ],
+      "lng": 104.775304,
+      "lat": 29.342258
+    },
+    {
+      "code": "5104",
+      "name": "攀枝花市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "510402",
+          "name": "东区",
+          "cityCode": "5104",
+          "provinceCode": "51",
+          "lng": 101.70259,
+          "lat": 26.550056
+        },
+        {
+          "code": "510403",
+          "name": "西区",
+          "cityCode": "5104",
+          "provinceCode": "51",
+          "lng": 101.629576,
+          "lat": 26.601316
+        },
+        {
+          "code": "510411",
+          "name": "仁和区",
+          "cityCode": "5104",
+          "provinceCode": "51",
+          "lng": 101.737074,
+          "lat": 26.501317
+        },
+        {
+          "code": "510421",
+          "name": "米易县",
+          "cityCode": "5104",
+          "provinceCode": "51",
+          "lng": 102.1094,
+          "lat": 26.899588
+        },
+        {
+          "code": "510422",
+          "name": "盐边县",
+          "cityCode": "5104",
+          "provinceCode": "51",
+          "lng": 101.853738,
+          "lat": 26.686732
+        }
+      ],
+      "lng": 101.70259,
+      "lat": 26.550056
+    },
+    {
+      "code": "5105",
+      "name": "泸州市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "510502",
+          "name": "江阳区",
+          "cityCode": "5105",
+          "provinceCode": "51",
+          "lng": 105.43146,
+          "lat": 28.881931
+        },
+        {
+          "code": "510503",
+          "name": "纳溪区",
+          "cityCode": "5105",
+          "provinceCode": "51",
+          "lng": 105.368051,
+          "lat": 28.775839
+        },
+        {
+          "code": "510504",
+          "name": "龙马潭区",
+          "cityCode": "5105",
+          "provinceCode": "51",
+          "lng": 105.434452,
+          "lat": 28.916269
+        },
+        {
+          "code": "510521",
+          "name": "泸县",
+          "cityCode": "5105",
+          "provinceCode": "51",
+          "lng": 105.378268,
+          "lat": 29.154489
+        },
+        {
+          "code": "510522",
+          "name": "合江县",
+          "cityCode": "5105",
+          "provinceCode": "51",
+          "lng": 105.827426,
+          "lat": 28.81498
+        },
+        {
+          "code": "510524",
+          "name": "叙永县",
+          "cityCode": "5105",
+          "provinceCode": "51",
+          "lng": 105.441117,
+          "lat": 28.159175
+        },
+        {
+          "code": "510525",
+          "name": "古蔺县",
+          "cityCode": "5105",
+          "provinceCode": "51",
+          "lng": 105.809163,
+          "lat": 28.042208
+        }
+      ],
+      "lng": 105.438408,
+      "lat": 28.874837
+    },
+    {
+      "code": "5106",
+      "name": "德阳市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "510603",
+          "name": "旌阳区",
+          "cityCode": "5106",
+          "provinceCode": "51",
+          "lng": 104.414311,
+          "lat": 31.144536
+        },
+        {
+          "code": "510604",
+          "name": "罗江区",
+          "cityCode": "5106",
+          "provinceCode": "51",
+          "lng": 104.507942,
+          "lat": 31.319658
+        },
+        {
+          "code": "510623",
+          "name": "中江县",
+          "cityCode": "5106",
+          "provinceCode": "51",
+          "lng": 104.676006,
+          "lat": 31.035726
+        },
+        {
+          "code": "510681",
+          "name": "广汉市",
+          "cityCode": "5106",
+          "provinceCode": "51",
+          "lng": 104.280496,
+          "lat": 30.979151
+        },
+        {
+          "code": "510682",
+          "name": "什邡市",
+          "cityCode": "5106",
+          "provinceCode": "51",
+          "lng": 104.165515,
+          "lat": 31.128827
+        },
+        {
+          "code": "510683",
+          "name": "绵竹市",
+          "cityCode": "5106",
+          "provinceCode": "51",
+          "lng": 104.218378,
+          "lat": 31.341457
+        }
+      ],
+      "lng": 104.395318,
+      "lat": 31.128941
+    },
+    {
+      "code": "5107",
+      "name": "绵阳市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "510703",
+          "name": "涪城区",
+          "cityCode": "5107",
+          "provinceCode": "51",
+          "lng": 104.754208,
+          "lat": 31.457198
+        },
+        {
+          "code": "510704",
+          "name": "游仙区",
+          "cityCode": "5107",
+          "provinceCode": "51",
+          "lng": 104.763202,
+          "lat": 31.475798
+        },
+        {
+          "code": "510705",
+          "name": "安州区",
+          "cityCode": "5107",
+          "provinceCode": "51",
+          "lng": 104.564815,
+          "lat": 31.536708
+        },
+        {
+          "code": "510722",
+          "name": "三台县",
+          "cityCode": "5107",
+          "provinceCode": "51",
+          "lng": 105.091188,
+          "lat": 31.09775
+        },
+        {
+          "code": "510723",
+          "name": "盐亭县",
+          "cityCode": "5107",
+          "provinceCode": "51",
+          "lng": 105.385617,
+          "lat": 31.210687
+        },
+        {
+          "code": "510725",
+          "name": "梓潼县",
+          "cityCode": "5107",
+          "provinceCode": "51",
+          "lng": 105.167381,
+          "lat": 31.644724
+        },
+        {
+          "code": "510726",
+          "name": "北川羌族自治县",
+          "cityCode": "5107",
+          "provinceCode": "51",
+          "lng": 104.352351,
+          "lat": 31.959396
+        },
+        {
+          "code": "510727",
+          "name": "平武县",
+          "cityCode": "5107",
+          "provinceCode": "51",
+          "lng": 104.553153,
+          "lat": 32.412128
+        },
+        {
+          "code": "510781",
+          "name": "江油市",
+          "cityCode": "5107",
+          "provinceCode": "51",
+          "lng": 104.742802,
+          "lat": 31.78073
+        }
+      ],
+      "lng": 105.385617,
+      "lat": 31.210687
+    },
+    {
+      "code": "5108",
+      "name": "广元市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "510802",
+          "name": "利州区",
+          "cityCode": "5108",
+          "provinceCode": "51",
+          "lng": 105.841942,
+          "lat": 32.436049
+        },
+        {
+          "code": "510811",
+          "name": "昭化区",
+          "cityCode": "5108",
+          "provinceCode": "51",
+          "lng": 105.953158,
+          "lat": 32.335179
+        },
+        {
+          "code": "510812",
+          "name": "朝天区",
+          "cityCode": "5108",
+          "provinceCode": "51",
+          "lng": 105.879044,
+          "lat": 32.65358
+        },
+        {
+          "code": "510821",
+          "name": "旺苍县",
+          "cityCode": "5108",
+          "provinceCode": "51",
+          "lng": 106.285828,
+          "lat": 32.231107
+        },
+        {
+          "code": "510822",
+          "name": "青川县",
+          "cityCode": "5108",
+          "provinceCode": "51",
+          "lng": 105.234913,
+          "lat": 32.578306
+        },
+        {
+          "code": "510823",
+          "name": "剑阁县",
+          "cityCode": "5108",
+          "provinceCode": "51",
+          "lng": 105.521233,
+          "lat": 32.290682
+        },
+        {
+          "code": "510824",
+          "name": "苍溪县",
+          "cityCode": "5108",
+          "provinceCode": "51",
+          "lng": 105.931359,
+          "lat": 31.734932
+        }
+      ],
+      "lng": 105.840296,
+      "lat": 32.437701
+    },
+    {
+      "code": "5109",
+      "name": "遂宁市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "510903",
+          "name": "船山区",
+          "cityCode": "5109",
+          "provinceCode": "51",
+          "lng": 105.564712,
+          "lat": 30.528994
+        },
+        {
+          "code": "510904",
+          "name": "安居区",
+          "cityCode": "5109",
+          "provinceCode": "51",
+          "lng": 105.452759,
+          "lat": 30.358047
+        },
+        {
+          "code": "510921",
+          "name": "蓬溪县",
+          "cityCode": "5109",
+          "provinceCode": "51",
+          "lng": 105.703901,
+          "lat": 30.760326
+        },
+        {
+          "code": "510923",
+          "name": "大英县",
+          "cityCode": "5109",
+          "provinceCode": "51",
+          "lng": 105.233771,
+          "lat": 30.597075
+        },
+        {
+          "code": "510981",
+          "name": "射洪市",
+          "cityCode": "5109",
+          "provinceCode": "51",
+          "lng": 105.384562,
+          "lat": 30.873437
+        }
+      ],
+      "lng": 105.589591,
+      "lat": 30.535595
+    },
+    {
+      "code": "5110",
+      "name": "内江市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "511002",
+          "name": "市中区",
+          "cityCode": "5110",
+          "provinceCode": "51",
+          "lng": 105.064538,
+          "lat": 29.589807
+        },
+        {
+          "code": "511011",
+          "name": "东兴区",
+          "cityCode": "5110",
+          "provinceCode": "51",
+          "lng": 105.072913,
+          "lat": 29.596097
+        },
+        {
+          "code": "511024",
+          "name": "威远县",
+          "cityCode": "5110",
+          "provinceCode": "51",
+          "lng": 104.666356,
+          "lat": 29.53024
+        },
+        {
+          "code": "511025",
+          "name": "资中县",
+          "cityCode": "5110",
+          "provinceCode": "51",
+          "lng": 104.849461,
+          "lat": 29.766986
+        },
+        {
+          "code": "511083",
+          "name": "隆昌市",
+          "cityCode": "5110",
+          "provinceCode": "51",
+          "lng": 105.284396,
+          "lat": 29.342293
+        }
+      ],
+      "lng": 105.054774,
+      "lat": 29.582777
+    },
+    {
+      "code": "5111",
+      "name": "乐山市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "511102",
+          "name": "市中区",
+          "cityCode": "5111",
+          "provinceCode": "51",
+          "lng": 103.75879,
+          "lat": 29.558252
+        },
+        {
+          "code": "511111",
+          "name": "沙湾区",
+          "cityCode": "5111",
+          "provinceCode": "51",
+          "lng": 103.548405,
+          "lat": 29.415956
+        },
+        {
+          "code": "511112",
+          "name": "五通桥区",
+          "cityCode": "5111",
+          "provinceCode": "51",
+          "lng": 103.815848,
+          "lat": 29.409782
+        },
+        {
+          "code": "511113",
+          "name": "金口河区",
+          "cityCode": "5111",
+          "provinceCode": "51",
+          "lng": 103.076575,
+          "lat": 29.247096
+        },
+        {
+          "code": "511123",
+          "name": "犍为县",
+          "cityCode": "5111",
+          "provinceCode": "51",
+          "lng": 103.94692,
+          "lat": 29.211279
+        },
+        {
+          "code": "511124",
+          "name": "井研县",
+          "cityCode": "5111",
+          "provinceCode": "51",
+          "lng": 104.066726,
+          "lat": 29.654289
+        },
+        {
+          "code": "511126",
+          "name": "夹江县",
+          "cityCode": "5111",
+          "provinceCode": "51",
+          "lng": 103.570033,
+          "lat": 29.740477
+        },
+        {
+          "code": "511129",
+          "name": "沐川县",
+          "cityCode": "5111",
+          "provinceCode": "51",
+          "lng": 103.900505,
+          "lat": 28.960022
+        },
+        {
+          "code": "511132",
+          "name": "峨边彝族自治县",
+          "cityCode": "5111",
+          "provinceCode": "51",
+          "lng": 103.260022,
+          "lat": 29.233332
+        },
+        {
+          "code": "511133",
+          "name": "马边彝族自治县",
+          "cityCode": "5111",
+          "provinceCode": "51",
+          "lng": 103.544141,
+          "lat": 28.838925
+        },
+        {
+          "code": "511181",
+          "name": "峨眉山市",
+          "cityCode": "5111",
+          "provinceCode": "51",
+          "lng": 103.482608,
+          "lat": 29.604516
+        }
+      ],
+      "lng": 103.763775,
+      "lat": 29.5551
+    },
+    {
+      "code": "5113",
+      "name": "南充市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "511302",
+          "name": "顺庆区",
+          "cityCode": "5113",
+          "provinceCode": "51",
+          "lng": 106.088304,
+          "lat": 30.799632
+        },
+        {
+          "code": "511303",
+          "name": "高坪区",
+          "cityCode": "5113",
+          "provinceCode": "51",
+          "lng": 106.114809,
+          "lat": 30.783864
+        },
+        {
+          "code": "511304",
+          "name": "嘉陵区",
+          "cityCode": "5113",
+          "provinceCode": "51",
+          "lng": 106.067778,
+          "lat": 30.760972
+        },
+        {
+          "code": "511321",
+          "name": "南部县",
+          "cityCode": "5113",
+          "provinceCode": "51",
+          "lng": 106.032463,
+          "lat": 31.350327
+        },
+        {
+          "code": "511322",
+          "name": "营山县",
+          "cityCode": "5113",
+          "provinceCode": "51",
+          "lng": 106.561814,
+          "lat": 31.079223
+        },
+        {
+          "code": "511323",
+          "name": "蓬安县",
+          "cityCode": "5113",
+          "provinceCode": "51",
+          "lng": 106.407886,
+          "lat": 31.030767
+        },
+        {
+          "code": "511324",
+          "name": "仪陇县",
+          "cityCode": "5113",
+          "provinceCode": "51",
+          "lng": 106.299063,
+          "lat": 31.273581
+        },
+        {
+          "code": "511325",
+          "name": "西充县",
+          "cityCode": "5113",
+          "provinceCode": "51",
+          "lng": 105.897188,
+          "lat": 30.997998
+        },
+        {
+          "code": "511381",
+          "name": "阆中市",
+          "cityCode": "5113",
+          "provinceCode": "51",
+          "lng": 106.001149,
+          "lat": 31.56045
+        }
+      ],
+      "lng": 106.106981,
+      "lat": 30.840082
+    },
+    {
+      "code": "5114",
+      "name": "眉山市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "511402",
+          "name": "东坡区",
+          "cityCode": "5114",
+          "provinceCode": "51",
+          "lng": 103.829656,
+          "lat": 30.044613
+        },
+        {
+          "code": "511403",
+          "name": "彭山区",
+          "cityCode": "5114",
+          "provinceCode": "51",
+          "lng": 103.870792,
+          "lat": 30.196073
+        },
+        {
+          "code": "511421",
+          "name": "仁寿县",
+          "cityCode": "5114",
+          "provinceCode": "51",
+          "lng": 104.131509,
+          "lat": 29.998127
+        },
+        {
+          "code": "511423",
+          "name": "洪雅县",
+          "cityCode": "5114",
+          "provinceCode": "51",
+          "lng": 103.370736,
+          "lat": 29.907429
+        },
+        {
+          "code": "511424",
+          "name": "丹棱县",
+          "cityCode": "5114",
+          "provinceCode": "51",
+          "lng": 103.510134,
+          "lat": 30.01759
+        },
+        {
+          "code": "511425",
+          "name": "青神县",
+          "cityCode": "5114",
+          "provinceCode": "51",
+          "lng": 103.844661,
+          "lat": 29.834151
+        }
+      ],
+      "lng": 103.84633,
+      "lat": 30.079925
+    },
+    {
+      "code": "5115",
+      "name": "宜宾市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "511502",
+          "name": "翠屏区",
+          "cityCode": "5115",
+          "provinceCode": "51",
+          "lng": 104.617505,
+          "lat": 28.769909
+        },
+        {
+          "code": "511503",
+          "name": "南溪区",
+          "cityCode": "5115",
+          "provinceCode": "51",
+          "lng": 104.966414,
+          "lat": 28.849743
+        },
+        {
+          "code": "511504",
+          "name": "叙州区",
+          "cityCode": "5115",
+          "provinceCode": "51",
+          "lng": 104.530657,
+          "lat": 28.693417
+        },
+        {
+          "code": "511523",
+          "name": "江安县",
+          "cityCode": "5115",
+          "provinceCode": "51",
+          "lng": 105.063752,
+          "lat": 28.726515
+        },
+        {
+          "code": "511524",
+          "name": "长宁县",
+          "cityCode": "5115",
+          "provinceCode": "51",
+          "lng": 104.918194,
+          "lat": 28.586359
+        },
+        {
+          "code": "511525",
+          "name": "高县",
+          "cityCode": "5115",
+          "provinceCode": "51",
+          "lng": 104.515257,
+          "lat": 28.439749
+        },
+        {
+          "code": "511526",
+          "name": "珙县",
+          "cityCode": "5115",
+          "provinceCode": "51",
+          "lng": 104.706436,
+          "lat": 28.442059
+        },
+        {
+          "code": "511527",
+          "name": "筠连县",
+          "cityCode": "5115",
+          "provinceCode": "51",
+          "lng": 104.509026,
+          "lat": 28.171274
+        },
+        {
+          "code": "511528",
+          "name": "兴文县",
+          "cityCode": "5115",
+          "provinceCode": "51",
+          "lng": 105.232801,
+          "lat": 28.307042
+        },
+        {
+          "code": "511529",
+          "name": "屏山县",
+          "cityCode": "5115",
+          "provinceCode": "51",
+          "lng": 104.343592,
+          "lat": 28.831671
+        }
+      ],
+      "lng": 104.640531,
+      "lat": 28.755752
+    },
+    {
+      "code": "5116",
+      "name": "广安市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "511602",
+          "name": "广安区",
+          "cityCode": "5116",
+          "provinceCode": "51",
+          "lng": 106.637781,
+          "lat": 30.476786
+        },
+        {
+          "code": "511603",
+          "name": "前锋区",
+          "cityCode": "5116",
+          "provinceCode": "51",
+          "lng": 106.882613,
+          "lat": 30.49854
+        },
+        {
+          "code": "511621",
+          "name": "岳池县",
+          "cityCode": "5116",
+          "provinceCode": "51",
+          "lng": 106.436151,
+          "lat": 30.540254
+        },
+        {
+          "code": "511622",
+          "name": "武胜县",
+          "cityCode": "5116",
+          "provinceCode": "51",
+          "lng": 106.291976,
+          "lat": 30.351876
+        },
+        {
+          "code": "511623",
+          "name": "邻水县",
+          "cityCode": "5116",
+          "provinceCode": "51",
+          "lng": 106.926493,
+          "lat": 30.33738
+        },
+        {
+          "code": "511681",
+          "name": "华蓥市",
+          "cityCode": "5116",
+          "provinceCode": "51",
+          "lng": 106.779103,
+          "lat": 30.393087
+        }
+      ],
+      "lng": 106.62884,
+      "lat": 30.459176
+    },
+    {
+      "code": "5117",
+      "name": "达州市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "511702",
+          "name": "通川区",
+          "cityCode": "5117",
+          "provinceCode": "51",
+          "lng": 107.500461,
+          "lat": 31.216951
+        },
+        {
+          "code": "511703",
+          "name": "达川区",
+          "cityCode": "5117",
+          "provinceCode": "51",
+          "lng": 107.507417,
+          "lat": 31.198884
+        },
+        {
+          "code": "511722",
+          "name": "宣汉县",
+          "cityCode": "5117",
+          "provinceCode": "51",
+          "lng": 107.722442,
+          "lat": 31.355986
+        },
+        {
+          "code": "511723",
+          "name": "开江县",
+          "cityCode": "5117",
+          "provinceCode": "51",
+          "lng": 107.864353,
+          "lat": 31.085427
+        },
+        {
+          "code": "511724",
+          "name": "大竹县",
+          "cityCode": "5117",
+          "provinceCode": "51",
+          "lng": 107.200558,
+          "lat": 30.738766
+        },
+        {
+          "code": "511725",
+          "name": "渠县",
+          "cityCode": "5117",
+          "provinceCode": "51",
+          "lng": 106.968847,
+          "lat": 30.839131
+        },
+        {
+          "code": "511781",
+          "name": "万源市",
+          "cityCode": "5117",
+          "provinceCode": "51",
+          "lng": 108.029836,
+          "lat": 32.08384
+        }
+      ],
+      "lng": 107.463345,
+      "lat": 31.210746
+    },
+    {
+      "code": "5118",
+      "name": "雅安市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "511802",
+          "name": "雨城区",
+          "cityCode": "5118",
+          "provinceCode": "51",
+          "lng": 103.031054,
+          "lat": 30.007905
+        },
+        {
+          "code": "511803",
+          "name": "名山区",
+          "cityCode": "5118",
+          "provinceCode": "51",
+          "lng": 103.107163,
+          "lat": 30.072359
+        },
+        {
+          "code": "511822",
+          "name": "荥经县",
+          "cityCode": "5118",
+          "provinceCode": "51",
+          "lng": 102.845293,
+          "lat": 29.795981
+        },
+        {
+          "code": "511823",
+          "name": "汉源县",
+          "cityCode": "5118",
+          "provinceCode": "51",
+          "lng": 102.649697,
+          "lat": 29.347082
+        },
+        {
+          "code": "511824",
+          "name": "石棉县",
+          "cityCode": "5118",
+          "provinceCode": "51",
+          "lng": 102.356618,
+          "lat": 29.233662
+        },
+        {
+          "code": "511825",
+          "name": "天全县",
+          "cityCode": "5118",
+          "provinceCode": "51",
+          "lng": 102.769646,
+          "lat": 30.059696
+        },
+        {
+          "code": "511826",
+          "name": "芦山县",
+          "cityCode": "5118",
+          "provinceCode": "51",
+          "lng": 102.932317,
+          "lat": 30.147556
+        },
+        {
+          "code": "511827",
+          "name": "宝兴县",
+          "cityCode": "5118",
+          "provinceCode": "51",
+          "lng": 102.813382,
+          "lat": 30.370756
+        }
+      ],
+      "lng": 103.041019,
+      "lat": 30.01348
+    },
+    {
+      "code": "5119",
+      "name": "巴中市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "511902",
+          "name": "巴州区",
+          "cityCode": "5119",
+          "provinceCode": "51",
+          "lng": 106.764676,
+          "lat": 31.853605
+        },
+        {
+          "code": "511903",
+          "name": "恩阳区",
+          "cityCode": "5119",
+          "provinceCode": "51",
+          "lng": 106.650458,
+          "lat": 31.789481
+        },
+        {
+          "code": "511921",
+          "name": "通江县",
+          "cityCode": "5119",
+          "provinceCode": "51",
+          "lng": 107.240416,
+          "lat": 31.913939
+        },
+        {
+          "code": "511922",
+          "name": "南江县",
+          "cityCode": "5119",
+          "provinceCode": "51",
+          "lng": 106.82431,
+          "lat": 32.349044
+        },
+        {
+          "code": "511923",
+          "name": "平昌县",
+          "cityCode": "5119",
+          "provinceCode": "51",
+          "lng": 107.098925,
+          "lat": 31.562492
+        }
+      ],
+      "lng": 106.743384,
+      "lat": 31.870038
+    },
+    {
+      "code": "5120",
+      "name": "资阳市",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "512002",
+          "name": "雁江区",
+          "cityCode": "5120",
+          "provinceCode": "51",
+          "lng": 104.674013,
+          "lat": 30.110237
+        },
+        {
+          "code": "512021",
+          "name": "安岳县",
+          "cityCode": "5120",
+          "provinceCode": "51",
+          "lng": 105.352129,
+          "lat": 30.106326
+        },
+        {
+          "code": "512022",
+          "name": "乐至县",
+          "cityCode": "5120",
+          "provinceCode": "51",
+          "lng": 105.017883,
+          "lat": 30.278807
+        }
+      ],
+      "lng": 104.625595,
+      "lat": 30.131547
+    },
+    {
+      "code": "5132",
+      "name": "阿坝藏族羌族自治州",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "513201",
+          "name": "马尔康市",
+          "cityCode": "5132",
+          "provinceCode": "51",
+          "lng": 102.204849,
+          "lat": 31.908184
+        },
+        {
+          "code": "513221",
+          "name": "汶川县",
+          "cityCode": "5132",
+          "provinceCode": "51",
+          "lng": 103.587972,
+          "lat": 31.479393
+        },
+        {
+          "code": "513222",
+          "name": "理县",
+          "cityCode": "5132",
+          "provinceCode": "51",
+          "lng": 103.161343,
+          "lat": 31.437941
+        },
+        {
+          "code": "513223",
+          "name": "茂县",
+          "cityCode": "5132",
+          "provinceCode": "51",
+          "lng": 103.850839,
+          "lat": 31.683437
+        },
+        {
+          "code": "513224",
+          "name": "松潘县",
+          "cityCode": "5132",
+          "provinceCode": "51",
+          "lng": 103.602293,
+          "lat": 32.658606
+        },
+        {
+          "code": "513225",
+          "name": "九寨沟县",
+          "cityCode": "5132",
+          "provinceCode": "51",
+          "lng": 104.239891,
+          "lat": 33.25374
+        },
+        {
+          "code": "513226",
+          "name": "金川县",
+          "cityCode": "5132",
+          "provinceCode": "51",
+          "lng": 102.0619,
+          "lat": 31.478246
+        },
+        {
+          "code": "513227",
+          "name": "小金县",
+          "cityCode": "5132",
+          "provinceCode": "51",
+          "lng": 102.361239,
+          "lat": 30.998171
+        },
+        {
+          "code": "513228",
+          "name": "黑水县",
+          "cityCode": "5132",
+          "provinceCode": "51",
+          "lng": 102.988152,
+          "lat": 32.064115
+        },
+        {
+          "code": "513230",
+          "name": "壤塘县",
+          "cityCode": "5132",
+          "provinceCode": "51",
+          "lng": 100.977122,
+          "lat": 32.267864
+        },
+        {
+          "code": "513231",
+          "name": "阿坝县",
+          "cityCode": "5132",
+          "provinceCode": "51",
+          "lng": 101.704738,
+          "lat": 32.904953
+        },
+        {
+          "code": "513232",
+          "name": "若尔盖县",
+          "cityCode": "5132",
+          "provinceCode": "51",
+          "lng": 102.966182,
+          "lat": 33.579918
+        },
+        {
+          "code": "513233",
+          "name": "红原县",
+          "cityCode": "5132",
+          "provinceCode": "51",
+          "lng": 102.542633,
+          "lat": 32.793305
+        }
+      ],
+      "lng": 102.223356,
+      "lat": 31.901546
+    },
+    {
+      "code": "5133",
+      "name": "甘孜藏族自治州",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "513301",
+          "name": "康定市",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 101.954995,
+          "lat": 30.001527
+        },
+        {
+          "code": "513322",
+          "name": "泸定县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 102.233436,
+          "lat": 29.916807
+        },
+        {
+          "code": "513323",
+          "name": "丹巴县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 101.888518,
+          "lat": 30.881182
+        },
+        {
+          "code": "513324",
+          "name": "九龙县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 101.50576,
+          "lat": 29.003399
+        },
+        {
+          "code": "513325",
+          "name": "雅江县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 101.01252,
+          "lat": 30.034864
+        },
+        {
+          "code": "513326",
+          "name": "道孚县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 101.123273,
+          "lat": 30.981642
+        },
+        {
+          "code": "513327",
+          "name": "炉霍县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 100.674745,
+          "lat": 31.394056
+        },
+        {
+          "code": "513328",
+          "name": "甘孜县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 99.990456,
+          "lat": 31.625007
+        },
+        {
+          "code": "513329",
+          "name": "新龙县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 100.310689,
+          "lat": 30.941624
+        },
+        {
+          "code": "513330",
+          "name": "德格县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 98.580645,
+          "lat": 31.809031
+        },
+        {
+          "code": "513331",
+          "name": "白玉县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 98.82371,
+          "lat": 31.212087
+        },
+        {
+          "code": "513332",
+          "name": "石渠县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 98.102216,
+          "lat": 32.980508
+        },
+        {
+          "code": "513333",
+          "name": "色达县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 100.331519,
+          "lat": 32.270594
+        },
+        {
+          "code": "513334",
+          "name": "理塘县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 100.267836,
+          "lat": 29.997149
+        },
+        {
+          "code": "513335",
+          "name": "巴塘县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 99.109446,
+          "lat": 30.008031
+        },
+        {
+          "code": "513336",
+          "name": "乡城县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 99.797368,
+          "lat": 28.93415
+        },
+        {
+          "code": "513337",
+          "name": "稻城县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 100.296142,
+          "lat": 29.04099
+        },
+        {
+          "code": "513338",
+          "name": "得荣县",
+          "cityCode": "5133",
+          "provinceCode": "51",
+          "lng": 99.285403,
+          "lat": 28.716347
+        }
+      ],
+      "lng": 101.960482,
+      "lat": 30.052221
+    },
+    {
+      "code": "5134",
+      "name": "凉山彝族自治州",
+      "provinceCode": "51",
+      "areas": [
+        {
+          "code": "513401",
+          "name": "西昌市",
+          "cityCode": "5134",
+          "provinceCode": "51",
+          "lng": 102.263506,
+          "lat": 27.897936
+        },
+        {
+          "code": "513402",
+          "name": "会理市",
+          "cityCode": "5134",
+          "provinceCode": "51"
+        },
+        {
+          "code": "513422",
+          "name": "木里藏族自治县",
+          "cityCode": "5134",
+          "provinceCode": "51",
+          "lng": 101.278394,
+          "lat": 27.931741
+        },
+        {
+          "code": "513423",
+          "name": "盐源县",
+          "cityCode": "5134",
+          "provinceCode": "51",
+          "lng": 101.507443,
+          "lat": 27.426082
+        },
+        {
+          "code": "513424",
+          "name": "德昌县",
+          "cityCode": "5134",
+          "provinceCode": "51",
+          "lng": 102.17395,
+          "lat": 27.406215
+        },
+        {
+          "code": "513426",
+          "name": "会东县",
+          "cityCode": "5134",
+          "provinceCode": "51",
+          "lng": 102.576729,
+          "lat": 26.638423
+        },
+        {
+          "code": "513427",
+          "name": "宁南县",
+          "cityCode": "5134",
+          "provinceCode": "51",
+          "lng": 102.750183,
+          "lat": 27.065072
+        },
+        {
+          "code": "513428",
+          "name": "普格县",
+          "cityCode": "5134",
+          "provinceCode": "51",
+          "lng": 102.538646,
+          "lat": 27.379824
+        },
+        {
+          "code": "513429",
+          "name": "布拖县",
+          "cityCode": "5134",
+          "provinceCode": "51",
+          "lng": 102.807729,
+          "lat": 27.715658
+        },
+        {
+          "code": "513430",
+          "name": "金阳县",
+          "cityCode": "5134",
+          "provinceCode": "51",
+          "lng": 103.246384,
+          "lat": 27.699782
+        },
+        {
+          "code": "513431",
+          "name": "昭觉县",
+          "cityCode": "5134",
+          "provinceCode": "51",
+          "lng": 102.841943,
+          "lat": 28.01843
+        },
+        {
+          "code": "513432",
+          "name": "喜德县",
+          "cityCode": "5134",
+          "provinceCode": "51",
+          "lng": 102.411301,
+          "lat": 28.310295
+        },
+        {
+          "code": "513433",
+          "name": "冕宁县",
+          "cityCode": "5134",
+          "provinceCode": "51",
+          "lng": 102.175377,
+          "lat": 28.552936
+        },
+        {
+          "code": "513434",
+          "name": "越西县",
+          "cityCode": "5134",
+          "provinceCode": "51",
+          "lng": 102.506514,
+          "lat": 28.643198
+        },
+        {
+          "code": "513435",
+          "name": "甘洛县",
+          "cityCode": "5134",
+          "provinceCode": "51",
+          "lng": 102.770386,
+          "lat": 28.962261
+        },
+        {
+          "code": "513436",
+          "name": "美姑县",
+          "cityCode": "5134",
+          "provinceCode": "51",
+          "lng": 103.129968,
+          "lat": 28.331606
+        },
+        {
+          "code": "513437",
+          "name": "雷波县",
+          "cityCode": "5134",
+          "provinceCode": "51",
+          "lng": 103.569795,
+          "lat": 28.26684
+        }
+      ],
+      "lng": 102.265506,
+      "lat": 27.885132
+    }
+  ]
+}

@@ -1,0 +1,934 @@
+{
+  "province": {
+    "code": "21",
+    "name": "辽宁省"
+  },
+  "cities": [
+    {
+      "code": "2101",
+      "name": "沈阳市",
+      "provinceCode": "21",
+      "areas": [
+        {
+          "code": "210102",
+          "name": "和平区",
+          "cityCode": "2101",
+          "provinceCode": "21",
+          "lng": 123.41435,
+          "lat": 41.787399
+        },
+        {
+          "code": "210103",
+          "name": "沈河区",
+          "cityCode": "2101",
+          "provinceCode": "21",
+          "lng": 123.452917,
+          "lat": 41.79341
+        },
+        {
+          "code": "210104",
+          "name": "大东区",
+          "cityCode": "2101",
+          "provinceCode": "21",
+          "lng": 123.463869,
+          "lat": 41.802985
+        },
+        {
+          "code": "210105",
+          "name": "皇姑区",
+          "cityCode": "2101",
+          "provinceCode": "21",
+          "lng": 123.436568,
+          "lat": 41.821846
+        },
+        {
+          "code": "210106",
+          "name": "铁西区",
+          "cityCode": "2101",
+          "provinceCode": "21",
+          "lng": 123.328019,
+          "lat": 41.818542
+        },
+        {
+          "code": "210111",
+          "name": "苏家屯区",
+          "cityCode": "2101",
+          "provinceCode": "21",
+          "lng": 123.33794,
+          "lat": 41.662742
+        },
+        {
+          "code": "210112",
+          "name": "浑南区",
+          "cityCode": "2101",
+          "provinceCode": "21",
+          "lng": 123.443392,
+          "lat": 41.71259
+        },
+        {
+          "code": "210113",
+          "name": "沈北新区",
+          "cityCode": "2101",
+          "provinceCode": "21",
+          "lng": 123.578618,
+          "lat": 41.911552
+        },
+        {
+          "code": "210114",
+          "name": "于洪区",
+          "cityCode": "2101",
+          "provinceCode": "21",
+          "lng": 123.302188,
+          "lat": 41.791601
+        },
+        {
+          "code": "210115",
+          "name": "辽中区",
+          "cityCode": "2101",
+          "provinceCode": "21",
+          "lng": 122.76051,
+          "lat": 41.515132
+        },
+        {
+          "code": "210123",
+          "name": "康平县",
+          "cityCode": "2101",
+          "provinceCode": "21",
+          "lng": 123.337312,
+          "lat": 42.725569
+        },
+        {
+          "code": "210124",
+          "name": "法库县",
+          "cityCode": "2101",
+          "provinceCode": "21",
+          "lng": 123.434016,
+          "lat": 42.498742
+        },
+        {
+          "code": "210181",
+          "name": "新民市",
+          "cityCode": "2101",
+          "provinceCode": "21",
+          "lng": 122.830592,
+          "lat": 41.983633
+        }
+      ],
+      "lng": 123.458622,
+      "lat": 41.675216
+    },
+    {
+      "code": "2102",
+      "name": "大连市",
+      "provinceCode": "21",
+      "areas": [
+        {
+          "code": "210202",
+          "name": "中山区",
+          "cityCode": "2102",
+          "provinceCode": "21",
+          "lng": 121.640087,
+          "lat": 38.917683
+        },
+        {
+          "code": "210203",
+          "name": "西岗区",
+          "cityCode": "2102",
+          "provinceCode": "21",
+          "lng": 121.607314,
+          "lat": 38.913987
+        },
+        {
+          "code": "210204",
+          "name": "沙河口区",
+          "cityCode": "2102",
+          "provinceCode": "21",
+          "lng": 121.583057,
+          "lat": 38.906731
+        },
+        {
+          "code": "210211",
+          "name": "甘井子区",
+          "cityCode": "2102",
+          "provinceCode": "21",
+          "lng": 121.519901,
+          "lat": 38.951196
+        },
+        {
+          "code": "210212",
+          "name": "旅顺口区",
+          "cityCode": "2102",
+          "provinceCode": "21",
+          "lng": 121.256699,
+          "lat": 38.850802
+        },
+        {
+          "code": "210213",
+          "name": "金州区",
+          "cityCode": "2102",
+          "provinceCode": "21",
+          "lng": 121.777443,
+          "lat": 39.050032
+        },
+        {
+          "code": "210214",
+          "name": "普兰店区",
+          "cityCode": "2102",
+          "provinceCode": "21",
+          "lng": 121.933139,
+          "lat": 39.390967
+        },
+        {
+          "code": "210224",
+          "name": "长海县",
+          "cityCode": "2102",
+          "provinceCode": "21",
+          "lng": 122.583599,
+          "lat": 39.27181
+        },
+        {
+          "code": "210281",
+          "name": "瓦房店市",
+          "cityCode": "2102",
+          "provinceCode": "21",
+          "lng": 121.974468,
+          "lat": 39.625925
+        },
+        {
+          "code": "210283",
+          "name": "庄河市",
+          "cityCode": "2102",
+          "provinceCode": "21",
+          "lng": 122.961538,
+          "lat": 39.679691
+        }
+      ],
+      "lng": 121.610056,
+      "lat": 38.912524
+    },
+    {
+      "code": "2103",
+      "name": "鞍山市",
+      "provinceCode": "21",
+      "areas": [
+        {
+          "code": "210302",
+          "name": "铁东区",
+          "cityCode": "2103",
+          "provinceCode": "21",
+          "lng": 122.985668,
+          "lat": 41.087967
+        },
+        {
+          "code": "210303",
+          "name": "铁西区",
+          "cityCode": "2103",
+          "provinceCode": "21",
+          "lng": 122.963994,
+          "lat": 41.117624
+        },
+        {
+          "code": "210304",
+          "name": "立山区",
+          "cityCode": "2103",
+          "provinceCode": "21",
+          "lng": 123.023333,
+          "lat": 41.148044
+        },
+        {
+          "code": "210311",
+          "name": "千山区",
+          "cityCode": "2103",
+          "provinceCode": "21",
+          "lng": 122.955105,
+          "lat": 41.073559
+        },
+        {
+          "code": "210321",
+          "name": "台安县",
+          "cityCode": "2103",
+          "provinceCode": "21",
+          "lng": 122.430598,
+          "lat": 41.410837
+        },
+        {
+          "code": "210323",
+          "name": "岫岩满族自治县",
+          "cityCode": "2103",
+          "provinceCode": "21",
+          "lng": 123.275344,
+          "lat": 40.288669
+        },
+        {
+          "code": "210381",
+          "name": "海城市",
+          "cityCode": "2103",
+          "provinceCode": "21",
+          "lng": 122.67982,
+          "lat": 40.880233
+        }
+      ],
+      "lng": 122.989497,
+      "lat": 41.106779
+    },
+    {
+      "code": "2104",
+      "name": "抚顺市",
+      "provinceCode": "21",
+      "areas": [
+        {
+          "code": "210402",
+          "name": "新抚区",
+          "cityCode": "2104",
+          "provinceCode": "21",
+          "lng": 123.907301,
+          "lat": 41.860007
+        },
+        {
+          "code": "210403",
+          "name": "东洲区",
+          "cityCode": "2104",
+          "provinceCode": "21",
+          "lng": 124.032428,
+          "lat": 41.850617
+        },
+        {
+          "code": "210404",
+          "name": "望花区",
+          "cityCode": "2104",
+          "provinceCode": "21",
+          "lng": 123.77836,
+          "lat": 41.851237
+        },
+        {
+          "code": "210411",
+          "name": "顺城区",
+          "cityCode": "2104",
+          "provinceCode": "21",
+          "lng": 123.939254,
+          "lat": 41.880771
+        },
+        {
+          "code": "210421",
+          "name": "抚顺县",
+          "cityCode": "2104",
+          "provinceCode": "21",
+          "lng": 123.909297,
+          "lat": 41.879206
+        },
+        {
+          "code": "210422",
+          "name": "新宾满族自治县",
+          "cityCode": "2104",
+          "provinceCode": "21",
+          "lng": 125.033859,
+          "lat": 41.731191
+        },
+        {
+          "code": "210423",
+          "name": "清原满族自治县",
+          "cityCode": "2104",
+          "provinceCode": "21",
+          "lng": 124.918241,
+          "lat": 42.098294
+        }
+      ],
+      "lng": 123.77836,
+      "lat": 41.851237
+    },
+    {
+      "code": "2105",
+      "name": "本溪市",
+      "provinceCode": "21",
+      "areas": [
+        {
+          "code": "210502",
+          "name": "平山区",
+          "cityCode": "2105",
+          "provinceCode": "21",
+          "lng": 123.762115,
+          "lat": 41.29381
+        },
+        {
+          "code": "210503",
+          "name": "溪湖区",
+          "cityCode": "2105",
+          "provinceCode": "21",
+          "lng": 123.761799,
+          "lat": 41.327079
+        },
+        {
+          "code": "210504",
+          "name": "明山区",
+          "cityCode": "2105",
+          "provinceCode": "21",
+          "lng": 123.856657,
+          "lat": 41.340536
+        },
+        {
+          "code": "210505",
+          "name": "南芬区",
+          "cityCode": "2105",
+          "provinceCode": "21",
+          "lng": 123.73897,
+          "lat": 41.098281
+        },
+        {
+          "code": "210521",
+          "name": "本溪满族自治县",
+          "cityCode": "2105",
+          "provinceCode": "21",
+          "lng": 124.114962,
+          "lat": 41.299818
+        },
+        {
+          "code": "210522",
+          "name": "桓仁满族自治县",
+          "cityCode": "2105",
+          "provinceCode": "21",
+          "lng": 125.354785,
+          "lat": 41.264832
+        }
+      ],
+      "lng": 123.679174,
+      "lat": 41.484724
+    },
+    {
+      "code": "2106",
+      "name": "丹东市",
+      "provinceCode": "21",
+      "areas": [
+        {
+          "code": "210602",
+          "name": "元宝区",
+          "cityCode": "2106",
+          "provinceCode": "21",
+          "lng": 124.390159,
+          "lat": 40.1349
+        },
+        {
+          "code": "210603",
+          "name": "振兴区",
+          "cityCode": "2106",
+          "provinceCode": "21",
+          "lng": 124.377664,
+          "lat": 40.128225
+        },
+        {
+          "code": "210604",
+          "name": "振安区",
+          "cityCode": "2106",
+          "provinceCode": "21",
+          "lng": 124.464456,
+          "lat": 40.200101
+        },
+        {
+          "code": "210624",
+          "name": "宽甸满族自治县",
+          "cityCode": "2106",
+          "provinceCode": "21",
+          "lng": 124.778281,
+          "lat": 40.729656
+        },
+        {
+          "code": "210681",
+          "name": "东港市",
+          "cityCode": "2106",
+          "provinceCode": "21",
+          "lng": 124.147224,
+          "lat": 39.860477
+        },
+        {
+          "code": "210682",
+          "name": "凤城市",
+          "cityCode": "2106",
+          "provinceCode": "21",
+          "lng": 124.060077,
+          "lat": 40.451253
+        }
+      ],
+      "lng": 124.348667,
+      "lat": 39.999164
+    },
+    {
+      "code": "2107",
+      "name": "锦州市",
+      "provinceCode": "21",
+      "areas": [
+        {
+          "code": "210702",
+          "name": "古塔区",
+          "cityCode": "2107",
+          "provinceCode": "21",
+          "lng": 121.122632,
+          "lat": 41.115223
+        },
+        {
+          "code": "210703",
+          "name": "凌河区",
+          "cityCode": "2107",
+          "provinceCode": "21",
+          "lng": 121.145396,
+          "lat": 41.112968
+        },
+        {
+          "code": "210711",
+          "name": "太和区",
+          "cityCode": "2107",
+          "provinceCode": "21",
+          "lng": 121.09789,
+          "lat": 41.107375
+        },
+        {
+          "code": "210726",
+          "name": "黑山县",
+          "cityCode": "2107",
+          "provinceCode": "21",
+          "lng": 122.121049,
+          "lat": 41.65116
+        },
+        {
+          "code": "210727",
+          "name": "义县",
+          "cityCode": "2107",
+          "provinceCode": "21",
+          "lng": 121.233498,
+          "lat": 41.530939
+        },
+        {
+          "code": "210781",
+          "name": "凌海市",
+          "cityCode": "2107",
+          "provinceCode": "21",
+          "lng": 121.349836,
+          "lat": 41.158509
+        },
+        {
+          "code": "210782",
+          "name": "北镇市",
+          "cityCode": "2107",
+          "provinceCode": "21",
+          "lng": 121.771793,
+          "lat": 41.586734
+        }
+      ],
+      "lng": 121.120355,
+      "lat": 41.093151
+    },
+    {
+      "code": "2108",
+      "name": "营口市",
+      "provinceCode": "21",
+      "areas": [
+        {
+          "code": "210802",
+          "name": "站前区",
+          "cityCode": "2108",
+          "provinceCode": "21",
+          "lng": 122.253835,
+          "lat": 40.671034
+        },
+        {
+          "code": "210803",
+          "name": "西市区",
+          "cityCode": "2108",
+          "provinceCode": "21",
+          "lng": 122.201784,
+          "lat": 40.664808
+        },
+        {
+          "code": "210804",
+          "name": "鲅鱼圈区",
+          "cityCode": "2108",
+          "provinceCode": "21",
+          "lng": 122.11563,
+          "lat": 40.22495
+        },
+        {
+          "code": "210811",
+          "name": "老边区",
+          "cityCode": "2108",
+          "provinceCode": "21",
+          "lng": 122.302672,
+          "lat": 40.669591
+        },
+        {
+          "code": "210881",
+          "name": "盖州市",
+          "cityCode": "2108",
+          "provinceCode": "21",
+          "lng": 122.343485,
+          "lat": 40.398913
+        },
+        {
+          "code": "210882",
+          "name": "大石桥市",
+          "cityCode": "2108",
+          "provinceCode": "21",
+          "lng": 122.503908,
+          "lat": 40.643069
+        }
+      ],
+      "lng": 122.213994,
+      "lat": 40.62352
+    },
+    {
+      "code": "2109",
+      "name": "阜新市",
+      "provinceCode": "21",
+      "areas": [
+        {
+          "code": "210902",
+          "name": "海州区",
+          "cityCode": "2109",
+          "provinceCode": "21",
+          "lng": 121.657158,
+          "lat": 42.015716
+        },
+        {
+          "code": "210903",
+          "name": "新邱区",
+          "cityCode": "2109",
+          "provinceCode": "21",
+          "lng": 121.786855,
+          "lat": 42.08525
+        },
+        {
+          "code": "210904",
+          "name": "太平区",
+          "cityCode": "2109",
+          "provinceCode": "21",
+          "lng": 121.67305,
+          "lat": 42.008451
+        },
+        {
+          "code": "210905",
+          "name": "清河门区",
+          "cityCode": "2109",
+          "provinceCode": "21",
+          "lng": 121.410353,
+          "lat": 41.780667
+        },
+        {
+          "code": "210911",
+          "name": "细河区",
+          "cityCode": "2109",
+          "provinceCode": "21",
+          "lng": 121.674569,
+          "lat": 42.023371
+        },
+        {
+          "code": "210921",
+          "name": "阜新蒙古族自治县",
+          "cityCode": "2109",
+          "provinceCode": "21",
+          "lng": 121.751485,
+          "lat": 42.063394
+        },
+        {
+          "code": "210922",
+          "name": "彰武县",
+          "cityCode": "2109",
+          "provinceCode": "21",
+          "lng": 122.533754,
+          "lat": 42.384368
+        }
+      ],
+      "lng": 121.752386,
+      "lat": 42.06297
+    },
+    {
+      "code": "2110",
+      "name": "辽阳市",
+      "provinceCode": "21",
+      "areas": [
+        {
+          "code": "211002",
+          "name": "白塔区",
+          "cityCode": "2110",
+          "provinceCode": "21",
+          "lng": 123.168745,
+          "lat": 41.268236
+        },
+        {
+          "code": "211003",
+          "name": "文圣区",
+          "cityCode": "2110",
+          "provinceCode": "21",
+          "lng": 123.225878,
+          "lat": 41.281568
+        },
+        {
+          "code": "211004",
+          "name": "宏伟区",
+          "cityCode": "2110",
+          "provinceCode": "21",
+          "lng": 123.190625,
+          "lat": 41.215935
+        },
+        {
+          "code": "211005",
+          "name": "弓长岭区",
+          "cityCode": "2110",
+          "provinceCode": "21",
+          "lng": 123.414065,
+          "lat": 41.149501
+        },
+        {
+          "code": "211011",
+          "name": "太子河区",
+          "cityCode": "2110",
+          "provinceCode": "21",
+          "lng": 123.176062,
+          "lat": 41.251499
+        },
+        {
+          "code": "211021",
+          "name": "辽阳县",
+          "cityCode": "2110",
+          "provinceCode": "21",
+          "lng": 123.10063,
+          "lat": 41.203935
+        },
+        {
+          "code": "211081",
+          "name": "灯塔市",
+          "cityCode": "2110",
+          "provinceCode": "21",
+          "lng": 123.333524,
+          "lat": 41.424139
+        }
+      ],
+      "lng": 123.231264,
+      "lat": 41.265732
+    },
+    {
+      "code": "2111",
+      "name": "盘锦市",
+      "provinceCode": "21",
+      "areas": [
+        {
+          "code": "211102",
+          "name": "双台子区",
+          "cityCode": "2111",
+          "provinceCode": "21",
+          "lng": 122.07046,
+          "lat": 41.210231
+        },
+        {
+          "code": "211103",
+          "name": "兴隆台区",
+          "cityCode": "2111",
+          "provinceCode": "21",
+          "lng": 122.065193,
+          "lat": 41.118168
+        },
+        {
+          "code": "211104",
+          "name": "大洼区",
+          "cityCode": "2111",
+          "provinceCode": "21",
+          "lng": 122.076722,
+          "lat": 41.000416
+        },
+        {
+          "code": "211122",
+          "name": "盘山县",
+          "cityCode": "2111",
+          "provinceCode": "21",
+          "lng": 121.991077,
+          "lat": 41.241401
+        }
+      ],
+      "lng": 122.165391,
+      "lat": 40.717781
+    },
+    {
+      "code": "2112",
+      "name": "铁岭市",
+      "provinceCode": "21",
+      "areas": [
+        {
+          "code": "211202",
+          "name": "银州区",
+          "cityCode": "2112",
+          "provinceCode": "21",
+          "lng": 123.836554,
+          "lat": 42.284084
+        },
+        {
+          "code": "211204",
+          "name": "清河区",
+          "cityCode": "2112",
+          "provinceCode": "21",
+          "lng": 124.15287,
+          "lat": 42.544323
+        },
+        {
+          "code": "211221",
+          "name": "铁岭县",
+          "cityCode": "2112",
+          "provinceCode": "21",
+          "lng": 123.722986,
+          "lat": 42.220669
+        },
+        {
+          "code": "211223",
+          "name": "西丰县",
+          "cityCode": "2112",
+          "provinceCode": "21",
+          "lng": 124.721348,
+          "lat": 42.736046
+        },
+        {
+          "code": "211224",
+          "name": "昌图县",
+          "cityCode": "2112",
+          "provinceCode": "21",
+          "lng": 124.104736,
+          "lat": 42.783704
+        },
+        {
+          "code": "211281",
+          "name": "调兵山市",
+          "cityCode": "2112",
+          "provinceCode": "21",
+          "lng": 123.561332,
+          "lat": 42.465391
+        },
+        {
+          "code": "211282",
+          "name": "开原市",
+          "cityCode": "2112",
+          "provinceCode": "21",
+          "lng": 124.045351,
+          "lat": 42.574309
+        }
+      ],
+      "lng": 123.720005,
+      "lat": 42.221628
+    },
+    {
+      "code": "2113",
+      "name": "朝阳市",
+      "provinceCode": "21",
+      "areas": [
+        {
+          "code": "211302",
+          "name": "双塔区",
+          "cityCode": "2113",
+          "provinceCode": "21",
+          "lng": 120.446199,
+          "lat": 41.559452
+        },
+        {
+          "code": "211303",
+          "name": "龙城区",
+          "cityCode": "2113",
+          "provinceCode": "21",
+          "lng": 120.431633,
+          "lat": 41.590424
+        },
+        {
+          "code": "211321",
+          "name": "朝阳县",
+          "cityCode": "2113",
+          "provinceCode": "21",
+          "lng": 120.384075,
+          "lat": 41.495432
+        },
+        {
+          "code": "211322",
+          "name": "建平县",
+          "cityCode": "2113",
+          "provinceCode": "21",
+          "lng": 119.637355,
+          "lat": 41.40138
+        },
+        {
+          "code": "211324",
+          "name": "喀喇沁左翼蒙古族自治县",
+          "cityCode": "2113",
+          "provinceCode": "21",
+          "lng": 119.734938,
+          "lat": 41.125628
+        },
+        {
+          "code": "211381",
+          "name": "北票市",
+          "cityCode": "2113",
+          "provinceCode": "21",
+          "lng": 120.765557,
+          "lat": 41.798611
+        },
+        {
+          "code": "211382",
+          "name": "凌源市",
+          "cityCode": "2113",
+          "provinceCode": "21",
+          "lng": 119.395074,
+          "lat": 41.243263
+        }
+      ],
+      "lng": 120.482765,
+      "lat": 41.59922
+    },
+    {
+      "code": "2114",
+      "name": "葫芦岛市",
+      "provinceCode": "21",
+      "areas": [
+        {
+          "code": "211402",
+          "name": "连山区",
+          "cityCode": "2114",
+          "provinceCode": "21",
+          "lng": 120.864884,
+          "lat": 40.773456
+        },
+        {
+          "code": "211403",
+          "name": "龙港区",
+          "cityCode": "2114",
+          "provinceCode": "21",
+          "lng": 120.888839,
+          "lat": 40.734056
+        },
+        {
+          "code": "211404",
+          "name": "南票区",
+          "cityCode": "2114",
+          "provinceCode": "21",
+          "lng": 120.744634,
+          "lat": 41.105218
+        },
+        {
+          "code": "211421",
+          "name": "绥中县",
+          "cityCode": "2114",
+          "provinceCode": "21",
+          "lng": 120.339016,
+          "lat": 40.324317
+        },
+        {
+          "code": "211422",
+          "name": "建昌县",
+          "cityCode": "2114",
+          "provinceCode": "21",
+          "lng": 119.830771,
+          "lat": 40.823148
+        },
+        {
+          "code": "211481",
+          "name": "兴城市",
+          "cityCode": "2114",
+          "provinceCode": "21",
+          "lng": 120.752696,
+          "lat": 40.609212
+        }
+      ],
+      "lng": 120.831701,
+      "lat": 40.709497
+    }
+  ]
+}

@@ -1,0 +1,951 @@
+{
+  "province": {
+    "code": "32",
+    "name": "江苏省"
+  },
+  "cities": [
+    {
+      "code": "3201",
+      "name": "南京市",
+      "provinceCode": "32",
+      "areas": [
+        {
+          "code": "320102",
+          "name": "玄武区",
+          "cityCode": "3201",
+          "provinceCode": "32",
+          "lng": 118.792589,
+          "lat": 32.050764
+        },
+        {
+          "code": "320104",
+          "name": "秦淮区",
+          "cityCode": "3201",
+          "provinceCode": "32",
+          "lng": 118.789564,
+          "lat": 32.041266
+        },
+        {
+          "code": "320105",
+          "name": "建邺区",
+          "cityCode": "3201",
+          "provinceCode": "32",
+          "lng": 118.72722,
+          "lat": 32.006593
+        },
+        {
+          "code": "320106",
+          "name": "鼓楼区",
+          "cityCode": "3201",
+          "provinceCode": "32",
+          "lng": 118.764862,
+          "lat": 32.068671
+        },
+        {
+          "code": "320111",
+          "name": "浦口区",
+          "cityCode": "3201",
+          "provinceCode": "32",
+          "lng": 118.623269,
+          "lat": 32.061346
+        },
+        {
+          "code": "320113",
+          "name": "栖霞区",
+          "cityCode": "3201",
+          "provinceCode": "32",
+          "lng": 118.903972,
+          "lat": 32.098528
+        },
+        {
+          "code": "320114",
+          "name": "雨花台区",
+          "cityCode": "3201",
+          "provinceCode": "32",
+          "lng": 118.773797,
+          "lat": 31.993738
+        },
+        {
+          "code": "320115",
+          "name": "江宁区",
+          "cityCode": "3201",
+          "provinceCode": "32",
+          "lng": 118.834656,
+          "lat": 31.955767
+        },
+        {
+          "code": "320116",
+          "name": "六合区",
+          "cityCode": "3201",
+          "provinceCode": "32",
+          "lng": 118.81703,
+          "lat": 32.325561
+        },
+        {
+          "code": "320117",
+          "name": "溧水区",
+          "cityCode": "3201",
+          "provinceCode": "32",
+          "lng": 119.0231,
+          "lat": 31.652987
+        },
+        {
+          "code": "320118",
+          "name": "高淳区",
+          "cityCode": "3201",
+          "provinceCode": "32",
+          "lng": 118.887095,
+          "lat": 31.331008
+        }
+      ],
+      "lng": 118.791524,
+      "lat": 32.061481
+    },
+    {
+      "code": "3202",
+      "name": "无锡市",
+      "provinceCode": "32",
+      "areas": [
+        {
+          "code": "320205",
+          "name": "锡山区",
+          "cityCode": "3202",
+          "provinceCode": "32",
+          "lng": 120.352316,
+          "lat": 31.590197
+        },
+        {
+          "code": "320206",
+          "name": "惠山区",
+          "cityCode": "3202",
+          "provinceCode": "32",
+          "lng": 120.293393,
+          "lat": 31.683004
+        },
+        {
+          "code": "320211",
+          "name": "滨湖区",
+          "cityCode": "3202",
+          "provinceCode": "32",
+          "lng": 120.279886,
+          "lat": 31.529779
+        },
+        {
+          "code": "320213",
+          "name": "梁溪区",
+          "cityCode": "3202",
+          "provinceCode": "32",
+          "lng": 120.298972,
+          "lat": 31.568132
+        },
+        {
+          "code": "320214",
+          "name": "新吴区",
+          "cityCode": "3202",
+          "provinceCode": "32",
+          "lng": 120.359848,
+          "lat": 31.492602
+        },
+        {
+          "code": "320281",
+          "name": "江阴市",
+          "cityCode": "3202",
+          "provinceCode": "32",
+          "lng": 120.280231,
+          "lat": 31.922616
+        },
+        {
+          "code": "320282",
+          "name": "宜兴市",
+          "cityCode": "3202",
+          "provinceCode": "32",
+          "lng": 119.817223,
+          "lat": 31.340725
+        }
+      ],
+      "lng": 120.307391,
+      "lat": 31.494988
+    },
+    {
+      "code": "3203",
+      "name": "徐州市",
+      "provinceCode": "32",
+      "areas": [
+        {
+          "code": "320302",
+          "name": "鼓楼区",
+          "cityCode": "3203",
+          "provinceCode": "32",
+          "lng": 117.180226,
+          "lat": 34.289312
+        },
+        {
+          "code": "320303",
+          "name": "云龙区",
+          "cityCode": "3203",
+          "provinceCode": "32",
+          "lng": 117.245701,
+          "lat": 34.255187
+        },
+        {
+          "code": "320305",
+          "name": "贾汪区",
+          "cityCode": "3203",
+          "provinceCode": "32",
+          "lng": 117.457073,
+          "lat": 34.436494
+        },
+        {
+          "code": "320311",
+          "name": "泉山区",
+          "cityCode": "3203",
+          "provinceCode": "32",
+          "lng": 117.188244,
+          "lat": 34.245444
+        },
+        {
+          "code": "320312",
+          "name": "铜山区",
+          "cityCode": "3203",
+          "provinceCode": "32",
+          "lng": 117.163994,
+          "lat": 34.182483
+        },
+        {
+          "code": "320321",
+          "name": "丰县",
+          "cityCode": "3203",
+          "provinceCode": "32",
+          "lng": 116.652967,
+          "lat": 34.697096
+        },
+        {
+          "code": "320322",
+          "name": "沛县",
+          "cityCode": "3203",
+          "provinceCode": "32",
+          "lng": 116.931074,
+          "lat": 34.762119
+        },
+        {
+          "code": "320324",
+          "name": "睢宁县",
+          "cityCode": "3203",
+          "provinceCode": "32",
+          "lng": 117.935949,
+          "lat": 33.915303
+        },
+        {
+          "code": "320371",
+          "name": "徐州经济技术开发区",
+          "cityCode": "3203",
+          "provinceCode": "32",
+          "lng": 117.278247,
+          "lat": 34.208191
+        },
+        {
+          "code": "320381",
+          "name": "新沂市",
+          "cityCode": "3203",
+          "provinceCode": "32",
+          "lng": 118.348813,
+          "lat": 34.370519
+        },
+        {
+          "code": "320382",
+          "name": "邳州市",
+          "cityCode": "3203",
+          "provinceCode": "32",
+          "lng": 118.006789,
+          "lat": 34.340085
+        }
+      ],
+      "lng": 117.278247,
+      "lat": 34.208191
+    },
+    {
+      "code": "3204",
+      "name": "常州市",
+      "provinceCode": "32",
+      "areas": [
+        {
+          "code": "320402",
+          "name": "天宁区",
+          "cityCode": "3204",
+          "provinceCode": "32",
+          "lng": 119.994414,
+          "lat": 31.79479
+        },
+        {
+          "code": "320404",
+          "name": "钟楼区",
+          "cityCode": "3204",
+          "provinceCode": "32",
+          "lng": 119.897315,
+          "lat": 31.803649
+        },
+        {
+          "code": "320411",
+          "name": "新北区",
+          "cityCode": "3204",
+          "provinceCode": "32",
+          "lng": 119.95619,
+          "lat": 31.865642
+        },
+        {
+          "code": "320412",
+          "name": "武进区",
+          "cityCode": "3204",
+          "provinceCode": "32",
+          "lng": 119.937317,
+          "lat": 31.702901
+        },
+        {
+          "code": "320413",
+          "name": "金坛区",
+          "cityCode": "3204",
+          "provinceCode": "32",
+          "lng": 119.582589,
+          "lat": 31.724524
+        },
+        {
+          "code": "320481",
+          "name": "溧阳市",
+          "cityCode": "3204",
+          "provinceCode": "32",
+          "lng": 119.479798,
+          "lat": 31.418136
+        }
+      ],
+      "lng": 119.969322,
+      "lat": 31.813394
+    },
+    {
+      "code": "3205",
+      "name": "苏州市",
+      "provinceCode": "32",
+      "areas": [
+        {
+          "code": "320505",
+          "name": "虎丘区",
+          "cityCode": "3205",
+          "provinceCode": "32",
+          "lng": 120.567806,
+          "lat": 31.298075
+        },
+        {
+          "code": "320506",
+          "name": "吴中区",
+          "cityCode": "3205",
+          "provinceCode": "32",
+          "lng": 120.627813,
+          "lat": 31.26621
+        },
+        {
+          "code": "320507",
+          "name": "相城区",
+          "cityCode": "3205",
+          "provinceCode": "32",
+          "lng": 120.637789,
+          "lat": 31.371026
+        },
+        {
+          "code": "320508",
+          "name": "姑苏区",
+          "cityCode": "3205",
+          "provinceCode": "32",
+          "lng": 120.6129,
+          "lat": 31.338561
+        },
+        {
+          "code": "320509",
+          "name": "吴江区",
+          "cityCode": "3205",
+          "provinceCode": "32",
+          "lng": 120.640913,
+          "lat": 31.141477
+        },
+        {
+          "code": "320576",
+          "name": "苏州工业园区",
+          "cityCode": "3205",
+          "provinceCode": "32"
+        },
+        {
+          "code": "320581",
+          "name": "常熟市",
+          "cityCode": "3205",
+          "provinceCode": "32",
+          "lng": 120.748604,
+          "lat": 31.655536
+        },
+        {
+          "code": "320582",
+          "name": "张家港市",
+          "cityCode": "3205",
+          "provinceCode": "32",
+          "lng": 120.551688,
+          "lat": 31.878787
+        },
+        {
+          "code": "320583",
+          "name": "昆山市",
+          "cityCode": "3205",
+          "provinceCode": "32",
+          "lng": 120.976462,
+          "lat": 31.38751
+        },
+        {
+          "code": "320585",
+          "name": "太仓市",
+          "cityCode": "3205",
+          "provinceCode": "32",
+          "lng": 121.124381,
+          "lat": 31.460682
+        }
+      ],
+      "lng": 120.551688,
+      "lat": 31.878787
+    },
+    {
+      "code": "3206",
+      "name": "南通市",
+      "provinceCode": "32",
+      "areas": [
+        {
+          "code": "320612",
+          "name": "通州区",
+          "cityCode": "3206",
+          "provinceCode": "32",
+          "lng": 121.069013,
+          "lat": 32.068045
+        },
+        {
+          "code": "320613",
+          "name": "崇川区",
+          "cityCode": "3206",
+          "provinceCode": "32"
+        },
+        {
+          "code": "320614",
+          "name": "海门区",
+          "cityCode": "3206",
+          "provinceCode": "32"
+        },
+        {
+          "code": "320623",
+          "name": "如东县",
+          "cityCode": "3206",
+          "provinceCode": "32",
+          "lng": 121.180235,
+          "lat": 32.33464
+        },
+        {
+          "code": "320671",
+          "name": "南通经济技术开发区",
+          "cityCode": "3206",
+          "provinceCode": "32",
+          "lng": 121.625943,
+          "lat": 31.810003
+        },
+        {
+          "code": "320681",
+          "name": "启东市",
+          "cityCode": "3206",
+          "provinceCode": "32",
+          "lng": 121.651261,
+          "lat": 31.795005
+        },
+        {
+          "code": "320682",
+          "name": "如皋市",
+          "cityCode": "3206",
+          "provinceCode": "32",
+          "lng": 120.568718,
+          "lat": 32.374017
+        },
+        {
+          "code": "320685",
+          "name": "海安市",
+          "cityCode": "3206",
+          "provinceCode": "32",
+          "lng": 120.463354,
+          "lat": 32.534832
+        }
+      ],
+      "lng": 120.890784,
+      "lat": 31.983071
+    },
+    {
+      "code": "3207",
+      "name": "连云港市",
+      "provinceCode": "32",
+      "areas": [
+        {
+          "code": "320703",
+          "name": "连云区",
+          "cityCode": "3207",
+          "provinceCode": "32",
+          "lng": 119.333693,
+          "lat": 34.760842
+        },
+        {
+          "code": "320706",
+          "name": "海州区",
+          "cityCode": "3207",
+          "provinceCode": "32",
+          "lng": 119.157868,
+          "lat": 34.573444
+        },
+        {
+          "code": "320707",
+          "name": "赣榆区",
+          "cityCode": "3207",
+          "provinceCode": "32",
+          "lng": 119.167457,
+          "lat": 34.842081
+        },
+        {
+          "code": "320722",
+          "name": "东海县",
+          "cityCode": "3207",
+          "provinceCode": "32",
+          "lng": 118.747352,
+          "lat": 34.543529
+        },
+        {
+          "code": "320723",
+          "name": "灌云县",
+          "cityCode": "3207",
+          "provinceCode": "32",
+          "lng": 119.234517,
+          "lat": 34.284044
+        },
+        {
+          "code": "320724",
+          "name": "灌南县",
+          "cityCode": "3207",
+          "provinceCode": "32",
+          "lng": 119.310461,
+          "lat": 34.087941
+        },
+        {
+          "code": "320771",
+          "name": "连云港经济技术开发区",
+          "cityCode": "3207",
+          "provinceCode": "32",
+          "lng": 119.231625,
+          "lat": 34.694036
+        }
+      ],
+      "lng": 119.215991,
+      "lat": 34.597653
+    },
+    {
+      "code": "3208",
+      "name": "淮安市",
+      "provinceCode": "32",
+      "areas": [
+        {
+          "code": "320803",
+          "name": "淮安区",
+          "cityCode": "3208",
+          "provinceCode": "32",
+          "lng": 119.13504,
+          "lat": 33.504129
+        },
+        {
+          "code": "320804",
+          "name": "淮阴区",
+          "cityCode": "3208",
+          "provinceCode": "32",
+          "lng": 119.029318,
+          "lat": 33.633937
+        },
+        {
+          "code": "320812",
+          "name": "清江浦区",
+          "cityCode": "3208",
+          "provinceCode": "32",
+          "lng": 119.021164,
+          "lat": 33.553956
+        },
+        {
+          "code": "320813",
+          "name": "洪泽区",
+          "cityCode": "3208",
+          "provinceCode": "32",
+          "lng": 118.868108,
+          "lat": 33.296042
+        },
+        {
+          "code": "320826",
+          "name": "涟水县",
+          "cityCode": "3208",
+          "provinceCode": "32",
+          "lng": 119.255164,
+          "lat": 33.783147
+        },
+        {
+          "code": "320830",
+          "name": "盱眙县",
+          "cityCode": "3208",
+          "provinceCode": "32",
+          "lng": 118.539377,
+          "lat": 33.013972
+        },
+        {
+          "code": "320831",
+          "name": "金湖县",
+          "cityCode": "3208",
+          "provinceCode": "32",
+          "lng": 119.015115,
+          "lat": 33.027213
+        },
+        {
+          "code": "320871",
+          "name": "淮安经济技术开发区",
+          "cityCode": "3208",
+          "provinceCode": "32",
+          "lng": 119.135419,
+          "lat": 33.504135
+        }
+      ],
+      "lng": 119.015115,
+      "lat": 33.027213
+    },
+    {
+      "code": "3209",
+      "name": "盐城市",
+      "provinceCode": "32",
+      "areas": [
+        {
+          "code": "320902",
+          "name": "亭湖区",
+          "cityCode": "3209",
+          "provinceCode": "32",
+          "lng": 120.193157,
+          "lat": 33.391575
+        },
+        {
+          "code": "320903",
+          "name": "盐都区",
+          "cityCode": "3209",
+          "provinceCode": "32",
+          "lng": 120.148637,
+          "lat": 33.339748
+        },
+        {
+          "code": "320904",
+          "name": "大丰区",
+          "cityCode": "3209",
+          "provinceCode": "32",
+          "lng": 120.496449,
+          "lat": 33.20058
+        },
+        {
+          "code": "320921",
+          "name": "响水县",
+          "cityCode": "3209",
+          "provinceCode": "32",
+          "lng": 119.572978,
+          "lat": 34.201364
+        },
+        {
+          "code": "320922",
+          "name": "滨海县",
+          "cityCode": "3209",
+          "provinceCode": "32",
+          "lng": 119.81592,
+          "lat": 33.991407
+        },
+        {
+          "code": "320923",
+          "name": "阜宁县",
+          "cityCode": "3209",
+          "provinceCode": "32",
+          "lng": 119.797888,
+          "lat": 33.76073
+        },
+        {
+          "code": "320924",
+          "name": "射阳县",
+          "cityCode": "3209",
+          "provinceCode": "32",
+          "lng": 120.321449,
+          "lat": 33.767635
+        },
+        {
+          "code": "320925",
+          "name": "建湖县",
+          "cityCode": "3209",
+          "provinceCode": "32",
+          "lng": 119.783416,
+          "lat": 33.440459
+        },
+        {
+          "code": "320971",
+          "name": "盐城经济技术开发区",
+          "cityCode": "3209",
+          "provinceCode": "32",
+          "lng": 120.212474,
+          "lat": 33.381203
+        },
+        {
+          "code": "320981",
+          "name": "东台市",
+          "cityCode": "3209",
+          "provinceCode": "32",
+          "lng": 120.316342,
+          "lat": 32.870549
+        }
+      ],
+      "lng": 120.157681,
+      "lat": 33.349604
+    },
+    {
+      "code": "3210",
+      "name": "扬州市",
+      "provinceCode": "32",
+      "areas": [
+        {
+          "code": "321002",
+          "name": "广陵区",
+          "cityCode": "3210",
+          "provinceCode": "32",
+          "lng": 119.426148,
+          "lat": 32.396702
+        },
+        {
+          "code": "321003",
+          "name": "邗江区",
+          "cityCode": "3210",
+          "provinceCode": "32",
+          "lng": 119.392514,
+          "lat": 32.378279
+        },
+        {
+          "code": "321012",
+          "name": "江都区",
+          "cityCode": "3210",
+          "provinceCode": "32",
+          "lng": 119.564849,
+          "lat": 32.436992
+        },
+        {
+          "code": "321023",
+          "name": "宝应县",
+          "cityCode": "3210",
+          "provinceCode": "32",
+          "lng": 119.352876,
+          "lat": 33.242126
+        },
+        {
+          "code": "321071",
+          "name": "扬州经济技术开发区",
+          "cityCode": "3210",
+          "provinceCode": "32",
+          "lng": 119.409625,
+          "lat": 32.380671
+        },
+        {
+          "code": "321081",
+          "name": "仪征市",
+          "cityCode": "3210",
+          "provinceCode": "32",
+          "lng": 119.179116,
+          "lat": 32.274524
+        },
+        {
+          "code": "321084",
+          "name": "高邮市",
+          "cityCode": "3210",
+          "provinceCode": "32",
+          "lng": 119.453435,
+          "lat": 32.783104
+        }
+      ],
+      "lng": 119.179116,
+      "lat": 32.274524
+    },
+    {
+      "code": "3211",
+      "name": "镇江市",
+      "provinceCode": "32",
+      "areas": [
+        {
+          "code": "321102",
+          "name": "京口区",
+          "cityCode": "3211",
+          "provinceCode": "32",
+          "lng": 119.464907,
+          "lat": 32.200345
+        },
+        {
+          "code": "321111",
+          "name": "润州区",
+          "cityCode": "3211",
+          "provinceCode": "32",
+          "lng": 119.40557,
+          "lat": 32.197895
+        },
+        {
+          "code": "321112",
+          "name": "丹徒区",
+          "cityCode": "3211",
+          "provinceCode": "32",
+          "lng": 119.428575,
+          "lat": 32.133879
+        },
+        {
+          "code": "321171",
+          "name": "镇江新区",
+          "cityCode": "3211",
+          "provinceCode": "32",
+          "lng": 119.511097,
+          "lat": 32.164884
+        },
+        {
+          "code": "321181",
+          "name": "丹阳市",
+          "cityCode": "3211",
+          "provinceCode": "32",
+          "lng": 119.601238,
+          "lat": 32.012423
+        },
+        {
+          "code": "321182",
+          "name": "扬中市",
+          "cityCode": "3211",
+          "provinceCode": "32",
+          "lng": 119.791653,
+          "lat": 32.238402
+        },
+        {
+          "code": "321183",
+          "name": "句容市",
+          "cityCode": "3211",
+          "provinceCode": "32",
+          "lng": 119.163252,
+          "lat": 31.947898
+        }
+      ],
+      "lng": 119.418553,
+      "lat": 32.190477
+    },
+    {
+      "code": "3212",
+      "name": "泰州市",
+      "provinceCode": "32",
+      "areas": [
+        {
+          "code": "321202",
+          "name": "海陵区",
+          "cityCode": "3212",
+          "provinceCode": "32",
+          "lng": 119.918747,
+          "lat": 32.494821
+        },
+        {
+          "code": "321203",
+          "name": "高港区",
+          "cityCode": "3212",
+          "provinceCode": "32",
+          "lng": 119.876839,
+          "lat": 32.321352
+        },
+        {
+          "code": "321204",
+          "name": "姜堰区",
+          "cityCode": "3212",
+          "provinceCode": "32",
+          "lng": 120.123139,
+          "lat": 32.512342
+        },
+        {
+          "code": "321281",
+          "name": "兴化市",
+          "cityCode": "3212",
+          "provinceCode": "32",
+          "lng": 119.846847,
+          "lat": 32.914246
+        },
+        {
+          "code": "321282",
+          "name": "靖江市",
+          "cityCode": "3212",
+          "provinceCode": "32",
+          "lng": 120.272511,
+          "lat": 31.985239
+        },
+        {
+          "code": "321283",
+          "name": "泰兴市",
+          "cityCode": "3212",
+          "provinceCode": "32",
+          "lng": 120.046456,
+          "lat": 32.175043
+        }
+      ],
+      "lng": 120.272511,
+      "lat": 31.985239
+    },
+    {
+      "code": "3213",
+      "name": "宿迁市",
+      "provinceCode": "32",
+      "areas": [
+        {
+          "code": "321302",
+          "name": "宿城区",
+          "cityCode": "3213",
+          "provinceCode": "32",
+          "lng": 118.237494,
+          "lat": 33.96426
+        },
+        {
+          "code": "321311",
+          "name": "宿豫区",
+          "cityCode": "3213",
+          "provinceCode": "32",
+          "lng": 118.324414,
+          "lat": 33.949763
+        },
+        {
+          "code": "321322",
+          "name": "沭阳县",
+          "cityCode": "3213",
+          "provinceCode": "32",
+          "lng": 118.799343,
+          "lat": 34.112541
+        },
+        {
+          "code": "321323",
+          "name": "泗阳县",
+          "cityCode": "3213",
+          "provinceCode": "32",
+          "lng": 118.698127,
+          "lat": 33.723918
+        },
+        {
+          "code": "321324",
+          "name": "泗洪县",
+          "cityCode": "3213",
+          "provinceCode": "32",
+          "lng": 118.210508,
+          "lat": 33.460998
+        },
+        {
+          "code": "321371",
+          "name": "宿迁经济技术开发区",
+          "cityCode": "3213",
+          "provinceCode": "32",
+          "lng": 118.271677,
+          "lat": 33.940901
+        }
+      ],
+      "lng": 118.799343,
+      "lat": 34.112541
+    }
+  ]
+}

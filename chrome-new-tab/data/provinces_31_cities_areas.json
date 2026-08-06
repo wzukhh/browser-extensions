@@ -1,0 +1,145 @@
+{
+  "province": {
+    "code": "31",
+    "name": "上海市"
+  },
+  "cities": [
+    {
+      "code": "3101",
+      "name": "市辖区",
+      "provinceCode": "31",
+      "areas": [
+        {
+          "code": "310101",
+          "name": "黄浦区",
+          "cityCode": "3101",
+          "provinceCode": "31",
+          "lng": 121.480129,
+          "lat": 31.233571
+        },
+        {
+          "code": "310104",
+          "name": "徐汇区",
+          "cityCode": "3101",
+          "provinceCode": "31",
+          "lng": 121.43187,
+          "lat": 31.190298
+        },
+        {
+          "code": "310105",
+          "name": "长宁区",
+          "cityCode": "3101",
+          "provinceCode": "31",
+          "lng": 121.419786,
+          "lat": 31.222264
+        },
+        {
+          "code": "310106",
+          "name": "静安区",
+          "cityCode": "3101",
+          "provinceCode": "31",
+          "lng": 121.442738,
+          "lat": 31.22977
+        },
+        {
+          "code": "310107",
+          "name": "普陀区",
+          "cityCode": "3101",
+          "provinceCode": "31",
+          "lng": 121.391083,
+          "lat": 31.251481
+        },
+        {
+          "code": "310109",
+          "name": "虹口区",
+          "cityCode": "3101",
+          "provinceCode": "31",
+          "lng": 121.500116,
+          "lat": 31.266774
+        },
+        {
+          "code": "310110",
+          "name": "杨浦区",
+          "cityCode": "3101",
+          "provinceCode": "31",
+          "lng": 121.521054,
+          "lat": 31.261688
+        },
+        {
+          "code": "310112",
+          "name": "闵行区",
+          "cityCode": "3101",
+          "provinceCode": "31",
+          "lng": 121.376275,
+          "lat": 31.114741
+        },
+        {
+          "code": "310113",
+          "name": "宝山区",
+          "cityCode": "3101",
+          "provinceCode": "31",
+          "lng": 121.484909,
+          "lat": 31.407152
+        },
+        {
+          "code": "310114",
+          "name": "嘉定区",
+          "cityCode": "3101",
+          "provinceCode": "31",
+          "lng": 121.260815,
+          "lat": 31.377615
+        },
+        {
+          "code": "310115",
+          "name": "浦东新区",
+          "cityCode": "3101",
+          "provinceCode": "31",
+          "lng": 121.539997,
+          "lat": 31.22372
+        },
+        {
+          "code": "310116",
+          "name": "金山区",
+          "cityCode": "3101",
+          "provinceCode": "31",
+          "lng": 121.337268,
+          "lat": 30.744974
+        },
+        {
+          "code": "310117",
+          "name": "松江区",
+          "cityCode": "3101",
+          "provinceCode": "31",
+          "lng": 121.223232,
+          "lat": 31.034702
+        },
+        {
+          "code": "310118",
+          "name": "青浦区",
+          "cityCode": "3101",
+          "provinceCode": "31",
+          "lng": 121.119338,
+          "lat": 31.152644
+        },
+        {
+          "code": "310120",
+          "name": "奉贤区",
+          "cityCode": "3101",
+          "provinceCode": "31",
+          "lng": 121.469462,
+          "lat": 30.920483
+        },
+        {
+          "code": "310151",
+          "name": "崇明区",
+          "cityCode": "3101",
+          "provinceCode": "31",
+          "lng": 121.392653,
+          "lat": 31.625145
+        }
+      ],
+      "lng": 31,
+      "lat": 121.469187
+    }
+  ]
+}

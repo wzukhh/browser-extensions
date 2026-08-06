@@ -1,0 +1,145 @@
+{
+  "province": {
+    "code": "11",
+    "name": "北京市"
+  },
+  "cities": [
+    {
+      "code": "1101",
+      "name": "市辖区",
+      "provinceCode": "11",
+      "areas": [
+        {
+          "code": "110101",
+          "name": "东城区",
+          "cityCode": "1101",
+          "provinceCode": "11",
+          "lng": 116.410089,
+          "lat": 39.926943
+        },
+        {
+          "code": "110102",
+          "name": "西城区",
+          "cityCode": "1101",
+          "provinceCode": "11",
+          "lng": 116.359673,
+          "lat": 39.911263
+        },
+        {
+          "code": "110105",
+          "name": "朝阳区",
+          "cityCode": "1101",
+          "provinceCode": "11",
+          "lng": 116.437011,
+          "lat": 39.920116
+        },
+        {
+          "code": "110106",
+          "name": "丰台区",
+          "cityCode": "1101",
+          "provinceCode": "11",
+          "lng": 116.244257,
+          "lat": 39.873891
+        },
+        {
+          "code": "110107",
+          "name": "石景山区",
+          "cityCode": "1101",
+          "provinceCode": "11",
+          "lng": 116.216936,
+          "lat": 39.905126
+        },
+        {
+          "code": "110108",
+          "name": "海淀区",
+          "cityCode": "1101",
+          "provinceCode": "11",
+          "lng": 116.292273,
+          "lat": 39.958667
+        },
+        {
+          "code": "110109",
+          "name": "门头沟区",
+          "cityCode": "1101",
+          "provinceCode": "11",
+          "lng": 116.095335,
+          "lat": 39.939445
+        },
+        {
+          "code": "110111",
+          "name": "房山区",
+          "cityCode": "1101",
+          "provinceCode": "11",
+          "lng": 116.136765,
+          "lat": 39.746753
+        },
+        {
+          "code": "110112",
+          "name": "通州区",
+          "cityCode": "1101",
+          "provinceCode": "11",
+          "lng": 116.722993,
+          "lat": 39.915159
+        },
+        {
+          "code": "110113",
+          "name": "顺义区",
+          "cityCode": "1101",
+          "provinceCode": "11",
+          "lng": 116.654923,
+          "lat": 40.148779
+        },
+        {
+          "code": "110114",
+          "name": "昌平区",
+          "cityCode": "1101",
+          "provinceCode": "11",
+          "lng": 116.22516,
+          "lat": 40.219837
+        },
+        {
+          "code": "110115",
+          "name": "大兴区",
+          "cityCode": "1101",
+          "provinceCode": "11",
+          "lng": 116.334815,
+          "lat": 39.725515
+        },
+        {
+          "code": "110116",
+          "name": "怀柔区",
+          "cityCode": "1101",
+          "provinceCode": "11",
+          "lng": 116.626264,
+          "lat": 40.315121
+        },
+        {
+          "code": "110117",
+          "name": "平谷区",
+          "cityCode": "1101",
+          "provinceCode": "11",
+          "lng": 117.11511,
+          "lat": 40.139262
+        },
+        {
+          "code": "110118",
+          "name": "密云区",
+          "cityCode": "1101",
+          "provinceCode": "11",
+          "lng": 116.836846,
+          "lat": 40.375913
+        },
+        {
+          "code": "110119",
+          "name": "延庆区",
+          "cityCode": "1101",
+          "provinceCode": "11",
+          "lng": 115.968441,
+          "lat": 40.455797
+        }
+      ],
+      "lng": 116.3979471,
+      "lat": 39.9081726
+    }
+  ]
+}

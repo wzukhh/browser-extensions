@@ -1,0 +1,438 @@
+{
+  "province": {
+    "code": "63",
+    "name": "青海省"
+  },
+  "cities": [
+    {
+      "code": "6301",
+      "name": "西宁市",
+      "provinceCode": "63",
+      "areas": [
+        {
+          "code": "630102",
+          "name": "城东区",
+          "cityCode": "6301",
+          "provinceCode": "63",
+          "lng": 101.801782,
+          "lat": 36.59999
+        },
+        {
+          "code": "630103",
+          "name": "城中区",
+          "cityCode": "6301",
+          "provinceCode": "63",
+          "lng": 101.703476,
+          "lat": 36.545595
+        },
+        {
+          "code": "630104",
+          "name": "城西区",
+          "cityCode": "6301",
+          "provinceCode": "63",
+          "lng": 101.763828,
+          "lat": 36.628243
+        },
+        {
+          "code": "630105",
+          "name": "城北区",
+          "cityCode": "6301",
+          "provinceCode": "63",
+          "lng": 101.764144,
+          "lat": 36.649999
+        },
+        {
+          "code": "630106",
+          "name": "湟中区",
+          "cityCode": "6301",
+          "provinceCode": "63",
+          "lng": 101.569853,
+          "lat": 36.501289
+        },
+        {
+          "code": "630121",
+          "name": "大通回族土族自治县",
+          "cityCode": "6301",
+          "provinceCode": "63",
+          "lng": 101.68343,
+          "lat": 36.92694
+        },
+        {
+          "code": "630123",
+          "name": "湟源县",
+          "cityCode": "6301",
+          "provinceCode": "63",
+          "lng": 101.25459,
+          "lat": 36.682518
+        }
+      ],
+      "lng": 101.776179,
+      "lat": 36.617134
+    },
+    {
+      "code": "6302",
+      "name": "海东市",
+      "provinceCode": "63",
+      "areas": [
+        {
+          "code": "630202",
+          "name": "乐都区",
+          "cityCode": "6302",
+          "provinceCode": "63",
+          "lng": 102.399593,
+          "lat": 36.482181
+        },
+        {
+          "code": "630203",
+          "name": "平安区",
+          "cityCode": "6302",
+          "provinceCode": "63",
+          "lng": 102.106142,
+          "lat": 36.499919
+        },
+        {
+          "code": "630222",
+          "name": "民和回族土族自治县",
+          "cityCode": "6302",
+          "provinceCode": "63",
+          "lng": 102.829046,
+          "lat": 36.320537
+        },
+        {
+          "code": "630223",
+          "name": "互助土族自治县",
+          "cityCode": "6302",
+          "provinceCode": "63",
+          "lng": 101.956712,
+          "lat": 36.84412
+        },
+        {
+          "code": "630224",
+          "name": "化隆回族自治县",
+          "cityCode": "6302",
+          "provinceCode": "63",
+          "lng": 102.26221,
+          "lat": 36.095138
+        },
+        {
+          "code": "630225",
+          "name": "循化撒拉族自治县",
+          "cityCode": "6302",
+          "provinceCode": "63",
+          "lng": 102.487115,
+          "lat": 35.851381
+        }
+      ],
+      "lng": 102.40863,
+      "lat": 36.473393
+    },
+    {
+      "code": "6322",
+      "name": "海北藏族自治州",
+      "provinceCode": "63",
+      "areas": [
+        {
+          "code": "632221",
+          "name": "门源回族自治县",
+          "cityCode": "6322",
+          "provinceCode": "63",
+          "lng": 101.620208,
+          "lat": 37.375775
+        },
+        {
+          "code": "632222",
+          "name": "祁连县",
+          "cityCode": "6322",
+          "provinceCode": "63",
+          "lng": 100.25193,
+          "lat": 38.176822
+        },
+        {
+          "code": "632223",
+          "name": "海晏县",
+          "cityCode": "6322",
+          "provinceCode": "63",
+          "lng": 100.992831,
+          "lat": 36.896575
+        },
+        {
+          "code": "632224",
+          "name": "刚察县",
+          "cityCode": "6322",
+          "provinceCode": "63",
+          "lng": 100.144222,
+          "lat": 37.324716
+        }
+      ],
+      "lng": 100.899456,
+      "lat": 36.954668
+    },
+    {
+      "code": "6323",
+      "name": "黄南藏族自治州",
+      "provinceCode": "63",
+      "areas": [
+        {
+          "code": "632301",
+          "name": "同仁市",
+          "cityCode": "6323",
+          "provinceCode": "63"
+        },
+        {
+          "code": "632322",
+          "name": "尖扎县",
+          "cityCode": "6323",
+          "provinceCode": "63",
+          "lng": 102.038465,
+          "lat": 35.943457
+        },
+        {
+          "code": "632323",
+          "name": "泽库县",
+          "cityCode": "6323",
+          "provinceCode": "63",
+          "lng": 101.464641,
+          "lat": 35.036862
+        },
+        {
+          "code": "632324",
+          "name": "河南蒙古族自治县",
+          "cityCode": "6323",
+          "provinceCode": "63",
+          "lng": 101.614321,
+          "lat": 34.735719
+        }
+      ],
+      "lng": 102.014112,
+      "lat": 35.520011
+    },
+    {
+      "code": "6325",
+      "name": "海南藏族自治州",
+      "provinceCode": "63",
+      "areas": [
+        {
+          "code": "632521",
+          "name": "共和县",
+          "cityCode": "6325",
+          "provinceCode": "63",
+          "lng": 100.618167,
+          "lat": 36.284003
+        },
+        {
+          "code": "632522",
+          "name": "同德县",
+          "cityCode": "6325",
+          "provinceCode": "63",
+          "lng": 100.576731,
+          "lat": 35.255208
+        },
+        {
+          "code": "632523",
+          "name": "贵德县",
+          "cityCode": "6325",
+          "provinceCode": "63",
+          "lng": 101.431466,
+          "lat": 36.040148
+        },
+        {
+          "code": "632524",
+          "name": "兴海县",
+          "cityCode": "6325",
+          "provinceCode": "63",
+          "lng": 99.986841,
+          "lat": 35.589154
+        },
+        {
+          "code": "632525",
+          "name": "贵南县",
+          "cityCode": "6325",
+          "provinceCode": "63",
+          "lng": 100.746196,
+          "lat": 35.587679
+        }
+      ],
+      "lng": 100.618723,
+      "lat": 36.286802
+    },
+    {
+      "code": "6326",
+      "name": "果洛藏族自治州",
+      "provinceCode": "63",
+      "areas": [
+        {
+          "code": "632621",
+          "name": "玛沁县",
+          "cityCode": "6326",
+          "provinceCode": "63",
+          "lng": 100.237657,
+          "lat": 34.479174
+        },
+        {
+          "code": "632622",
+          "name": "班玛县",
+          "cityCode": "6326",
+          "provinceCode": "63",
+          "lng": 100.735705,
+          "lat": 32.934875
+        },
+        {
+          "code": "632623",
+          "name": "甘德县",
+          "cityCode": "6326",
+          "provinceCode": "63",
+          "lng": 99.899793,
+          "lat": 33.97116
+        },
+        {
+          "code": "632624",
+          "name": "达日县",
+          "cityCode": "6326",
+          "provinceCode": "63",
+          "lng": 99.650257,
+          "lat": 33.750779
+        },
+        {
+          "code": "632625",
+          "name": "久治县",
+          "cityCode": "6326",
+          "provinceCode": "63",
+          "lng": 101.480934,
+          "lat": 33.431236
+        },
+        {
+          "code": "632626",
+          "name": "玛多县",
+          "cityCode": "6326",
+          "provinceCode": "63",
+          "lng": 98.208723,
+          "lat": 34.916729
+        }
+      ],
+      "lng": 100.243659,
+      "lat": 34.47288
+    },
+    {
+      "code": "6327",
+      "name": "玉树藏族自治州",
+      "provinceCode": "63",
+      "areas": [
+        {
+          "code": "632701",
+          "name": "玉树市",
+          "cityCode": "6327",
+          "provinceCode": "63",
+          "lng": 97.008702,
+          "lat": 32.99505
+        },
+        {
+          "code": "632722",
+          "name": "杂多县",
+          "cityCode": "6327",
+          "provinceCode": "63",
+          "lng": 95.25283,
+          "lat": 32.898059
+        },
+        {
+          "code": "632723",
+          "name": "称多县",
+          "cityCode": "6327",
+          "provinceCode": "63",
+          "lng": 97.110167,
+          "lat": 33.370956
+        },
+        {
+          "code": "632724",
+          "name": "治多县",
+          "cityCode": "6327",
+          "provinceCode": "63",
+          "lng": 95.618282,
+          "lat": 33.846733
+        },
+        {
+          "code": "632725",
+          "name": "囊谦县",
+          "cityCode": "6327",
+          "provinceCode": "63",
+          "lng": 96.489107,
+          "lat": 32.205575
+        },
+        {
+          "code": "632726",
+          "name": "曲麻莱县",
+          "cityCode": "6327",
+          "provinceCode": "63",
+          "lng": 95.796275,
+          "lat": 34.128118
+        }
+      ],
+      "lng": 97.006168,
+      "lat": 33.00734
+    },
+    {
+      "code": "6328",
+      "name": "海西蒙古族藏族自治州",
+      "provinceCode": "63",
+      "areas": [
+        {
+          "code": "632801",
+          "name": "格尔木市",
+          "cityCode": "6328",
+          "provinceCode": "63",
+          "lng": 94.92734,
+          "lat": 36.407688
+        },
+        {
+          "code": "632802",
+          "name": "德令哈市",
+          "cityCode": "6328",
+          "provinceCode": "63",
+          "lng": 97.360724,
+          "lat": 37.369424
+        },
+        {
+          "code": "632803",
+          "name": "茫崖市",
+          "cityCode": "6328",
+          "provinceCode": "63",
+          "lng": 90.854532,
+          "lat": 38.247153
+        },
+        {
+          "code": "632821",
+          "name": "乌兰县",
+          "cityCode": "6328",
+          "provinceCode": "63",
+          "lng": 98.479484,
+          "lat": 36.94133
+        },
+        {
+          "code": "632822",
+          "name": "都兰县",
+          "cityCode": "6328",
+          "provinceCode": "63",
+          "lng": 98.095105,
+          "lat": 36.302219
+        },
+        {
+          "code": "632823",
+          "name": "天峻县",
+          "cityCode": "6328",
+          "provinceCode": "63",
+          "lng": 99.021766,
+          "lat": 37.300697
+        },
+        {
+          "code": "632857",
+          "name": "大柴旦行政委员会",
+          "cityCode": "6328",
+          "provinceCode": "63",
+          "lng": 95.364066,
+          "lat": 37.852183
+        }
+      ],
+      "lng": 97.368897,
+      "lat": 37.376521
+    }
+  ]
+}

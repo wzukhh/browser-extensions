@@ -1,0 +1,7 @@
+{
+  "name": "com.browserplugin.word2pdf",
+  "description": "Word to PDF Converter Native Host",
+  "path": "REPLACE_WITH_FULL_PATH_TO_EXE",
+  "type": "stdio",
+  "allowed_origins": ["chrome-extension://lcfjnnpibdelbejfdeflbifofcblhlnh/"]
+}

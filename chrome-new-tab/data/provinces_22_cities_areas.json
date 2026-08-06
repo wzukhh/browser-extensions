@@ -1,0 +1,641 @@
+{
+  "province": {
+    "code": "22",
+    "name": "吉林省"
+  },
+  "cities": [
+    {
+      "code": "2201",
+      "name": "长春市",
+      "provinceCode": "22",
+      "areas": [
+        {
+          "code": "220102",
+          "name": "南关区",
+          "cityCode": "2201",
+          "provinceCode": "22",
+          "lng": 125.343697,
+          "lat": 43.861554
+        },
+        {
+          "code": "220103",
+          "name": "宽城区",
+          "cityCode": "2201",
+          "provinceCode": "22",
+          "lng": 125.320043,
+          "lat": 43.941487
+        },
+        {
+          "code": "220104",
+          "name": "朝阳区",
+          "cityCode": "2201",
+          "provinceCode": "22",
+          "lng": 125.281672,
+          "lat": 43.83153
+        },
+        {
+          "code": "220105",
+          "name": "二道区",
+          "cityCode": "2201",
+          "provinceCode": "22",
+          "lng": 125.367505,
+          "lat": 43.863218
+        },
+        {
+          "code": "220106",
+          "name": "绿园区",
+          "cityCode": "2201",
+          "provinceCode": "22",
+          "lng": 125.249991,
+          "lat": 43.878694
+        },
+        {
+          "code": "220112",
+          "name": "双阳区",
+          "cityCode": "2201",
+          "provinceCode": "22",
+          "lng": 125.658377,
+          "lat": 43.523078
+        },
+        {
+          "code": "220113",
+          "name": "九台区",
+          "cityCode": "2201",
+          "provinceCode": "22",
+          "lng": 125.833468,
+          "lat": 44.14967
+        },
+        {
+          "code": "220122",
+          "name": "农安县",
+          "cityCode": "2201",
+          "provinceCode": "22",
+          "lng": 125.178382,
+          "lat": 44.430689
+        },
+        {
+          "code": "220171",
+          "name": "长春经济技术开发区",
+          "cityCode": "2201",
+          "provinceCode": "22",
+          "lng": 125.420642,
+          "lat": 43.876547
+        },
+        {
+          "code": "220172",
+          "name": "长春净月高新技术产业开发区",
+          "cityCode": "2201",
+          "provinceCode": "22",
+          "lng": 125.416546,
+          "lat": 43.78017
+        },
+        {
+          "code": "220173",
+          "name": "长春高新技术产业开发区",
+          "cityCode": "2201",
+          "provinceCode": "22",
+          "lng": 125.252447,
+          "lat": 43.786617
+        },
+        {
+          "code": "220174",
+          "name": "长春汽车经济技术开发区",
+          "cityCode": "2201",
+          "provinceCode": "22",
+          "lng": 125.420642,
+          "lat": 43.876547
+        },
+        {
+          "code": "220182",
+          "name": "榆树市",
+          "cityCode": "2201",
+          "provinceCode": "22",
+          "lng": 126.527104,
+          "lat": 44.837851
+        },
+        {
+          "code": "220183",
+          "name": "德惠市",
+          "cityCode": "2201",
+          "provinceCode": "22",
+          "lng": 125.721598,
+          "lat": 44.519181
+        },
+        {
+          "code": "220184",
+          "name": "公主岭市",
+          "cityCode": "2201",
+          "provinceCode": "22",
+          "lng": 124.816962,
+          "lat": 43.502314
+        }
+      ],
+      "lng": 125.317492,
+      "lat": 43.813749
+    },
+    {
+      "code": "2202",
+      "name": "吉林市",
+      "provinceCode": "22",
+      "areas": [
+        {
+          "code": "220202",
+          "name": "昌邑区",
+          "cityCode": "2202",
+          "provinceCode": "22",
+          "lng": 126.568774,
+          "lat": 43.879709
+        },
+        {
+          "code": "220203",
+          "name": "龙潭区",
+          "cityCode": "2202",
+          "provinceCode": "22",
+          "lng": 126.556274,
+          "lat": 43.908403
+        },
+        {
+          "code": "220204",
+          "name": "船营区",
+          "cityCode": "2202",
+          "provinceCode": "22",
+          "lng": 126.534958,
+          "lat": 43.83164
+        },
+        {
+          "code": "220211",
+          "name": "丰满区",
+          "cityCode": "2202",
+          "provinceCode": "22",
+          "lng": 126.556345,
+          "lat": 43.819059
+        },
+        {
+          "code": "220221",
+          "name": "永吉县",
+          "cityCode": "2202",
+          "provinceCode": "22",
+          "lng": 126.491518,
+          "lat": 43.670287
+        },
+        {
+          "code": "220271",
+          "name": "吉林经济开发区",
+          "cityCode": "2202",
+          "provinceCode": "22",
+          "lng": 126.463199,
+          "lat": 43.987578
+        },
+        {
+          "code": "220272",
+          "name": "吉林高新技术产业开发区",
+          "cityCode": "2202",
+          "provinceCode": "22",
+          "lng": 126.595886,
+          "lat": 43.790074
+        },
+        {
+          "code": "220273",
+          "name": "吉林中国新加坡食品区",
+          "cityCode": "2202",
+          "provinceCode": "22",
+          "lng": 125.985928,
+          "lat": 43.723161
+        },
+        {
+          "code": "220281",
+          "name": "蛟河市",
+          "cityCode": "2202",
+          "provinceCode": "22",
+          "lng": 127.338661,
+          "lat": 43.72131
+        },
+        {
+          "code": "220282",
+          "name": "桦甸市",
+          "cityCode": "2202",
+          "provinceCode": "22",
+          "lng": 126.740228,
+          "lat": 42.969455
+        },
+        {
+          "code": "220283",
+          "name": "舒兰市",
+          "cityCode": "2202",
+          "provinceCode": "22",
+          "lng": 126.959058,
+          "lat": 44.403907
+        },
+        {
+          "code": "220284",
+          "name": "磐石市",
+          "cityCode": "2202",
+          "provinceCode": "22",
+          "lng": 126.05384,
+          "lat": 42.943629
+        }
+      ],
+      "lng": 125.319474,
+      "lat": 43.893589
+    },
+    {
+      "code": "2203",
+      "name": "四平市",
+      "provinceCode": "22",
+      "areas": [
+        {
+          "code": "220302",
+          "name": "铁西区",
+          "cityCode": "2203",
+          "provinceCode": "22",
+          "lng": 124.3395,
+          "lat": 43.143855
+        },
+        {
+          "code": "220303",
+          "name": "铁东区",
+          "cityCode": "2203",
+          "provinceCode": "22",
+          "lng": 124.403585,
+          "lat": 43.160039
+        },
+        {
+          "code": "220322",
+          "name": "梨树县",
+          "cityCode": "2203",
+          "provinceCode": "22",
+          "lng": 124.329426,
+          "lat": 43.304362
+        },
+        {
+          "code": "220323",
+          "name": "伊通满族自治县",
+          "cityCode": "2203",
+          "provinceCode": "22",
+          "lng": 125.298616,
+          "lat": 43.342456
+        },
+        {
+          "code": "220382",
+          "name": "双辽市",
+          "cityCode": "2203",
+          "provinceCode": "22",
+          "lng": 123.496826,
+          "lat": 43.515976
+        }
+      ],
+      "lng": 124.343796,
+      "lat": 43.163424
+    },
+    {
+      "code": "2204",
+      "name": "辽源市",
+      "provinceCode": "22",
+      "areas": [
+        {
+          "code": "220402",
+          "name": "龙山区",
+          "cityCode": "2204",
+          "provinceCode": "22",
+          "lng": 125.130567,
+          "lat": 42.899577
+        },
+        {
+          "code": "220403",
+          "name": "西安区",
+          "cityCode": "2204",
+          "provinceCode": "22",
+          "lng": 125.142888,
+          "lat": 42.924801
+        },
+        {
+          "code": "220421",
+          "name": "东丰县",
+          "cityCode": "2204",
+          "provinceCode": "22",
+          "lng": 125.525067,
+          "lat": 42.675024
+        },
+        {
+          "code": "220422",
+          "name": "东辽县",
+          "cityCode": "2204",
+          "provinceCode": "22",
+          "lng": 124.984894,
+          "lat": 42.923842
+        }
+      ],
+      "lng": 125.138367,
+      "lat": 42.885794
+    },
+    {
+      "code": "2205",
+      "name": "通化市",
+      "provinceCode": "22",
+      "areas": [
+        {
+          "code": "220502",
+          "name": "东昌区",
+          "cityCode": "2205",
+          "provinceCode": "22",
+          "lng": 125.92141,
+          "lat": 41.700368
+        },
+        {
+          "code": "220503",
+          "name": "二道江区",
+          "cityCode": "2205",
+          "provinceCode": "22",
+          "lng": 126.03668,
+          "lat": 41.771482
+        },
+        {
+          "code": "220521",
+          "name": "通化县",
+          "cityCode": "2205",
+          "provinceCode": "22",
+          "lng": 125.753033,
+          "lat": 41.676994
+        },
+        {
+          "code": "220523",
+          "name": "辉南县",
+          "cityCode": "2205",
+          "provinceCode": "22",
+          "lng": 126.040903,
+          "lat": 42.682539
+        },
+        {
+          "code": "220524",
+          "name": "柳河县",
+          "cityCode": "2205",
+          "provinceCode": "22",
+          "lng": 125.738937,
+          "lat": 42.282318
+        },
+        {
+          "code": "220581",
+          "name": "梅河口市",
+          "cityCode": "2205",
+          "provinceCode": "22",
+          "lng": 125.704515,
+          "lat": 42.537122
+        },
+        {
+          "code": "220582",
+          "name": "集安市",
+          "cityCode": "2205",
+          "provinceCode": "22",
+          "lng": 126.187316,
+          "lat": 41.123517
+        }
+      ],
+      "lng": 125.934068,
+      "lat": 41.726132
+    },
+    {
+      "code": "2206",
+      "name": "白山市",
+      "provinceCode": "22",
+      "areas": [
+        {
+          "code": "220602",
+          "name": "浑江区",
+          "cityCode": "2206",
+          "provinceCode": "22",
+          "lng": 126.411136,
+          "lat": 41.942289
+        },
+        {
+          "code": "220605",
+          "name": "江源区",
+          "cityCode": "2206",
+          "provinceCode": "22",
+          "lng": 126.585536,
+          "lat": 42.054587
+        },
+        {
+          "code": "220621",
+          "name": "抚松县",
+          "cityCode": "2206",
+          "provinceCode": "22",
+          "lng": 127.442844,
+          "lat": 42.218533
+        },
+        {
+          "code": "220622",
+          "name": "靖宇县",
+          "cityCode": "2206",
+          "provinceCode": "22",
+          "lng": 126.807715,
+          "lat": 42.386644
+        },
+        {
+          "code": "220623",
+          "name": "长白朝鲜族自治县",
+          "cityCode": "2206",
+          "provinceCode": "22",
+          "lng": 128.195113,
+          "lat": 41.417782
+        },
+        {
+          "code": "220681",
+          "name": "临江市",
+          "cityCode": "2206",
+          "provinceCode": "22",
+          "lng": 126.912351,
+          "lat": 41.809928
+        }
+      ],
+      "lng": 126.408604,
+      "lat": 41.941726
+    },
+    {
+      "code": "2207",
+      "name": "松原市",
+      "provinceCode": "22",
+      "areas": [
+        {
+          "code": "220702",
+          "name": "宁江区",
+          "cityCode": "2207",
+          "provinceCode": "22",
+          "lng": 124.786877,
+          "lat": 45.184834
+        },
+        {
+          "code": "220721",
+          "name": "前郭尔罗斯蒙古族自治县",
+          "cityCode": "2207",
+          "provinceCode": "22",
+          "lng": 124.817264,
+          "lat": 45.115673
+        },
+        {
+          "code": "220722",
+          "name": "长岭县",
+          "cityCode": "2207",
+          "provinceCode": "22",
+          "lng": 123.960529,
+          "lat": 44.273812
+        },
+        {
+          "code": "220723",
+          "name": "乾安县",
+          "cityCode": "2207",
+          "provinceCode": "22",
+          "lng": 124.034243,
+          "lat": 45.001466
+        },
+        {
+          "code": "220771",
+          "name": "吉林松原经济开发区",
+          "cityCode": "2207",
+          "provinceCode": "22",
+          "lng": 124.794601,
+          "lat": 45.12072
+        },
+        {
+          "code": "220781",
+          "name": "扶余市",
+          "cityCode": "2207",
+          "provinceCode": "22",
+          "lng": 126.043315,
+          "lat": 44.986223
+        }
+      ],
+      "lng": 124.819019,
+      "lat": 45.139923
+    },
+    {
+      "code": "2208",
+      "name": "白城市",
+      "provinceCode": "22",
+      "areas": [
+        {
+          "code": "220802",
+          "name": "洮北区",
+          "cityCode": "2208",
+          "provinceCode": "22",
+          "lng": 122.845149,
+          "lat": 45.619612
+        },
+        {
+          "code": "220821",
+          "name": "镇赉县",
+          "cityCode": "2208",
+          "provinceCode": "22",
+          "lng": 123.193558,
+          "lat": 45.845279
+        },
+        {
+          "code": "220822",
+          "name": "通榆县",
+          "cityCode": "2208",
+          "provinceCode": "22",
+          "lng": 123.081621,
+          "lat": 44.810869
+        },
+        {
+          "code": "220871",
+          "name": "吉林白城经济开发区",
+          "cityCode": "2208",
+          "provinceCode": "22",
+          "lng": 122.848979,
+          "lat": 45.614134
+        },
+        {
+          "code": "220881",
+          "name": "洮南市",
+          "cityCode": "2208",
+          "provinceCode": "22",
+          "lng": 122.782086,
+          "lat": 45.333093
+        },
+        {
+          "code": "220882",
+          "name": "大安市",
+          "cityCode": "2208",
+          "provinceCode": "22",
+          "lng": 124.284598,
+          "lat": 45.504897
+        }
+      ],
+      "lng": 122.832066,
+      "lat": 45.61829
+    },
+    {
+      "code": "2224",
+      "name": "延边朝鲜族自治州",
+      "provinceCode": "22",
+      "areas": [
+        {
+          "code": "222401",
+          "name": "延吉市",
+          "cityCode": "2224",
+          "provinceCode": "22",
+          "lng": 129.507085,
+          "lat": 42.90435
+        },
+        {
+          "code": "222402",
+          "name": "图们市",
+          "cityCode": "2224",
+          "provinceCode": "22",
+          "lng": 129.837127,
+          "lat": 42.965501
+        },
+        {
+          "code": "222403",
+          "name": "敦化市",
+          "cityCode": "2224",
+          "provinceCode": "22",
+          "lng": 128.225872,
+          "lat": 43.370025
+        },
+        {
+          "code": "222404",
+          "name": "珲春市",
+          "cityCode": "2224",
+          "provinceCode": "22",
+          "lng": 130.358828,
+          "lat": 42.860144
+        },
+        {
+          "code": "222405",
+          "name": "龙井市",
+          "cityCode": "2224",
+          "provinceCode": "22",
+          "lng": 129.418865,
+          "lat": 42.763285
+        },
+        {
+          "code": "222406",
+          "name": "和龙市",
+          "cityCode": "2224",
+          "provinceCode": "22",
+          "lng": 129.004458,
+          "lat": 42.543587
+        },
+        {
+          "code": "222424",
+          "name": "汪清县",
+          "cityCode": "2224",
+          "provinceCode": "22",
+          "lng": 129.76391,
+          "lat": 43.310205
+        },
+        {
+          "code": "222426",
+          "name": "安图县",
+          "cityCode": "2224",
+          "provinceCode": "22",
+          "lng": 128.892781,
+          "lat": 43.10934
+        }
+      ],
+      "lng": 129.463934,
+      "lat": 42.906825
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+.tree-node { margin-left: 16px; }
+.tree-node.collapsed > .tree-children { display: none; }
+.tree-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 2px 4px;
+  cursor: default;
+  font-size: 13px;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  border-radius: 3px;
+}
+.tree-entry > span:last-child {
+  overflow-wrap: break-word;
+  word-break: break-all;
+  min-width: 0;
+}
+.tree-entry .tree-toggle {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.tree-children { min-width: 0; }
+.tree-entry:hover { background: var(--bg-tertiary); }
+.tree-toggle {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 10px;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+.tree-toggle::before {
+  content: '▶';
+  transition: transform 0.15s;
+}
+.tree-node:not(.collapsed) > .tree-entry > .tree-toggle::before {
+  content: '▼';
+}
+.tree-toggle.no-children { visibility: hidden; }
+.tree-key { color: var(--accent); margin-right: 4px; }
+.tree-colon { color: var(--text-secondary); margin-right: 4px; }
+.tree-string { color: #ce9178; }
+.tree-number { color: #b5cea8; }
+.tree-boolean { color: #569cd6; }
+.tree-null { color: #808080; font-style: italic; }
+.tree-bracket { color: var(--text-secondary); }
+/* 统计 */
+.tree-stats {
+  padding: 4px 8px;
+  font-size: 11px;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border);
+}

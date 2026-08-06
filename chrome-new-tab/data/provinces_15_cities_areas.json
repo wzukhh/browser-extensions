@@ -1,0 +1,980 @@
+{
+  "province": {
+    "code": "15",
+    "name": "内蒙古自治区"
+  },
+  "cities": [
+    {
+      "code": "1501",
+      "name": "呼和浩特市",
+      "provinceCode": "15",
+      "areas": [
+        {
+          "code": "150102",
+          "name": "新城区",
+          "cityCode": "1501",
+          "provinceCode": "15",
+          "lng": 111.65823,
+          "lat": 40.856848
+        },
+        {
+          "code": "150103",
+          "name": "回民区",
+          "cityCode": "1501",
+          "provinceCode": "15",
+          "lng": 111.638626,
+          "lat": 40.820697
+        },
+        {
+          "code": "150104",
+          "name": "玉泉区",
+          "cityCode": "1501",
+          "provinceCode": "15",
+          "lng": 111.666921,
+          "lat": 40.752297
+        },
+        {
+          "code": "150105",
+          "name": "赛罕区",
+          "cityCode": "1501",
+          "provinceCode": "15",
+          "lng": 111.684511,
+          "lat": 40.799885
+        },
+        {
+          "code": "150121",
+          "name": "土默特左旗",
+          "cityCode": "1501",
+          "provinceCode": "15",
+          "lng": 111.156267,
+          "lat": 40.728044
+        },
+        {
+          "code": "150122",
+          "name": "托克托县",
+          "cityCode": "1501",
+          "provinceCode": "15",
+          "lng": 111.187528,
+          "lat": 40.276525
+        },
+        {
+          "code": "150123",
+          "name": "和林格尔县",
+          "cityCode": "1501",
+          "provinceCode": "15",
+          "lng": 111.815252,
+          "lat": 40.377509
+        },
+        {
+          "code": "150124",
+          "name": "清水河县",
+          "cityCode": "1501",
+          "provinceCode": "15",
+          "lng": 111.640756,
+          "lat": 39.920197
+        },
+        {
+          "code": "150125",
+          "name": "武川县",
+          "cityCode": "1501",
+          "provinceCode": "15",
+          "lng": 111.444513,
+          "lat": 41.094531
+        },
+        {
+          "code": "150172",
+          "name": "呼和浩特经济技术开发区",
+          "cityCode": "1501",
+          "provinceCode": "15",
+          "lng": 111.745483,
+          "lat": 40.838544
+        }
+      ],
+      "lng": 111.694467,
+      "lat": 40.791315
+    },
+    {
+      "code": "1502",
+      "name": "包头市",
+      "provinceCode": "15",
+      "areas": [
+        {
+          "code": "150202",
+          "name": "东河区",
+          "cityCode": "1502",
+          "provinceCode": "15",
+          "lng": 110.037931,
+          "lat": 40.574339
+        },
+        {
+          "code": "150203",
+          "name": "昆都仑区",
+          "cityCode": "1502",
+          "provinceCode": "15",
+          "lng": 109.834645,
+          "lat": 40.656857
+        },
+        {
+          "code": "150204",
+          "name": "青山区",
+          "cityCode": "1502",
+          "provinceCode": "15",
+          "lng": 109.896592,
+          "lat": 40.64291
+        },
+        {
+          "code": "150205",
+          "name": "石拐区",
+          "cityCode": "1502",
+          "provinceCode": "15",
+          "lng": 110.055172,
+          "lat": 40.675405
+        },
+        {
+          "code": "150206",
+          "name": "白云鄂博矿区",
+          "cityCode": "1502",
+          "provinceCode": "15",
+          "lng": 109.967578,
+          "lat": 41.767866
+        },
+        {
+          "code": "150207",
+          "name": "九原区",
+          "cityCode": "1502",
+          "provinceCode": "15",
+          "lng": 109.962128,
+          "lat": 40.60975
+        },
+        {
+          "code": "150221",
+          "name": "土默特右旗",
+          "cityCode": "1502",
+          "provinceCode": "15",
+          "lng": 110.518122,
+          "lat": 40.567643
+        },
+        {
+          "code": "150222",
+          "name": "固阳县",
+          "cityCode": "1502",
+          "provinceCode": "15",
+          "lng": 110.054501,
+          "lat": 41.033104
+        },
+        {
+          "code": "150223",
+          "name": "达尔罕茂明安联合旗",
+          "cityCode": "1502",
+          "provinceCode": "15",
+          "lng": 110.426463,
+          "lat": 41.696569
+        },
+        {
+          "code": "150271",
+          "name": "包头稀土高新技术产业开发区",
+          "cityCode": "1502",
+          "provinceCode": "15",
+          "lng": 109.833614,
+          "lat": 40.629947
+        }
+      ],
+      "lng": 109.947945,
+      "lat": 40.620735
+    },
+    {
+      "code": "1503",
+      "name": "乌海市",
+      "provinceCode": "15",
+      "areas": [
+        {
+          "code": "150302",
+          "name": "海勃湾区",
+          "cityCode": "1503",
+          "provinceCode": "15",
+          "lng": 106.818277,
+          "lat": 39.6899
+        },
+        {
+          "code": "150303",
+          "name": "海南区",
+          "cityCode": "1503",
+          "provinceCode": "15",
+          "lng": 106.88684,
+          "lat": 39.441066
+        },
+        {
+          "code": "150304",
+          "name": "乌达区",
+          "cityCode": "1503",
+          "provinceCode": "15",
+          "lng": 106.721294,
+          "lat": 39.504974
+        }
+      ],
+      "lng": 106.789335,
+      "lat": 39.654395
+    },
+    {
+      "code": "1504",
+      "name": "赤峰市",
+      "provinceCode": "15",
+      "areas": [
+        {
+          "code": "150402",
+          "name": "红山区",
+          "cityCode": "1504",
+          "provinceCode": "15",
+          "lng": 118.947699,
+          "lat": 42.294352
+        },
+        {
+          "code": "150403",
+          "name": "元宝山区",
+          "cityCode": "1504",
+          "provinceCode": "15",
+          "lng": 119.282173,
+          "lat": 42.036704
+        },
+        {
+          "code": "150404",
+          "name": "松山区",
+          "cityCode": "1504",
+          "provinceCode": "15",
+          "lng": 118.91025,
+          "lat": 42.297619
+        },
+        {
+          "code": "150421",
+          "name": "阿鲁科尔沁旗",
+          "cityCode": "1504",
+          "provinceCode": "15",
+          "lng": 120.059646,
+          "lat": 43.86994
+        },
+        {
+          "code": "150422",
+          "name": "巴林左旗",
+          "cityCode": "1504",
+          "provinceCode": "15",
+          "lng": 119.356104,
+          "lat": 43.958601
+        },
+        {
+          "code": "150423",
+          "name": "巴林右旗",
+          "cityCode": "1504",
+          "provinceCode": "15",
+          "lng": 118.658037,
+          "lat": 43.532198
+        },
+        {
+          "code": "150424",
+          "name": "林西县",
+          "cityCode": "1504",
+          "provinceCode": "15",
+          "lng": 118.049143,
+          "lat": 43.615209
+        },
+        {
+          "code": "150425",
+          "name": "克什克腾旗",
+          "cityCode": "1504",
+          "provinceCode": "15",
+          "lng": 117.538243,
+          "lat": 43.262937
+        },
+        {
+          "code": "150426",
+          "name": "翁牛特旗",
+          "cityCode": "1504",
+          "provinceCode": "15",
+          "lng": 118.999445,
+          "lat": 42.933846
+        },
+        {
+          "code": "150428",
+          "name": "喀喇沁旗",
+          "cityCode": "1504",
+          "provinceCode": "15",
+          "lng": 118.695626,
+          "lat": 41.925007
+        },
+        {
+          "code": "150429",
+          "name": "宁城县",
+          "cityCode": "1504",
+          "provinceCode": "15",
+          "lng": 119.313413,
+          "lat": 41.597955
+        },
+        {
+          "code": "150430",
+          "name": "敖汉旗",
+          "cityCode": "1504",
+          "provinceCode": "15",
+          "lng": 119.915651,
+          "lat": 42.288189
+        }
+      ],
+      "lng": 118.880267,
+      "lat": 42.255752
+    },
+    {
+      "code": "1505",
+      "name": "通辽市",
+      "provinceCode": "15",
+      "areas": [
+        {
+          "code": "150502",
+          "name": "科尔沁区",
+          "cityCode": "1505",
+          "provinceCode": "15",
+          "lng": 122.250454,
+          "lat": 43.620228
+        },
+        {
+          "code": "150521",
+          "name": "科尔沁左翼中旗",
+          "cityCode": "1505",
+          "provinceCode": "15",
+          "lng": 123.305873,
+          "lat": 44.124454
+        },
+        {
+          "code": "150522",
+          "name": "科尔沁左翼后旗",
+          "cityCode": "1505",
+          "provinceCode": "15",
+          "lng": 122.35136,
+          "lat": 42.931333
+        },
+        {
+          "code": "150523",
+          "name": "开鲁县",
+          "cityCode": "1505",
+          "provinceCode": "15",
+          "lng": 121.313107,
+          "lat": 43.597568
+        },
+        {
+          "code": "150524",
+          "name": "库伦旗",
+          "cityCode": "1505",
+          "provinceCode": "15",
+          "lng": 121.80514,
+          "lat": 42.733468
+        },
+        {
+          "code": "150525",
+          "name": "奈曼旗",
+          "cityCode": "1505",
+          "provinceCode": "15",
+          "lng": 120.652486,
+          "lat": 42.864853
+        },
+        {
+          "code": "150526",
+          "name": "扎鲁特旗",
+          "cityCode": "1505",
+          "provinceCode": "15",
+          "lng": 120.911433,
+          "lat": 44.565113
+        },
+        {
+          "code": "150571",
+          "name": "通辽经济技术开发区",
+          "cityCode": "1505",
+          "provinceCode": "15",
+          "lng": 122.243534,
+          "lat": 43.64947
+        },
+        {
+          "code": "150581",
+          "name": "霍林郭勒市",
+          "cityCode": "1505",
+          "provinceCode": "15",
+          "lng": 119.657377,
+          "lat": 45.529561
+        }
+      ],
+      "lng": 122.238448,
+      "lat": 43.649737
+    },
+    {
+      "code": "1506",
+      "name": "鄂尔多斯市",
+      "provinceCode": "15",
+      "areas": [
+        {
+          "code": "150602",
+          "name": "东胜区",
+          "cityCode": "1506",
+          "provinceCode": "15",
+          "lng": 109.957775,
+          "lat": 39.822103
+        },
+        {
+          "code": "150603",
+          "name": "康巴什区",
+          "cityCode": "1506",
+          "provinceCode": "15",
+          "lng": 109.852963,
+          "lat": 39.607491
+        },
+        {
+          "code": "150621",
+          "name": "达拉特旗",
+          "cityCode": "1506",
+          "provinceCode": "15",
+          "lng": 110.028186,
+          "lat": 40.411496
+        },
+        {
+          "code": "150622",
+          "name": "准格尔旗",
+          "cityCode": "1506",
+          "provinceCode": "15",
+          "lng": 111.233575,
+          "lat": 39.863109
+        },
+        {
+          "code": "150623",
+          "name": "鄂托克前旗",
+          "cityCode": "1506",
+          "provinceCode": "15",
+          "lng": 107.472218,
+          "lat": 38.181983
+        },
+        {
+          "code": "150624",
+          "name": "鄂托克旗",
+          "cityCode": "1506",
+          "provinceCode": "15",
+          "lng": 107.971084,
+          "lat": 39.088956
+        },
+        {
+          "code": "150625",
+          "name": "杭锦旗",
+          "cityCode": "1506",
+          "provinceCode": "15",
+          "lng": 108.730697,
+          "lat": 39.831995
+        },
+        {
+          "code": "150626",
+          "name": "乌审旗",
+          "cityCode": "1506",
+          "provinceCode": "15",
+          "lng": 108.814563,
+          "lat": 38.603895
+        },
+        {
+          "code": "150627",
+          "name": "伊金霍洛旗",
+          "cityCode": "1506",
+          "provinceCode": "15",
+          "lng": 109.79535,
+          "lat": 39.342241
+        }
+      ],
+      "lng": 109.852963,
+      "lat": 39.607491
+    },
+    {
+      "code": "1507",
+      "name": "呼伦贝尔市",
+      "provinceCode": "15",
+      "areas": [
+        {
+          "code": "150702",
+          "name": "海拉尔区",
+          "cityCode": "1507",
+          "provinceCode": "15",
+          "lng": 119.728803,
+          "lat": 49.210248
+        },
+        {
+          "code": "150703",
+          "name": "扎赉诺尔区",
+          "cityCode": "1507",
+          "provinceCode": "15",
+          "lng": 117.662038,
+          "lat": 49.508798
+        },
+        {
+          "code": "150721",
+          "name": "阿荣旗",
+          "cityCode": "1507",
+          "provinceCode": "15",
+          "lng": 123.45207,
+          "lat": 48.123913
+        },
+        {
+          "code": "150722",
+          "name": "莫力达瓦达斡尔族自治旗",
+          "cityCode": "1507",
+          "provinceCode": "15",
+          "lng": 124.512543,
+          "lat": 48.475128
+        },
+        {
+          "code": "150723",
+          "name": "鄂伦春自治旗",
+          "cityCode": "1507",
+          "provinceCode": "15",
+          "lng": 123.718318,
+          "lat": 50.590128
+        },
+        {
+          "code": "150724",
+          "name": "鄂温克族自治旗",
+          "cityCode": "1507",
+          "provinceCode": "15",
+          "lng": 119.748021,
+          "lat": 49.144825
+        },
+        {
+          "code": "150725",
+          "name": "陈巴尔虎旗",
+          "cityCode": "1507",
+          "provinceCode": "15",
+          "lng": 119.416122,
+          "lat": 49.326695
+        },
+        {
+          "code": "150726",
+          "name": "新巴尔虎左旗",
+          "cityCode": "1507",
+          "provinceCode": "15",
+          "lng": 118.262468,
+          "lat": 48.21627
+        },
+        {
+          "code": "150727",
+          "name": "新巴尔虎右旗",
+          "cityCode": "1507",
+          "provinceCode": "15",
+          "lng": 116.816192,
+          "lat": 48.670199
+        },
+        {
+          "code": "150781",
+          "name": "满洲里市",
+          "cityCode": "1507",
+          "provinceCode": "15",
+          "lng": 117.370052,
+          "lat": 49.595356
+        },
+        {
+          "code": "150782",
+          "name": "牙克石市",
+          "cityCode": "1507",
+          "provinceCode": "15",
+          "lng": 120.705228,
+          "lat": 49.283942
+        },
+        {
+          "code": "150783",
+          "name": "扎兰屯市",
+          "cityCode": "1507",
+          "provinceCode": "15",
+          "lng": 122.702389,
+          "lat": 48.026053
+        },
+        {
+          "code": "150784",
+          "name": "额尔古纳市",
+          "cityCode": "1507",
+          "provinceCode": "15",
+          "lng": 120.172973,
+          "lat": 50.241794
+        },
+        {
+          "code": "150785",
+          "name": "根河市",
+          "cityCode": "1507",
+          "provinceCode": "15",
+          "lng": 121.513522,
+          "lat": 50.779044
+        }
+      ],
+      "lng": 119.771167,
+      "lat": 49.164606
+    },
+    {
+      "code": "1508",
+      "name": "巴彦淖尔市",
+      "provinceCode": "15",
+      "areas": [
+        {
+          "code": "150802",
+          "name": "临河区",
+          "cityCode": "1508",
+          "provinceCode": "15",
+          "lng": 107.358001,
+          "lat": 40.749566
+        },
+        {
+          "code": "150821",
+          "name": "五原县",
+          "cityCode": "1508",
+          "provinceCode": "15",
+          "lng": 108.262209,
+          "lat": 41.086845
+        },
+        {
+          "code": "150822",
+          "name": "磴口县",
+          "cityCode": "1508",
+          "provinceCode": "15",
+          "lng": 107.003424,
+          "lat": 40.329476
+        },
+        {
+          "code": "150823",
+          "name": "乌拉特前旗",
+          "cityCode": "1508",
+          "provinceCode": "15",
+          "lng": 108.646956,
+          "lat": 40.735558
+        },
+        {
+          "code": "150824",
+          "name": "乌拉特中旗",
+          "cityCode": "1508",
+          "provinceCode": "15",
+          "lng": 108.508409,
+          "lat": 41.586334
+        },
+        {
+          "code": "150825",
+          "name": "乌拉特后旗",
+          "cityCode": "1508",
+          "provinceCode": "15",
+          "lng": 107.069243,
+          "lat": 41.082432
+        },
+        {
+          "code": "150826",
+          "name": "杭锦后旗",
+          "cityCode": "1508",
+          "provinceCode": "15",
+          "lng": 107.145737,
+          "lat": 40.884435
+        }
+      ],
+      "lng": 107.382406,
+      "lat": 40.741654
+    },
+    {
+      "code": "1509",
+      "name": "乌兰察布市",
+      "provinceCode": "15",
+      "areas": [
+        {
+          "code": "150902",
+          "name": "集宁区",
+          "cityCode": "1509",
+          "provinceCode": "15",
+          "lng": 113.160171,
+          "lat": 41.000097
+        },
+        {
+          "code": "150921",
+          "name": "卓资县",
+          "cityCode": "1509",
+          "provinceCode": "15",
+          "lng": 112.571063,
+          "lat": 40.893056
+        },
+        {
+          "code": "150922",
+          "name": "化德县",
+          "cityCode": "1509",
+          "provinceCode": "15",
+          "lng": 114.003124,
+          "lat": 41.902102
+        },
+        {
+          "code": "150923",
+          "name": "商都县",
+          "cityCode": "1509",
+          "provinceCode": "15",
+          "lng": 113.570799,
+          "lat": 41.560423
+        },
+        {
+          "code": "150924",
+          "name": "兴和县",
+          "cityCode": "1509",
+          "provinceCode": "15",
+          "lng": 113.82721,
+          "lat": 40.870985
+        },
+        {
+          "code": "150925",
+          "name": "凉城县",
+          "cityCode": "1509",
+          "provinceCode": "15",
+          "lng": 112.497035,
+          "lat": 40.530455
+        },
+        {
+          "code": "150926",
+          "name": "察哈尔右翼前旗",
+          "cityCode": "1509",
+          "provinceCode": "15",
+          "lng": 113.205252,
+          "lat": 40.783264
+        },
+        {
+          "code": "150927",
+          "name": "察哈尔右翼中旗",
+          "cityCode": "1509",
+          "provinceCode": "15",
+          "lng": 112.628848,
+          "lat": 41.275807
+        },
+        {
+          "code": "150928",
+          "name": "察哈尔右翼后旗",
+          "cityCode": "1509",
+          "provinceCode": "15",
+          "lng": 113.184799,
+          "lat": 41.43429
+        },
+        {
+          "code": "150929",
+          "name": "四子王旗",
+          "cityCode": "1509",
+          "provinceCode": "15",
+          "lng": 111.699613,
+          "lat": 41.531316
+        },
+        {
+          "code": "150981",
+          "name": "丰镇市",
+          "cityCode": "1509",
+          "provinceCode": "15",
+          "lng": 113.102792,
+          "lat": 40.434693
+        }
+      ],
+      "lng": 113.125734,
+      "lat": 40.992933
+    },
+    {
+      "code": "1522",
+      "name": "兴安盟",
+      "provinceCode": "15",
+      "areas": [
+        {
+          "code": "152201",
+          "name": "乌兰浩特市",
+          "cityCode": "1522",
+          "provinceCode": "15",
+          "lng": 122.087067,
+          "lat": 46.070162
+        },
+        {
+          "code": "152202",
+          "name": "阿尔山市",
+          "cityCode": "1522",
+          "provinceCode": "15",
+          "lng": 119.936978,
+          "lat": 47.175326
+        },
+        {
+          "code": "152221",
+          "name": "科尔沁右翼前旗",
+          "cityCode": "1522",
+          "provinceCode": "15",
+          "lng": 121.946747,
+          "lat": 46.078
+        },
+        {
+          "code": "152222",
+          "name": "科尔沁右翼中旗",
+          "cityCode": "1522",
+          "provinceCode": "15",
+          "lng": 121.470901,
+          "lat": 45.058585
+        },
+        {
+          "code": "152223",
+          "name": "扎赉特旗",
+          "cityCode": "1522",
+          "provinceCode": "15",
+          "lng": 122.893627,
+          "lat": 46.72149
+        },
+        {
+          "code": "152224",
+          "name": "突泉县",
+          "cityCode": "1522",
+          "provinceCode": "15",
+          "lng": 121.588226,
+          "lat": 45.380082
+        }
+      ],
+      "lng": 130.231216,
+      "lat": 47.250532
+    },
+    {
+      "code": "1525",
+      "name": "锡林郭勒盟",
+      "provinceCode": "15",
+      "areas": [
+        {
+          "code": "152501",
+          "name": "二连浩特市",
+          "cityCode": "1525",
+          "provinceCode": "15",
+          "lng": 111.942815,
+          "lat": 43.64119
+        },
+        {
+          "code": "152502",
+          "name": "锡林浩特市",
+          "cityCode": "1525",
+          "provinceCode": "15",
+          "lng": 116.079131,
+          "lat": 43.931078
+        },
+        {
+          "code": "152522",
+          "name": "阿巴嘎旗",
+          "cityCode": "1525",
+          "provinceCode": "15",
+          "lng": 114.943635,
+          "lat": 44.021073
+        },
+        {
+          "code": "152523",
+          "name": "苏尼特左旗",
+          "cityCode": "1525",
+          "provinceCode": "15",
+          "lng": 113.659891,
+          "lat": 43.857784
+        },
+        {
+          "code": "152524",
+          "name": "苏尼特右旗",
+          "cityCode": "1525",
+          "provinceCode": "15",
+          "lng": 112.634944,
+          "lat": 42.740901
+        },
+        {
+          "code": "152525",
+          "name": "东乌珠穆沁旗",
+          "cityCode": "1525",
+          "provinceCode": "15",
+          "lng": 116.96509,
+          "lat": 45.507907
+        },
+        {
+          "code": "152526",
+          "name": "西乌珠穆沁旗",
+          "cityCode": "1525",
+          "provinceCode": "15",
+          "lng": 117.603122,
+          "lat": 44.585882
+        },
+        {
+          "code": "152527",
+          "name": "太仆寺旗",
+          "cityCode": "1525",
+          "provinceCode": "15",
+          "lng": 115.276575,
+          "lat": 41.874746
+        },
+        {
+          "code": "152528",
+          "name": "镶黄旗",
+          "cityCode": "1525",
+          "provinceCode": "15",
+          "lng": 113.840639,
+          "lat": 42.230456
+        },
+        {
+          "code": "152529",
+          "name": "正镶白旗",
+          "cityCode": "1525",
+          "provinceCode": "15",
+          "lng": 115.023231,
+          "lat": 42.285403
+        },
+        {
+          "code": "152530",
+          "name": "正蓝旗",
+          "cityCode": "1525",
+          "provinceCode": "15",
+          "lng": 115.985639,
+          "lat": 42.239902
+        },
+        {
+          "code": "152531",
+          "name": "多伦县",
+          "cityCode": "1525",
+          "provinceCode": "15",
+          "lng": 116.479184,
+          "lat": 42.201356
+        },
+        {
+          "code": "152571",
+          "name": "乌拉盖管理区管委会",
+          "cityCode": "1525",
+          "provinceCode": "15",
+          "lng": 118.831839,
+          "lat": 45.709361
+        }
+      ],
+      "lng": 116.040449,
+      "lat": 43.930971
+    },
+    {
+      "code": "1529",
+      "name": "阿拉善盟",
+      "provinceCode": "15",
+      "areas": [
+        {
+          "code": "152921",
+          "name": "阿拉善左旗",
+          "cityCode": "1529",
+          "provinceCode": "15",
+          "lng": 105.662151,
+          "lat": 38.833067
+        },
+        {
+          "code": "152922",
+          "name": "阿拉善右旗",
+          "cityCode": "1529",
+          "provinceCode": "15",
+          "lng": 101.66521,
+          "lat": 39.215558
+        },
+        {
+          "code": "152923",
+          "name": "额济纳旗",
+          "cityCode": "1529",
+          "provinceCode": "15",
+          "lng": 101.053786,
+          "lat": 41.952243
+        },
+        {
+          "code": "152971",
+          "name": "内蒙古阿拉善高新技术产业开发区",
+          "cityCode": "1529",
+          "provinceCode": "15",
+          "lng": 106.676819,
+          "lat": 39.400394
+        }
+      ],
+      "lng": 105.724731,
+      "lat": 38.851434
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Word2PDF Converter",
+  "version": "1.0.0",
+  "description": "Batch convert Word documents to PDF on Windows via Office/WPS (native host)",
+  "author": "wzukhh",
+
+  "action": {
+    "default_title": "Word2PDF Converter",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+
+  "permissions": [
+    "nativeMessaging"
+  ],
+
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjLWJQtrwAAdlRryacRnqGYZUzI8GMzgPVLDszRymqZQBVyLdeGSuWsUrhl11p0Ekc0ij39+Y6YXGbtvzn9YHWz6sh6iqGj0fLqXk4gwOcgRw7o4dyLMhkOEnXm7uivxlBobtDnjxPwWBDqAiRuIm0CwesKRd7h6BOUe/p6vHRLf/KOtXLZk2OSBXHSQaiu3tlKhovlQeasVOxDmqyCU5iaTMkSsU5jKowMpFjw23K3Ha9wvKvBsGb0K4NKgEICJu7NZ1Mm4mTo7NZjbe6GIaEyftFqRQ9j74l9EyRhkloBHeVZSvcU+6knKRUzEIQYul7imNedK3saNMBWiq2VzdfQIDAQAB"
+}

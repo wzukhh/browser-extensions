@@ -1,0 +1,823 @@
+{
+  "province": {
+    "code": "33",
+    "name": "浙江省"
+  },
+  "cities": [
+    {
+      "code": "3301",
+      "name": "杭州市",
+      "provinceCode": "33",
+      "areas": [
+        {
+          "code": "330102",
+          "name": "上城区",
+          "cityCode": "3301",
+          "provinceCode": "33",
+          "lng": 120.193182,
+          "lat": 30.229247
+        },
+        {
+          "code": "330105",
+          "name": "拱墅区",
+          "cityCode": "3301",
+          "provinceCode": "33",
+          "lng": 120.136853,
+          "lat": 30.321355
+        },
+        {
+          "code": "330106",
+          "name": "西湖区",
+          "cityCode": "3301",
+          "provinceCode": "33",
+          "lng": 120.125698,
+          "lat": 30.261574
+        },
+        {
+          "code": "330108",
+          "name": "滨江区",
+          "cityCode": "3301",
+          "provinceCode": "33",
+          "lng": 120.207081,
+          "lat": 30.211233
+        },
+        {
+          "code": "330109",
+          "name": "萧山区",
+          "cityCode": "3301",
+          "provinceCode": "33",
+          "lng": 120.259538,
+          "lat": 30.183855
+        },
+        {
+          "code": "330110",
+          "name": "余杭区",
+          "cityCode": "3301",
+          "provinceCode": "33",
+          "lng": 119.97478,
+          "lat": 30.276748
+        },
+        {
+          "code": "330111",
+          "name": "富阳区",
+          "cityCode": "3301",
+          "provinceCode": "33",
+          "lng": 119.95565,
+          "lat": 30.05138
+        },
+        {
+          "code": "330112",
+          "name": "临安区",
+          "cityCode": "3301",
+          "provinceCode": "33",
+          "lng": 119.719553,
+          "lat": 30.236855
+        },
+        {
+          "code": "330113",
+          "name": "临平区",
+          "cityCode": "3301",
+          "provinceCode": "33"
+        },
+        {
+          "code": "330114",
+          "name": "钱塘区",
+          "cityCode": "3301",
+          "provinceCode": "33"
+        },
+        {
+          "code": "330122",
+          "name": "桐庐县",
+          "cityCode": "3301",
+          "provinceCode": "33",
+          "lng": 119.687072,
+          "lat": 29.795656
+        },
+        {
+          "code": "330127",
+          "name": "淳安县",
+          "cityCode": "3301",
+          "provinceCode": "33",
+          "lng": 119.036765,
+          "lat": 29.611708
+        },
+        {
+          "code": "330182",
+          "name": "建德市",
+          "cityCode": "3301",
+          "provinceCode": "33",
+          "lng": 119.276143,
+          "lat": 29.477529
+        }
+      ],
+      "lng": 119.276143,
+      "lat": 29.477529
+    },
+    {
+      "code": "3302",
+      "name": "宁波市",
+      "provinceCode": "33",
+      "areas": [
+        {
+          "code": "330203",
+          "name": "海曙区",
+          "cityCode": "3302",
+          "provinceCode": "33",
+          "lng": 121.546845,
+          "lat": 29.861986
+        },
+        {
+          "code": "330205",
+          "name": "江北区",
+          "cityCode": "3302",
+          "provinceCode": "33",
+          "lng": 121.551113,
+          "lat": 29.88933
+        },
+        {
+          "code": "330206",
+          "name": "北仑区",
+          "cityCode": "3302",
+          "provinceCode": "33",
+          "lng": 121.839908,
+          "lat": 29.901468
+        },
+        {
+          "code": "330211",
+          "name": "镇海区",
+          "cityCode": "3302",
+          "provinceCode": "33",
+          "lng": 121.592429,
+          "lat": 29.9677
+        },
+        {
+          "code": "330212",
+          "name": "鄞州区",
+          "cityCode": "3302",
+          "provinceCode": "33",
+          "lng": 121.542489,
+          "lat": 29.820191
+        },
+        {
+          "code": "330213",
+          "name": "奉化区",
+          "cityCode": "3302",
+          "provinceCode": "33",
+          "lng": 121.401781,
+          "lat": 29.657651
+        },
+        {
+          "code": "330225",
+          "name": "象山县",
+          "cityCode": "3302",
+          "provinceCode": "33",
+          "lng": 121.865244,
+          "lat": 29.479528
+        },
+        {
+          "code": "330226",
+          "name": "宁海县",
+          "cityCode": "3302",
+          "provinceCode": "33",
+          "lng": 121.425253,
+          "lat": 29.290791
+        },
+        {
+          "code": "330281",
+          "name": "余姚市",
+          "cityCode": "3302",
+          "provinceCode": "33",
+          "lng": 121.150122,
+          "lat": 30.040326
+        },
+        {
+          "code": "330282",
+          "name": "慈溪市",
+          "cityCode": "3302",
+          "provinceCode": "33",
+          "lng": 121.261655,
+          "lat": 30.17204
+        }
+      ],
+      "lng": 121.620171,
+      "lat": 29.863047
+    },
+    {
+      "code": "3303",
+      "name": "温州市",
+      "provinceCode": "33",
+      "areas": [
+        {
+          "code": "330302",
+          "name": "鹿城区",
+          "cityCode": "3303",
+          "provinceCode": "33",
+          "lng": 120.651026,
+          "lat": 28.018067
+        },
+        {
+          "code": "330303",
+          "name": "龙湾区",
+          "cityCode": "3303",
+          "provinceCode": "33",
+          "lng": 120.808973,
+          "lat": 27.935893
+        },
+        {
+          "code": "330304",
+          "name": "瓯海区",
+          "cityCode": "3303",
+          "provinceCode": "33",
+          "lng": 120.611082,
+          "lat": 27.970012
+        },
+        {
+          "code": "330305",
+          "name": "洞头区",
+          "cityCode": "3303",
+          "provinceCode": "33",
+          "lng": 121.152631,
+          "lat": 27.839305
+        },
+        {
+          "code": "330324",
+          "name": "永嘉县",
+          "cityCode": "3303",
+          "provinceCode": "33",
+          "lng": 120.677963,
+          "lat": 28.15393
+        },
+        {
+          "code": "330326",
+          "name": "平阳县",
+          "cityCode": "3303",
+          "provinceCode": "33",
+          "lng": 120.56184,
+          "lat": 27.665164
+        },
+        {
+          "code": "330327",
+          "name": "苍南县",
+          "cityCode": "3303",
+          "provinceCode": "33",
+          "lng": 120.422656,
+          "lat": 27.520421
+        },
+        {
+          "code": "330328",
+          "name": "文成县",
+          "cityCode": "3303",
+          "provinceCode": "33",
+          "lng": 120.086483,
+          "lat": 27.790115
+        },
+        {
+          "code": "330329",
+          "name": "泰顺县",
+          "cityCode": "3303",
+          "provinceCode": "33",
+          "lng": 119.712641,
+          "lat": 27.559952
+        },
+        {
+          "code": "330381",
+          "name": "瑞安市",
+          "cityCode": "3303",
+          "provinceCode": "33",
+          "lng": 120.651043,
+          "lat": 27.78163
+        },
+        {
+          "code": "330382",
+          "name": "乐清市",
+          "cityCode": "3303",
+          "provinceCode": "33",
+          "lng": 120.981914,
+          "lat": 28.115391
+        },
+        {
+          "code": "330383",
+          "name": "龙港市",
+          "cityCode": "3303",
+          "provinceCode": "33",
+          "lng": 120.54881,
+          "lat": 27.581973
+        }
+      ],
+      "lng": 120.695226,
+      "lat": 27.997173
+    },
+    {
+      "code": "3304",
+      "name": "嘉兴市",
+      "provinceCode": "33",
+      "areas": [
+        {
+          "code": "330402",
+          "name": "南湖区",
+          "cityCode": "3304",
+          "provinceCode": "33",
+          "lng": 120.778588,
+          "lat": 30.750095
+        },
+        {
+          "code": "330411",
+          "name": "秀洲区",
+          "cityCode": "3304",
+          "provinceCode": "33",
+          "lng": 120.704671,
+          "lat": 30.767854
+        },
+        {
+          "code": "330421",
+          "name": "嘉善县",
+          "cityCode": "3304",
+          "provinceCode": "33",
+          "lng": 120.921861,
+          "lat": 30.833623
+        },
+        {
+          "code": "330424",
+          "name": "海盐县",
+          "cityCode": "3304",
+          "provinceCode": "33",
+          "lng": 120.941848,
+          "lat": 30.528134
+        },
+        {
+          "code": "330481",
+          "name": "海宁市",
+          "cityCode": "3304",
+          "provinceCode": "33",
+          "lng": 120.675785,
+          "lat": 30.514577
+        },
+        {
+          "code": "330482",
+          "name": "平湖市",
+          "cityCode": "3304",
+          "provinceCode": "33",
+          "lng": 121.011604,
+          "lat": 30.678882
+        },
+        {
+          "code": "330483",
+          "name": "桐乡市",
+          "cityCode": "3304",
+          "provinceCode": "33",
+          "lng": 120.561408,
+          "lat": 30.632933
+        }
+      ],
+      "lng": 120.751323,
+      "lat": 30.748984
+    },
+    {
+      "code": "3305",
+      "name": "湖州市",
+      "provinceCode": "33",
+      "areas": [
+        {
+          "code": "330502",
+          "name": "吴兴区",
+          "cityCode": "3305",
+          "provinceCode": "33",
+          "lng": 120.181141,
+          "lat": 30.858698
+        },
+        {
+          "code": "330503",
+          "name": "南浔区",
+          "cityCode": "3305",
+          "provinceCode": "33",
+          "lng": 120.413668,
+          "lat": 30.85274
+        },
+        {
+          "code": "330521",
+          "name": "德清县",
+          "cityCode": "3305",
+          "provinceCode": "33",
+          "lng": 119.972352,
+          "lat": 30.544968
+        },
+        {
+          "code": "330522",
+          "name": "长兴县",
+          "cityCode": "3305",
+          "provinceCode": "33",
+          "lng": 119.906619,
+          "lat": 31.029381
+        },
+        {
+          "code": "330523",
+          "name": "安吉县",
+          "cityCode": "3305",
+          "provinceCode": "33",
+          "lng": 119.675284,
+          "lat": 30.641277
+        }
+      ],
+      "lng": 120.083129,
+      "lat": 30.895044
+    },
+    {
+      "code": "3306",
+      "name": "绍兴市",
+      "provinceCode": "33",
+      "areas": [
+        {
+          "code": "330602",
+          "name": "越城区",
+          "cityCode": "3306",
+          "provinceCode": "33",
+          "lng": 120.577923,
+          "lat": 29.991738
+        },
+        {
+          "code": "330603",
+          "name": "柯桥区",
+          "cityCode": "3306",
+          "provinceCode": "33",
+          "lng": 120.491203,
+          "lat": 30.085489
+        },
+        {
+          "code": "330604",
+          "name": "上虞区",
+          "cityCode": "3306",
+          "provinceCode": "33",
+          "lng": 120.863866,
+          "lat": 30.036174
+        },
+        {
+          "code": "330624",
+          "name": "新昌县",
+          "cityCode": "3306",
+          "provinceCode": "33",
+          "lng": 120.899943,
+          "lat": 29.502834
+        },
+        {
+          "code": "330681",
+          "name": "诸暨市",
+          "cityCode": "3306",
+          "provinceCode": "33",
+          "lng": 120.242568,
+          "lat": 29.711085
+        },
+        {
+          "code": "330683",
+          "name": "嵊州市",
+          "cityCode": "3306",
+          "provinceCode": "33",
+          "lng": 120.826489,
+          "lat": 29.564313
+        }
+      ],
+      "lng": 120.579512,
+      "lat": 30.054023
+    },
+    {
+      "code": "3307",
+      "name": "金华市",
+      "provinceCode": "33",
+      "areas": [
+        {
+          "code": "330702",
+          "name": "婺城区",
+          "cityCode": "3307",
+          "provinceCode": "33",
+          "lng": 119.567286,
+          "lat": 29.089103
+        },
+        {
+          "code": "330703",
+          "name": "金东区",
+          "cityCode": "3307",
+          "provinceCode": "33",
+          "lng": 119.688138,
+          "lat": 29.1027
+        },
+        {
+          "code": "330723",
+          "name": "武义县",
+          "cityCode": "3307",
+          "provinceCode": "33",
+          "lng": 119.811839,
+          "lat": 28.895758
+        },
+        {
+          "code": "330726",
+          "name": "浦江县",
+          "cityCode": "3307",
+          "provinceCode": "33",
+          "lng": 119.8875,
+          "lat": 29.455161
+        },
+        {
+          "code": "330727",
+          "name": "磐安县",
+          "cityCode": "3307",
+          "provinceCode": "33",
+          "lng": 120.445603,
+          "lat": 29.057206
+        },
+        {
+          "code": "330781",
+          "name": "兰溪市",
+          "cityCode": "3307",
+          "provinceCode": "33",
+          "lng": 119.455291,
+          "lat": 29.211547
+        },
+        {
+          "code": "330782",
+          "name": "义乌市",
+          "cityCode": "3307",
+          "provinceCode": "33",
+          "lng": 120.070296,
+          "lat": 29.308924
+        },
+        {
+          "code": "330783",
+          "name": "东阳市",
+          "cityCode": "3307",
+          "provinceCode": "33",
+          "lng": 120.237359,
+          "lat": 29.292832
+        },
+        {
+          "code": "330784",
+          "name": "永康市",
+          "cityCode": "3307",
+          "provinceCode": "33",
+          "lng": 120.042741,
+          "lat": 28.891801
+        }
+      ],
+      "lng": 119.642516,
+      "lat": 29.082177
+    },
+    {
+      "code": "3308",
+      "name": "衢州市",
+      "provinceCode": "33",
+      "areas": [
+        {
+          "code": "330802",
+          "name": "柯城区",
+          "cityCode": "3308",
+          "provinceCode": "33",
+          "lng": 118.866222,
+          "lat": 28.971602
+        },
+        {
+          "code": "330803",
+          "name": "衢江区",
+          "cityCode": "3308",
+          "provinceCode": "33",
+          "lng": 118.954259,
+          "lat": 28.983409
+        },
+        {
+          "code": "330822",
+          "name": "常山县",
+          "cityCode": "3308",
+          "provinceCode": "33",
+          "lng": 118.506382,
+          "lat": 28.904286
+        },
+        {
+          "code": "330824",
+          "name": "开化县",
+          "cityCode": "3308",
+          "provinceCode": "33",
+          "lng": 118.410698,
+          "lat": 29.139611
+        },
+        {
+          "code": "330825",
+          "name": "龙游县",
+          "cityCode": "3308",
+          "provinceCode": "33",
+          "lng": 119.166896,
+          "lat": 29.03099
+        },
+        {
+          "code": "330881",
+          "name": "江山市",
+          "cityCode": "3308",
+          "provinceCode": "33",
+          "lng": 118.622253,
+          "lat": 28.74048
+        }
+      ],
+      "lng": 118.866533,
+      "lat": 28.971712
+    },
+    {
+      "code": "3309",
+      "name": "舟山市",
+      "provinceCode": "33",
+      "areas": [
+        {
+          "code": "330902",
+          "name": "定海区",
+          "cityCode": "3309",
+          "provinceCode": "33",
+          "lng": 122.102411,
+          "lat": 30.022247
+        },
+        {
+          "code": "330903",
+          "name": "普陀区",
+          "cityCode": "3309",
+          "provinceCode": "33",
+          "lng": 122.320796,
+          "lat": 29.973446
+        },
+        {
+          "code": "330921",
+          "name": "岱山县",
+          "cityCode": "3309",
+          "provinceCode": "33",
+          "lng": 122.221849,
+          "lat": 30.266415
+        },
+        {
+          "code": "330922",
+          "name": "嵊泗县",
+          "cityCode": "3309",
+          "provinceCode": "33",
+          "lng": 122.44659,
+          "lat": 30.727955
+        }
+      ],
+      "lng": 122.202842,
+      "lat": 29.987603
+    },
+    {
+      "code": "3310",
+      "name": "台州市",
+      "provinceCode": "33",
+      "areas": [
+        {
+          "code": "331002",
+          "name": "椒江区",
+          "cityCode": "3310",
+          "provinceCode": "33",
+          "lng": 121.438465,
+          "lat": 28.676293
+        },
+        {
+          "code": "331003",
+          "name": "黄岩区",
+          "cityCode": "3310",
+          "provinceCode": "33",
+          "lng": 121.257592,
+          "lat": 28.652595
+        },
+        {
+          "code": "331004",
+          "name": "路桥区",
+          "cityCode": "3310",
+          "provinceCode": "33",
+          "lng": 121.333519,
+          "lat": 28.581224
+        },
+        {
+          "code": "331022",
+          "name": "三门县",
+          "cityCode": "3310",
+          "provinceCode": "33",
+          "lng": 121.391528,
+          "lat": 29.107209
+        },
+        {
+          "code": "331023",
+          "name": "天台县",
+          "cityCode": "3310",
+          "provinceCode": "33",
+          "lng": 121.00276,
+          "lat": 29.146548
+        },
+        {
+          "code": "331024",
+          "name": "仙居县",
+          "cityCode": "3310",
+          "provinceCode": "33",
+          "lng": 120.724839,
+          "lat": 28.849916
+        },
+        {
+          "code": "331081",
+          "name": "温岭市",
+          "cityCode": "3310",
+          "provinceCode": "33",
+          "lng": 121.381143,
+          "lat": 28.375739
+        },
+        {
+          "code": "331082",
+          "name": "临海市",
+          "cityCode": "3310",
+          "provinceCode": "33",
+          "lng": 121.140182,
+          "lat": 28.861851
+        },
+        {
+          "code": "331083",
+          "name": "玉环市",
+          "cityCode": "3310",
+          "provinceCode": "33",
+          "lng": 121.227726,
+          "lat": 28.13965
+        }
+      ],
+      "lng": 121.438465,
+      "lat": 28.676293
+    },
+    {
+      "code": "3311",
+      "name": "丽水市",
+      "provinceCode": "33",
+      "areas": [
+        {
+          "code": "331102",
+          "name": "莲都区",
+          "cityCode": "3311",
+          "provinceCode": "33",
+          "lng": 119.908051,
+          "lat": 28.449568
+        },
+        {
+          "code": "331121",
+          "name": "青田县",
+          "cityCode": "3311",
+          "provinceCode": "33",
+          "lng": 120.285382,
+          "lat": 28.142832
+        },
+        {
+          "code": "331122",
+          "name": "缙云县",
+          "cityCode": "3311",
+          "provinceCode": "33",
+          "lng": 120.086318,
+          "lat": 28.662159
+        },
+        {
+          "code": "331123",
+          "name": "遂昌县",
+          "cityCode": "3311",
+          "provinceCode": "33",
+          "lng": 119.270696,
+          "lat": 28.595808
+        },
+        {
+          "code": "331124",
+          "name": "松阳县",
+          "cityCode": "3311",
+          "provinceCode": "33",
+          "lng": 119.476329,
+          "lat": 28.452223
+        },
+        {
+          "code": "331125",
+          "name": "云和县",
+          "cityCode": "3311",
+          "provinceCode": "33",
+          "lng": 119.568366,
+          "lat": 28.119238
+        },
+        {
+          "code": "331126",
+          "name": "庆元县",
+          "cityCode": "3311",
+          "provinceCode": "33",
+          "lng": 119.057831,
+          "lat": 27.622199
+        },
+        {
+          "code": "331127",
+          "name": "景宁畲族自治县",
+          "cityCode": "3311",
+          "provinceCode": "33",
+          "lng": 119.631395,
+          "lat": 27.976604
+        },
+        {
+          "code": "331181",
+          "name": "龙泉市",
+          "cityCode": "3311",
+          "provinceCode": "33",
+          "lng": 119.136217,
+          "lat": 28.078169
+        }
+      ],
+      "lng": 119.918911,
+      "lat": 28.471111
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "province": {
+    "code": "46",
+    "name": "海南省"
+  },
+  "cities": [
+    {
+      "code": "4601",
+      "name": "海口市",
+      "provinceCode": "46",
+      "areas": [
+        {
+          "code": "460105",
+          "name": "秀英区",
+          "cityCode": "4601",
+          "provinceCode": "46",
+          "lng": 110.289151,
+          "lat": 20.010052
+        },
+        {
+          "code": "460106",
+          "name": "龙华区",
+          "cityCode": "4601",
+          "provinceCode": "46",
+          "lng": 110.324265,
+          "lat": 20.0329
+        },
+        {
+          "code": "460107",
+          "name": "琼山区",
+          "cityCode": "4601",
+          "provinceCode": "46",
+          "lng": 110.379892,
+          "lat": 19.986385
+        },
+        {
+          "code": "460108",
+          "name": "美兰区",
+          "cityCode": "4601",
+          "provinceCode": "46",
+          "lng": 110.361951,
+          "lat": 20.031066
+        }
+      ],
+      "lng": 110.195855,
+      "lat": 20.04841
+    },
+    {
+      "code": "4602",
+      "name": "三亚市",
+      "provinceCode": "46",
+      "areas": [
+        {
+          "code": "460202",
+          "name": "海棠区",
+          "cityCode": "4602",
+          "provinceCode": "46",
+          "lng": 109.731586,
+          "lat": 18.385918
+        },
+        {
+          "code": "460203",
+          "name": "吉阳区",
+          "cityCode": "4602",
+          "provinceCode": "46",
+          "lng": 109.574346,
+          "lat": 18.283191
+        },
+        {
+          "code": "460204",
+          "name": "天涯区",
+          "cityCode": "4602",
+          "provinceCode": "46",
+          "lng": 109.448087,
+          "lat": 18.300538
+        },
+        {
+          "code": "460205",
+          "name": "崖州区",
+          "cityCode": "4602",
+          "provinceCode": "46",
+          "lng": 109.167824,
+          "lat": 18.359021
+        }
+      ],
+      "lng": 109.507674,
+      "lat": 18.254487
+    },
+    {
+      "code": "4603",
+      "name": "三沙市",
+      "provinceCode": "46",
+      "areas": [
+        {
+          "code": "460321",
+          "name": "西沙群岛",
+          "cityCode": "4603",
+          "provinceCode": "46",
+          "lng": 111.775108,
+          "lat": 16.506011
+        },
+        {
+          "code": "460322",
+          "name": "南沙群岛",
+          "cityCode": "4603",
+          "provinceCode": "46",
+          "lng": 112.329097,
+          "lat": 16.834339
+        },
+        {
+          "code": "460323",
+          "name": "中沙群岛的岛礁及其海域",
+          "cityCode": "4603",
+          "provinceCode": "46",
+          "lng": 112.329097,
+          "lat": 16.834339
+        }
+      ],
+      "lng": 112.329097,
+      "lat": 16.834339
+    },
+    {
+      "code": "4604",
+      "name": "儋州市",
+      "provinceCode": "46",
+      "areas": [
+        {
+          "code": "460400",
+          "name": "儋州市",
+          "cityCode": "4604",
+          "provinceCode": "46",
+          "lng": 109.57662,
+          "lat": 19.522548
+        }
+      ],
+      "lng": 109.57662,
+      "lat": 19.522548
+    },
+    {
+      "code": "4690",
+      "name": "省直辖县级行政区划",
+      "provinceCode": "46",
+      "areas": [
+        {
+          "code": "469001",
+          "name": "五指山市",
+          "cityCode": "4690",
+          "provinceCode": "46",
+          "lng": 109.512695,
+          "lat": 18.776703
+        },
+        {
+          "code": "469002",
+          "name": "琼海市",
+          "cityCode": "4690",
+          "provinceCode": "46",
+          "lng": 110.470795,
+          "lat": 19.260929
+        },
+        {
+          "code": "469005",
+          "name": "文昌市",
+          "cityCode": "4690",
+          "provinceCode": "46",
+          "lng": 110.793037,
+          "lat": 19.546074
+        },
+        {
+          "code": "469006",
+          "name": "万宁市",
+          "cityCode": "4690",
+          "provinceCode": "46",
+          "lng": 110.38688,
+          "lat": 18.796559
+        },
+        {
+          "code": "469007",
+          "name": "东方市",
+          "cityCode": "4690",
+          "provinceCode": "46",
+          "lng": 108.648205,
+          "lat": 19.097051
+        },
+        {
+          "code": "469021",
+          "name": "定安县",
+          "cityCode": "4690",
+          "provinceCode": "46",
+          "lng": 110.353662,
+          "lat": 19.682939
+        },
+        {
+          "code": "469022",
+          "name": "屯昌县",
+          "cityCode": "4690",
+          "provinceCode": "46",
+          "lng": 110.099021,
+          "lat": 19.353108
+        },
+        {
+          "code": "469023",
+          "name": "澄迈县",
+          "cityCode": "4690",
+          "provinceCode": "46",
+          "lng": 110.003295,
+          "lat": 19.740774
+        },
+        {
+          "code": "469024",
+          "name": "临高县",
+          "cityCode": "4690",
+          "provinceCode": "46",
+          "lng": 109.686646,
+          "lat": 19.914525
+        },
+        {
+          "code": "469025",
+          "name": "白沙黎族自治县",
+          "cityCode": "4690",
+          "provinceCode": "46",
+          "lng": 110.289151,
+          "lat": 20.010052
+        },
+        {
+          "code": "469026",
+          "name": "昌江黎族自治县",
+          "cityCode": "4690",
+          "provinceCode": "46",
+          "lng": 109.05156,
+          "lat": 19.299822
+        },
+        {
+          "code": "469027",
+          "name": "乐东黎族自治县",
+          "cityCode": "4690",
+          "provinceCode": "46",
+          "lng": 110.289151,
+          "lat": 20.010052
+        },
+        {
+          "code": "469028",
+          "name": "陵水黎族自治县",
+          "cityCode": "4690",
+          "provinceCode": "46",
+          "lng": 110.033253,
+          "lat": 18.507626
+        },
+        {
+          "code": "469029",
+          "name": "保亭黎族苗族自治县",
+          "cityCode": "4690",
+          "provinceCode": "46",
+          "lng": 109.698607,
+          "lat": 18.55636
+        },
+        {
+          "code": "469030",
+          "name": "琼中黎族苗族自治县",
+          "cityCode": "4690",
+          "provinceCode": "46",
+          "lng": 109.834432,
+          "lat": 19.035185
+        }
+      ],
+      "lng": 110.289151,
+      "lat": 20.010052
+    }
+  ]
+}

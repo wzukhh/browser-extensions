@@ -1,0 +1,1356 @@
+{
+  "province": {
+    "code": "37",
+    "name": "山东省"
+  },
+  "cities": [
+    {
+      "code": "3701",
+      "name": "济南市",
+      "provinceCode": "37",
+      "areas": [
+        {
+          "code": "370102",
+          "name": "历下区",
+          "cityCode": "3701",
+          "provinceCode": "37",
+          "lng": 117.069896,
+          "lat": 36.665961
+        },
+        {
+          "code": "370103",
+          "name": "市中区",
+          "cityCode": "3701",
+          "provinceCode": "37",
+          "lng": 116.991631,
+          "lat": 36.650925
+        },
+        {
+          "code": "370104",
+          "name": "槐荫区",
+          "cityCode": "3701",
+          "provinceCode": "37",
+          "lng": 116.895493,
+          "lat": 36.652267
+        },
+        {
+          "code": "370105",
+          "name": "天桥区",
+          "cityCode": "3701",
+          "provinceCode": "37",
+          "lng": 116.981213,
+          "lat": 36.677571
+        },
+        {
+          "code": "370112",
+          "name": "历城区",
+          "cityCode": "3701",
+          "provinceCode": "37",
+          "lng": 117.059112,
+          "lat": 36.680258
+        },
+        {
+          "code": "370113",
+          "name": "长清区",
+          "cityCode": "3701",
+          "provinceCode": "37",
+          "lng": 116.746206,
+          "lat": 36.554088
+        },
+        {
+          "code": "370114",
+          "name": "章丘区",
+          "cityCode": "3701",
+          "provinceCode": "37",
+          "lng": 117.520371,
+          "lat": 36.681093
+        },
+        {
+          "code": "370115",
+          "name": "济阳区",
+          "cityCode": "3701",
+          "provinceCode": "37",
+          "lng": 117.16742,
+          "lat": 36.977924
+        },
+        {
+          "code": "370116",
+          "name": "莱芜区",
+          "cityCode": "3701",
+          "provinceCode": "37",
+          "lng": 117.67006,
+          "lat": 36.214271
+        },
+        {
+          "code": "370117",
+          "name": "钢城区",
+          "cityCode": "3701",
+          "provinceCode": "37",
+          "lng": 117.805542,
+          "lat": 36.059005
+        },
+        {
+          "code": "370124",
+          "name": "平阴县",
+          "cityCode": "3701",
+          "provinceCode": "37",
+          "lng": 116.450366,
+          "lat": 36.288981
+        },
+        {
+          "code": "370126",
+          "name": "商河县",
+          "cityCode": "3701",
+          "provinceCode": "37",
+          "lng": 117.151058,
+          "lat": 37.30829
+        },
+        {
+          "code": "370176",
+          "name": "济南高新技术产业开发区",
+          "cityCode": "3701",
+          "provinceCode": "37"
+        }
+      ],
+      "lng": 117.113873,
+      "lat": 36.649771
+    },
+    {
+      "code": "3702",
+      "name": "青岛市",
+      "provinceCode": "37",
+      "areas": [
+        {
+          "code": "370202",
+          "name": "市南区",
+          "cityCode": "3702",
+          "provinceCode": "37",
+          "lng": 120.406875,
+          "lat": 36.075516
+        },
+        {
+          "code": "370203",
+          "name": "市北区",
+          "cityCode": "3702",
+          "provinceCode": "37",
+          "lng": 120.369869,
+          "lat": 36.086925
+        },
+        {
+          "code": "370211",
+          "name": "黄岛区",
+          "cityCode": "3702",
+          "provinceCode": "37",
+          "lng": 120.192985,
+          "lat": 35.960762
+        },
+        {
+          "code": "370212",
+          "name": "崂山区",
+          "cityCode": "3702",
+          "provinceCode": "37",
+          "lng": 120.464016,
+          "lat": 36.107001
+        },
+        {
+          "code": "370213",
+          "name": "李沧区",
+          "cityCode": "3702",
+          "provinceCode": "37",
+          "lng": 120.427183,
+          "lat": 36.145806
+        },
+        {
+          "code": "370214",
+          "name": "城阳区",
+          "cityCode": "3702",
+          "provinceCode": "37",
+          "lng": 120.391123,
+          "lat": 36.307329
+        },
+        {
+          "code": "370215",
+          "name": "即墨区",
+          "cityCode": "3702",
+          "provinceCode": "37",
+          "lng": 120.442135,
+          "lat": 36.389333
+        },
+        {
+          "code": "370281",
+          "name": "胶州市",
+          "cityCode": "3702",
+          "provinceCode": "37",
+          "lng": 120.026971,
+          "lat": 36.263159
+        },
+        {
+          "code": "370283",
+          "name": "平度市",
+          "cityCode": "3702",
+          "provinceCode": "37",
+          "lng": 119.964971,
+          "lat": 36.753604
+        },
+        {
+          "code": "370285",
+          "name": "莱西市",
+          "cityCode": "3702",
+          "provinceCode": "37",
+          "lng": 120.512764,
+          "lat": 36.888738
+        }
+      ],
+      "lng": 120.377518,
+      "lat": 36.066596
+    },
+    {
+      "code": "3703",
+      "name": "淄博市",
+      "provinceCode": "37",
+      "areas": [
+        {
+          "code": "370302",
+          "name": "淄川区",
+          "cityCode": "3703",
+          "provinceCode": "37",
+          "lng": 117.961144,
+          "lat": 36.644124
+        },
+        {
+          "code": "370303",
+          "name": "张店区",
+          "cityCode": "3703",
+          "provinceCode": "37",
+          "lng": 118.012014,
+          "lat": 36.805872
+        },
+        {
+          "code": "370304",
+          "name": "博山区",
+          "cityCode": "3703",
+          "provinceCode": "37",
+          "lng": 117.856232,
+          "lat": 36.494667
+        },
+        {
+          "code": "370305",
+          "name": "临淄区",
+          "cityCode": "3703",
+          "provinceCode": "37",
+          "lng": 118.303397,
+          "lat": 36.826532
+        },
+        {
+          "code": "370306",
+          "name": "周村区",
+          "cityCode": "3703",
+          "provinceCode": "37",
+          "lng": 117.864214,
+          "lat": 36.802794
+        },
+        {
+          "code": "370321",
+          "name": "桓台县",
+          "cityCode": "3703",
+          "provinceCode": "37",
+          "lng": 118.091874,
+          "lat": 36.958728
+        },
+        {
+          "code": "370322",
+          "name": "高青县",
+          "cityCode": "3703",
+          "provinceCode": "37",
+          "lng": 117.820895,
+          "lat": 37.170706
+        },
+        {
+          "code": "370323",
+          "name": "沂源县",
+          "cityCode": "3703",
+          "provinceCode": "37",
+          "lng": 118.164927,
+          "lat": 36.185443
+        }
+      ],
+      "lng": 118.048919,
+      "lat": 36.812477
+    },
+    {
+      "code": "3704",
+      "name": "枣庄市",
+      "provinceCode": "37",
+      "areas": [
+        {
+          "code": "370402",
+          "name": "市中区",
+          "cityCode": "3704",
+          "provinceCode": "37",
+          "lng": 117.713356,
+          "lat": 34.84347
+        },
+        {
+          "code": "370403",
+          "name": "薛城区",
+          "cityCode": "3704",
+          "provinceCode": "37",
+          "lng": 117.257216,
+          "lat": 34.795894
+        },
+        {
+          "code": "370404",
+          "name": "峄城区",
+          "cityCode": "3704",
+          "provinceCode": "37",
+          "lng": 117.585211,
+          "lat": 34.774366
+        },
+        {
+          "code": "370405",
+          "name": "台儿庄区",
+          "cityCode": "3704",
+          "provinceCode": "37",
+          "lng": 117.72798,
+          "lat": 34.563692
+        },
+        {
+          "code": "370406",
+          "name": "山亭区",
+          "cityCode": "3704",
+          "provinceCode": "37",
+          "lng": 117.454997,
+          "lat": 35.099951
+        },
+        {
+          "code": "370481",
+          "name": "滕州市",
+          "cityCode": "3704",
+          "provinceCode": "37",
+          "lng": 117.160103,
+          "lat": 35.114744
+        }
+      ],
+      "lng": 117.317872,
+      "lat": 34.811638
+    },
+    {
+      "code": "3705",
+      "name": "东营市",
+      "provinceCode": "37",
+      "areas": [
+        {
+          "code": "370502",
+          "name": "东营区",
+          "cityCode": "3705",
+          "provinceCode": "37",
+          "lng": 118.576667,
+          "lat": 37.449043
+        },
+        {
+          "code": "370503",
+          "name": "河口区",
+          "cityCode": "3705",
+          "provinceCode": "37",
+          "lng": 118.519828,
+          "lat": 37.885761
+        },
+        {
+          "code": "370505",
+          "name": "垦利区",
+          "cityCode": "3705",
+          "provinceCode": "37",
+          "lng": 118.569659,
+          "lat": 37.57277
+        },
+        {
+          "code": "370522",
+          "name": "利津县",
+          "cityCode": "3705",
+          "provinceCode": "37",
+          "lng": 118.249394,
+          "lat": 37.489667
+        },
+        {
+          "code": "370523",
+          "name": "广饶县",
+          "cityCode": "3705",
+          "provinceCode": "37",
+          "lng": 118.413582,
+          "lat": 37.053577
+        },
+        {
+          "code": "370571",
+          "name": "东营经济技术开发区",
+          "cityCode": "3705",
+          "provinceCode": "37",
+          "lng": 118.57644,
+          "lat": 37.448109
+        },
+        {
+          "code": "370572",
+          "name": "东营港经济开发区",
+          "cityCode": "3705",
+          "provinceCode": "37",
+          "lng": 118.690102,
+          "lat": 37.433095
+        }
+      ],
+      "lng": 118.668882,
+      "lat": 37.433318
+    },
+    {
+      "code": "3706",
+      "name": "烟台市",
+      "provinceCode": "37",
+      "areas": [
+        {
+          "code": "370602",
+          "name": "芝罘区",
+          "cityCode": "3706",
+          "provinceCode": "37",
+          "lng": 121.395067,
+          "lat": 37.540503
+        },
+        {
+          "code": "370611",
+          "name": "福山区",
+          "cityCode": "3706",
+          "provinceCode": "37",
+          "lng": 121.262672,
+          "lat": 37.497431
+        },
+        {
+          "code": "370612",
+          "name": "牟平区",
+          "cityCode": "3706",
+          "provinceCode": "37",
+          "lng": 121.595226,
+          "lat": 37.386475
+        },
+        {
+          "code": "370613",
+          "name": "莱山区",
+          "cityCode": "3706",
+          "provinceCode": "37",
+          "lng": 121.439781,
+          "lat": 37.510312
+        },
+        {
+          "code": "370614",
+          "name": "蓬莱区",
+          "cityCode": "3706",
+          "provinceCode": "37",
+          "lng": 120.82427,
+          "lat": 37.7949
+        },
+        {
+          "code": "370671",
+          "name": "烟台高新技术产业开发区",
+          "cityCode": "3706",
+          "provinceCode": "37",
+          "lng": 121.476055,
+          "lat": 37.454006
+        },
+        {
+          "code": "370676",
+          "name": "烟台经济技术开发区",
+          "cityCode": "3706",
+          "provinceCode": "37"
+        },
+        {
+          "code": "370681",
+          "name": "龙口市",
+          "cityCode": "3706",
+          "provinceCode": "37",
+          "lng": 120.473893,
+          "lat": 37.645298
+        },
+        {
+          "code": "370682",
+          "name": "莱阳市",
+          "cityCode": "3706",
+          "provinceCode": "37",
+          "lng": 120.707134,
+          "lat": 36.977775
+        },
+        {
+          "code": "370683",
+          "name": "莱州市",
+          "cityCode": "3706",
+          "provinceCode": "37",
+          "lng": 119.93686,
+          "lat": 37.177688
+        },
+        {
+          "code": "370685",
+          "name": "招远市",
+          "cityCode": "3706",
+          "provinceCode": "37",
+          "lng": 120.429782,
+          "lat": 37.353933
+        },
+        {
+          "code": "370686",
+          "name": "栖霞市",
+          "cityCode": "3706",
+          "provinceCode": "37",
+          "lng": 120.84523,
+          "lat": 37.33446
+        },
+        {
+          "code": "370687",
+          "name": "海阳市",
+          "cityCode": "3706",
+          "provinceCode": "37",
+          "lng": 121.168961,
+          "lat": 36.686753
+        }
+      ],
+      "lng": 121.442574,
+      "lat": 37.463588
+    },
+    {
+      "code": "3707",
+      "name": "潍坊市",
+      "provinceCode": "37",
+      "areas": [
+        {
+          "code": "370702",
+          "name": "潍城区",
+          "cityCode": "3707",
+          "provinceCode": "37",
+          "lng": 119.019007,
+          "lat": 36.727896
+        },
+        {
+          "code": "370703",
+          "name": "寒亭区",
+          "cityCode": "3707",
+          "provinceCode": "37",
+          "lng": 119.21423,
+          "lat": 36.774706
+        },
+        {
+          "code": "370704",
+          "name": "坊子区",
+          "cityCode": "3707",
+          "provinceCode": "37",
+          "lng": 119.160134,
+          "lat": 36.653997
+        },
+        {
+          "code": "370705",
+          "name": "奎文区",
+          "cityCode": "3707",
+          "provinceCode": "37",
+          "lng": 119.12706,
+          "lat": 36.706211
+        },
+        {
+          "code": "370724",
+          "name": "临朐县",
+          "cityCode": "3707",
+          "provinceCode": "37",
+          "lng": 118.537358,
+          "lat": 36.512396
+        },
+        {
+          "code": "370725",
+          "name": "昌乐县",
+          "cityCode": "3707",
+          "provinceCode": "37",
+          "lng": 118.824416,
+          "lat": 36.706774
+        },
+        {
+          "code": "370772",
+          "name": "潍坊滨海经济技术开发区",
+          "cityCode": "3707",
+          "provinceCode": "37",
+          "lng": 119.173047,
+          "lat": 37.129839
+        },
+        {
+          "code": "370781",
+          "name": "青州市",
+          "cityCode": "3707",
+          "provinceCode": "37",
+          "lng": 118.473884,
+          "lat": 36.684987
+        },
+        {
+          "code": "370782",
+          "name": "诸城市",
+          "cityCode": "3707",
+          "provinceCode": "37",
+          "lng": 119.404142,
+          "lat": 35.995451
+        },
+        {
+          "code": "370783",
+          "name": "寿光市",
+          "cityCode": "3707",
+          "provinceCode": "37",
+          "lng": 118.785319,
+          "lat": 36.855206
+        },
+        {
+          "code": "370784",
+          "name": "安丘市",
+          "cityCode": "3707",
+          "provinceCode": "37",
+          "lng": 119.213305,
+          "lat": 36.47814
+        },
+        {
+          "code": "370785",
+          "name": "高密市",
+          "cityCode": "3707",
+          "provinceCode": "37",
+          "lng": 119.750522,
+          "lat": 36.382426
+        },
+        {
+          "code": "370786",
+          "name": "昌邑市",
+          "cityCode": "3707",
+          "provinceCode": "37",
+          "lng": 119.397336,
+          "lat": 36.842867
+        }
+      ],
+      "lng": 118.785489,
+      "lat": 36.856798
+    },
+    {
+      "code": "3708",
+      "name": "济宁市",
+      "provinceCode": "37",
+      "areas": [
+        {
+          "code": "370811",
+          "name": "任城区",
+          "cityCode": "3708",
+          "provinceCode": "37",
+          "lng": 116.542646,
+          "lat": 35.48804
+        },
+        {
+          "code": "370812",
+          "name": "兖州区",
+          "cityCode": "3708",
+          "provinceCode": "37",
+          "lng": 116.780259,
+          "lat": 35.552489
+        },
+        {
+          "code": "370826",
+          "name": "微山县",
+          "cityCode": "3708",
+          "provinceCode": "37",
+          "lng": 117.123185,
+          "lat": 34.807131
+        },
+        {
+          "code": "370827",
+          "name": "鱼台县",
+          "cityCode": "3708",
+          "provinceCode": "37",
+          "lng": 116.645671,
+          "lat": 35.012404
+        },
+        {
+          "code": "370828",
+          "name": "金乡县",
+          "cityCode": "3708",
+          "provinceCode": "37",
+          "lng": 116.305544,
+          "lat": 35.067709
+        },
+        {
+          "code": "370829",
+          "name": "嘉祥县",
+          "cityCode": "3708",
+          "provinceCode": "37",
+          "lng": 116.336557,
+          "lat": 35.408157
+        },
+        {
+          "code": "370830",
+          "name": "汶上县",
+          "cityCode": "3708",
+          "provinceCode": "37",
+          "lng": 116.491598,
+          "lat": 35.711728
+        },
+        {
+          "code": "370831",
+          "name": "泗水县",
+          "cityCode": "3708",
+          "provinceCode": "37",
+          "lng": 117.245132,
+          "lat": 35.664389
+        },
+        {
+          "code": "370832",
+          "name": "梁山县",
+          "cityCode": "3708",
+          "provinceCode": "37",
+          "lng": 116.090157,
+          "lat": 35.802269
+        },
+        {
+          "code": "370871",
+          "name": "济宁高新技术产业开发区",
+          "cityCode": "3708",
+          "provinceCode": "37",
+          "lng": 116.272668,
+          "lat": 35.096509
+        },
+        {
+          "code": "370881",
+          "name": "曲阜市",
+          "cityCode": "3708",
+          "provinceCode": "37",
+          "lng": 116.980707,
+          "lat": 35.581911
+        },
+        {
+          "code": "370883",
+          "name": "邹城市",
+          "cityCode": "3708",
+          "provinceCode": "37",
+          "lng": 117.001723,
+          "lat": 35.402746
+        }
+      ],
+      "lng": 116.581947,
+      "lat": 35.41555
+    },
+    {
+      "code": "3709",
+      "name": "泰安市",
+      "provinceCode": "37",
+      "areas": [
+        {
+          "code": "370902",
+          "name": "泰山区",
+          "cityCode": "3709",
+          "provinceCode": "37",
+          "lng": 117.129032,
+          "lat": 36.193072
+        },
+        {
+          "code": "370911",
+          "name": "岱岳区",
+          "cityCode": "3709",
+          "provinceCode": "37",
+          "lng": 117.036041,
+          "lat": 36.187321
+        },
+        {
+          "code": "370921",
+          "name": "宁阳县",
+          "cityCode": "3709",
+          "provinceCode": "37",
+          "lng": 116.799964,
+          "lat": 35.758952
+        },
+        {
+          "code": "370923",
+          "name": "东平县",
+          "cityCode": "3709",
+          "provinceCode": "37",
+          "lng": 116.464708,
+          "lat": 35.937065
+        },
+        {
+          "code": "370982",
+          "name": "新泰市",
+          "cityCode": "3709",
+          "provinceCode": "37",
+          "lng": 117.76213,
+          "lat": 35.90945
+        },
+        {
+          "code": "370983",
+          "name": "肥城市",
+          "cityCode": "3709",
+          "provinceCode": "37",
+          "lng": 116.763349,
+          "lat": 36.182449
+        }
+      ],
+      "lng": 117.081932,
+      "lat": 36.19965
+    },
+    {
+      "code": "3710",
+      "name": "威海市",
+      "provinceCode": "37",
+      "areas": [
+        {
+          "code": "371002",
+          "name": "环翠区",
+          "cityCode": "3710",
+          "provinceCode": "37",
+          "lng": 122.118154,
+          "lat": 37.500596
+        },
+        {
+          "code": "371003",
+          "name": "文登区",
+          "cityCode": "3710",
+          "provinceCode": "37",
+          "lng": 122.083237,
+          "lat": 37.195231
+        },
+        {
+          "code": "371071",
+          "name": "威海火炬高技术产业开发区",
+          "cityCode": "3710",
+          "provinceCode": "37",
+          "lng": 122.029262,
+          "lat": 37.520815
+        },
+        {
+          "code": "371072",
+          "name": "威海经济技术开发区",
+          "cityCode": "3710",
+          "provinceCode": "37",
+          "lng": 122.115944,
+          "lat": 37.509568
+        },
+        {
+          "code": "371073",
+          "name": "威海临港经济技术开发区",
+          "cityCode": "3710",
+          "provinceCode": "37",
+          "lng": 122.115944,
+          "lat": 37.509568
+        },
+        {
+          "code": "371082",
+          "name": "荣成市",
+          "cityCode": "3710",
+          "provinceCode": "37",
+          "lng": 122.482286,
+          "lat": 37.163999
+        },
+        {
+          "code": "371083",
+          "name": "乳山市",
+          "cityCode": "3710",
+          "provinceCode": "37",
+          "lng": 121.534792,
+          "lat": 36.919816
+        }
+      ],
+      "lng": 122.115944,
+      "lat": 37.509568
+    },
+    {
+      "code": "3711",
+      "name": "日照市",
+      "provinceCode": "37",
+      "areas": [
+        {
+          "code": "371102",
+          "name": "东港区",
+          "cityCode": "3711",
+          "provinceCode": "37",
+          "lng": 119.456564,
+          "lat": 35.426388
+        },
+        {
+          "code": "371103",
+          "name": "岚山区",
+          "cityCode": "3711",
+          "provinceCode": "37",
+          "lng": 119.313347,
+          "lat": 35.122025
+        },
+        {
+          "code": "371121",
+          "name": "五莲县",
+          "cityCode": "3711",
+          "provinceCode": "37",
+          "lng": 119.208455,
+          "lat": 35.759858
+        },
+        {
+          "code": "371122",
+          "name": "莒县",
+          "cityCode": "3711",
+          "provinceCode": "37",
+          "lng": 118.831552,
+          "lat": 35.580217
+        },
+        {
+          "code": "371171",
+          "name": "日照经济技术开发区",
+          "cityCode": "3711",
+          "provinceCode": "37",
+          "lng": 119.521572,
+          "lat": 35.416788
+        }
+      ],
+      "lng": 119.521572,
+      "lat": 35.416788
+    },
+    {
+      "code": "3713",
+      "name": "临沂市",
+      "provinceCode": "37",
+      "areas": [
+        {
+          "code": "371302",
+          "name": "兰山区",
+          "cityCode": "3713",
+          "provinceCode": "37",
+          "lng": 118.342266,
+          "lat": 35.051766
+        },
+        {
+          "code": "371311",
+          "name": "罗庄区",
+          "cityCode": "3713",
+          "provinceCode": "37",
+          "lng": 118.279086,
+          "lat": 34.997792
+        },
+        {
+          "code": "371312",
+          "name": "河东区",
+          "cityCode": "3713",
+          "provinceCode": "37",
+          "lng": 118.397326,
+          "lat": 35.090233
+        },
+        {
+          "code": "371321",
+          "name": "沂南县",
+          "cityCode": "3713",
+          "provinceCode": "37",
+          "lng": 118.459548,
+          "lat": 35.550113
+        },
+        {
+          "code": "371322",
+          "name": "郯城县",
+          "cityCode": "3713",
+          "provinceCode": "37",
+          "lng": 118.361282,
+          "lat": 34.614391
+        },
+        {
+          "code": "371323",
+          "name": "沂水县",
+          "cityCode": "3713",
+          "provinceCode": "37",
+          "lng": 118.622608,
+          "lat": 35.790675
+        },
+        {
+          "code": "371324",
+          "name": "兰陵县",
+          "cityCode": "3713",
+          "provinceCode": "37",
+          "lng": 118.064959,
+          "lat": 34.858968
+        },
+        {
+          "code": "371325",
+          "name": "费县",
+          "cityCode": "3713",
+          "provinceCode": "37",
+          "lng": 117.97231,
+          "lat": 35.266538
+        },
+        {
+          "code": "371326",
+          "name": "平邑县",
+          "cityCode": "3713",
+          "provinceCode": "37",
+          "lng": 117.609143,
+          "lat": 35.517157
+        },
+        {
+          "code": "371327",
+          "name": "莒南县",
+          "cityCode": "3713",
+          "provinceCode": "37",
+          "lng": 118.82959,
+          "lat": 35.17546
+        },
+        {
+          "code": "371328",
+          "name": "蒙阴县",
+          "cityCode": "3713",
+          "provinceCode": "37",
+          "lng": 117.939343,
+          "lat": 35.7103
+        },
+        {
+          "code": "371329",
+          "name": "临沭县",
+          "cityCode": "3713",
+          "provinceCode": "37",
+          "lng": 118.645388,
+          "lat": 34.920856
+        },
+        {
+          "code": "371371",
+          "name": "临沂高新技术产业开发区",
+          "cityCode": "3713",
+          "provinceCode": "37",
+          "lng": 118.258544,
+          "lat": 34.987992
+        }
+      ],
+      "lng": 118.350721,
+      "lat": 35.104153
+    },
+    {
+      "code": "3714",
+      "name": "德州市",
+      "provinceCode": "37",
+      "areas": [
+        {
+          "code": "371402",
+          "name": "德城区",
+          "cityCode": "3714",
+          "provinceCode": "37",
+          "lng": 116.293838,
+          "lat": 37.450336
+        },
+        {
+          "code": "371403",
+          "name": "陵城区",
+          "cityCode": "3714",
+          "provinceCode": "37",
+          "lng": 116.57065,
+          "lat": 37.335299
+        },
+        {
+          "code": "371422",
+          "name": "宁津县",
+          "cityCode": "3714",
+          "provinceCode": "37",
+          "lng": 116.794579,
+          "lat": 37.651643
+        },
+        {
+          "code": "371423",
+          "name": "庆云县",
+          "cityCode": "3714",
+          "provinceCode": "37",
+          "lng": 117.377762,
+          "lat": 37.773482
+        },
+        {
+          "code": "371424",
+          "name": "临邑县",
+          "cityCode": "3714",
+          "provinceCode": "37",
+          "lng": 116.861378,
+          "lat": 37.189445
+        },
+        {
+          "code": "371425",
+          "name": "齐河县",
+          "cityCode": "3714",
+          "provinceCode": "37",
+          "lng": 116.757194,
+          "lat": 36.783744
+        },
+        {
+          "code": "371426",
+          "name": "平原县",
+          "cityCode": "3714",
+          "provinceCode": "37",
+          "lng": 116.428067,
+          "lat": 37.16462
+        },
+        {
+          "code": "371427",
+          "name": "夏津县",
+          "cityCode": "3714",
+          "provinceCode": "37",
+          "lng": 115.995963,
+          "lat": 36.948117
+        },
+        {
+          "code": "371428",
+          "name": "武城县",
+          "cityCode": "3714",
+          "provinceCode": "37",
+          "lng": 116.063502,
+          "lat": 37.212449
+        },
+        {
+          "code": "371471",
+          "name": "德州天衢新区",
+          "cityCode": "3714",
+          "provinceCode": "37",
+          "lng": 116.353097,
+          "lat": 37.43463
+        },
+        {
+          "code": "371481",
+          "name": "乐陵市",
+          "cityCode": "3714",
+          "provinceCode": "37",
+          "lng": 117.225784,
+          "lat": 37.729404
+        },
+        {
+          "code": "371482",
+          "name": "禹城市",
+          "cityCode": "3714",
+          "provinceCode": "37",
+          "lng": 116.632502,
+          "lat": 36.933616
+        }
+      ],
+      "lng": 117.225784,
+      "lat": 37.729404
+    },
+    {
+      "code": "3715",
+      "name": "聊城市",
+      "provinceCode": "37",
+      "areas": [
+        {
+          "code": "371502",
+          "name": "东昌府区",
+          "cityCode": "3715",
+          "provinceCode": "37",
+          "lng": 116.000787,
+          "lat": 36.412445
+        },
+        {
+          "code": "371503",
+          "name": "茌平区",
+          "cityCode": "3715",
+          "provinceCode": "37",
+          "lng": 116.249356,
+          "lat": 36.580503
+        },
+        {
+          "code": "371521",
+          "name": "阳谷县",
+          "cityCode": "3715",
+          "provinceCode": "37",
+          "lng": 115.786253,
+          "lat": 36.114511
+        },
+        {
+          "code": "371522",
+          "name": "莘县",
+          "cityCode": "3715",
+          "provinceCode": "37",
+          "lng": 115.665551,
+          "lat": 36.233698
+        },
+        {
+          "code": "371524",
+          "name": "东阿县",
+          "cityCode": "3715",
+          "provinceCode": "37",
+          "lng": 116.242357,
+          "lat": 36.33499
+        },
+        {
+          "code": "371525",
+          "name": "冠县",
+          "cityCode": "3715",
+          "provinceCode": "37",
+          "lng": 115.435712,
+          "lat": 36.483967
+        },
+        {
+          "code": "371526",
+          "name": "高唐县",
+          "cityCode": "3715",
+          "provinceCode": "37",
+          "lng": 116.223797,
+          "lat": 36.845738
+        },
+        {
+          "code": "371581",
+          "name": "临清市",
+          "cityCode": "3715",
+          "provinceCode": "37",
+          "lng": 115.699147,
+          "lat": 36.837884
+        }
+      ],
+      "lng": 115.785799,
+      "lat": 36.114615
+    },
+    {
+      "code": "3716",
+      "name": "滨州市",
+      "provinceCode": "37",
+      "areas": [
+        {
+          "code": "371602",
+          "name": "滨城区",
+          "cityCode": "3716",
+          "provinceCode": "37",
+          "lng": 118.013935,
+          "lat": 37.430388
+        },
+        {
+          "code": "371603",
+          "name": "沾化区",
+          "cityCode": "3716",
+          "provinceCode": "37",
+          "lng": 118.092738,
+          "lat": 37.697996
+        },
+        {
+          "code": "371621",
+          "name": "惠民县",
+          "cityCode": "3716",
+          "provinceCode": "37",
+          "lng": 117.503893,
+          "lat": 37.489072
+        },
+        {
+          "code": "371622",
+          "name": "阳信县",
+          "cityCode": "3716",
+          "provinceCode": "37",
+          "lng": 117.597522,
+          "lat": 37.632021
+        },
+        {
+          "code": "371623",
+          "name": "无棣县",
+          "cityCode": "3716",
+          "provinceCode": "37",
+          "lng": 117.619823,
+          "lat": 37.769945
+        },
+        {
+          "code": "371625",
+          "name": "博兴县",
+          "cityCode": "3716",
+          "provinceCode": "37",
+          "lng": 118.104862,
+          "lat": 37.153699
+        },
+        {
+          "code": "371681",
+          "name": "邹平市",
+          "cityCode": "3716",
+          "provinceCode": "37",
+          "lng": 117.736958,
+          "lat": 36.863491
+        }
+      ],
+      "lng": 117.965096,
+      "lat": 37.381249
+    },
+    {
+      "code": "3717",
+      "name": "菏泽市",
+      "provinceCode": "37",
+      "areas": [
+        {
+          "code": "371702",
+          "name": "牡丹区",
+          "cityCode": "3717",
+          "provinceCode": "37",
+          "lng": 115.410997,
+          "lat": 35.251158
+        },
+        {
+          "code": "371703",
+          "name": "定陶区",
+          "cityCode": "3717",
+          "provinceCode": "37",
+          "lng": 115.577463,
+          "lat": 35.105835
+        },
+        {
+          "code": "371721",
+          "name": "曹县",
+          "cityCode": "3717",
+          "provinceCode": "37",
+          "lng": 115.536415,
+          "lat": 34.826615
+        },
+        {
+          "code": "371722",
+          "name": "单县",
+          "cityCode": "3717",
+          "provinceCode": "37",
+          "lng": 116.073008,
+          "lat": 34.782717
+        },
+        {
+          "code": "371723",
+          "name": "成武县",
+          "cityCode": "3717",
+          "provinceCode": "37",
+          "lng": 115.884376,
+          "lat": 34.953713
+        },
+        {
+          "code": "371724",
+          "name": "巨野县",
+          "cityCode": "3717",
+          "provinceCode": "37",
+          "lng": 116.056787,
+          "lat": 35.388728
+        },
+        {
+          "code": "371725",
+          "name": "郓城县",
+          "cityCode": "3717",
+          "provinceCode": "37",
+          "lng": 115.938517,
+          "lat": 35.600094
+        },
+        {
+          "code": "371726",
+          "name": "鄄城县",
+          "cityCode": "3717",
+          "provinceCode": "37",
+          "lng": 115.504229,
+          "lat": 35.563708
+        },
+        {
+          "code": "371728",
+          "name": "东明县",
+          "cityCode": "3717",
+          "provinceCode": "37",
+          "lng": 115.101568,
+          "lat": 35.275917
+        },
+        {
+          "code": "371771",
+          "name": "菏泽经济技术开发区",
+          "cityCode": "3717",
+          "provinceCode": "37",
+          "lng": 115.489774,
+          "lat": 35.236881
+        },
+        {
+          "code": "371772",
+          "name": "菏泽高新技术开发区",
+          "cityCode": "3717",
+          "provinceCode": "37",
+          "lng": 116.073008,
+          "lat": 34.782717
+        }
+      ],
+      "lng": 116.073008,
+      "lat": 34.782717
+    }
+  ]
+}

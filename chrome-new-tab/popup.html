@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>添加到快捷链接</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="popup-shell">
+    <section class="hero-card">
+      <div class="hero-top">
+        <div class="hero-badge">快捷动作</div>
+        <div id="popup-status" class="status status-loading" role="status" aria-live="polite">正在读取当前页面…</div>
+      </div>
+
+      <div class="page-preview">
+        <div class="page-icon" id="page-icon" aria-hidden="true">
+          <img id="page-icon-img" alt="" class="hidden" />
+          <span id="page-icon-fallback">?</span>
+        </div>
+        <div class="page-meta">
+          <div id="page-title" class="page-title">准备中</div>
+          <div id="page-domain" class="page-domain"></div>
+          <div id="page-url" class="page-url"></div>
+        </div>
+      </div>
+
+      <div class="action-card">
+        <div class="action-copy">
+          <div class="action-title">添加当前页面到快捷链接</div>
+          <div class="action-desc">保存标题、链接和图标，后续会直接出现在首页。</div>
+        </div>
+        <button id="add-current-btn" class="primary-btn" disabled>添加</button>
+      </div>
+
+      <div class="reserved-area" aria-hidden="true">
+        <div class="reserved-title">更多功能敬请期待</div>
+        <div class="reserved-desc">更多功能敬请期待</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

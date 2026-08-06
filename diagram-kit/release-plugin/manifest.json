@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "DiagramKit",
+  "version": "1.0.0",
+  "description": "DiagramKit 图形编辑器 — Mermaid / Markmap 编辑、预览、导出",
+  "action": {
+    "default_title": "打开 DiagramKit"
+  },
+  "permissions": ["storage", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

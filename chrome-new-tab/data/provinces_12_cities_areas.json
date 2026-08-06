@@ -1,0 +1,145 @@
+{
+  "province": {
+    "code": "12",
+    "name": "天津市"
+  },
+  "cities": [
+    {
+      "code": "1201",
+      "name": "市辖区",
+      "provinceCode": "12",
+      "areas": [
+        {
+          "code": "120101",
+          "name": "和平区",
+          "cityCode": "1201",
+          "provinceCode": "12",
+          "lng": 117.208372,
+          "lat": 39.115998
+        },
+        {
+          "code": "120102",
+          "name": "河东区",
+          "cityCode": "1201",
+          "provinceCode": "12",
+          "lng": 117.245529,
+          "lat": 39.128081
+        },
+        {
+          "code": "120103",
+          "name": "河西区",
+          "cityCode": "1201",
+          "provinceCode": "12",
+          "lng": 117.217114,
+          "lat": 39.108654
+        },
+        {
+          "code": "120104",
+          "name": "南开区",
+          "cityCode": "1201",
+          "provinceCode": "12",
+          "lng": 117.144284,
+          "lat": 39.137279
+        },
+        {
+          "code": "120105",
+          "name": "河北区",
+          "cityCode": "1201",
+          "provinceCode": "12",
+          "lng": 117.190537,
+          "lat": 39.146826
+        },
+        {
+          "code": "120106",
+          "name": "红桥区",
+          "cityCode": "1201",
+          "provinceCode": "12",
+          "lng": 117.145145,
+          "lat": 39.166211
+        },
+        {
+          "code": "120110",
+          "name": "东丽区",
+          "cityCode": "1201",
+          "provinceCode": "12",
+          "lng": 117.307326,
+          "lat": 39.08581
+        },
+        {
+          "code": "120111",
+          "name": "西青区",
+          "cityCode": "1201",
+          "provinceCode": "12",
+          "lng": 117.002607,
+          "lat": 39.140798
+        },
+        {
+          "code": "120112",
+          "name": "津南区",
+          "cityCode": "1201",
+          "provinceCode": "12",
+          "lng": 117.35013,
+          "lat": 38.935998
+        },
+        {
+          "code": "120113",
+          "name": "北辰区",
+          "cityCode": "1201",
+          "provinceCode": "12",
+          "lng": 117.129656,
+          "lat": 39.223413
+        },
+        {
+          "code": "120114",
+          "name": "武清区",
+          "cityCode": "1201",
+          "provinceCode": "12",
+          "lng": 117.038189,
+          "lat": 39.382872
+        },
+        {
+          "code": "120115",
+          "name": "宝坻区",
+          "cityCode": "1201",
+          "provinceCode": "12",
+          "lng": 117.303386,
+          "lat": 39.716068
+        },
+        {
+          "code": "120116",
+          "name": "滨海新区",
+          "cityCode": "1201",
+          "provinceCode": "12",
+          "lng": 117.690069,
+          "lat": 39.016736
+        },
+        {
+          "code": "120117",
+          "name": "宁河区",
+          "cityCode": "1201",
+          "provinceCode": "12",
+          "lng": 117.820535,
+          "lat": 39.328739
+        },
+        {
+          "code": "120118",
+          "name": "静海区",
+          "cityCode": "1201",
+          "provinceCode": "12",
+          "lng": 116.969475,
+          "lat": 38.946992
+        },
+        {
+          "code": "120119",
+          "name": "蓟州区",
+          "cityCode": "1201",
+          "provinceCode": "12",
+          "lng": 117.401636,
+          "lat": 40.044371
+        }
+      ],
+      "lng": 117.195264,
+      "lat": 39.084253
+    }
+  ]
+}

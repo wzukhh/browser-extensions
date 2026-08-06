@@ -1,0 +1,691 @@
+{
+  "province": {
+    "code": "54",
+    "name": "西藏自治区"
+  },
+  "cities": [
+    {
+      "code": "5401",
+      "name": "拉萨市",
+      "provinceCode": "54",
+      "areas": [
+        {
+          "code": "540102",
+          "name": "城关区",
+          "cityCode": "5401",
+          "provinceCode": "54",
+          "lng": 91.13896,
+          "lat": 29.657463
+        },
+        {
+          "code": "540103",
+          "name": "堆龙德庆区",
+          "cityCode": "5401",
+          "provinceCode": "54",
+          "lng": 91.002018,
+          "lat": 29.648908
+        },
+        {
+          "code": "540104",
+          "name": "达孜区",
+          "cityCode": "5401",
+          "provinceCode": "54",
+          "lng": 91.347993,
+          "lat": 29.672916
+        },
+        {
+          "code": "540121",
+          "name": "林周县",
+          "cityCode": "5401",
+          "provinceCode": "54",
+          "lng": 91.263916,
+          "lat": 29.896395
+        },
+        {
+          "code": "540122",
+          "name": "当雄县",
+          "cityCode": "5401",
+          "provinceCode": "54",
+          "lng": 91.099414,
+          "lat": 30.475738
+        },
+        {
+          "code": "540123",
+          "name": "尼木县",
+          "cityCode": "5401",
+          "provinceCode": "54",
+          "lng": 90.162927,
+          "lat": 29.434595
+        },
+        {
+          "code": "540124",
+          "name": "曲水县",
+          "cityCode": "5401",
+          "provinceCode": "54",
+          "lng": 90.74232,
+          "lat": 29.356011
+        },
+        {
+          "code": "540127",
+          "name": "墨竹工卡县",
+          "cityCode": "5401",
+          "provinceCode": "54",
+          "lng": 91.737886,
+          "lat": 29.853216
+        },
+        {
+          "code": "540171",
+          "name": "格尔木藏青工业园区",
+          "cityCode": "5401",
+          "provinceCode": "54",
+          "lng": 95.089964,
+          "lat": 36.341954
+        },
+        {
+          "code": "540172",
+          "name": "拉萨经济技术开发区",
+          "cityCode": "5401",
+          "provinceCode": "54",
+          "lng": 91.019926,
+          "lat": 29.641965
+        },
+        {
+          "code": "540173",
+          "name": "西藏文化旅游创意园区",
+          "cityCode": "5401",
+          "provinceCode": "54",
+          "lng": 91.133624,
+          "lat": 29.619849
+        },
+        {
+          "code": "540174",
+          "name": "达孜工业园区",
+          "cityCode": "5401",
+          "provinceCode": "54",
+          "lng": 91.348289,
+          "lat": 29.672143
+        }
+      ],
+      "lng": 91.170483,
+      "lat": 29.656245
+    },
+    {
+      "code": "5402",
+      "name": "日喀则市",
+      "provinceCode": "54",
+      "areas": [
+        {
+          "code": "540202",
+          "name": "桑珠孜区",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 88.89635,
+          "lat": 29.251022
+        },
+        {
+          "code": "540221",
+          "name": "南木林县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 89.096881,
+          "lat": 29.684959
+        },
+        {
+          "code": "540222",
+          "name": "江孜县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 89.603811,
+          "lat": 28.915181
+        },
+        {
+          "code": "540223",
+          "name": "定日县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 87.12355,
+          "lat": 28.662106
+        },
+        {
+          "code": "540224",
+          "name": "萨迦县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 88.019232,
+          "lat": 28.902514
+        },
+        {
+          "code": "540225",
+          "name": "拉孜县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 87.63484,
+          "lat": 29.085038
+        },
+        {
+          "code": "540226",
+          "name": "昂仁县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 87.233561,
+          "lat": 29.297889
+        },
+        {
+          "code": "540227",
+          "name": "谢通门县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 88.25929,
+          "lat": 29.435398
+        },
+        {
+          "code": "540228",
+          "name": "白朗县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 89.259568,
+          "lat": 29.110849
+        },
+        {
+          "code": "540229",
+          "name": "仁布县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 89.840185,
+          "lat": 29.234112
+        },
+        {
+          "code": "540230",
+          "name": "康马县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 89.679323,
+          "lat": 28.558064
+        },
+        {
+          "code": "540231",
+          "name": "定结县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 87.763456,
+          "lat": 28.367806
+        },
+        {
+          "code": "540232",
+          "name": "仲巴县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 84.029108,
+          "lat": 29.772866
+        },
+        {
+          "code": "540233",
+          "name": "亚东县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 88.905129,
+          "lat": 27.488614
+        },
+        {
+          "code": "540234",
+          "name": "吉隆县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 85.29532,
+          "lat": 28.855807
+        },
+        {
+          "code": "540235",
+          "name": "聂拉木县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 85.980117,
+          "lat": 28.158943
+        },
+        {
+          "code": "540236",
+          "name": "萨嘎县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 85.231002,
+          "lat": 29.331657
+        },
+        {
+          "code": "540237",
+          "name": "岗巴县",
+          "cityCode": "5402",
+          "provinceCode": "54",
+          "lng": 88.517859,
+          "lat": 28.2782
+        }
+      ],
+      "lng": 88.878357,
+      "lat": 29.270055
+    },
+    {
+      "code": "5403",
+      "name": "昌都市",
+      "provinceCode": "54",
+      "areas": [
+        {
+          "code": "540302",
+          "name": "卡若区",
+          "cityCode": "5403",
+          "provinceCode": "54",
+          "lng": 97.19553,
+          "lat": 31.114472
+        },
+        {
+          "code": "540321",
+          "name": "江达县",
+          "cityCode": "5403",
+          "provinceCode": "54",
+          "lng": 98.217806,
+          "lat": 31.501944
+        },
+        {
+          "code": "540322",
+          "name": "贡觉县",
+          "cityCode": "5403",
+          "provinceCode": "54",
+          "lng": 98.270409,
+          "lat": 30.862713
+        },
+        {
+          "code": "540323",
+          "name": "类乌齐县",
+          "cityCode": "5403",
+          "provinceCode": "54",
+          "lng": 96.600134,
+          "lat": 31.21418
+        },
+        {
+          "code": "540324",
+          "name": "丁青县",
+          "cityCode": "5403",
+          "provinceCode": "54",
+          "lng": 95.61882,
+          "lat": 31.411694
+        },
+        {
+          "code": "540325",
+          "name": "察雅县",
+          "cityCode": "5403",
+          "provinceCode": "54",
+          "lng": 97.568485,
+          "lat": 30.656469
+        },
+        {
+          "code": "540326",
+          "name": "八宿县",
+          "cityCode": "5403",
+          "provinceCode": "54",
+          "lng": 96.917722,
+          "lat": 30.05616
+        },
+        {
+          "code": "540327",
+          "name": "左贡县",
+          "cityCode": "5403",
+          "provinceCode": "54",
+          "lng": 97.840946,
+          "lat": 29.674449
+        },
+        {
+          "code": "540328",
+          "name": "芒康县",
+          "cityCode": "5403",
+          "provinceCode": "54",
+          "lng": 98.592886,
+          "lat": 29.683044
+        },
+        {
+          "code": "540329",
+          "name": "洛隆县",
+          "cityCode": "5403",
+          "provinceCode": "54",
+          "lng": 95.824134,
+          "lat": 30.744555
+        },
+        {
+          "code": "540330",
+          "name": "边坝县",
+          "cityCode": "5403",
+          "provinceCode": "54",
+          "lng": 94.706967,
+          "lat": 30.93605
+        }
+      ],
+      "lng": 97.169904,
+      "lat": 31.145214
+    },
+    {
+      "code": "5404",
+      "name": "林芝市",
+      "provinceCode": "54",
+      "areas": [
+        {
+          "code": "540402",
+          "name": "巴宜区",
+          "cityCode": "5404",
+          "provinceCode": "54",
+          "lng": 94.359947,
+          "lat": 29.639267
+        },
+        {
+          "code": "540421",
+          "name": "工布江达县",
+          "cityCode": "5404",
+          "provinceCode": "54",
+          "lng": 93.244885,
+          "lat": 29.888167
+        },
+        {
+          "code": "540423",
+          "name": "墨脱县",
+          "cityCode": "5404",
+          "provinceCode": "54",
+          "lng": 95.331958,
+          "lat": 29.328121
+        },
+        {
+          "code": "540424",
+          "name": "波密县",
+          "cityCode": "5404",
+          "provinceCode": "54",
+          "lng": 95.766694,
+          "lat": 29.861602
+        },
+        {
+          "code": "540425",
+          "name": "察隅县",
+          "cityCode": "5404",
+          "provinceCode": "54",
+          "lng": 97.466321,
+          "lat": 28.664866
+        },
+        {
+          "code": "540426",
+          "name": "朗县",
+          "cityCode": "5404",
+          "provinceCode": "54",
+          "lng": 93.073481,
+          "lat": 29.049107
+        },
+        {
+          "code": "540481",
+          "name": "米林市",
+          "cityCode": "5404",
+          "provinceCode": "54"
+        }
+      ],
+      "lng": 94.360504,
+      "lat": 29.65161
+    },
+    {
+      "code": "5405",
+      "name": "山南市",
+      "provinceCode": "54",
+      "areas": [
+        {
+          "code": "540502",
+          "name": "乃东区",
+          "cityCode": "5405",
+          "provinceCode": "54",
+          "lng": 91.760185,
+          "lat": 29.227923
+        },
+        {
+          "code": "540521",
+          "name": "扎囊县",
+          "cityCode": "5405",
+          "provinceCode": "54",
+          "lng": 91.335875,
+          "lat": 29.247961
+        },
+        {
+          "code": "540522",
+          "name": "贡嘎县",
+          "cityCode": "5405",
+          "provinceCode": "54",
+          "lng": 90.982811,
+          "lat": 29.292595
+        },
+        {
+          "code": "540523",
+          "name": "桑日县",
+          "cityCode": "5405",
+          "provinceCode": "54",
+          "lng": 92.016489,
+          "lat": 29.262476
+        },
+        {
+          "code": "540524",
+          "name": "琼结县",
+          "cityCode": "5405",
+          "provinceCode": "54",
+          "lng": 91.682523,
+          "lat": 29.027907
+        },
+        {
+          "code": "540525",
+          "name": "曲松县",
+          "cityCode": "5405",
+          "provinceCode": "54",
+          "lng": 92.202664,
+          "lat": 29.065972
+        },
+        {
+          "code": "540526",
+          "name": "措美县",
+          "cityCode": "5405",
+          "provinceCode": "54",
+          "lng": 91.432102,
+          "lat": 28.441352
+        },
+        {
+          "code": "540527",
+          "name": "洛扎县",
+          "cityCode": "5405",
+          "provinceCode": "54",
+          "lng": 90.858828,
+          "lat": 28.389443
+        },
+        {
+          "code": "540528",
+          "name": "加查县",
+          "cityCode": "5405",
+          "provinceCode": "54",
+          "lng": 92.593315,
+          "lat": 29.143546
+        },
+        {
+          "code": "540529",
+          "name": "隆子县",
+          "cityCode": "5405",
+          "provinceCode": "54",
+          "lng": 92.460711,
+          "lat": 28.410282
+        },
+        {
+          "code": "540531",
+          "name": "浪卡子县",
+          "cityCode": "5405",
+          "provinceCode": "54",
+          "lng": 90.396337,
+          "lat": 28.971433
+        },
+        {
+          "code": "540581",
+          "name": "错那市",
+          "cityCode": "5405",
+          "provinceCode": "54"
+        }
+      ],
+      "lng": 91.770509,
+      "lat": 29.240727
+    },
+    {
+      "code": "5406",
+      "name": "那曲市",
+      "provinceCode": "54",
+      "areas": [
+        {
+          "code": "540602",
+          "name": "色尼区",
+          "cityCode": "5406",
+          "provinceCode": "54",
+          "lng": 92.052257,
+          "lat": 31.472008
+        },
+        {
+          "code": "540621",
+          "name": "嘉黎县",
+          "cityCode": "5406",
+          "provinceCode": "54",
+          "lng": 93.231107,
+          "lat": 30.643604
+        },
+        {
+          "code": "540622",
+          "name": "比如县",
+          "cityCode": "5406",
+          "provinceCode": "54",
+          "lng": 93.680082,
+          "lat": 31.480342
+        },
+        {
+          "code": "540623",
+          "name": "聂荣县",
+          "cityCode": "5406",
+          "provinceCode": "54",
+          "lng": 92.301117,
+          "lat": 32.110008
+        },
+        {
+          "code": "540624",
+          "name": "安多县",
+          "cityCode": "5406",
+          "provinceCode": "54",
+          "lng": 91.680714,
+          "lat": 32.267585
+        },
+        {
+          "code": "540625",
+          "name": "申扎县",
+          "cityCode": "5406",
+          "provinceCode": "54",
+          "lng": 88.707588,
+          "lat": 30.933114
+        },
+        {
+          "code": "540626",
+          "name": "索县",
+          "cityCode": "5406",
+          "provinceCode": "54",
+          "lng": 93.784339,
+          "lat": 31.889102
+        },
+        {
+          "code": "540627",
+          "name": "班戈县",
+          "cityCode": "5406",
+          "provinceCode": "54",
+          "lng": 90.007913,
+          "lat": 31.394541
+        },
+        {
+          "code": "540628",
+          "name": "巴青县",
+          "cityCode": "5406",
+          "provinceCode": "54",
+          "lng": 94.052064,
+          "lat": 31.920742
+        },
+        {
+          "code": "540629",
+          "name": "尼玛县",
+          "cityCode": "5406",
+          "provinceCode": "54",
+          "lng": 87.234392,
+          "lat": 31.787152
+        },
+        {
+          "code": "540630",
+          "name": "双湖县",
+          "cityCode": "5406",
+          "provinceCode": "54",
+          "lng": 88.834691,
+          "lat": 33.189877
+        }
+      ],
+      "lng": 92.050216,
+      "lat": 31.480136
+    },
+    {
+      "code": "5425",
+      "name": "阿里地区",
+      "provinceCode": "54",
+      "areas": [
+        {
+          "code": "542521",
+          "name": "普兰县",
+          "cityCode": "5425",
+          "provinceCode": "54",
+          "lng": 81.174608,
+          "lat": 30.293235
+        },
+        {
+          "code": "542522",
+          "name": "札达县",
+          "cityCode": "5425",
+          "provinceCode": "54",
+          "lng": 79.804959,
+          "lat": 31.482383
+        },
+        {
+          "code": "542523",
+          "name": "噶尔县",
+          "cityCode": "5425",
+          "provinceCode": "54",
+          "lng": 80.094198,
+          "lat": 32.493971
+        },
+        {
+          "code": "542524",
+          "name": "日土县",
+          "cityCode": "5425",
+          "provinceCode": "54",
+          "lng": 79.730418,
+          "lat": 33.383512
+        },
+        {
+          "code": "542525",
+          "name": "革吉县",
+          "cityCode": "5425",
+          "provinceCode": "54",
+          "lng": 81.142921,
+          "lat": 32.389404
+        },
+        {
+          "code": "542526",
+          "name": "改则县",
+          "cityCode": "5425",
+          "provinceCode": "54",
+          "lng": 84.054376,
+          "lat": 32.299727
+        },
+        {
+          "code": "542527",
+          "name": "措勤县",
+          "cityCode": "5425",
+          "provinceCode": "54",
+          "lng": 85.150128,
+          "lat": 31.018926
+        }
+      ],
+      "lng": 80.103533,
+      "lat": 32.503544
+    }
+  ]
+}

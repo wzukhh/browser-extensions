@@ -1,0 +1,972 @@
+{
+  "province": {
+    "code": "42",
+    "name": "湖北省"
+  },
+  "cities": [
+    {
+      "code": "4201",
+      "name": "武汉市",
+      "provinceCode": "42",
+      "areas": [
+        {
+          "code": "420102",
+          "name": "江岸区",
+          "cityCode": "4201",
+          "provinceCode": "42",
+          "lng": 114.304549,
+          "lat": 30.602098
+        },
+        {
+          "code": "420103",
+          "name": "江汉区",
+          "cityCode": "4201",
+          "provinceCode": "42",
+          "lng": 114.265492,
+          "lat": 30.603856
+        },
+        {
+          "code": "420104",
+          "name": "硚口区",
+          "cityCode": "4201",
+          "provinceCode": "42",
+          "lng": 114.209534,
+          "lat": 30.583946
+        },
+        {
+          "code": "420105",
+          "name": "汉阳区",
+          "cityCode": "4201",
+          "provinceCode": "42",
+          "lng": 114.21303,
+          "lat": 30.556887
+        },
+        {
+          "code": "420106",
+          "name": "武昌区",
+          "cityCode": "4201",
+          "provinceCode": "42",
+          "lng": 114.310969,
+          "lat": 30.556739
+        },
+        {
+          "code": "420107",
+          "name": "青山区",
+          "cityCode": "4201",
+          "provinceCode": "42",
+          "lng": 114.379448,
+          "lat": 30.642762
+        },
+        {
+          "code": "420111",
+          "name": "洪山区",
+          "cityCode": "4201",
+          "provinceCode": "42",
+          "lng": 114.338502,
+          "lat": 30.50247
+        },
+        {
+          "code": "420112",
+          "name": "东西湖区",
+          "cityCode": "4201",
+          "provinceCode": "42",
+          "lng": 114.131322,
+          "lat": 30.621998
+        },
+        {
+          "code": "420113",
+          "name": "汉南区",
+          "cityCode": "4201",
+          "provinceCode": "42",
+          "lng": 114.078877,
+          "lat": 30.311183
+        },
+        {
+          "code": "420114",
+          "name": "蔡甸区",
+          "cityCode": "4201",
+          "provinceCode": "42",
+          "lng": 114.081617,
+          "lat": 30.538759
+        },
+        {
+          "code": "420115",
+          "name": "江夏区",
+          "cityCode": "4201",
+          "provinceCode": "42",
+          "lng": 114.316549,
+          "lat": 30.378139
+        },
+        {
+          "code": "420116",
+          "name": "黄陂区",
+          "cityCode": "4201",
+          "provinceCode": "42",
+          "lng": 114.370432,
+          "lat": 30.883445
+        },
+        {
+          "code": "420117",
+          "name": "新洲区",
+          "cityCode": "4201",
+          "provinceCode": "42",
+          "lng": 114.796034,
+          "lat": 30.84384
+        }
+      ],
+      "lng": 114.299728,
+      "lat": 30.595346
+    },
+    {
+      "code": "4202",
+      "name": "黄石市",
+      "provinceCode": "42",
+      "areas": [
+        {
+          "code": "420202",
+          "name": "黄石港区",
+          "cityCode": "4202",
+          "provinceCode": "42",
+          "lng": 115.060173,
+          "lat": 30.225762
+        },
+        {
+          "code": "420203",
+          "name": "西塞山区",
+          "cityCode": "4202",
+          "provinceCode": "42",
+          "lng": 115.104514,
+          "lat": 30.207048
+        },
+        {
+          "code": "420204",
+          "name": "下陆区",
+          "cityCode": "4202",
+          "provinceCode": "42",
+          "lng": 114.955881,
+          "lat": 30.176343
+        },
+        {
+          "code": "420205",
+          "name": "铁山区",
+          "cityCode": "4202",
+          "provinceCode": "42",
+          "lng": 114.895975,
+          "lat": 30.209318
+        },
+        {
+          "code": "420222",
+          "name": "阳新县",
+          "cityCode": "4202",
+          "provinceCode": "42",
+          "lng": 115.210253,
+          "lat": 29.833045
+        },
+        {
+          "code": "420281",
+          "name": "大冶市",
+          "cityCode": "4202",
+          "provinceCode": "42",
+          "lng": 114.974734,
+          "lat": 30.098568
+        }
+      ],
+      "lng": 115.033555,
+      "lat": 30.203444
+    },
+    {
+      "code": "4203",
+      "name": "十堰市",
+      "provinceCode": "42",
+      "areas": [
+        {
+          "code": "420302",
+          "name": "茅箭区",
+          "cityCode": "4203",
+          "provinceCode": "42",
+          "lng": 110.80844,
+          "lat": 32.594105
+        },
+        {
+          "code": "420303",
+          "name": "张湾区",
+          "cityCode": "4203",
+          "provinceCode": "42",
+          "lng": 110.763663,
+          "lat": 32.654247
+        },
+        {
+          "code": "420304",
+          "name": "郧阳区",
+          "cityCode": "4203",
+          "provinceCode": "42",
+          "lng": 110.806586,
+          "lat": 32.836943
+        },
+        {
+          "code": "420322",
+          "name": "郧西县",
+          "cityCode": "4203",
+          "provinceCode": "42",
+          "lng": 110.420511,
+          "lat": 32.995026
+        },
+        {
+          "code": "420323",
+          "name": "竹山县",
+          "cityCode": "4203",
+          "provinceCode": "42",
+          "lng": 110.223992,
+          "lat": 32.227013
+        },
+        {
+          "code": "420324",
+          "name": "竹溪县",
+          "cityCode": "4203",
+          "provinceCode": "42",
+          "lng": 109.710033,
+          "lat": 32.321061
+        },
+        {
+          "code": "420325",
+          "name": "房县",
+          "cityCode": "4203",
+          "provinceCode": "42",
+          "lng": 110.721829,
+          "lat": 32.042884
+        },
+        {
+          "code": "420381",
+          "name": "丹江口市",
+          "cityCode": "4203",
+          "provinceCode": "42",
+          "lng": 111.50744,
+          "lat": 32.542493
+        }
+      ],
+      "lng": 110.79268,
+      "lat": 32.63139
+    },
+    {
+      "code": "4205",
+      "name": "宜昌市",
+      "provinceCode": "42",
+      "areas": [
+        {
+          "code": "420502",
+          "name": "西陵区",
+          "cityCode": "4205",
+          "provinceCode": "42",
+          "lng": 111.280224,
+          "lat": 30.713222
+        },
+        {
+          "code": "420503",
+          "name": "伍家岗区",
+          "cityCode": "4205",
+          "provinceCode": "42",
+          "lng": 111.354969,
+          "lat": 30.646296
+        },
+        {
+          "code": "420504",
+          "name": "点军区",
+          "cityCode": "4205",
+          "provinceCode": "42",
+          "lng": 111.262667,
+          "lat": 30.695871
+        },
+        {
+          "code": "420505",
+          "name": "猇亭区",
+          "cityCode": "4205",
+          "provinceCode": "42",
+          "lng": 111.429104,
+          "lat": 30.533064
+        },
+        {
+          "code": "420506",
+          "name": "夷陵区",
+          "cityCode": "4205",
+          "provinceCode": "42",
+          "lng": 111.32023,
+          "lat": 30.771233
+        },
+        {
+          "code": "420525",
+          "name": "远安县",
+          "cityCode": "4205",
+          "provinceCode": "42",
+          "lng": 111.634705,
+          "lat": 31.063725
+        },
+        {
+          "code": "420526",
+          "name": "兴山县",
+          "cityCode": "4205",
+          "provinceCode": "42",
+          "lng": 110.741708,
+          "lat": 31.350235
+        },
+        {
+          "code": "420527",
+          "name": "秭归县",
+          "cityCode": "4205",
+          "provinceCode": "42",
+          "lng": 110.972378,
+          "lat": 30.828245
+        },
+        {
+          "code": "420528",
+          "name": "长阳土家族自治县",
+          "cityCode": "4205",
+          "provinceCode": "42",
+          "lng": 111.20159,
+          "lat": 30.475173
+        },
+        {
+          "code": "420529",
+          "name": "五峰土家族自治县",
+          "cityCode": "4205",
+          "provinceCode": "42",
+          "lng": 111.040468,
+          "lat": 30.167863
+        },
+        {
+          "code": "420581",
+          "name": "宜都市",
+          "cityCode": "4205",
+          "provinceCode": "42",
+          "lng": 111.444318,
+          "lat": 30.38077
+        },
+        {
+          "code": "420582",
+          "name": "当阳市",
+          "cityCode": "4205",
+          "provinceCode": "42",
+          "lng": 111.782543,
+          "lat": 30.823595
+        },
+        {
+          "code": "420583",
+          "name": "枝江市",
+          "cityCode": "4205",
+          "provinceCode": "42",
+          "lng": 111.754443,
+          "lat": 30.428559
+        }
+      ],
+      "lng": 111.281415,
+      "lat": 30.695029
+    },
+    {
+      "code": "4206",
+      "name": "襄阳市",
+      "provinceCode": "42",
+      "areas": [
+        {
+          "code": "420602",
+          "name": "襄城区",
+          "cityCode": "4206",
+          "provinceCode": "42",
+          "lng": 112.127996,
+          "lat": 32.011869
+        },
+        {
+          "code": "420606",
+          "name": "樊城区",
+          "cityCode": "4206",
+          "provinceCode": "42",
+          "lng": 112.129237,
+          "lat": 32.04697
+        },
+        {
+          "code": "420607",
+          "name": "襄州区",
+          "cityCode": "4206",
+          "provinceCode": "42",
+          "lng": 112.205886,
+          "lat": 32.090357
+        },
+        {
+          "code": "420624",
+          "name": "南漳县",
+          "cityCode": "4206",
+          "provinceCode": "42",
+          "lng": 111.833363,
+          "lat": 31.77684
+        },
+        {
+          "code": "420625",
+          "name": "谷城县",
+          "cityCode": "4206",
+          "provinceCode": "42",
+          "lng": 111.647399,
+          "lat": 32.265753
+        },
+        {
+          "code": "420626",
+          "name": "保康县",
+          "cityCode": "4206",
+          "provinceCode": "42",
+          "lng": 111.25571,
+          "lat": 31.879742
+        },
+        {
+          "code": "420682",
+          "name": "老河口市",
+          "cityCode": "4206",
+          "provinceCode": "42",
+          "lng": 111.677993,
+          "lat": 32.361326
+        },
+        {
+          "code": "420683",
+          "name": "枣阳市",
+          "cityCode": "4206",
+          "provinceCode": "42",
+          "lng": 112.766066,
+          "lat": 32.130968
+        },
+        {
+          "code": "420684",
+          "name": "宜城市",
+          "cityCode": "4206",
+          "provinceCode": "42",
+          "lng": 112.250933,
+          "lat": 31.722674
+        }
+      ],
+      "lng": 112.149128,
+      "lat": 32.048902
+    },
+    {
+      "code": "4207",
+      "name": "鄂州市",
+      "provinceCode": "42",
+      "areas": [
+        {
+          "code": "420702",
+          "name": "梁子湖区",
+          "cityCode": "4207",
+          "provinceCode": "42",
+          "lng": 114.679705,
+          "lat": 30.10277
+        },
+        {
+          "code": "420703",
+          "name": "华容区",
+          "cityCode": "4207",
+          "provinceCode": "42",
+          "lng": 114.724907,
+          "lat": 30.537415
+        },
+        {
+          "code": "420704",
+          "name": "鄂城区",
+          "cityCode": "4207",
+          "provinceCode": "42",
+          "lng": 114.886527,
+          "lat": 30.403236
+        }
+      ],
+      "lng": 114.889915,
+      "lat": 30.393816
+    },
+    {
+      "code": "4208",
+      "name": "荆门市",
+      "provinceCode": "42",
+      "areas": [
+        {
+          "code": "420802",
+          "name": "东宝区",
+          "cityCode": "4208",
+          "provinceCode": "42",
+          "lng": 112.195409,
+          "lat": 31.054031
+        },
+        {
+          "code": "420804",
+          "name": "掇刀区",
+          "cityCode": "4208",
+          "provinceCode": "42",
+          "lng": 112.202194,
+          "lat": 30.975863
+        },
+        {
+          "code": "420822",
+          "name": "沙洋县",
+          "cityCode": "4208",
+          "provinceCode": "42",
+          "lng": 112.583014,
+          "lat": 30.711799
+        },
+        {
+          "code": "420881",
+          "name": "钟祥市",
+          "cityCode": "4208",
+          "provinceCode": "42",
+          "lng": 112.582434,
+          "lat": 31.170364
+        },
+        {
+          "code": "420882",
+          "name": "京山市",
+          "cityCode": "4208",
+          "provinceCode": "42",
+          "lng": 113.113877,
+          "lat": 31.02058
+        }
+      ],
+      "lng": 112.193221,
+      "lat": 31.037652
+    },
+    {
+      "code": "4209",
+      "name": "孝感市",
+      "provinceCode": "42",
+      "areas": [
+        {
+          "code": "420902",
+          "name": "孝南区",
+          "cityCode": "4209",
+          "provinceCode": "42",
+          "lng": 113.905498,
+          "lat": 30.919182
+        },
+        {
+          "code": "420921",
+          "name": "孝昌县",
+          "cityCode": "4209",
+          "provinceCode": "42",
+          "lng": 113.991859,
+          "lat": 31.260333
+        },
+        {
+          "code": "420922",
+          "name": "大悟县",
+          "cityCode": "4209",
+          "provinceCode": "42",
+          "lng": 114.121214,
+          "lat": 31.56277
+        },
+        {
+          "code": "420923",
+          "name": "云梦县",
+          "cityCode": "4209",
+          "provinceCode": "42",
+          "lng": 113.747024,
+          "lat": 31.023798
+        },
+        {
+          "code": "420981",
+          "name": "应城市",
+          "cityCode": "4209",
+          "provinceCode": "42",
+          "lng": 113.567301,
+          "lat": 30.930773
+        },
+        {
+          "code": "420982",
+          "name": "安陆市",
+          "cityCode": "4209",
+          "provinceCode": "42",
+          "lng": 113.683533,
+          "lat": 31.257626
+        },
+        {
+          "code": "420984",
+          "name": "汉川市",
+          "cityCode": "4209",
+          "provinceCode": "42",
+          "lng": 113.832535,
+          "lat": 30.676576
+        }
+      ],
+      "lng": 113.951451,
+      "lat": 30.920743
+    },
+    {
+      "code": "4210",
+      "name": "荆州市",
+      "provinceCode": "42",
+      "areas": [
+        {
+          "code": "421002",
+          "name": "沙市区",
+          "cityCode": "4210",
+          "provinceCode": "42",
+          "lng": 112.246343,
+          "lat": 30.328572
+        },
+        {
+          "code": "421003",
+          "name": "荆州区",
+          "cityCode": "4210",
+          "provinceCode": "42",
+          "lng": 112.184495,
+          "lat": 30.355482
+        },
+        {
+          "code": "421022",
+          "name": "公安县",
+          "cityCode": "4210",
+          "provinceCode": "42",
+          "lng": 112.223993,
+          "lat": 30.061156
+        },
+        {
+          "code": "421024",
+          "name": "江陵县",
+          "cityCode": "4210",
+          "provinceCode": "42",
+          "lng": 112.419133,
+          "lat": 30.044198
+        },
+        {
+          "code": "421071",
+          "name": "荆州经济技术开发区",
+          "cityCode": "4210",
+          "provinceCode": "42",
+          "lng": 112.184495,
+          "lat": 30.355482
+        },
+        {
+          "code": "421081",
+          "name": "石首市",
+          "cityCode": "4210",
+          "provinceCode": "42",
+          "lng": 112.419648,
+          "lat": 29.723184
+        },
+        {
+          "code": "421083",
+          "name": "洪湖市",
+          "cityCode": "4210",
+          "provinceCode": "42",
+          "lng": 113.470091,
+          "lat": 29.82949
+        },
+        {
+          "code": "421087",
+          "name": "松滋市",
+          "cityCode": "4210",
+          "provinceCode": "42",
+          "lng": 111.761245,
+          "lat": 30.172184
+        },
+        {
+          "code": "421088",
+          "name": "监利市",
+          "cityCode": "4210",
+          "provinceCode": "42"
+        }
+      ],
+      "lng": 112.235985,
+      "lat": 30.338665
+    },
+    {
+      "code": "4211",
+      "name": "黄冈市",
+      "provinceCode": "42",
+      "areas": [
+        {
+          "code": "421102",
+          "name": "黄州区",
+          "cityCode": "4211",
+          "provinceCode": "42",
+          "lng": 114.874923,
+          "lat": 30.436974
+        },
+        {
+          "code": "421121",
+          "name": "团风县",
+          "cityCode": "4211",
+          "provinceCode": "42",
+          "lng": 114.867012,
+          "lat": 30.646146
+        },
+        {
+          "code": "421122",
+          "name": "红安县",
+          "cityCode": "4211",
+          "provinceCode": "42",
+          "lng": 114.613046,
+          "lat": 31.29039
+        },
+        {
+          "code": "421123",
+          "name": "罗田县",
+          "cityCode": "4211",
+          "provinceCode": "42",
+          "lng": 115.393429,
+          "lat": 30.785272
+        },
+        {
+          "code": "421124",
+          "name": "英山县",
+          "cityCode": "4211",
+          "provinceCode": "42",
+          "lng": 115.676213,
+          "lat": 30.737634
+        },
+        {
+          "code": "421125",
+          "name": "浠水县",
+          "cityCode": "4211",
+          "provinceCode": "42",
+          "lng": 115.259673,
+          "lat": 30.454289
+        },
+        {
+          "code": "421126",
+          "name": "蕲春县",
+          "cityCode": "4211",
+          "provinceCode": "42",
+          "lng": 115.430508,
+          "lat": 30.228565
+        },
+        {
+          "code": "421127",
+          "name": "黄梅县",
+          "cityCode": "4211",
+          "provinceCode": "42",
+          "lng": 115.939389,
+          "lat": 30.073118
+        },
+        {
+          "code": "421171",
+          "name": "龙感湖管理区",
+          "cityCode": "4211",
+          "provinceCode": "42",
+          "lng": 115.998205,
+          "lat": 29.876943
+        },
+        {
+          "code": "421181",
+          "name": "麻城市",
+          "cityCode": "4211",
+          "provinceCode": "42",
+          "lng": 115.00253,
+          "lat": 31.175029
+        },
+        {
+          "code": "421182",
+          "name": "武穴市",
+          "cityCode": "4211",
+          "provinceCode": "42",
+          "lng": 115.590412,
+          "lat": 29.872321
+        }
+      ],
+      "lng": 114.867318,
+      "lat": 30.456513
+    },
+    {
+      "code": "4212",
+      "name": "咸宁市",
+      "provinceCode": "42",
+      "areas": [
+        {
+          "code": "421202",
+          "name": "咸安区",
+          "cityCode": "4212",
+          "provinceCode": "42",
+          "lng": 114.293014,
+          "lat": 29.855133
+        },
+        {
+          "code": "421221",
+          "name": "嘉鱼县",
+          "cityCode": "4212",
+          "provinceCode": "42",
+          "lng": 113.933904,
+          "lat": 29.973204
+        },
+        {
+          "code": "421222",
+          "name": "通城县",
+          "cityCode": "4212",
+          "provinceCode": "42",
+          "lng": 113.811363,
+          "lat": 29.248443
+        },
+        {
+          "code": "421223",
+          "name": "崇阳县",
+          "cityCode": "4212",
+          "provinceCode": "42",
+          "lng": 114.033865,
+          "lat": 29.559263
+        },
+        {
+          "code": "421224",
+          "name": "通山县",
+          "cityCode": "4212",
+          "provinceCode": "42",
+          "lng": 114.47743,
+          "lat": 29.608921
+        },
+        {
+          "code": "421281",
+          "name": "赤壁市",
+          "cityCode": "4212",
+          "provinceCode": "42",
+          "lng": 113.894636,
+          "lat": 29.728387
+        }
+      ],
+      "lng": 114.316594,
+      "lat": 29.843666
+    },
+    {
+      "code": "4213",
+      "name": "随州市",
+      "provinceCode": "42",
+      "areas": [
+        {
+          "code": "421303",
+          "name": "曾都区",
+          "cityCode": "4213",
+          "provinceCode": "42",
+          "lng": 113.364793,
+          "lat": 31.717987
+        },
+        {
+          "code": "421321",
+          "name": "随县",
+          "cityCode": "4213",
+          "provinceCode": "42",
+          "lng": 113.284617,
+          "lat": 31.885751
+        },
+        {
+          "code": "421381",
+          "name": "广水市",
+          "cityCode": "4213",
+          "provinceCode": "42",
+          "lng": 113.820286,
+          "lat": 31.619114
+        }
+      ],
+      "lng": 113.376782,
+      "lat": 31.692174
+    },
+    {
+      "code": "4228",
+      "name": "恩施土家族苗族自治州",
+      "provinceCode": "42",
+      "areas": [
+        {
+          "code": "422801",
+          "name": "恩施市",
+          "cityCode": "4228",
+          "provinceCode": "42",
+          "lng": 109.474675,
+          "lat": 30.29749
+        },
+        {
+          "code": "422802",
+          "name": "利川市",
+          "cityCode": "4228",
+          "provinceCode": "42",
+          "lng": 108.932109,
+          "lat": 30.293761
+        },
+        {
+          "code": "422822",
+          "name": "建始县",
+          "cityCode": "4228",
+          "provinceCode": "42",
+          "lng": 109.717273,
+          "lat": 30.604842
+        },
+        {
+          "code": "422823",
+          "name": "巴东县",
+          "cityCode": "4228",
+          "provinceCode": "42",
+          "lng": 110.335634,
+          "lat": 31.044425
+        },
+        {
+          "code": "422825",
+          "name": "宣恩县",
+          "cityCode": "4228",
+          "provinceCode": "42",
+          "lng": 109.484925,
+          "lat": 29.989434
+        },
+        {
+          "code": "422826",
+          "name": "咸丰县",
+          "cityCode": "4228",
+          "provinceCode": "42",
+          "lng": 109.135076,
+          "lat": 29.667865
+        },
+        {
+          "code": "422827",
+          "name": "来凤县",
+          "cityCode": "4228",
+          "provinceCode": "42",
+          "lng": 109.402482,
+          "lat": 29.496096
+        },
+        {
+          "code": "422828",
+          "name": "鹤峰县",
+          "cityCode": "4228",
+          "provinceCode": "42",
+          "lng": 110.029047,
+          "lat": 29.892562
+        }
+      ],
+      "lng": 109.483129,
+      "lat": 30.27477
+    },
+    {
+      "code": "4290",
+      "name": "省直辖县级行政区划",
+      "provinceCode": "42",
+      "areas": [
+        {
+          "code": "429004",
+          "name": "仙桃市",
+          "cityCode": "4290",
+          "provinceCode": "42",
+          "lng": 113.437042,
+          "lat": 30.330106
+        },
+        {
+          "code": "429005",
+          "name": "潜江市",
+          "cityCode": "4290",
+          "provinceCode": "42",
+          "lng": 112.891283,
+          "lat": 30.423934
+        },
+        {
+          "code": "429006",
+          "name": "天门市",
+          "cityCode": "4290",
+          "provinceCode": "42",
+          "lng": 111.024935,
+          "lat": 32.427275
+        },
+        {
+          "code": "429021",
+          "name": "神农架林区",
+          "cityCode": "4290",
+          "provinceCode": "42",
+          "lng": 114.265874,
+          "lat": 30.594827
+        }
+      ],
+      "lng": 112.184495,
+      "lat": 30.355482
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "LAN 文件传输",
+  "version": "1.0.0",
+  "description": "扫码即可在电脑和手机之间互相传输文件，所有数据仅在局域网内传输",
+  "author": "",
+  "homepage_url": "https://github.com/wzukhh/browser-plugin",
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "action": {
+    "default_title": "LAN 文件传输",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+
+  "permissions": [
+    "nativeMessaging"
+  ],
+
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjZLA+qjw+q5r9UNZfhndIsMGq0iZpjxM3CRxD0CLBZOej53yfEk6gUP7KJK3AU0a62JyvIUb1E8iePW/2vJPAx4Fg7efYq+Ao2mMczhqbUzDPtkjovsONNFQpvWk8EHtEJmrMLV25PKrT5bGwreZSJQpYEsbF+nt9EfgSG4rsA5vLSGXKzU1vz9bkPH6IT1zNJ9+Yu04fkl5m7c1H3fXsKsV50NMTQqAuPbTnHQSUY/GyfX3HlHBcBnMPzJSLsZeCiW+DPEY62Fpw6jFbVSrQp5mAxbQmwMX0TPoKKZw/qrYPAPT2L6pZk7fU+qG0h5TPLxP/O61PHpOObgTGhoV2wIDAQAB"
+}

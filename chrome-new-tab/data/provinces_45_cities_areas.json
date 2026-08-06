@@ -1,0 +1,1020 @@
+{
+  "province": {
+    "code": "45",
+    "name": "广西壮族自治区"
+  },
+  "cities": [
+    {
+      "code": "4501",
+      "name": "南宁市",
+      "provinceCode": "45",
+      "areas": [
+        {
+          "code": "450102",
+          "name": "兴宁区",
+          "cityCode": "4501",
+          "provinceCode": "45",
+          "lng": 108.36401,
+          "lat": 22.856235
+        },
+        {
+          "code": "450103",
+          "name": "青秀区",
+          "cityCode": "4501",
+          "provinceCode": "45",
+          "lng": 108.491307,
+          "lat": 22.78874
+        },
+        {
+          "code": "450105",
+          "name": "江南区",
+          "cityCode": "4501",
+          "provinceCode": "45",
+          "lng": 108.269005,
+          "lat": 22.78482
+        },
+        {
+          "code": "450107",
+          "name": "西乡塘区",
+          "cityCode": "4501",
+          "provinceCode": "45",
+          "lng": 108.309024,
+          "lat": 22.836674
+        },
+        {
+          "code": "450108",
+          "name": "良庆区",
+          "cityCode": "4501",
+          "provinceCode": "45",
+          "lng": 108.389282,
+          "lat": 22.756551
+        },
+        {
+          "code": "450109",
+          "name": "邕宁区",
+          "cityCode": "4501",
+          "provinceCode": "45",
+          "lng": 108.483848,
+          "lat": 22.761627
+        },
+        {
+          "code": "450110",
+          "name": "武鸣区",
+          "cityCode": "4501",
+          "provinceCode": "45",
+          "lng": 108.27088,
+          "lat": 23.161919
+        },
+        {
+          "code": "450123",
+          "name": "隆安县",
+          "cityCode": "4501",
+          "provinceCode": "45",
+          "lng": 107.691735,
+          "lat": 23.169174
+        },
+        {
+          "code": "450124",
+          "name": "马山县",
+          "cityCode": "4501",
+          "provinceCode": "45",
+          "lng": 108.172855,
+          "lat": 23.710741
+        },
+        {
+          "code": "450125",
+          "name": "上林县",
+          "cityCode": "4501",
+          "provinceCode": "45",
+          "lng": 108.601397,
+          "lat": 23.435256
+        },
+        {
+          "code": "450126",
+          "name": "宾阳县",
+          "cityCode": "4501",
+          "provinceCode": "45",
+          "lng": 108.806213,
+          "lat": 23.220929
+        },
+        {
+          "code": "450181",
+          "name": "横州市",
+          "cityCode": "4501",
+          "provinceCode": "45"
+        }
+      ],
+      "lng": 108.362928,
+      "lat": 22.818985
+    },
+    {
+      "code": "4502",
+      "name": "柳州市",
+      "provinceCode": "45",
+      "areas": [
+        {
+          "code": "450202",
+          "name": "城中区",
+          "cityCode": "4502",
+          "provinceCode": "45",
+          "lng": 109.422795,
+          "lat": 24.369676
+        },
+        {
+          "code": "450203",
+          "name": "鱼峰区",
+          "cityCode": "4502",
+          "provinceCode": "45",
+          "lng": 109.448203,
+          "lat": 24.321054
+        },
+        {
+          "code": "450204",
+          "name": "柳南区",
+          "cityCode": "4502",
+          "provinceCode": "45",
+          "lng": 109.380918,
+          "lat": 24.338885
+        },
+        {
+          "code": "450205",
+          "name": "柳北区",
+          "cityCode": "4502",
+          "provinceCode": "45",
+          "lng": 109.397425,
+          "lat": 24.365392
+        },
+        {
+          "code": "450206",
+          "name": "柳江区",
+          "cityCode": "4502",
+          "provinceCode": "45",
+          "lng": 109.321868,
+          "lat": 24.258144
+        },
+        {
+          "code": "450222",
+          "name": "柳城县",
+          "cityCode": "4502",
+          "provinceCode": "45",
+          "lng": 109.240649,
+          "lat": 24.653524
+        },
+        {
+          "code": "450223",
+          "name": "鹿寨县",
+          "cityCode": "4502",
+          "provinceCode": "45",
+          "lng": 109.74603,
+          "lat": 24.475802
+        },
+        {
+          "code": "450224",
+          "name": "融安县",
+          "cityCode": "4502",
+          "provinceCode": "45",
+          "lng": 109.392968,
+          "lat": 25.227342
+        },
+        {
+          "code": "450225",
+          "name": "融水苗族自治县",
+          "cityCode": "4502",
+          "provinceCode": "45",
+          "lng": 109.251619,
+          "lat": 25.069283
+        },
+        {
+          "code": "450226",
+          "name": "三江侗族自治县",
+          "cityCode": "4502",
+          "provinceCode": "45",
+          "lng": 109.60365,
+          "lat": 25.786328
+        }
+      ],
+      "lng": 109.4234,
+      "lat": 24.328401
+    },
+    {
+      "code": "4503",
+      "name": "桂林市",
+      "provinceCode": "45",
+      "areas": [
+        {
+          "code": "450302",
+          "name": "秀峰区",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 110.259717,
+          "lat": 25.276775
+        },
+        {
+          "code": "450303",
+          "name": "叠彩区",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 110.296908,
+          "lat": 25.316937
+        },
+        {
+          "code": "450304",
+          "name": "象山区",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 110.27643,
+          "lat": 25.264446
+        },
+        {
+          "code": "450305",
+          "name": "七星区",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 110.312988,
+          "lat": 25.255766
+        },
+        {
+          "code": "450311",
+          "name": "雁山区",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 110.304392,
+          "lat": 25.063015
+        },
+        {
+          "code": "450312",
+          "name": "临桂区",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 110.207903,
+          "lat": 25.241428
+        },
+        {
+          "code": "450321",
+          "name": "阳朔县",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 110.491863,
+          "lat": 24.781682
+        },
+        {
+          "code": "450323",
+          "name": "灵川县",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 110.315255,
+          "lat": 25.397622
+        },
+        {
+          "code": "450324",
+          "name": "全州县",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 111.081755,
+          "lat": 25.952115
+        },
+        {
+          "code": "450325",
+          "name": "兴安县",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 110.667062,
+          "lat": 25.615076
+        },
+        {
+          "code": "450326",
+          "name": "永福县",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 109.978627,
+          "lat": 24.982858
+        },
+        {
+          "code": "450327",
+          "name": "灌阳县",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 111.155737,
+          "lat": 25.492077
+        },
+        {
+          "code": "450328",
+          "name": "龙胜各族自治县",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 110.006395,
+          "lat": 25.801117
+        },
+        {
+          "code": "450329",
+          "name": "资源县",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 110.648054,
+          "lat": 26.045839
+        },
+        {
+          "code": "450330",
+          "name": "平乐县",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 110.638501,
+          "lat": 24.636357
+        },
+        {
+          "code": "450332",
+          "name": "恭城瑶族自治县",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 110.823295,
+          "lat": 24.834492
+        },
+        {
+          "code": "450381",
+          "name": "荔浦市",
+          "cityCode": "4503",
+          "provinceCode": "45",
+          "lng": 110.390206,
+          "lat": 24.491262
+        }
+      ],
+      "lng": 110.175113,
+      "lat": 25.238449
+    },
+    {
+      "code": "4504",
+      "name": "梧州市",
+      "provinceCode": "45",
+      "areas": [
+        {
+          "code": "450403",
+          "name": "万秀区",
+          "cityCode": "4504",
+          "provinceCode": "45",
+          "lng": 111.312919,
+          "lat": 23.472969
+        },
+        {
+          "code": "450405",
+          "name": "长洲区",
+          "cityCode": "4504",
+          "provinceCode": "45",
+          "lng": 111.269509,
+          "lat": 23.488345
+        },
+        {
+          "code": "450406",
+          "name": "龙圩区",
+          "cityCode": "4504",
+          "provinceCode": "45",
+          "lng": 111.235178,
+          "lat": 23.409823
+        },
+        {
+          "code": "450421",
+          "name": "苍梧县",
+          "cityCode": "4504",
+          "provinceCode": "45",
+          "lng": 111.543895,
+          "lat": 23.843095
+        },
+        {
+          "code": "450422",
+          "name": "藤县",
+          "cityCode": "4504",
+          "provinceCode": "45",
+          "lng": 110.910407,
+          "lat": 23.377904
+        },
+        {
+          "code": "450423",
+          "name": "蒙山县",
+          "cityCode": "4504",
+          "provinceCode": "45",
+          "lng": 110.520452,
+          "lat": 24.196336
+        },
+        {
+          "code": "450481",
+          "name": "岑溪市",
+          "cityCode": "4504",
+          "provinceCode": "45",
+          "lng": 110.989878,
+          "lat": 22.921314
+        }
+      ],
+      "lng": 111.273892,
+      "lat": 23.479492
+    },
+    {
+      "code": "4505",
+      "name": "北海市",
+      "provinceCode": "45",
+      "areas": [
+        {
+          "code": "450502",
+          "name": "海城区",
+          "cityCode": "4505",
+          "provinceCode": "45",
+          "lng": 109.11304,
+          "lat": 21.477381
+        },
+        {
+          "code": "450503",
+          "name": "银海区",
+          "cityCode": "4505",
+          "provinceCode": "45",
+          "lng": 109.135477,
+          "lat": 21.452167
+        },
+        {
+          "code": "450512",
+          "name": "铁山港区",
+          "cityCode": "4505",
+          "provinceCode": "45",
+          "lng": 109.417042,
+          "lat": 21.53157
+        },
+        {
+          "code": "450521",
+          "name": "合浦县",
+          "cityCode": "4505",
+          "provinceCode": "45",
+          "lng": 109.203011,
+          "lat": 21.663875
+        }
+      ],
+      "lng": 109.115951,
+      "lat": 21.483644
+    },
+    {
+      "code": "4506",
+      "name": "防城港市",
+      "provinceCode": "45",
+      "areas": [
+        {
+          "code": "450602",
+          "name": "港口区",
+          "cityCode": "4506",
+          "provinceCode": "45",
+          "lng": 108.375973,
+          "lat": 21.645837
+        },
+        {
+          "code": "450603",
+          "name": "防城区",
+          "cityCode": "4506",
+          "provinceCode": "45",
+          "lng": 108.349986,
+          "lat": 21.771345
+        },
+        {
+          "code": "450621",
+          "name": "上思县",
+          "cityCode": "4506",
+          "provinceCode": "45",
+          "lng": 107.979854,
+          "lat": 22.157026
+        },
+        {
+          "code": "450681",
+          "name": "东兴市",
+          "cityCode": "4506",
+          "provinceCode": "45",
+          "lng": 107.967166,
+          "lat": 21.55027
+        }
+      ],
+      "lng": 108.350727,
+      "lat": 21.689225
+    },
+    {
+      "code": "4507",
+      "name": "钦州市",
+      "provinceCode": "45",
+      "areas": [
+        {
+          "code": "450702",
+          "name": "钦南区",
+          "cityCode": "4507",
+          "provinceCode": "45",
+          "lng": 108.653665,
+          "lat": 21.943298
+        },
+        {
+          "code": "450703",
+          "name": "钦北区",
+          "cityCode": "4507",
+          "provinceCode": "45",
+          "lng": 108.628285,
+          "lat": 22.017336
+        },
+        {
+          "code": "450721",
+          "name": "灵山县",
+          "cityCode": "4507",
+          "provinceCode": "45",
+          "lng": 109.286783,
+          "lat": 22.419389
+        },
+        {
+          "code": "450722",
+          "name": "浦北县",
+          "cityCode": "4507",
+          "provinceCode": "45",
+          "lng": 109.552823,
+          "lat": 22.274517
+        }
+      ],
+      "lng": 108.650608,
+      "lat": 21.983768
+    },
+    {
+      "code": "4508",
+      "name": "贵港市",
+      "provinceCode": "45",
+      "areas": [
+        {
+          "code": "450802",
+          "name": "港北区",
+          "cityCode": "4508",
+          "provinceCode": "45",
+          "lng": 109.56775,
+          "lat": 23.114571
+        },
+        {
+          "code": "450803",
+          "name": "港南区",
+          "cityCode": "4508",
+          "provinceCode": "45",
+          "lng": 109.595263,
+          "lat": 23.07869
+        },
+        {
+          "code": "450804",
+          "name": "覃塘区",
+          "cityCode": "4508",
+          "provinceCode": "45",
+          "lng": 109.448129,
+          "lat": 23.130377
+        },
+        {
+          "code": "450821",
+          "name": "平南县",
+          "cityCode": "4508",
+          "provinceCode": "45",
+          "lng": 110.387328,
+          "lat": 23.54163
+        },
+        {
+          "code": "450881",
+          "name": "桂平市",
+          "cityCode": "4508",
+          "provinceCode": "45",
+          "lng": 110.074397,
+          "lat": 23.396767
+        }
+      ],
+      "lng": 109.594889,
+      "lat": 23.114525
+    },
+    {
+      "code": "4509",
+      "name": "玉林市",
+      "provinceCode": "45",
+      "areas": [
+        {
+          "code": "450902",
+          "name": "玉州区",
+          "cityCode": "4509",
+          "provinceCode": "45",
+          "lng": 110.146198,
+          "lat": 22.631244
+        },
+        {
+          "code": "450903",
+          "name": "福绵区",
+          "cityCode": "4509",
+          "provinceCode": "45",
+          "lng": 110.055026,
+          "lat": 22.588049
+        },
+        {
+          "code": "450921",
+          "name": "容县",
+          "cityCode": "4509",
+          "provinceCode": "45",
+          "lng": 110.553738,
+          "lat": 22.861445
+        },
+        {
+          "code": "450922",
+          "name": "陆川县",
+          "cityCode": "4509",
+          "provinceCode": "45",
+          "lng": 110.259748,
+          "lat": 22.324203
+        },
+        {
+          "code": "450923",
+          "name": "博白县",
+          "cityCode": "4509",
+          "provinceCode": "45",
+          "lng": 109.971836,
+          "lat": 22.27626
+        },
+        {
+          "code": "450924",
+          "name": "兴业县",
+          "cityCode": "4509",
+          "provinceCode": "45",
+          "lng": 109.871021,
+          "lat": 22.739432
+        },
+        {
+          "code": "450981",
+          "name": "北流市",
+          "cityCode": "4509",
+          "provinceCode": "45",
+          "lng": 110.34933,
+          "lat": 22.711022
+        }
+      ],
+      "lng": 110.176519,
+      "lat": 22.656806
+    },
+    {
+      "code": "4510",
+      "name": "百色市",
+      "provinceCode": "45",
+      "areas": [
+        {
+          "code": "451002",
+          "name": "右江区",
+          "cityCode": "4510",
+          "provinceCode": "45",
+          "lng": 106.614725,
+          "lat": 23.90381
+        },
+        {
+          "code": "451003",
+          "name": "田阳区",
+          "cityCode": "4510",
+          "provinceCode": "45",
+          "lng": 106.912087,
+          "lat": 23.738431
+        },
+        {
+          "code": "451022",
+          "name": "田东县",
+          "cityCode": "4510",
+          "provinceCode": "45",
+          "lng": 107.121861,
+          "lat": 23.599491
+        },
+        {
+          "code": "451024",
+          "name": "德保县",
+          "cityCode": "4510",
+          "provinceCode": "45",
+          "lng": 106.612021,
+          "lat": 23.327093
+        },
+        {
+          "code": "451026",
+          "name": "那坡县",
+          "cityCode": "4510",
+          "provinceCode": "45",
+          "lng": 105.829132,
+          "lat": 23.390835
+        },
+        {
+          "code": "451027",
+          "name": "凌云县",
+          "cityCode": "4510",
+          "provinceCode": "45",
+          "lng": 106.558576,
+          "lat": 24.350759
+        },
+        {
+          "code": "451028",
+          "name": "乐业县",
+          "cityCode": "4510",
+          "provinceCode": "45",
+          "lng": 106.553228,
+          "lat": 24.779661
+        },
+        {
+          "code": "451029",
+          "name": "田林县",
+          "cityCode": "4510",
+          "provinceCode": "45",
+          "lng": 106.225412,
+          "lat": 24.297365
+        },
+        {
+          "code": "451030",
+          "name": "西林县",
+          "cityCode": "4510",
+          "provinceCode": "45",
+          "lng": 105.090849,
+          "lat": 24.492449
+        },
+        {
+          "code": "451031",
+          "name": "隆林各族自治县",
+          "cityCode": "4510",
+          "provinceCode": "45",
+          "lng": 105.34073,
+          "lat": 24.773433
+        },
+        {
+          "code": "451081",
+          "name": "靖西市",
+          "cityCode": "4510",
+          "provinceCode": "45",
+          "lng": 106.414018,
+          "lat": 23.136915
+        },
+        {
+          "code": "451082",
+          "name": "平果市",
+          "cityCode": "4510",
+          "provinceCode": "45",
+          "lng": 107.586079,
+          "lat": 23.33222
+        }
+      ],
+      "lng": 106.61459,
+      "lat": 23.905404
+    },
+    {
+      "code": "4511",
+      "name": "贺州市",
+      "provinceCode": "45",
+      "areas": [
+        {
+          "code": "451102",
+          "name": "八步区",
+          "cityCode": "4511",
+          "provinceCode": "45",
+          "lng": 111.546903,
+          "lat": 24.414752
+        },
+        {
+          "code": "451103",
+          "name": "平桂区",
+          "cityCode": "4511",
+          "provinceCode": "45",
+          "lng": 111.474509,
+          "lat": 24.455898
+        },
+        {
+          "code": "451121",
+          "name": "昭平县",
+          "cityCode": "4511",
+          "provinceCode": "45",
+          "lng": 110.806594,
+          "lat": 24.172426
+        },
+        {
+          "code": "451122",
+          "name": "钟山县",
+          "cityCode": "4511",
+          "provinceCode": "45",
+          "lng": 111.297771,
+          "lat": 24.528848
+        },
+        {
+          "code": "451123",
+          "name": "富川瑶族自治县",
+          "cityCode": "4511",
+          "provinceCode": "45",
+          "lng": 111.272806,
+          "lat": 24.817182
+        }
+      ],
+      "lng": 111.562129,
+      "lat": 24.40718
+    },
+    {
+      "code": "4512",
+      "name": "河池市",
+      "provinceCode": "45",
+      "areas": [
+        {
+          "code": "451202",
+          "name": "金城江区",
+          "cityCode": "4512",
+          "provinceCode": "45",
+          "lng": 108.033146,
+          "lat": 24.692489
+        },
+        {
+          "code": "451203",
+          "name": "宜州区",
+          "cityCode": "4512",
+          "provinceCode": "45",
+          "lng": 108.607573,
+          "lat": 24.503523
+        },
+        {
+          "code": "451221",
+          "name": "南丹县",
+          "cityCode": "4512",
+          "provinceCode": "45",
+          "lng": 107.53696,
+          "lat": 24.978726
+        },
+        {
+          "code": "451222",
+          "name": "天峨县",
+          "cityCode": "4512",
+          "provinceCode": "45",
+          "lng": 107.168155,
+          "lat": 25.001999
+        },
+        {
+          "code": "451223",
+          "name": "凤山县",
+          "cityCode": "4512",
+          "provinceCode": "45",
+          "lng": 107.037952,
+          "lat": 24.549721
+        },
+        {
+          "code": "451224",
+          "name": "东兰县",
+          "cityCode": "4512",
+          "provinceCode": "45",
+          "lng": 107.369714,
+          "lat": 24.513562
+        },
+        {
+          "code": "451225",
+          "name": "罗城仫佬族自治县",
+          "cityCode": "4512",
+          "provinceCode": "45",
+          "lng": 108.901045,
+          "lat": 24.780506
+        },
+        {
+          "code": "451226",
+          "name": "环江毛南族自治县",
+          "cityCode": "4512",
+          "provinceCode": "45",
+          "lng": 108.25398,
+          "lat": 24.828821
+        },
+        {
+          "code": "451227",
+          "name": "巴马瑶族自治县",
+          "cityCode": "4512",
+          "provinceCode": "45",
+          "lng": 107.255966,
+          "lat": 24.14392
+        },
+        {
+          "code": "451228",
+          "name": "都安瑶族自治县",
+          "cityCode": "4512",
+          "provinceCode": "45",
+          "lng": 108.100793,
+          "lat": 23.933642
+        },
+        {
+          "code": "451229",
+          "name": "大化瑶族自治县",
+          "cityCode": "4512",
+          "provinceCode": "45",
+          "lng": 107.993978,
+          "lat": 23.739167
+        }
+      ],
+      "lng": 108.080726,
+      "lat": 24.695558
+    },
+    {
+      "code": "4513",
+      "name": "来宾市",
+      "provinceCode": "45",
+      "areas": [
+        {
+          "code": "451302",
+          "name": "兴宾区",
+          "cityCode": "4513",
+          "provinceCode": "45",
+          "lng": 109.178985,
+          "lat": 23.730285
+        },
+        {
+          "code": "451321",
+          "name": "忻城县",
+          "cityCode": "4513",
+          "provinceCode": "45",
+          "lng": 108.661637,
+          "lat": 24.069107
+        },
+        {
+          "code": "451322",
+          "name": "象州县",
+          "cityCode": "4513",
+          "provinceCode": "45",
+          "lng": 109.700448,
+          "lat": 23.976632
+        },
+        {
+          "code": "451323",
+          "name": "武宣县",
+          "cityCode": "4513",
+          "provinceCode": "45",
+          "lng": 109.658798,
+          "lat": 23.597506
+        },
+        {
+          "code": "451324",
+          "name": "金秀瑶族自治县",
+          "cityCode": "4513",
+          "provinceCode": "45",
+          "lng": 110.184462,
+          "lat": 24.133029
+        },
+        {
+          "code": "451381",
+          "name": "合山市",
+          "cityCode": "4513",
+          "provinceCode": "45",
+          "lng": 108.882069,
+          "lat": 23.810111
+        }
+      ],
+      "lng": 109.216951,
+      "lat": 23.752761
+    },
+    {
+      "code": "4514",
+      "name": "崇左市",
+      "provinceCode": "45",
+      "areas": [
+        {
+          "code": "451402",
+          "name": "江州区",
+          "cityCode": "4514",
+          "provinceCode": "45",
+          "lng": 107.349233,
+          "lat": 22.408463
+        },
+        {
+          "code": "451421",
+          "name": "扶绥县",
+          "cityCode": "4514",
+          "provinceCode": "45",
+          "lng": 107.900201,
+          "lat": 22.638085
+        },
+        {
+          "code": "451422",
+          "name": "宁明县",
+          "cityCode": "4514",
+          "provinceCode": "45",
+          "lng": 107.072384,
+          "lat": 22.142908
+        },
+        {
+          "code": "451423",
+          "name": "龙州县",
+          "cityCode": "4514",
+          "provinceCode": "45",
+          "lng": 106.851015,
+          "lat": 22.345668
+        },
+        {
+          "code": "451424",
+          "name": "大新县",
+          "cityCode": "4514",
+          "provinceCode": "45",
+          "lng": 107.196643,
+          "lat": 22.832182
+        },
+        {
+          "code": "451425",
+          "name": "天等县",
+          "cityCode": "4514",
+          "provinceCode": "45",
+          "lng": 107.139562,
+          "lat": 23.083943
+        },
+        {
+          "code": "451481",
+          "name": "凭祥市",
+          "cityCode": "4514",
+          "provinceCode": "45",
+          "lng": 106.763157,
+          "lat": 22.09721
+        }
+      ],
+      "lng": 107.360827,
+      "lat": 22.379764
+    }
+  ]
+}

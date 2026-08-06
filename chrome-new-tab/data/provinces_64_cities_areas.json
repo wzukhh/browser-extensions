@@ -1,0 +1,229 @@
+{
+  "province": {
+    "code": "64",
+    "name": "宁夏回族自治区"
+  },
+  "cities": [
+    {
+      "code": "6401",
+      "name": "银川市",
+      "provinceCode": "64",
+      "areas": [
+        {
+          "code": "640104",
+          "name": "兴庆区",
+          "cityCode": "6401",
+          "provinceCode": "64",
+          "lng": 106.284081,
+          "lat": 38.473389
+        },
+        {
+          "code": "640105",
+          "name": "西夏区",
+          "cityCode": "6401",
+          "provinceCode": "64",
+          "lng": 106.156718,
+          "lat": 38.501751
+        },
+        {
+          "code": "640106",
+          "name": "金凤区",
+          "cityCode": "6401",
+          "provinceCode": "64",
+          "lng": 106.235415,
+          "lat": 38.473602
+        },
+        {
+          "code": "640121",
+          "name": "永宁县",
+          "cityCode": "6401",
+          "provinceCode": "64",
+          "lng": 106.2491,
+          "lat": 38.276916
+        },
+        {
+          "code": "640122",
+          "name": "贺兰县",
+          "cityCode": "6401",
+          "provinceCode": "64",
+          "lng": 106.345395,
+          "lat": 38.553798
+        },
+        {
+          "code": "640181",
+          "name": "灵武市",
+          "cityCode": "6401",
+          "provinceCode": "64",
+          "lng": 106.335461,
+          "lat": 38.101905
+        }
+      ],
+      "lng": 106.226542,
+      "lat": 38.487351
+    },
+    {
+      "code": "6402",
+      "name": "石嘴山市",
+      "provinceCode": "64",
+      "areas": [
+        {
+          "code": "640202",
+          "name": "大武口区",
+          "cityCode": "6402",
+          "provinceCode": "64",
+          "lng": 106.363342,
+          "lat": 39.018106
+        },
+        {
+          "code": "640205",
+          "name": "惠农区",
+          "cityCode": "6402",
+          "provinceCode": "64",
+          "lng": 106.776427,
+          "lat": 39.238446
+        },
+        {
+          "code": "640221",
+          "name": "平罗县",
+          "cityCode": "6402",
+          "provinceCode": "64",
+          "lng": 106.525562,
+          "lat": 38.913061
+        }
+      ],
+      "lng": 106.378103,
+      "lat": 38.983811
+    },
+    {
+      "code": "6403",
+      "name": "吴忠市",
+      "provinceCode": "64",
+      "areas": [
+        {
+          "code": "640302",
+          "name": "利通区",
+          "cityCode": "6403",
+          "provinceCode": "64",
+          "lng": 106.208141,
+          "lat": 37.984142
+        },
+        {
+          "code": "640303",
+          "name": "红寺堡区",
+          "cityCode": "6403",
+          "provinceCode": "64",
+          "lng": 106.057723,
+          "lat": 37.425106
+        },
+        {
+          "code": "640323",
+          "name": "盐池县",
+          "cityCode": "6403",
+          "provinceCode": "64",
+          "lng": 107.401884,
+          "lat": 37.782528
+        },
+        {
+          "code": "640324",
+          "name": "同心县",
+          "cityCode": "6403",
+          "provinceCode": "64",
+          "lng": 105.891439,
+          "lat": 36.954443
+        },
+        {
+          "code": "640381",
+          "name": "青铜峡市",
+          "cityCode": "6403",
+          "provinceCode": "64",
+          "lng": 106.074275,
+          "lat": 38.020734
+        }
+      ],
+      "lng": 106.194602,
+      "lat": 37.996858
+    },
+    {
+      "code": "6404",
+      "name": "固原市",
+      "provinceCode": "64",
+      "areas": [
+        {
+          "code": "640402",
+          "name": "原州区",
+          "cityCode": "6404",
+          "provinceCode": "64",
+          "lng": 106.283672,
+          "lat": 36.004491
+        },
+        {
+          "code": "640422",
+          "name": "西吉县",
+          "cityCode": "6404",
+          "provinceCode": "64",
+          "lng": 105.725069,
+          "lat": 35.964064
+        },
+        {
+          "code": "640423",
+          "name": "隆德县",
+          "cityCode": "6404",
+          "provinceCode": "64",
+          "lng": 106.10719,
+          "lat": 35.626247
+        },
+        {
+          "code": "640424",
+          "name": "泾源县",
+          "cityCode": "6404",
+          "provinceCode": "64",
+          "lng": 106.326697,
+          "lat": 35.498395
+        },
+        {
+          "code": "640425",
+          "name": "彭阳县",
+          "cityCode": "6404",
+          "provinceCode": "64",
+          "lng": 106.627662,
+          "lat": 35.86056
+        }
+      ],
+      "lng": 106.237804,
+      "lat": 36.015985
+    },
+    {
+      "code": "6405",
+      "name": "中卫市",
+      "provinceCode": "64",
+      "areas": [
+        {
+          "code": "640502",
+          "name": "沙坡头区",
+          "cityCode": "6405",
+          "provinceCode": "64",
+          "lng": 105.169926,
+          "lat": 37.516399
+        },
+        {
+          "code": "640521",
+          "name": "中宁县",
+          "cityCode": "6405",
+          "provinceCode": "64",
+          "lng": 105.680703,
+          "lat": 37.491641
+        },
+        {
+          "code": "640522",
+          "name": "海原县",
+          "cityCode": "6405",
+          "provinceCode": "64",
+          "lng": 105.639708,
+          "lat": 36.565407
+        }
+      ],
+      "lng": 105.193233,
+      "lat": 37.499345
+    }
+  ]
+}

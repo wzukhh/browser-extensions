@@ -1,0 +1,838 @@
+{
+  "province": {
+    "code": "62",
+    "name": "甘肃省"
+  },
+  "cities": [
+    {
+      "code": "6201",
+      "name": "兰州市",
+      "provinceCode": "62",
+      "areas": [
+        {
+          "code": "620102",
+          "name": "城关区",
+          "cityCode": "6201",
+          "provinceCode": "62",
+          "lng": 103.82271,
+          "lat": 36.057625
+        },
+        {
+          "code": "620103",
+          "name": "七里河区",
+          "cityCode": "6201",
+          "provinceCode": "62",
+          "lng": 103.783506,
+          "lat": 36.066146
+        },
+        {
+          "code": "620104",
+          "name": "西固区",
+          "cityCode": "6201",
+          "provinceCode": "62",
+          "lng": 103.625574,
+          "lat": 36.088733
+        },
+        {
+          "code": "620105",
+          "name": "安宁区",
+          "cityCode": "6201",
+          "provinceCode": "62",
+          "lng": 103.71669,
+          "lat": 36.104821
+        },
+        {
+          "code": "620111",
+          "name": "红古区",
+          "cityCode": "6201",
+          "provinceCode": "62",
+          "lng": 102.85755,
+          "lat": 36.346101
+        },
+        {
+          "code": "620121",
+          "name": "永登县",
+          "cityCode": "6201",
+          "provinceCode": "62",
+          "lng": 103.257942,
+          "lat": 36.736465
+        },
+        {
+          "code": "620122",
+          "name": "皋兰县",
+          "cityCode": "6201",
+          "provinceCode": "62",
+          "lng": 103.944602,
+          "lat": 36.332391
+        },
+        {
+          "code": "620123",
+          "name": "榆中县",
+          "cityCode": "6201",
+          "provinceCode": "62",
+          "lng": 104.109737,
+          "lat": 35.843441
+        },
+        {
+          "code": "620171",
+          "name": "兰州新区",
+          "cityCode": "6201",
+          "provinceCode": "62",
+          "lng": 103.717445,
+          "lat": 36.084676
+        }
+      ],
+      "lng": 103.831829,
+      "lat": 36.061142
+    },
+    {
+      "code": "6202",
+      "name": "嘉峪关市",
+      "provinceCode": "62",
+      "areas": [
+        {
+          "code": "620201",
+          "name": "嘉峪关市",
+          "cityCode": "6202",
+          "provinceCode": "62",
+          "lng": 98.288094,
+          "lat": 39.772426
+        }
+      ],
+      "lng": 98.288094,
+      "lat": 39.772426
+    },
+    {
+      "code": "6203",
+      "name": "金昌市",
+      "provinceCode": "62",
+      "areas": [
+        {
+          "code": "620302",
+          "name": "金川区",
+          "cityCode": "6203",
+          "provinceCode": "62",
+          "lng": 102.191983,
+          "lat": 38.519958
+        },
+        {
+          "code": "620321",
+          "name": "永昌县",
+          "cityCode": "6203",
+          "provinceCode": "62",
+          "lng": 101.982864,
+          "lat": 38.242846
+        }
+      ],
+      "lng": 102.185983,
+      "lat": 38.520907
+    },
+    {
+      "code": "6204",
+      "name": "白银市",
+      "provinceCode": "62",
+      "areas": [
+        {
+          "code": "620402",
+          "name": "白银区",
+          "cityCode": "6204",
+          "provinceCode": "62",
+          "lng": 104.14679,
+          "lat": 36.534128
+        },
+        {
+          "code": "620403",
+          "name": "平川区",
+          "cityCode": "6204",
+          "provinceCode": "62",
+          "lng": 104.82194,
+          "lat": 36.727831
+        },
+        {
+          "code": "620421",
+          "name": "靖远县",
+          "cityCode": "6204",
+          "provinceCode": "62",
+          "lng": 104.67312,
+          "lat": 36.571324
+        },
+        {
+          "code": "620422",
+          "name": "会宁县",
+          "cityCode": "6204",
+          "provinceCode": "62",
+          "lng": 105.049429,
+          "lat": 35.692969
+        },
+        {
+          "code": "620423",
+          "name": "景泰县",
+          "cityCode": "6204",
+          "provinceCode": "62",
+          "lng": 104.060288,
+          "lat": 37.183003
+        }
+      ],
+      "lng": 104.136085,
+      "lat": 36.545082
+    },
+    {
+      "code": "6205",
+      "name": "天水市",
+      "provinceCode": "62",
+      "areas": [
+        {
+          "code": "620502",
+          "name": "秦州区",
+          "cityCode": "6205",
+          "provinceCode": "62",
+          "lng": 105.72098,
+          "lat": 34.582509
+        },
+        {
+          "code": "620503",
+          "name": "麦积区",
+          "cityCode": "6205",
+          "provinceCode": "62",
+          "lng": 105.885861,
+          "lat": 34.572032
+        },
+        {
+          "code": "620521",
+          "name": "清水县",
+          "cityCode": "6205",
+          "provinceCode": "62",
+          "lng": 106.133013,
+          "lat": 34.75085
+        },
+        {
+          "code": "620522",
+          "name": "秦安县",
+          "cityCode": "6205",
+          "provinceCode": "62",
+          "lng": 105.671671,
+          "lat": 34.860239
+        },
+        {
+          "code": "620523",
+          "name": "甘谷县",
+          "cityCode": "6205",
+          "provinceCode": "62",
+          "lng": 105.332194,
+          "lat": 34.73327
+        },
+        {
+          "code": "620524",
+          "name": "武山县",
+          "cityCode": "6205",
+          "provinceCode": "62",
+          "lng": 104.887981,
+          "lat": 34.72272
+        },
+        {
+          "code": "620525",
+          "name": "张家川回族自治县",
+          "cityCode": "6205",
+          "provinceCode": "62",
+          "lng": 106.200849,
+          "lat": 34.989454
+        }
+      ],
+      "lng": 105.720959,
+      "lat": 34.582494
+    },
+    {
+      "code": "6206",
+      "name": "武威市",
+      "provinceCode": "62",
+      "areas": [
+        {
+          "code": "620602",
+          "name": "凉州区",
+          "cityCode": "6206",
+          "provinceCode": "62",
+          "lng": 102.640371,
+          "lat": 37.928514
+        },
+        {
+          "code": "620621",
+          "name": "民勤县",
+          "cityCode": "6206",
+          "provinceCode": "62",
+          "lng": 103.09116,
+          "lat": 38.623746
+        },
+        {
+          "code": "620622",
+          "name": "古浪县",
+          "cityCode": "6206",
+          "provinceCode": "62",
+          "lng": 102.895782,
+          "lat": 37.470566
+        },
+        {
+          "code": "620623",
+          "name": "天祝藏族自治县",
+          "cityCode": "6206",
+          "provinceCode": "62",
+          "lng": 103.13943,
+          "lat": 36.971457
+        }
+      ],
+      "lng": 102.63647,
+      "lat": 37.928715
+    },
+    {
+      "code": "6207",
+      "name": "张掖市",
+      "provinceCode": "62",
+      "areas": [
+        {
+          "code": "620702",
+          "name": "甘州区",
+          "cityCode": "6207",
+          "provinceCode": "62",
+          "lng": 100.413616,
+          "lat": 38.943846
+        },
+        {
+          "code": "620721",
+          "name": "肃南裕固族自治县",
+          "cityCode": "6207",
+          "provinceCode": "62",
+          "lng": 99.614275,
+          "lat": 38.836641
+        },
+        {
+          "code": "620722",
+          "name": "民乐县",
+          "cityCode": "6207",
+          "provinceCode": "62",
+          "lng": 100.811569,
+          "lat": 38.430371
+        },
+        {
+          "code": "620723",
+          "name": "临泽县",
+          "cityCode": "6207",
+          "provinceCode": "62",
+          "lng": 100.162847,
+          "lat": 39.151829
+        },
+        {
+          "code": "620724",
+          "name": "高台县",
+          "cityCode": "6207",
+          "provinceCode": "62",
+          "lng": 99.817884,
+          "lat": 39.376837
+        },
+        {
+          "code": "620725",
+          "name": "山丹县",
+          "cityCode": "6207",
+          "provinceCode": "62",
+          "lng": 101.086875,
+          "lat": 38.784076
+        }
+      ],
+      "lng": 100.448299,
+      "lat": 38.925162
+    },
+    {
+      "code": "6208",
+      "name": "平凉市",
+      "provinceCode": "62",
+      "areas": [
+        {
+          "code": "620802",
+          "name": "崆峒区",
+          "cityCode": "6208",
+          "provinceCode": "62",
+          "lng": 106.670523,
+          "lat": 35.543078
+        },
+        {
+          "code": "620821",
+          "name": "泾川县",
+          "cityCode": "6208",
+          "provinceCode": "62",
+          "lng": 107.36267,
+          "lat": 35.333074
+        },
+        {
+          "code": "620822",
+          "name": "灵台县",
+          "cityCode": "6208",
+          "provinceCode": "62",
+          "lng": 107.616345,
+          "lat": 35.066353
+        },
+        {
+          "code": "620823",
+          "name": "崇信县",
+          "cityCode": "6208",
+          "provinceCode": "62",
+          "lng": 107.030256,
+          "lat": 35.302744
+        },
+        {
+          "code": "620825",
+          "name": "庄浪县",
+          "cityCode": "6208",
+          "provinceCode": "62",
+          "lng": 106.032025,
+          "lat": 35.203158
+        },
+        {
+          "code": "620826",
+          "name": "静宁县",
+          "cityCode": "6208",
+          "provinceCode": "62",
+          "lng": 105.727986,
+          "lat": 35.522396
+        },
+        {
+          "code": "620881",
+          "name": "华亭市",
+          "cityCode": "6208",
+          "provinceCode": "62",
+          "lng": 106.624638,
+          "lat": 35.208839
+        }
+      ],
+      "lng": 106.660859,
+      "lat": 35.543324
+    },
+    {
+      "code": "6209",
+      "name": "酒泉市",
+      "provinceCode": "62",
+      "areas": [
+        {
+          "code": "620902",
+          "name": "肃州区",
+          "cityCode": "6209",
+          "provinceCode": "62",
+          "lng": 98.507312,
+          "lat": 39.744217
+        },
+        {
+          "code": "620921",
+          "name": "金塔县",
+          "cityCode": "6209",
+          "provinceCode": "62",
+          "lng": 98.900838,
+          "lat": 39.983528
+        },
+        {
+          "code": "620922",
+          "name": "瓜州县",
+          "cityCode": "6209",
+          "provinceCode": "62",
+          "lng": 95.781225,
+          "lat": 40.520142
+        },
+        {
+          "code": "620923",
+          "name": "肃北蒙古族自治县",
+          "cityCode": "6209",
+          "provinceCode": "62",
+          "lng": 94.876127,
+          "lat": 39.511988
+        },
+        {
+          "code": "620924",
+          "name": "阿克塞哈萨克族自治县",
+          "cityCode": "6209",
+          "provinceCode": "62",
+          "lng": 94.338915,
+          "lat": 39.633082
+        },
+        {
+          "code": "620981",
+          "name": "玉门市",
+          "cityCode": "6209",
+          "provinceCode": "62",
+          "lng": 97.045554,
+          "lat": 40.292069
+        },
+        {
+          "code": "620982",
+          "name": "敦煌市",
+          "cityCode": "6209",
+          "provinceCode": "62",
+          "lng": 94.660897,
+          "lat": 40.141463
+        }
+      ],
+      "lng": 98.493565,
+      "lat": 39.731577
+    },
+    {
+      "code": "6210",
+      "name": "庆阳市",
+      "provinceCode": "62",
+      "areas": [
+        {
+          "code": "621002",
+          "name": "西峰区",
+          "cityCode": "6210",
+          "provinceCode": "62",
+          "lng": 107.645886,
+          "lat": 35.73084
+        },
+        {
+          "code": "621021",
+          "name": "庆城县",
+          "cityCode": "6210",
+          "provinceCode": "62",
+          "lng": 107.87719,
+          "lat": 36.016459
+        },
+        {
+          "code": "621022",
+          "name": "环县",
+          "cityCode": "6210",
+          "provinceCode": "62",
+          "lng": 107.304061,
+          "lat": 36.568645
+        },
+        {
+          "code": "621023",
+          "name": "华池县",
+          "cityCode": "6210",
+          "provinceCode": "62",
+          "lng": 107.985004,
+          "lat": 36.461295
+        },
+        {
+          "code": "621024",
+          "name": "合水县",
+          "cityCode": "6210",
+          "provinceCode": "62",
+          "lng": 108.015082,
+          "lat": 35.819242
+        },
+        {
+          "code": "621025",
+          "name": "正宁县",
+          "cityCode": "6210",
+          "provinceCode": "62",
+          "lng": 108.354989,
+          "lat": 35.49195
+        },
+        {
+          "code": "621026",
+          "name": "宁县",
+          "cityCode": "6210",
+          "provinceCode": "62",
+          "lng": 107.92336,
+          "lat": 35.502733
+        },
+        {
+          "code": "621027",
+          "name": "镇原县",
+          "cityCode": "6210",
+          "provinceCode": "62",
+          "lng": 107.196026,
+          "lat": 35.677599
+        }
+      ],
+      "lng": 107.638258,
+      "lat": 35.709297
+    },
+    {
+      "code": "6211",
+      "name": "定西市",
+      "provinceCode": "62",
+      "areas": [
+        {
+          "code": "621102",
+          "name": "安定区",
+          "cityCode": "6211",
+          "provinceCode": "62",
+          "lng": 104.607906,
+          "lat": 35.581231
+        },
+        {
+          "code": "621121",
+          "name": "通渭县",
+          "cityCode": "6211",
+          "provinceCode": "62",
+          "lng": 105.238788,
+          "lat": 35.211529
+        },
+        {
+          "code": "621122",
+          "name": "陇西县",
+          "cityCode": "6211",
+          "provinceCode": "62",
+          "lng": 104.63242,
+          "lat": 35.0049
+        },
+        {
+          "code": "621123",
+          "name": "渭源县",
+          "cityCode": "6211",
+          "provinceCode": "62",
+          "lng": 104.212795,
+          "lat": 35.137664
+        },
+        {
+          "code": "621124",
+          "name": "临洮县",
+          "cityCode": "6211",
+          "provinceCode": "62",
+          "lng": 103.856678,
+          "lat": 35.395569
+        },
+        {
+          "code": "621125",
+          "name": "漳县",
+          "cityCode": "6211",
+          "provinceCode": "62",
+          "lng": 104.469199,
+          "lat": 34.849493
+        },
+        {
+          "code": "621126",
+          "name": "岷县",
+          "cityCode": "6211",
+          "provinceCode": "62",
+          "lng": 104.034193,
+          "lat": 34.439678
+        }
+      ],
+      "lng": 104.589791,
+      "lat": 35.608559
+    },
+    {
+      "code": "6212",
+      "name": "陇南市",
+      "provinceCode": "62",
+      "areas": [
+        {
+          "code": "621202",
+          "name": "武都区",
+          "cityCode": "6212",
+          "provinceCode": "62",
+          "lng": 104.923327,
+          "lat": 33.394462
+        },
+        {
+          "code": "621221",
+          "name": "成县",
+          "cityCode": "6212",
+          "provinceCode": "62",
+          "lng": 105.7381,
+          "lat": 33.752127
+        },
+        {
+          "code": "621222",
+          "name": "文县",
+          "cityCode": "6212",
+          "provinceCode": "62",
+          "lng": 104.680794,
+          "lat": 32.946184
+        },
+        {
+          "code": "621223",
+          "name": "宕昌县",
+          "cityCode": "6212",
+          "provinceCode": "62",
+          "lng": 104.390712,
+          "lat": 34.048751
+        },
+        {
+          "code": "621224",
+          "name": "康县",
+          "cityCode": "6212",
+          "provinceCode": "62",
+          "lng": 105.604963,
+          "lat": 33.331357
+        },
+        {
+          "code": "621225",
+          "name": "西和县",
+          "cityCode": "6212",
+          "provinceCode": "62",
+          "lng": 105.295172,
+          "lat": 34.015764
+        },
+        {
+          "code": "621226",
+          "name": "礼县",
+          "cityCode": "6212",
+          "provinceCode": "62",
+          "lng": 105.173439,
+          "lat": 34.190448
+        },
+        {
+          "code": "621227",
+          "name": "徽县",
+          "cityCode": "6212",
+          "provinceCode": "62",
+          "lng": 106.083637,
+          "lat": 33.770272
+        },
+        {
+          "code": "621228",
+          "name": "两当县",
+          "cityCode": "6212",
+          "provinceCode": "62",
+          "lng": 106.300821,
+          "lat": 33.910529
+        }
+      ],
+      "lng": 104.957389,
+      "lat": 33.372088
+    },
+    {
+      "code": "6229",
+      "name": "临夏回族自治州",
+      "provinceCode": "62",
+      "areas": [
+        {
+          "code": "622901",
+          "name": "临夏市",
+          "cityCode": "6229",
+          "provinceCode": "62",
+          "lng": 103.240021,
+          "lat": 35.605056
+        },
+        {
+          "code": "622921",
+          "name": "临夏县",
+          "cityCode": "6229",
+          "provinceCode": "62",
+          "lng": 103.240766,
+          "lat": 35.604485
+        },
+        {
+          "code": "622922",
+          "name": "康乐县",
+          "cityCode": "6229",
+          "provinceCode": "62",
+          "lng": 103.706571,
+          "lat": 35.370674
+        },
+        {
+          "code": "622923",
+          "name": "永靖县",
+          "cityCode": "6229",
+          "provinceCode": "62",
+          "lng": 103.283438,
+          "lat": 35.957684
+        },
+        {
+          "code": "622924",
+          "name": "广河县",
+          "cityCode": "6229",
+          "provinceCode": "62",
+          "lng": 103.573628,
+          "lat": 35.488815
+        },
+        {
+          "code": "622925",
+          "name": "和政县",
+          "cityCode": "6229",
+          "provinceCode": "62",
+          "lng": 103.348677,
+          "lat": 35.424844
+        },
+        {
+          "code": "622926",
+          "name": "东乡族自治县",
+          "cityCode": "6229",
+          "provinceCode": "62",
+          "lng": 103.386442,
+          "lat": 35.66377
+        },
+        {
+          "code": "622927",
+          "name": "积石山保安族东乡族撒拉族自治县",
+          "cityCode": "6229",
+          "provinceCode": "62",
+          "lng": 102.874258,
+          "lat": 35.718108
+        }
+      ],
+      "lng": 103.207758,
+      "lat": 35.601658
+    },
+    {
+      "code": "6230",
+      "name": "甘南藏族自治州",
+      "provinceCode": "62",
+      "areas": [
+        {
+          "code": "623001",
+          "name": "合作市",
+          "cityCode": "6230",
+          "provinceCode": "62",
+          "lng": 102.908767,
+          "lat": 35.001334
+        },
+        {
+          "code": "623021",
+          "name": "临潭县",
+          "cityCode": "6230",
+          "provinceCode": "62",
+          "lng": 103.351183,
+          "lat": 34.693861
+        },
+        {
+          "code": "623022",
+          "name": "卓尼县",
+          "cityCode": "6230",
+          "provinceCode": "62",
+          "lng": 103.504777,
+          "lat": 34.590948
+        },
+        {
+          "code": "623023",
+          "name": "舟曲县",
+          "cityCode": "6230",
+          "provinceCode": "62",
+          "lng": 104.36877,
+          "lat": 33.786385
+        },
+        {
+          "code": "623024",
+          "name": "迭部县",
+          "cityCode": "6230",
+          "provinceCode": "62",
+          "lng": 103.219782,
+          "lat": 34.057716
+        },
+        {
+          "code": "623025",
+          "name": "玛曲县",
+          "cityCode": "6230",
+          "provinceCode": "62",
+          "lng": 102.070046,
+          "lat": 33.999062
+        },
+        {
+          "code": "623026",
+          "name": "碌曲县",
+          "cityCode": "6230",
+          "provinceCode": "62",
+          "lng": 102.485744,
+          "lat": 34.5924
+        },
+        {
+          "code": "623027",
+          "name": "夏河县",
+          "cityCode": "6230",
+          "provinceCode": "62",
+          "lng": 102.520324,
+          "lat": 35.20329
+        }
+      ],
+      "lng": 102.909277,
+      "lat": 34.984537
+    }
+  ]
+}

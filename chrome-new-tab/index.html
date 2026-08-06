@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>新标签页</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="background"></div>
+
+  <main id="main">
+    <!-- 搜索框 -->
+    <div id="search-container">
+      <div id="search-bar">
+        <button id="se-switcher" title="切换搜索引擎">
+          <img id="se-current-icon" src="" alt="" />
+          <span id="se-current-text" style="display:none">G</span>
+        </button>
+        <input type="text" id="search-input" placeholder="搜索或输入网址..." spellcheck="false" autofocus />
+      </div>
+      <div id="se-dropdown" class="hidden"></div>
+    </div>
+
+    <!-- 时间 -->
+    <div id="clock-section">
+      <div id="time">&nbsp;</div>
+      <div id="date">&nbsp;</div>
+    </div>
+
+    <!-- 快捷链接 -->
+    <div id="quick-links">
+      <div class="ql-header">
+        <span>快捷链接</span>
+        <div class="ql-header-actions">
+          <button id="ql-edit-btn" data-tooltip="批量管理" aria-label="批量管理">编辑</button>
+          <button id="ql-add-btn" data-tooltip="添加快捷方式" aria-label="添加快捷方式">+</button>
+        </div>
+      </div>
+      <div id="ql-scroll-area">
+        <div id="ql-grid"></div>
+        <div id="ql-batch-bar" class="hidden">
+          <div class="ql-batch-left">
+            <label class="ql-batch-label"><input type="checkbox" id="ql-select-all" /> 全选</label>
+            <button id="ql-row-select-btn" class="ql-row-btn">行选</button>
+          </div>
+          <div class="ql-batch-right">
+            <span id="ql-batch-count">已选 0 项</span>
+            <button id="ql-batch-delete">删除</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 右键菜单 -->
+  <div id="ql-context-menu" class="hidden">
+    <button class="ctx-item" data-action="edit">✏️ 编辑</button>
+    <button class="ctx-item" data-action="delete">🗑️ 删除</button>
+  </div>
+
+  <!-- 设置面板 -->
+  <div id="settings-overlay" class="hidden">
+    <div id="settings-panel">
+      <div class="settings-header">
+        <h2>设置</h2>
+        <span class="settings-version" id="settings-version"></span>
+        <span class="settings-author">作者: wzukhh | wzukhh@163.com</span>
+        <button id="settings-close">&times;</button>
+      </div>
+      <div class="settings-body">
+        <!-- 设置项 -->
+        <div class="settings-section">
+          <h3>背景</h3>
+          <div class="bg-options">
+            <button class="bg-option" data-bg="gradient">渐变</button>
+            <button class="bg-option" data-bg="custom">自定义图片</button>
+            <button class="bg-option" data-bg="color">纯色</button>
+          </div>
+          <div id="bg-color-picker" class="hidden">
+            <label for="color-input" class="bg-color-btn">
+              <span class="bg-color-swatch" id="color-swatch"></span>
+              选择颜色
+            </label>
+            <input type="color" id="color-input" value="#1a1a2e" hidden />
+            <span class="bg-color-value" id="bg-color-value">#1a1a2e</span>
+            <input type="text" class="bg-color-paste" id="bg-color-paste" placeholder="粘贴颜色值" spellcheck="false" />
+            <span class="bg-color-toast" id="bg-color-toast">✓ 已复制</span>
+          </div>
+          <div id="bg-upload" class="hidden">
+            <label for="image-input" class="bg-upload-btn">选择图片</label>
+            <span id="bg-upload-name" class="bg-upload-name"></span>
+            <input type="file" id="image-input" accept="image/*" hidden />
+          </div>
+        </div>
+        <div class="settings-section">
+          <h3>主题</h3>
+          <div id="theme-options" class="theme-options"></div>
+        </div>
+        <div class="settings-section">
+          <h3>天气</h3>
+          <div class="setting-row">
+            <span class="setting-label">主页显示</span>
+            <label class="toggle">
+              <input type="checkbox" id="weather-display-toggle" checked />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+          <div id="weather-city-row" style="margin-top:8px">
+            <div id="weather-current-display" style="font-size:12px;opacity:0.6;margin-bottom:6px">📍 <span id="weather-current-city">未设置位置</span></div>
+            <div style="display:flex;gap:4px;align-items:center">
+              <div class="cs-wrapper" id="cs-province-wrapper"><select id="weather-province" class="weather-select"><option value="">省份</option></select></div>
+              <div class="cs-wrapper" id="cs-city-wrapper"><select id="weather-city-select" class="weather-select" disabled><option value="">城市</option></select></div>
+              <div class="cs-wrapper" id="cs-district-wrapper"><select id="weather-district" class="weather-select" disabled><option value="">区县</option></select></div>
+              <button id="weather-location-preview" style="padding:4px 8px;border-radius:4px;border:none;background:transparent;color:var(--text-color,#ccc);cursor:pointer;font-size:12px;white-space:nowrap;border:1px solid rgba(255,255,255,0.15)">预览</button>
+              <button id="weather-location-apply" style="padding:4px 8px;border-radius:4px;border:none;background:var(--accent,#5b7cfa);color:#fff;cursor:pointer;font-size:12px;white-space:nowrap">应用</button>
+            </div>
+            <span id="weather-location-status" style="font-size:11px;opacity:0.5;margin-top:4px;display:block"></span>
+          </div>
+        </div>
+        <div class="settings-section">
+          <h3>搜索引擎</h3>
+          <div id="se-manage-list"></div>
+          <button id="se-add-btn">新增搜索引擎</button>
+        </div>
+        <div class="settings-section">
+          <h3>新闻热搜</h3>
+          <div class="setting-row">
+            <span class="setting-label">加载热搜数据</span>
+            <label class="toggle">
+              <input type="checkbox" id="news-enabled-toggle" checked />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+          <p class="setting-desc">关闭后不请求热搜接口，适合无法访问外网的内网环境。默认开启。</p>
+        </div>
+        <div class="settings-section">
+          <h3>快捷链接</h3>
+          <div id="ql-manage" style="margin-top:10px">
+            <button id="ql-reset-btn">清空快捷链接</button>
+            <button id="ql-sync-btn">同步收藏夹</button>
+          </div>
+        </div>
+        <div class="settings-section settings-danger">
+          <h3>数据</h3>
+          <div class="data-actions">
+            <button id="ql-export-btn">⬇ 导出配置</button>
+            <button id="ql-import-btn">⬆ 导入配置</button>
+            <button id="ql-clear-btn">清除所有数据</button>
+          </div>
+          <input type="file" id="ql-import-file" accept=".json" hidden />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 新增搜索引擎弹窗 -->
+  <div id="se-modal-overlay" class="hidden">
+    <div id="se-modal">
+      <h3>新增搜索引擎</h3>
+      <label>名称</label>
+      <input type="text" id="se-add-name" placeholder="例如: 搜狗搜索" />
+      <label>搜索 URL</label>
+      <input type="text" id="se-add-url" placeholder="https://www.sogou.com/web?query=" />
+      <div class="se-modal-hint">搜索关键词替换为 <code>q=</code> 参数，例如 <code>https://www.sogou.com/web?q=搜索词</code></div>
+      <label>图标 URL（可选）</label>
+      <input type="text" id="se-add-icon" placeholder="https://www.sogou.com/favicon.ico" />
+      <div class="ql-modal-actions">
+        <button id="se-add-cancel">取消</button>
+        <button id="se-add-save">添加</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 同步收藏夹弹窗 -->
+  <div id="bm-modal-overlay" class="hidden">
+    <div id="bm-modal">
+      <div class="bm-header">
+        <h3>同步收藏夹</h3>
+        <button id="bm-close">&times;</button>
+      </div>
+      <div class="bm-toolbar">
+        <label class="bm-select-all"><input type="checkbox" id="bm-select-all" /> 全选</label>
+        <span class="bm-count" id="bm-count">已选择 0 个</span>
+      </div>
+      <div id="bm-tree" class="bm-tree"></div>
+      <div class="bm-actions">
+        <button id="bm-cancel">取消</button>
+        <button id="bm-confirm">导入到快捷链接</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 导入配置弹窗 -->
+  <div id="import-modal-overlay" class="hidden">
+    <div id="import-modal">
+      <div class="import-modal-header">
+        <h3>导入配置</h3>
+        <button id="import-modal-close">&times;</button>
+      </div>
+      <div class="import-modal-body">
+        <div class="import-section" id="import-file-section">
+          <div class="import-option-text">
+            <div class="import-option-title">从文件导入</div>
+            <div class="import-option-desc">选择本地的 JSON 配置文件</div>
+          </div>
+          <button id="import-file-btn" class="import-btn">选择文件</button>
+          <input type="file" id="import-file-input" accept=".json" hidden />
+        </div>
+        <div class="import-divider"></div>
+        <div class="import-section" id="import-url-section">
+          <div class="import-option-text">
+            <div class="import-option-title">从 URL 导入</div>
+            <div class="import-option-desc">输入配置文件的在线地址</div>
+          </div>
+          <div class="import-url-row">
+            <input type="text" id="import-url-input" placeholder="https://example.com/config.json" spellcheck="false" />
+            <button id="import-url-btn" class="import-btn">获取</button>
+          </div>
+        </div>
+        <div id="import-modal-status" class="hidden"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="glitch-overlay">
+    <div id="glitch-effects"></div>
+  </div>
+  <div id="toolbar">
+    <button id="settings-btn" title="设置">&#9881;</button>
+  </div>
+
+  <!-- 天气容器 -->
+  <div id="weather-container">
+    <div id="weather-trigger"><span id="weather-temp"></span></div>
+    <div id="weather-details"></div>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/builtins.js"></script>
+  <script src="js/news-sources.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/quicklinks.js"></script>
+  <script src="js/news.js"></script>
+  <script src="js/add-picker.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

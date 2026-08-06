@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Formatter</title>
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="tree-view.css">
+</head>
+<body>
+  <!-- 工具栏 -->
+  <div id="toolbar">
+    <div class="toolbar-left">
+      <button id="btnFormat" title="格式化 (Ctrl+Shift+F)">✨ 格式化</button>
+      <button id="btnCompress" title="压缩">🗜️ 压缩</button>
+      <button id="btnSort" title="排序">🔤 排序</button>
+      <span class="sep"></span>
+      <button id="btnEscape" title="转义">↪️ 转义</button>
+      <button id="btnUnescape" title="去转义">↩️ 去转义</button>
+      <span class="sep"></span>
+      <button id="btnUndo" title="撤销">↩</button>
+      <button id="btnRedo" title="重做">↪</button>
+    </div>
+    <div class="toolbar-right">
+      <button id="btnWrap" class="toggle-btn" title="自动换行">📏 换行</button>
+      <button id="btnTheme" title="切换主题">🌓</button>
+      <button id="btnSettings" title="设置">⚙️</button>
+    </div>
+  </div>
+
+  <!-- 主内容 -->
+  <div id="main">
+    <!-- 左侧编辑器 -->
+    <div id="editorPanel" class="panel">
+      <div class="panel-header">
+        <span>📝 编辑器</span>
+        <div class="panel-actions">
+          <span id="statusBar" class="status"></span>
+        </div>
+      </div>
+      <div id="editorContainer"></div>
+    </div>
+
+    <!-- 右侧树形视图 -->
+    <div id="treePanel" class="panel">
+      <div class="panel-header">
+        <span>🌳 树形视图</span>
+        <div class="panel-actions">
+          <button id="btnExpandAll" title="全部展开">⤵ 展开</button>
+          <button id="btnCollapseAll" title="全部折叠">⤴ 折叠</button>
+        </div>
+      </div>
+      <div id="treeContainer">
+        <div class="tree-empty">输入有效 JSON 后自动显示树形结构</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部面板 -->
+  <div id="bottomPanel" class="is-collapsed">
+    <div class="tabs">
+      <button
+        id="btnToggleBottomPanel"
+        class="bottom-panel-toggle"
+        type="button"
+        aria-controls="bottomPanelBody"
+        aria-expanded="false"
+        title="展开功能区"
+      >展开</button>
+      <button class="tab active" data-tab="input">📥 输入</button>
+      <button class="tab" data-tab="convert">🔄 格式转换</button>
+      <button class="tab" data-tab="codegen">📄 代码生成</button>
+      <button class="tab" data-tab="jwt">🔑 JWT</button>
+      <button class="tab" data-tab="history">📚 历史</button>
+    </div>
+    <div id="bottomPanelBody" class="bottom-panel-body" hidden>
+      <div class="tab-content" id="tabInput">
+        <button id="btnOpenFile">📂 打开文件</button>
+        <button id="btnImportURL">🌐 从 URL 导入</button>
+        <input type="file" id="fileInput" accept=".json" hidden>
+        <button id="btnDownload">💾 下载</button>
+        <button id="btnCopy">📋 复制</button>
+      </div>
+      <div class="tab-content" id="tabConvert" hidden>
+        <div class="tool-tab-actions">
+          <button class="convert-btn" data-action="to-yaml">→ YAML</button>
+          <button class="convert-btn" data-action="to-xml">→ XML</button>
+          <button class="convert-btn" data-action="to-toml">→ TOML</button>
+        </div>
+        <div class="tool-result-panel" data-result-panel="convert" hidden>
+          <div class="tool-result-header">
+            <span data-result-title="convert">格式转换结果</span>
+            <div class="tool-result-actions">
+              <button data-result-copy="convert">复制结果</button>
+              <button data-result-open="convert">展开查看</button>
+            </div>
+          </div>
+          <pre class="output-area tool-result-preview" data-result-preview="convert"></pre>
+        </div>
+      </div>
+      <div class="tab-content" id="tabCodegen" hidden>
+        <div class="tool-tab-actions">
+          <button class="codegen-btn" data-lang="typescript">TypeScript</button>
+          <button class="codegen-btn" data-lang="go">Go</button>
+          <button class="codegen-btn" data-lang="python">Python</button>
+          <button class="codegen-btn" data-lang="java">Java</button>
+          <button class="codegen-btn" data-lang="csharp">C#</button>
+          <button class="codegen-btn" data-lang="rust">Rust</button>
+        </div>
+        <div class="tool-result-panel" data-result-panel="codegen" hidden>
+          <div class="tool-result-header">
+            <span data-result-title="codegen">代码生成结果</span>
+            <div class="tool-result-actions">
+              <button data-result-copy="codegen">复制结果</button>
+              <button data-result-open="codegen">展开查看</button>
+            </div>
+          </div>
+          <pre class="output-area tool-result-preview" data-result-preview="codegen"></pre>
+        </div>
+      </div>
+      <div class="tab-content" id="tabJwt" hidden>
+        <div class="tool-tab-actions jwt-actions">
+          <textarea id="jwtInput" placeholder="粘贴 JWT token..." rows="3"></textarea>
+          <button id="btnDecodeJWT">🔓 解码</button>
+        </div>
+        <div class="tool-result-panel" data-result-panel="jwt" hidden>
+          <div class="tool-result-header">
+            <span data-result-title="jwt">JWT 解码结果</span>
+            <div class="tool-result-actions">
+              <button data-result-copy="jwt">复制结果</button>
+              <button data-result-open="jwt">展开查看</button>
+            </div>
+          </div>
+          <pre id="jwtOutput" class="output-area tool-result-preview" data-result-preview="jwt"></pre>
+        </div>
+      </div>
+      <div class="tab-content" id="tabHistory" hidden>
+        <div id="historyList"></div>
+        <button id="btnClearHistory">🗑️ 清空历史</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 作者信息 -->
+  <div class="app-author">作者: wzukhh | wzukhh@163.com</div>
+
+  <!-- 模态框：工具结果 -->
+  <div id="toolResultModal" class="result-modal" hidden>
+    <div class="result-modal-content">
+      <div class="result-modal-header">
+        <h3 id="toolResultModalTitle">工具结果</h3>
+        <button id="btnCloseResultModal" title="关闭">关闭</button>
+      </div>
+      <pre id="toolResultModalBody" class="result-modal-body"></pre>
+      <div class="result-modal-actions">
+        <button id="btnCopyResultModal">复制结果</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 模态框：设置 -->
+  <div id="settingsModal" class="modal" hidden>
+    <div class="modal-content">
+      <h3>⚙️ 设置</h3>
+      <label>缩进空格数
+        <select id="settingIndent">
+          <option value="2">2</option>
+          <option value="4">4</option>
+        </select>
+      </label>
+      <label>字号
+        <input type="number" id="settingFontSize" value="14" min="10" max="32">
+      </label>
+      <label>字体
+        <select id="settingFontFamily">
+          <option value="'SF Mono', 'Fira Code', monospace">SF Mono / Fira Code</option>
+          <option value="'Consolas', monospace">Consolas</option>
+          <option value="'Source Code Pro', monospace">Source Code Pro</option>
+          <option value="monospace">系统默认</option>
+        </select>
+      </label>
+      <div class="modal-actions">
+        <button id="btnSaveSettings">保存</button>
+        <button id="btnCloseSettings">取消</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

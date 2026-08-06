@@ -1,0 +1,753 @@
+{
+  "province": {
+    "code": "35",
+    "name": "福建省"
+  },
+  "cities": [
+    {
+      "code": "3501",
+      "name": "福州市",
+      "provinceCode": "35",
+      "areas": [
+        {
+          "code": "350102",
+          "name": "鼓楼区",
+          "cityCode": "3501",
+          "provinceCode": "35",
+          "lng": 119.299187,
+          "lat": 26.085095
+        },
+        {
+          "code": "350103",
+          "name": "台江区",
+          "cityCode": "3501",
+          "provinceCode": "35",
+          "lng": 119.3093,
+          "lat": 26.055759
+        },
+        {
+          "code": "350104",
+          "name": "仓山区",
+          "cityCode": "3501",
+          "provinceCode": "35",
+          "lng": 119.26923,
+          "lat": 26.049611
+        },
+        {
+          "code": "350105",
+          "name": "马尾区",
+          "cityCode": "3501",
+          "provinceCode": "35",
+          "lng": 119.434108,
+          "lat": 26.001633
+        },
+        {
+          "code": "350111",
+          "name": "晋安区",
+          "cityCode": "3501",
+          "provinceCode": "35",
+          "lng": 119.323142,
+          "lat": 26.084551
+        },
+        {
+          "code": "350112",
+          "name": "长乐区",
+          "cityCode": "3501",
+          "provinceCode": "35",
+          "lng": 119.518526,
+          "lat": 25.966132
+        },
+        {
+          "code": "350121",
+          "name": "闽侯县",
+          "cityCode": "3501",
+          "provinceCode": "35",
+          "lng": 119.126553,
+          "lat": 26.153334
+        },
+        {
+          "code": "350122",
+          "name": "连江县",
+          "cityCode": "3501",
+          "provinceCode": "35",
+          "lng": 119.535429,
+          "lat": 26.200728
+        },
+        {
+          "code": "350123",
+          "name": "罗源县",
+          "cityCode": "3501",
+          "provinceCode": "35",
+          "lng": 119.5444,
+          "lat": 26.493749
+        },
+        {
+          "code": "350124",
+          "name": "闽清县",
+          "cityCode": "3501",
+          "provinceCode": "35",
+          "lng": 118.858422,
+          "lat": 26.224591
+        },
+        {
+          "code": "350125",
+          "name": "永泰县",
+          "cityCode": "3501",
+          "provinceCode": "35",
+          "lng": 118.928197,
+          "lat": 25.870366
+        },
+        {
+          "code": "350128",
+          "name": "平潭县",
+          "cityCode": "3501",
+          "provinceCode": "35",
+          "lng": 119.786137,
+          "lat": 25.501595
+        },
+        {
+          "code": "350181",
+          "name": "福清市",
+          "cityCode": "3501",
+          "provinceCode": "35",
+          "lng": 119.379088,
+          "lat": 25.722832
+        }
+      ],
+      "lng": 119.2922,
+      "lat": 26.077301
+    },
+    {
+      "code": "3502",
+      "name": "厦门市",
+      "provinceCode": "35",
+      "areas": [
+        {
+          "code": "350203",
+          "name": "思明区",
+          "cityCode": "3502",
+          "provinceCode": "35",
+          "lng": 118.077026,
+          "lat": 24.448245
+        },
+        {
+          "code": "350205",
+          "name": "海沧区",
+          "cityCode": "3502",
+          "provinceCode": "35",
+          "lng": 118.028094,
+          "lat": 24.487336
+        },
+        {
+          "code": "350206",
+          "name": "湖里区",
+          "cityCode": "3502",
+          "provinceCode": "35",
+          "lng": 118.142095,
+          "lat": 24.514594
+        },
+        {
+          "code": "350211",
+          "name": "集美区",
+          "cityCode": "3502",
+          "provinceCode": "35",
+          "lng": 118.092396,
+          "lat": 24.578644
+        },
+        {
+          "code": "350212",
+          "name": "同安区",
+          "cityCode": "3502",
+          "provinceCode": "35",
+          "lng": 118.146814,
+          "lat": 24.725964
+        },
+        {
+          "code": "350213",
+          "name": "翔安区",
+          "cityCode": "3502",
+          "provinceCode": "35",
+          "lng": 118.243646,
+          "lat": 24.621608
+        }
+      ],
+      "lng": 118.08423,
+      "lat": 24.482375
+    },
+    {
+      "code": "3503",
+      "name": "莆田市",
+      "provinceCode": "35",
+      "areas": [
+        {
+          "code": "350302",
+          "name": "城厢区",
+          "cityCode": "3503",
+          "provinceCode": "35",
+          "lng": 118.990312,
+          "lat": 25.421412
+        },
+        {
+          "code": "350303",
+          "name": "涵江区",
+          "cityCode": "3503",
+          "provinceCode": "35",
+          "lng": 119.111086,
+          "lat": 25.461326
+        },
+        {
+          "code": "350304",
+          "name": "荔城区",
+          "cityCode": "3503",
+          "provinceCode": "35",
+          "lng": 119.010383,
+          "lat": 25.434762
+        },
+        {
+          "code": "350305",
+          "name": "秀屿区",
+          "cityCode": "3503",
+          "provinceCode": "35",
+          "lng": 119.100253,
+          "lat": 25.321692
+        },
+        {
+          "code": "350322",
+          "name": "仙游县",
+          "cityCode": "3503",
+          "provinceCode": "35",
+          "lng": 118.687386,
+          "lat": 25.364848
+        }
+      ],
+      "lng": 119.002979,
+      "lat": 25.456926
+    },
+    {
+      "code": "3504",
+      "name": "三明市",
+      "provinceCode": "35",
+      "areas": [
+        {
+          "code": "350404",
+          "name": "三元区",
+          "cityCode": "3504",
+          "provinceCode": "35"
+        },
+        {
+          "code": "350405",
+          "name": "沙县区",
+          "cityCode": "3504",
+          "provinceCode": "35"
+        },
+        {
+          "code": "350421",
+          "name": "明溪县",
+          "cityCode": "3504",
+          "provinceCode": "35",
+          "lng": 117.197607,
+          "lat": 26.358837
+        },
+        {
+          "code": "350423",
+          "name": "清流县",
+          "cityCode": "3504",
+          "provinceCode": "35",
+          "lng": 116.81224,
+          "lat": 26.181181
+        },
+        {
+          "code": "350424",
+          "name": "宁化县",
+          "cityCode": "3504",
+          "provinceCode": "35",
+          "lng": 116.649868,
+          "lat": 26.265413
+        },
+        {
+          "code": "350425",
+          "name": "大田县",
+          "cityCode": "3504",
+          "provinceCode": "35",
+          "lng": 117.84233,
+          "lat": 25.695735
+        },
+        {
+          "code": "350426",
+          "name": "尤溪县",
+          "cityCode": "3504",
+          "provinceCode": "35",
+          "lng": 118.186082,
+          "lat": 26.173055
+        },
+        {
+          "code": "350428",
+          "name": "将乐县",
+          "cityCode": "3504",
+          "provinceCode": "35",
+          "lng": 117.465979,
+          "lat": 26.732184
+        },
+        {
+          "code": "350429",
+          "name": "泰宁县",
+          "cityCode": "3504",
+          "provinceCode": "35",
+          "lng": 117.17055,
+          "lat": 26.903536
+        },
+        {
+          "code": "350430",
+          "name": "建宁县",
+          "cityCode": "3504",
+          "provinceCode": "35",
+          "lng": 116.843652,
+          "lat": 26.836547
+        },
+        {
+          "code": "350481",
+          "name": "永安市",
+          "cityCode": "3504",
+          "provinceCode": "35",
+          "lng": 117.359812,
+          "lat": 25.944635
+        }
+      ],
+      "lng": 117.6341,
+      "lat": 26.267325
+    },
+    {
+      "code": "3505",
+      "name": "泉州市",
+      "provinceCode": "35",
+      "areas": [
+        {
+          "code": "350502",
+          "name": "鲤城区",
+          "cityCode": "3505",
+          "provinceCode": "35",
+          "lng": 118.582551,
+          "lat": 24.9103
+        },
+        {
+          "code": "350503",
+          "name": "丰泽区",
+          "cityCode": "3505",
+          "provinceCode": "35",
+          "lng": 118.608552,
+          "lat": 24.892301
+        },
+        {
+          "code": "350504",
+          "name": "洛江区",
+          "cityCode": "3505",
+          "provinceCode": "35",
+          "lng": 118.666633,
+          "lat": 24.942334
+        },
+        {
+          "code": "350505",
+          "name": "泉港区",
+          "cityCode": "3505",
+          "provinceCode": "35",
+          "lng": 118.911523,
+          "lat": 25.136267
+        },
+        {
+          "code": "350521",
+          "name": "惠安县",
+          "cityCode": "3505",
+          "provinceCode": "35",
+          "lng": 118.792386,
+          "lat": 25.033438
+        },
+        {
+          "code": "350524",
+          "name": "安溪县",
+          "cityCode": "3505",
+          "provinceCode": "35",
+          "lng": 118.181471,
+          "lat": 25.05881
+        },
+        {
+          "code": "350525",
+          "name": "永春县",
+          "cityCode": "3505",
+          "provinceCode": "35",
+          "lng": 118.289408,
+          "lat": 25.324583
+        },
+        {
+          "code": "350526",
+          "name": "德化县",
+          "cityCode": "3505",
+          "provinceCode": "35",
+          "lng": 118.236378,
+          "lat": 25.494891
+        },
+        {
+          "code": "350527",
+          "name": "金门县",
+          "cityCode": "3505",
+          "provinceCode": "35",
+          "lng": 118.319231,
+          "lat": 24.436833
+        },
+        {
+          "code": "350581",
+          "name": "石狮市",
+          "cityCode": "3505",
+          "provinceCode": "35",
+          "lng": 118.643554,
+          "lat": 24.73473
+        },
+        {
+          "code": "350582",
+          "name": "晋江市",
+          "cityCode": "3505",
+          "provinceCode": "35",
+          "lng": 118.547202,
+          "lat": 24.784626
+        },
+        {
+          "code": "350583",
+          "name": "南安市",
+          "cityCode": "3505",
+          "provinceCode": "35",
+          "lng": 118.38152,
+          "lat": 24.962757
+        }
+      ],
+      "lng": 118.38152,
+      "lat": 24.962757
+    },
+    {
+      "code": "3506",
+      "name": "漳州市",
+      "provinceCode": "35",
+      "areas": [
+        {
+          "code": "350602",
+          "name": "芗城区",
+          "cityCode": "3506",
+          "provinceCode": "35",
+          "lng": 117.649202,
+          "lat": 24.513567
+        },
+        {
+          "code": "350603",
+          "name": "龙文区",
+          "cityCode": "3506",
+          "provinceCode": "35",
+          "lng": 117.706506,
+          "lat": 24.5065
+        },
+        {
+          "code": "350604",
+          "name": "龙海区",
+          "cityCode": "3506",
+          "provinceCode": "35"
+        },
+        {
+          "code": "350605",
+          "name": "长泰区",
+          "cityCode": "3506",
+          "provinceCode": "35"
+        },
+        {
+          "code": "350622",
+          "name": "云霄县",
+          "cityCode": "3506",
+          "provinceCode": "35",
+          "lng": 117.334994,
+          "lat": 23.960443
+        },
+        {
+          "code": "350623",
+          "name": "漳浦县",
+          "cityCode": "3506",
+          "provinceCode": "35",
+          "lng": 117.608923,
+          "lat": 24.120547
+        },
+        {
+          "code": "350624",
+          "name": "诏安县",
+          "cityCode": "3506",
+          "provinceCode": "35",
+          "lng": 117.170249,
+          "lat": 23.714323
+        },
+        {
+          "code": "350626",
+          "name": "东山县",
+          "cityCode": "3506",
+          "provinceCode": "35",
+          "lng": 117.424659,
+          "lat": 23.704378
+        },
+        {
+          "code": "350627",
+          "name": "南靖县",
+          "cityCode": "3506",
+          "provinceCode": "35",
+          "lng": 117.351712,
+          "lat": 24.51798
+        },
+        {
+          "code": "350628",
+          "name": "平和县",
+          "cityCode": "3506",
+          "provinceCode": "35",
+          "lng": 117.310161,
+          "lat": 24.36598
+        },
+        {
+          "code": "350629",
+          "name": "华安县",
+          "cityCode": "3506",
+          "provinceCode": "35",
+          "lng": 117.528723,
+          "lat": 25.007392
+        }
+      ],
+      "lng": 117.813476,
+      "lat": 24.449733
+    },
+    {
+      "code": "3507",
+      "name": "南平市",
+      "provinceCode": "35",
+      "areas": [
+        {
+          "code": "350702",
+          "name": "延平区",
+          "cityCode": "3507",
+          "provinceCode": "35",
+          "lng": 118.177224,
+          "lat": 26.640901
+        },
+        {
+          "code": "350703",
+          "name": "建阳区",
+          "cityCode": "3507",
+          "provinceCode": "35",
+          "lng": 118.115374,
+          "lat": 27.335073
+        },
+        {
+          "code": "350721",
+          "name": "顺昌县",
+          "cityCode": "3507",
+          "provinceCode": "35",
+          "lng": 117.805009,
+          "lat": 26.796561
+        },
+        {
+          "code": "350722",
+          "name": "浦城县",
+          "cityCode": "3507",
+          "provinceCode": "35",
+          "lng": 118.536329,
+          "lat": 27.921171
+        },
+        {
+          "code": "350723",
+          "name": "光泽县",
+          "cityCode": "3507",
+          "provinceCode": "35",
+          "lng": 117.328555,
+          "lat": 27.544184
+        },
+        {
+          "code": "350724",
+          "name": "松溪县",
+          "cityCode": "3507",
+          "provinceCode": "35",
+          "lng": 118.780573,
+          "lat": 27.529545
+        },
+        {
+          "code": "350725",
+          "name": "政和县",
+          "cityCode": "3507",
+          "provinceCode": "35",
+          "lng": 118.852974,
+          "lat": 27.369628
+        },
+        {
+          "code": "350781",
+          "name": "邵武市",
+          "cityCode": "3507",
+          "provinceCode": "35",
+          "lng": 117.487227,
+          "lat": 27.343642
+        },
+        {
+          "code": "350782",
+          "name": "武夷山市",
+          "cityCode": "3507",
+          "provinceCode": "35",
+          "lng": 118.030278,
+          "lat": 27.759566
+        },
+        {
+          "code": "350783",
+          "name": "建瓯市",
+          "cityCode": "3507",
+          "provinceCode": "35",
+          "lng": 118.300071,
+          "lat": 27.025968
+        }
+      ],
+      "lng": 118.075746,
+      "lat": 27.386005
+    },
+    {
+      "code": "3508",
+      "name": "龙岩市",
+      "provinceCode": "35",
+      "areas": [
+        {
+          "code": "350802",
+          "name": "新罗区",
+          "cityCode": "3508",
+          "provinceCode": "35",
+          "lng": 117.032055,
+          "lat": 25.100903
+        },
+        {
+          "code": "350803",
+          "name": "永定区",
+          "cityCode": "3508",
+          "provinceCode": "35",
+          "lng": 116.727357,
+          "lat": 24.726931
+        },
+        {
+          "code": "350821",
+          "name": "长汀县",
+          "cityCode": "3508",
+          "provinceCode": "35",
+          "lng": 116.352155,
+          "lat": 25.836261
+        },
+        {
+          "code": "350823",
+          "name": "上杭县",
+          "cityCode": "3508",
+          "provinceCode": "35",
+          "lng": 116.41518,
+          "lat": 25.052039
+        },
+        {
+          "code": "350824",
+          "name": "武平县",
+          "cityCode": "3508",
+          "provinceCode": "35",
+          "lng": 116.09566,
+          "lat": 25.098354
+        },
+        {
+          "code": "350825",
+          "name": "连城县",
+          "cityCode": "3508",
+          "provinceCode": "35",
+          "lng": 116.749264,
+          "lat": 25.712931
+        },
+        {
+          "code": "350881",
+          "name": "漳平市",
+          "cityCode": "3508",
+          "provinceCode": "35",
+          "lng": 117.414812,
+          "lat": 25.292719
+        }
+      ],
+      "lng": 117.012542,
+      "lat": 25.078634
+    },
+    {
+      "code": "3509",
+      "name": "宁德市",
+      "provinceCode": "35",
+      "areas": [
+        {
+          "code": "350902",
+          "name": "蕉城区",
+          "cityCode": "3509",
+          "provinceCode": "35",
+          "lng": 119.522352,
+          "lat": 26.663844
+        },
+        {
+          "code": "350921",
+          "name": "霞浦县",
+          "cityCode": "3509",
+          "provinceCode": "35",
+          "lng": 120.000571,
+          "lat": 26.88832
+        },
+        {
+          "code": "350922",
+          "name": "古田县",
+          "cityCode": "3509",
+          "provinceCode": "35",
+          "lng": 118.741281,
+          "lat": 26.580977
+        },
+        {
+          "code": "350923",
+          "name": "屏南县",
+          "cityCode": "3509",
+          "provinceCode": "35",
+          "lng": 118.981003,
+          "lat": 26.911712
+        },
+        {
+          "code": "350924",
+          "name": "寿宁县",
+          "cityCode": "3509",
+          "provinceCode": "35",
+          "lng": 119.510508,
+          "lat": 27.457941
+        },
+        {
+          "code": "350925",
+          "name": "周宁县",
+          "cityCode": "3509",
+          "provinceCode": "35",
+          "lng": 119.334033,
+          "lat": 27.10791
+        },
+        {
+          "code": "350926",
+          "name": "柘荣县",
+          "cityCode": "3509",
+          "provinceCode": "35",
+          "lng": 119.896681,
+          "lat": 27.237228
+        },
+        {
+          "code": "350981",
+          "name": "福安市",
+          "cityCode": "3509",
+          "provinceCode": "35",
+          "lng": 119.643347,
+          "lat": 27.091452
+        },
+        {
+          "code": "350982",
+          "name": "福鼎市",
+          "cityCode": "3509",
+          "provinceCode": "35",
+          "lng": 120.212626,
+          "lat": 27.327822
+        }
+      ],
+      "lng": 119.543418,
+      "lat": 26.669696
+    }
+  ]
+}

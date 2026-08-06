@@ -1,0 +1,17 @@
+.DS_Store
+.claude/
+.remember/
+.superpowers/
+superpowers/
+.worktrees/
+.vscode/
+.idea/
+.cursor/
+.codex/
+docs/superpowers/
+.vite/
+package-lock.json
+node_modules/
+test/
+tests/
+skills/

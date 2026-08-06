@@ -1,0 +1,950 @@
+{
+  "province": {
+    "code": "61",
+    "name": "陕西省"
+  },
+  "cities": [
+    {
+      "code": "6101",
+      "name": "西安市",
+      "provinceCode": "61",
+      "areas": [
+        {
+          "code": "610102",
+          "name": "新城区",
+          "cityCode": "6101",
+          "provinceCode": "61",
+          "lng": 108.956284,
+          "lat": 34.267945
+        },
+        {
+          "code": "610103",
+          "name": "碑林区",
+          "cityCode": "6101",
+          "provinceCode": "61",
+          "lng": 108.935872,
+          "lat": 34.258452
+        },
+        {
+          "code": "610104",
+          "name": "莲湖区",
+          "cityCode": "6101",
+          "provinceCode": "61",
+          "lng": 108.939303,
+          "lat": 34.266904
+        },
+        {
+          "code": "610111",
+          "name": "灞桥区",
+          "cityCode": "6101",
+          "provinceCode": "61",
+          "lng": 109.059887,
+          "lat": 34.274171
+        },
+        {
+          "code": "610112",
+          "name": "未央区",
+          "cityCode": "6101",
+          "provinceCode": "61",
+          "lng": 108.942108,
+          "lat": 34.294617
+        },
+        {
+          "code": "610113",
+          "name": "雁塔区",
+          "cityCode": "6101",
+          "provinceCode": "61",
+          "lng": 108.94034,
+          "lat": 34.216
+        },
+        {
+          "code": "610114",
+          "name": "阎良区",
+          "cityCode": "6101",
+          "provinceCode": "61",
+          "lng": 109.22093,
+          "lat": 34.663461
+        },
+        {
+          "code": "610115",
+          "name": "临潼区",
+          "cityCode": "6101",
+          "provinceCode": "61",
+          "lng": 109.209212,
+          "lat": 34.368104
+        },
+        {
+          "code": "610116",
+          "name": "长安区",
+          "cityCode": "6101",
+          "provinceCode": "61",
+          "lng": 108.902059,
+          "lat": 34.160601
+        },
+        {
+          "code": "610117",
+          "name": "高陵区",
+          "cityCode": "6101",
+          "provinceCode": "61",
+          "lng": 109.083118,
+          "lat": 34.53612
+        },
+        {
+          "code": "610118",
+          "name": "鄠邑区",
+          "cityCode": "6101",
+          "provinceCode": "61",
+          "lng": 108.600573,
+          "lat": 34.110375
+        },
+        {
+          "code": "610122",
+          "name": "蓝田县",
+          "cityCode": "6101",
+          "provinceCode": "61",
+          "lng": 109.318446,
+          "lat": 34.15293
+        },
+        {
+          "code": "610124",
+          "name": "周至县",
+          "cityCode": "6101",
+          "provinceCode": "61",
+          "lng": 108.217485,
+          "lat": 34.165123
+        }
+      ],
+      "lng": 108.935344,
+      "lat": 34.342656
+    },
+    {
+      "code": "6102",
+      "name": "铜川市",
+      "provinceCode": "61",
+      "areas": [
+        {
+          "code": "610202",
+          "name": "王益区",
+          "cityCode": "6102",
+          "provinceCode": "61",
+          "lng": 109.070398,
+          "lat": 35.069989
+        },
+        {
+          "code": "610203",
+          "name": "印台区",
+          "cityCode": "6102",
+          "provinceCode": "61",
+          "lng": 109.094994,
+          "lat": 35.115113
+        },
+        {
+          "code": "610204",
+          "name": "耀州区",
+          "cityCode": "6102",
+          "provinceCode": "61",
+          "lng": 108.975157,
+          "lat": 34.910679
+        },
+        {
+          "code": "610222",
+          "name": "宜君县",
+          "cityCode": "6102",
+          "provinceCode": "61",
+          "lng": 109.111683,
+          "lat": 35.398844
+        }
+      ],
+      "lng": 109.070398,
+      "lat": 35.069989
+    },
+    {
+      "code": "6103",
+      "name": "宝鸡市",
+      "provinceCode": "61",
+      "areas": [
+        {
+          "code": "610302",
+          "name": "渭滨区",
+          "cityCode": "6103",
+          "provinceCode": "61",
+          "lng": 107.132262,
+          "lat": 34.370939
+        },
+        {
+          "code": "610303",
+          "name": "金台区",
+          "cityCode": "6103",
+          "provinceCode": "61",
+          "lng": 107.1422,
+          "lat": 34.377378
+        },
+        {
+          "code": "610304",
+          "name": "陈仓区",
+          "cityCode": "6103",
+          "provinceCode": "61",
+          "lng": 107.363961,
+          "lat": 34.351582
+        },
+        {
+          "code": "610305",
+          "name": "凤翔区",
+          "cityCode": "6103",
+          "provinceCode": "61"
+        },
+        {
+          "code": "610323",
+          "name": "岐山县",
+          "cityCode": "6103",
+          "provinceCode": "61",
+          "lng": 107.616792,
+          "lat": 34.445272
+        },
+        {
+          "code": "610324",
+          "name": "扶风县",
+          "cityCode": "6103",
+          "provinceCode": "61",
+          "lng": 107.895706,
+          "lat": 34.377222
+        },
+        {
+          "code": "610326",
+          "name": "眉县",
+          "cityCode": "6103",
+          "provinceCode": "61",
+          "lng": 107.745273,
+          "lat": 34.276264
+        },
+        {
+          "code": "610327",
+          "name": "陇县",
+          "cityCode": "6103",
+          "provinceCode": "61",
+          "lng": 106.859737,
+          "lat": 34.894239
+        },
+        {
+          "code": "610328",
+          "name": "千阳县",
+          "cityCode": "6103",
+          "provinceCode": "61",
+          "lng": 107.127472,
+          "lat": 34.643509
+        },
+        {
+          "code": "610329",
+          "name": "麟游县",
+          "cityCode": "6103",
+          "provinceCode": "61",
+          "lng": 107.788225,
+          "lat": 34.679018
+        },
+        {
+          "code": "610330",
+          "name": "凤县",
+          "cityCode": "6103",
+          "provinceCode": "61",
+          "lng": 106.511914,
+          "lat": 33.912423
+        },
+        {
+          "code": "610331",
+          "name": "太白县",
+          "cityCode": "6103",
+          "provinceCode": "61",
+          "lng": 107.314268,
+          "lat": 34.059897
+        }
+      ],
+      "lng": 107.233308,
+      "lat": 34.364518
+    },
+    {
+      "code": "6104",
+      "name": "咸阳市",
+      "provinceCode": "61",
+      "areas": [
+        {
+          "code": "610402",
+          "name": "秦都区",
+          "cityCode": "6104",
+          "provinceCode": "61",
+          "lng": 108.701631,
+          "lat": 34.331086
+        },
+        {
+          "code": "610403",
+          "name": "杨陵区",
+          "cityCode": "6104",
+          "provinceCode": "61",
+          "lng": 108.079571,
+          "lat": 34.27334
+        },
+        {
+          "code": "610404",
+          "name": "渭城区",
+          "cityCode": "6104",
+          "provinceCode": "61",
+          "lng": 108.731743,
+          "lat": 34.36307
+        },
+        {
+          "code": "610422",
+          "name": "三原县",
+          "cityCode": "6104",
+          "provinceCode": "61",
+          "lng": 108.936073,
+          "lat": 34.618652
+        },
+        {
+          "code": "610423",
+          "name": "泾阳县",
+          "cityCode": "6104",
+          "provinceCode": "61",
+          "lng": 108.838043,
+          "lat": 34.527988
+        },
+        {
+          "code": "610424",
+          "name": "乾县",
+          "cityCode": "6104",
+          "provinceCode": "61",
+          "lng": 108.234322,
+          "lat": 34.528999
+        },
+        {
+          "code": "610425",
+          "name": "礼泉县",
+          "cityCode": "6104",
+          "provinceCode": "61",
+          "lng": 108.420232,
+          "lat": 34.482975
+        },
+        {
+          "code": "610426",
+          "name": "永寿县",
+          "cityCode": "6104",
+          "provinceCode": "61",
+          "lng": 108.136945,
+          "lat": 34.693093
+        },
+        {
+          "code": "610428",
+          "name": "长武县",
+          "cityCode": "6104",
+          "provinceCode": "61",
+          "lng": 107.794193,
+          "lat": 35.206468
+        },
+        {
+          "code": "610429",
+          "name": "旬邑县",
+          "cityCode": "6104",
+          "provinceCode": "61",
+          "lng": 108.329164,
+          "lat": 35.11251
+        },
+        {
+          "code": "610430",
+          "name": "淳化县",
+          "cityCode": "6104",
+          "provinceCode": "61",
+          "lng": 108.576514,
+          "lat": 34.799831
+        },
+        {
+          "code": "610431",
+          "name": "武功县",
+          "cityCode": "6104",
+          "provinceCode": "61",
+          "lng": 108.195651,
+          "lat": 34.261806
+        },
+        {
+          "code": "610481",
+          "name": "兴平市",
+          "cityCode": "6104",
+          "provinceCode": "61",
+          "lng": 108.48532,
+          "lat": 34.300599
+        },
+        {
+          "code": "610482",
+          "name": "彬州市",
+          "cityCode": "6104",
+          "provinceCode": "61",
+          "lng": 108.076105,
+          "lat": 35.036273
+        }
+      ],
+      "lng": 108.136405,
+      "lat": 34.693902
+    },
+    {
+      "code": "6105",
+      "name": "渭南市",
+      "provinceCode": "61",
+      "areas": [
+        {
+          "code": "610502",
+          "name": "临渭区",
+          "cityCode": "6105",
+          "provinceCode": "61",
+          "lng": 109.504794,
+          "lat": 34.499373
+        },
+        {
+          "code": "610503",
+          "name": "华州区",
+          "cityCode": "6105",
+          "provinceCode": "61",
+          "lng": 109.770761,
+          "lat": 34.497597
+        },
+        {
+          "code": "610522",
+          "name": "潼关县",
+          "cityCode": "6105",
+          "provinceCode": "61",
+          "lng": 110.241322,
+          "lat": 34.546011
+        },
+        {
+          "code": "610523",
+          "name": "大荔县",
+          "cityCode": "6105",
+          "provinceCode": "61",
+          "lng": 109.936905,
+          "lat": 34.798408
+        },
+        {
+          "code": "610524",
+          "name": "合阳县",
+          "cityCode": "6105",
+          "provinceCode": "61",
+          "lng": 110.143843,
+          "lat": 35.238237
+        },
+        {
+          "code": "610525",
+          "name": "澄城县",
+          "cityCode": "6105",
+          "provinceCode": "61",
+          "lng": 109.927128,
+          "lat": 35.19133
+        },
+        {
+          "code": "610526",
+          "name": "蒲城县",
+          "cityCode": "6105",
+          "provinceCode": "61",
+          "lng": 109.581067,
+          "lat": 34.956466
+        },
+        {
+          "code": "610527",
+          "name": "白水县",
+          "cityCode": "6105",
+          "provinceCode": "61",
+          "lng": 109.585601,
+          "lat": 35.178543
+        },
+        {
+          "code": "610528",
+          "name": "富平县",
+          "cityCode": "6105",
+          "provinceCode": "61",
+          "lng": 109.175001,
+          "lat": 34.752679
+        },
+        {
+          "code": "610581",
+          "name": "韩城市",
+          "cityCode": "6105",
+          "provinceCode": "61",
+          "lng": 110.437225,
+          "lat": 35.476679
+        },
+        {
+          "code": "610582",
+          "name": "华阴市",
+          "cityCode": "6105",
+          "provinceCode": "61",
+          "lng": 110.086679,
+          "lat": 34.567417
+        }
+      ],
+      "lng": 109.586841,
+      "lat": 35.183587
+    },
+    {
+      "code": "6106",
+      "name": "延安市",
+      "provinceCode": "61",
+      "areas": [
+        {
+          "code": "610602",
+          "name": "宝塔区",
+          "cityCode": "6106",
+          "provinceCode": "61",
+          "lng": 109.483927,
+          "lat": 36.585288
+        },
+        {
+          "code": "610603",
+          "name": "安塞区",
+          "cityCode": "6106",
+          "provinceCode": "61",
+          "lng": 109.324054,
+          "lat": 36.864294
+        },
+        {
+          "code": "610621",
+          "name": "延长县",
+          "cityCode": "6106",
+          "provinceCode": "61",
+          "lng": 110.006815,
+          "lat": 36.579256
+        },
+        {
+          "code": "610622",
+          "name": "延川县",
+          "cityCode": "6106",
+          "provinceCode": "61",
+          "lng": 110.188156,
+          "lat": 36.877677
+        },
+        {
+          "code": "610625",
+          "name": "志丹县",
+          "cityCode": "6106",
+          "provinceCode": "61",
+          "lng": 108.763504,
+          "lat": 36.822157
+        },
+        {
+          "code": "610626",
+          "name": "吴起县",
+          "cityCode": "6106",
+          "provinceCode": "61",
+          "lng": 108.171255,
+          "lat": 36.927379
+        },
+        {
+          "code": "610627",
+          "name": "甘泉县",
+          "cityCode": "6106",
+          "provinceCode": "61",
+          "lng": 109.345602,
+          "lat": 36.276576
+        },
+        {
+          "code": "610628",
+          "name": "富县",
+          "cityCode": "6106",
+          "provinceCode": "61",
+          "lng": 109.374218,
+          "lat": 35.987731
+        },
+        {
+          "code": "610629",
+          "name": "洛川县",
+          "cityCode": "6106",
+          "provinceCode": "61",
+          "lng": 109.426935,
+          "lat": 35.762245
+        },
+        {
+          "code": "610630",
+          "name": "宜川县",
+          "cityCode": "6106",
+          "provinceCode": "61",
+          "lng": 110.163414,
+          "lat": 36.050241
+        },
+        {
+          "code": "610631",
+          "name": "黄龙县",
+          "cityCode": "6106",
+          "provinceCode": "61",
+          "lng": 109.835163,
+          "lat": 35.585037
+        },
+        {
+          "code": "610632",
+          "name": "黄陵县",
+          "cityCode": "6106",
+          "provinceCode": "61",
+          "lng": 109.257787,
+          "lat": 35.57997
+        },
+        {
+          "code": "610681",
+          "name": "子长市",
+          "cityCode": "6106",
+          "provinceCode": "61",
+          "lng": 109.66976,
+          "lat": 37.142163
+        }
+      ],
+      "lng": 109.489175,
+      "lat": 36.650283
+    },
+    {
+      "code": "6107",
+      "name": "汉中市",
+      "provinceCode": "61",
+      "areas": [
+        {
+          "code": "610702",
+          "name": "汉台区",
+          "cityCode": "6107",
+          "provinceCode": "61",
+          "lng": 107.027351,
+          "lat": 33.069208
+        },
+        {
+          "code": "610703",
+          "name": "南郑区",
+          "cityCode": "6107",
+          "provinceCode": "61",
+          "lng": 106.93208,
+          "lat": 33.002169
+        },
+        {
+          "code": "610722",
+          "name": "城固县",
+          "cityCode": "6107",
+          "provinceCode": "61",
+          "lng": 107.329229,
+          "lat": 33.158483
+        },
+        {
+          "code": "610723",
+          "name": "洋县",
+          "cityCode": "6107",
+          "provinceCode": "61",
+          "lng": 107.541091,
+          "lat": 33.224713
+        },
+        {
+          "code": "610724",
+          "name": "西乡县",
+          "cityCode": "6107",
+          "provinceCode": "61",
+          "lng": 107.761749,
+          "lat": 32.985026
+        },
+        {
+          "code": "610725",
+          "name": "勉县",
+          "cityCode": "6107",
+          "provinceCode": "61",
+          "lng": 106.668927,
+          "lat": 33.155494
+        },
+        {
+          "code": "610726",
+          "name": "宁强县",
+          "cityCode": "6107",
+          "provinceCode": "61",
+          "lng": 106.252963,
+          "lat": 32.832127
+        },
+        {
+          "code": "610727",
+          "name": "略阳县",
+          "cityCode": "6107",
+          "provinceCode": "61",
+          "lng": 106.152491,
+          "lat": 33.329011
+        },
+        {
+          "code": "610728",
+          "name": "镇巴县",
+          "cityCode": "6107",
+          "provinceCode": "61",
+          "lng": 107.890498,
+          "lat": 32.539114
+        },
+        {
+          "code": "610729",
+          "name": "留坝县",
+          "cityCode": "6107",
+          "provinceCode": "61",
+          "lng": 106.916571,
+          "lat": 33.619403
+        },
+        {
+          "code": "610730",
+          "name": "佛坪县",
+          "cityCode": "6107",
+          "provinceCode": "61",
+          "lng": 107.986243,
+          "lat": 33.526046
+        }
+      ],
+      "lng": 107.018944,
+      "lat": 33.069067
+    },
+    {
+      "code": "6108",
+      "name": "榆林市",
+      "provinceCode": "61",
+      "areas": [
+        {
+          "code": "610802",
+          "name": "榆阳区",
+          "cityCode": "6108",
+          "provinceCode": "61",
+          "lng": 109.715305,
+          "lat": 38.276811
+        },
+        {
+          "code": "610803",
+          "name": "横山区",
+          "cityCode": "6108",
+          "provinceCode": "61",
+          "lng": 109.288478,
+          "lat": 37.961884
+        },
+        {
+          "code": "610822",
+          "name": "府谷县",
+          "cityCode": "6108",
+          "provinceCode": "61",
+          "lng": 111.060511,
+          "lat": 39.027141
+        },
+        {
+          "code": "610824",
+          "name": "靖边县",
+          "cityCode": "6108",
+          "provinceCode": "61",
+          "lng": 108.789374,
+          "lat": 37.598908
+        },
+        {
+          "code": "610825",
+          "name": "定边县",
+          "cityCode": "6108",
+          "provinceCode": "61",
+          "lng": 107.596202,
+          "lat": 37.594222
+        },
+        {
+          "code": "610826",
+          "name": "绥德县",
+          "cityCode": "6108",
+          "provinceCode": "61",
+          "lng": 110.257655,
+          "lat": 37.502397
+        },
+        {
+          "code": "610827",
+          "name": "米脂县",
+          "cityCode": "6108",
+          "provinceCode": "61",
+          "lng": 110.178365,
+          "lat": 37.754604
+        },
+        {
+          "code": "610828",
+          "name": "佳县",
+          "cityCode": "6108",
+          "provinceCode": "61",
+          "lng": 110.485301,
+          "lat": 38.01899
+        },
+        {
+          "code": "610829",
+          "name": "吴堡县",
+          "cityCode": "6108",
+          "provinceCode": "61",
+          "lng": 110.733701,
+          "lat": 37.451854
+        },
+        {
+          "code": "610830",
+          "name": "清涧县",
+          "cityCode": "6108",
+          "provinceCode": "61",
+          "lng": 110.115722,
+          "lat": 37.088318
+        },
+        {
+          "code": "610831",
+          "name": "子洲县",
+          "cityCode": "6108",
+          "provinceCode": "61",
+          "lng": 110.029629,
+          "lat": 37.609729
+        },
+        {
+          "code": "610881",
+          "name": "神木市",
+          "cityCode": "6108",
+          "provinceCode": "61",
+          "lng": 110.494052,
+          "lat": 38.829613
+        }
+      ],
+      "lng": 109.729416,
+      "lat": 38.284682
+    },
+    {
+      "code": "6109",
+      "name": "安康市",
+      "provinceCode": "61",
+      "areas": [
+        {
+          "code": "610902",
+          "name": "汉滨区",
+          "cityCode": "6109",
+          "provinceCode": "61",
+          "lng": 109.022103,
+          "lat": 32.697512
+        },
+        {
+          "code": "610921",
+          "name": "汉阴县",
+          "cityCode": "6109",
+          "provinceCode": "61",
+          "lng": 108.504496,
+          "lat": 32.895176
+        },
+        {
+          "code": "610922",
+          "name": "石泉县",
+          "cityCode": "6109",
+          "provinceCode": "61",
+          "lng": 108.24338,
+          "lat": 33.0402
+        },
+        {
+          "code": "610923",
+          "name": "宁陕县",
+          "cityCode": "6109",
+          "provinceCode": "61",
+          "lng": 108.309746,
+          "lat": 33.312104
+        },
+        {
+          "code": "610924",
+          "name": "紫阳县",
+          "cityCode": "6109",
+          "provinceCode": "61",
+          "lng": 108.529794,
+          "lat": 32.522568
+        },
+        {
+          "code": "610925",
+          "name": "岚皋县",
+          "cityCode": "6109",
+          "provinceCode": "61",
+          "lng": 108.897564,
+          "lat": 32.309616
+        },
+        {
+          "code": "610926",
+          "name": "平利县",
+          "cityCode": "6109",
+          "provinceCode": "61",
+          "lng": 109.357059,
+          "lat": 32.39115
+        },
+        {
+          "code": "610927",
+          "name": "镇坪县",
+          "cityCode": "6109",
+          "provinceCode": "61",
+          "lng": 109.521897,
+          "lat": 31.885979
+        },
+        {
+          "code": "610929",
+          "name": "白河县",
+          "cityCode": "6109",
+          "provinceCode": "61",
+          "lng": 110.10705,
+          "lat": 32.810973
+        },
+        {
+          "code": "610981",
+          "name": "旬阳市",
+          "cityCode": "6109",
+          "provinceCode": "61"
+        }
+      ],
+      "lng": 109.024274,
+      "lat": 32.687465
+    },
+    {
+      "code": "6110",
+      "name": "商洛市",
+      "provinceCode": "61",
+      "areas": [
+        {
+          "code": "611002",
+          "name": "商州区",
+          "cityCode": "6110",
+          "provinceCode": "61",
+          "lng": 109.936157,
+          "lat": 33.864604
+        },
+        {
+          "code": "611021",
+          "name": "洛南县",
+          "cityCode": "6110",
+          "provinceCode": "61",
+          "lng": 110.14296,
+          "lat": 34.092103
+        },
+        {
+          "code": "611022",
+          "name": "丹凤县",
+          "cityCode": "6110",
+          "provinceCode": "61",
+          "lng": 110.321705,
+          "lat": 33.69727
+        },
+        {
+          "code": "611023",
+          "name": "商南县",
+          "cityCode": "6110",
+          "provinceCode": "61",
+          "lng": 110.876289,
+          "lat": 33.533643
+        },
+        {
+          "code": "611024",
+          "name": "山阳县",
+          "cityCode": "6110",
+          "provinceCode": "61",
+          "lng": 109.877068,
+          "lat": 33.533904
+        },
+        {
+          "code": "611025",
+          "name": "镇安县",
+          "cityCode": "6110",
+          "provinceCode": "61",
+          "lng": 109.147754,
+          "lat": 33.425314
+        },
+        {
+          "code": "611026",
+          "name": "柞水县",
+          "cityCode": "6110",
+          "provinceCode": "61",
+          "lng": 109.108883,
+          "lat": 33.687505
+        }
+      ],
+      "lng": 109.913043,
+      "lat": 33.874004
+    }
+  ]
+}

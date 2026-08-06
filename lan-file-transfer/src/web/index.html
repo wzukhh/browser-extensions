@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>LAN 文件传输</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📁</text></svg>">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <span class="device-icon" id="deviceIcon">🖥️</span>
+        <div>
+          <h1 class="device-title" id="deviceTitle">电脑端</h1>
+          <span class="device-subtitle" id="deviceSubtitle">扫码分享文件</span>
+        </div>
+      </div>
+      <div class="status-badge">
+        <span class="dot online" id="statusDot"></span>
+        <span id="statusText">就绪</span>
+      </div>
+    </header>
+
+    <!-- Mobile device name row (edit trigger) -->
+    <div class="device-name-row" id="deviceNameRow" hidden>
+      <span class="device-name-icon">📱</span>
+      <span class="device-name-label" id="deviceNameMobile"></span>
+      <button class="device-name-edit" id="deviceNameEditBtn" title="修改名称">✏️</button>
+    </div>
+
+    <!-- Main layout: left panel (QR) + right panel (everything else) -->
+    <div class="main-layout">
+
+      <!-- Left Panel: QR Code (PC only) -->
+      <div class="left-panel">
+        <div class="card qr-card" id="qrCard">
+          <div class="qr-wrapper">
+            <div id="qrcode"></div>
+          </div>
+          <p class="url-text" id="serverUrl">正在启动...</p>
+          <p class="hint">📱 手机扫码打开以上地址</p>
+        </div>
+      </div>
+
+      <!-- Right Panel: Devices, Upload, Files -->
+      <div class="right-panel">
+
+        <!-- Device Panel (PC only): shows connected mobile devices -->
+        <div class="card device-panel" id="devicePanel" hidden>
+          <div class="device-panel-header">
+            <span>已连接的设备</span>
+            <span class="device-count" id="deviceCount">0</span>
+          </div>
+          <div class="device-list" id="deviceList"></div>
+        </div>
+
+        <!-- Target Device Selector (PC only): multi-select chips -->
+        <div class="target-bar" id="targetBar" hidden>
+          <span class="target-label">发送到：</span>
+          <div class="target-chips" id="targetChips"></div>
+        </div>
+
+        <!-- Upload: compact button -->
+        <div class="upload-row">
+          <button class="upload-btn" id="uploadBtn">📤 选择文件</button>
+          <span class="upload-hint" id="uploadHint">支持所有类型，最大 200 MB</span>
+          <input type="file" id="fileInput" multiple hidden>
+        </div>
+        <div class="progress-container" id="progressContainer" hidden>
+          <div class="progress-text" id="progressText"></div>
+          <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+        </div>
+
+        <!-- Files: tabs + shared area (scrolls internally, page stays fixed) -->
+        <div class="card files-card">
+          <div class="tab-bar" id="tabBar">
+            <button class="tab active" id="sentTab">📤 已发送</button>
+            <button class="tab" id="receivedTab">📥 已接收</button>
+          </div>
+          <!-- Device filter pills (PC only) -->
+          <div class="filter-bar" id="filterBar" hidden></div>
+          <p class="file-hint" id="fileHint"></p>
+          <div class="file-list" id="sentList">
+            <div class="empty-state"><p>还没有发送文件</p></div>
+          </div>
+          <div class="file-list" id="receivedList" hidden>
+            <div class="empty-state"><p>还没有收到文件</p></div>
+          </div>
+        </div>
+
+        <!-- Save path hint (PC only, clickable) -->
+        <div class="save-path-bar" id="savePathCard">
+          <span class="save-icon">📂</span>
+          <span class="save-path-text">文件保存至 <strong id="savePath">加载中...</strong></span>
+          <button class="save-open-btn" id="openSavePathBtn" title="打开文件夹">打开</button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <p>所有传输仅在局域网内进行，文件不会被上传到互联网</p>
+          <p class="footer-author">作者: wzukhh | 联系方式: wzukhh@163.com</p>
+        </footer>
+
+      </div><!-- /right-panel -->
+    </div><!-- /main-layout -->
+
+  </div>
+
+  <!-- Service stopped (server idle timeout or closed) -->
+  <div id="view-service-stopped" class="service-stopped-view" hidden>
+    <div class="service-stopped-card">
+      <div class="service-stopped-icon">⏱️</div>
+      <h2>传输服务已退出</h2>
+      <p id="service-stopped-msg">无法连接本地传输服务，可能因长时间无操作已自动关闭。</p>
+      <p class="service-stopped-hint">请点击浏览器工具栏上的 <strong>LAN 文件传输</strong> 扩展图标重新启动。</p>
+    </div>
+  </div>
+
+  <!-- Device Name Prompt (mobile only, shown once) -->
+  <div class="modal-overlay" id="nameModal" hidden>
+    <div class="modal-card">
+      <div class="modal-title">📱 设置设备名称</div>
+      <p class="modal-desc">给你的设备起个名字，方便电脑端识别</p>
+      <input class="modal-input" id="nameInput" type="text" maxlength="20" placeholder="例如：我的手机">
+      <div class="modal-actions">
+        <button class="btn btn-primary modal-confirm" id="nameConfirm">确定</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/qrcode.min.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1614 @@
+{
+  "province": {
+    "code": "41",
+    "name": "河南省"
+  },
+  "cities": [
+    {
+      "code": "4101",
+      "name": "郑州市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "410102",
+          "name": "中原区",
+          "cityCode": "4101",
+          "provinceCode": "41",
+          "lng": 113.606962,
+          "lat": 34.749463
+        },
+        {
+          "code": "410103",
+          "name": "二七区",
+          "cityCode": "4101",
+          "provinceCode": "41",
+          "lng": 113.63394,
+          "lat": 34.725885
+        },
+        {
+          "code": "410104",
+          "name": "管城回族区",
+          "cityCode": "4101",
+          "provinceCode": "41",
+          "lng": 113.670875,
+          "lat": 34.75489
+        },
+        {
+          "code": "410105",
+          "name": "金水区",
+          "cityCode": "4101",
+          "provinceCode": "41",
+          "lng": 113.654348,
+          "lat": 34.801508
+        },
+        {
+          "code": "410106",
+          "name": "上街区",
+          "cityCode": "4101",
+          "provinceCode": "41",
+          "lng": 113.302432,
+          "lat": 34.804052
+        },
+        {
+          "code": "410108",
+          "name": "惠济区",
+          "cityCode": "4101",
+          "provinceCode": "41",
+          "lng": 113.611021,
+          "lat": 34.869068
+        },
+        {
+          "code": "410122",
+          "name": "中牟县",
+          "cityCode": "4101",
+          "provinceCode": "41",
+          "lng": 113.969875,
+          "lat": 34.721565
+        },
+        {
+          "code": "410171",
+          "name": "郑州经济技术开发区",
+          "cityCode": "4101",
+          "provinceCode": "41",
+          "lng": 113.759997,
+          "lat": 34.720193
+        },
+        {
+          "code": "410172",
+          "name": "郑州高新技术产业开发区",
+          "cityCode": "4101",
+          "provinceCode": "41",
+          "lng": 113.560817,
+          "lat": 34.812959
+        },
+        {
+          "code": "410173",
+          "name": "郑州航空港经济综合实验区",
+          "cityCode": "4101",
+          "provinceCode": "41",
+          "lng": 113.816041,
+          "lat": 34.519438
+        },
+        {
+          "code": "410181",
+          "name": "巩义市",
+          "cityCode": "4101",
+          "provinceCode": "41",
+          "lng": 113.015983,
+          "lat": 34.74916
+        },
+        {
+          "code": "410182",
+          "name": "荥阳市",
+          "cityCode": "4101",
+          "provinceCode": "41",
+          "lng": 113.377071,
+          "lat": 34.787305
+        },
+        {
+          "code": "410183",
+          "name": "新密市",
+          "cityCode": "4101",
+          "provinceCode": "41",
+          "lng": 113.384484,
+          "lat": 34.540618
+        },
+        {
+          "code": "410184",
+          "name": "新郑市",
+          "cityCode": "4101",
+          "provinceCode": "41",
+          "lng": 113.73385,
+          "lat": 34.396891
+        },
+        {
+          "code": "410185",
+          "name": "登封市",
+          "cityCode": "4101",
+          "provinceCode": "41",
+          "lng": 113.04409,
+          "lat": 34.455607
+        }
+      ],
+      "lng": 113.618953,
+      "lat": 34.748383
+    },
+    {
+      "code": "4102",
+      "name": "开封市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "410202",
+          "name": "龙亭区",
+          "cityCode": "4102",
+          "provinceCode": "41",
+          "lng": 114.349076,
+          "lat": 34.816487
+        },
+        {
+          "code": "410203",
+          "name": "顺河回族区",
+          "cityCode": "4102",
+          "provinceCode": "41",
+          "lng": 114.354927,
+          "lat": 34.796497
+        },
+        {
+          "code": "410204",
+          "name": "鼓楼区",
+          "cityCode": "4102",
+          "provinceCode": "41",
+          "lng": 114.342089,
+          "lat": 34.789427
+        },
+        {
+          "code": "410205",
+          "name": "禹王台区",
+          "cityCode": "4102",
+          "provinceCode": "41",
+          "lng": 114.342271,
+          "lat": 34.77802
+        },
+        {
+          "code": "410212",
+          "name": "祥符区",
+          "cityCode": "4102",
+          "provinceCode": "41",
+          "lng": 114.435403,
+          "lat": 34.757848
+        },
+        {
+          "code": "410221",
+          "name": "杞县",
+          "cityCode": "4102",
+          "provinceCode": "41",
+          "lng": 114.777401,
+          "lat": 34.550387
+        },
+        {
+          "code": "410222",
+          "name": "通许县",
+          "cityCode": "4102",
+          "provinceCode": "41",
+          "lng": 114.4674,
+          "lat": 34.503183
+        },
+        {
+          "code": "410223",
+          "name": "尉氏县",
+          "cityCode": "4102",
+          "provinceCode": "41",
+          "lng": 114.18712,
+          "lat": 34.412715
+        },
+        {
+          "code": "410225",
+          "name": "兰考县",
+          "cityCode": "4102",
+          "provinceCode": "41",
+          "lng": 114.813214,
+          "lat": 34.857012
+        }
+      ],
+      "lng": 114.307925,
+      "lat": 34.799185
+    },
+    {
+      "code": "4103",
+      "name": "洛阳市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "410302",
+          "name": "老城区",
+          "cityCode": "4103",
+          "provinceCode": "41",
+          "lng": 112.46269,
+          "lat": 34.684537
+        },
+        {
+          "code": "410303",
+          "name": "西工区",
+          "cityCode": "4103",
+          "provinceCode": "41",
+          "lng": 112.42182,
+          "lat": 34.660873
+        },
+        {
+          "code": "410304",
+          "name": "瀍河回族区",
+          "cityCode": "4103",
+          "provinceCode": "41",
+          "lng": 112.497383,
+          "lat": 34.698202
+        },
+        {
+          "code": "410305",
+          "name": "涧西区",
+          "cityCode": "4103",
+          "provinceCode": "41",
+          "lng": 112.389675,
+          "lat": 34.658635
+        },
+        {
+          "code": "410307",
+          "name": "偃师区",
+          "cityCode": "4103",
+          "provinceCode": "41"
+        },
+        {
+          "code": "410308",
+          "name": "孟津区",
+          "cityCode": "4103",
+          "provinceCode": "41"
+        },
+        {
+          "code": "410311",
+          "name": "洛龙区",
+          "cityCode": "4103",
+          "provinceCode": "41",
+          "lng": 112.457778,
+          "lat": 34.61965
+        },
+        {
+          "code": "410323",
+          "name": "新安县",
+          "cityCode": "4103",
+          "provinceCode": "41",
+          "lng": 112.126132,
+          "lat": 34.7298
+        },
+        {
+          "code": "410324",
+          "name": "栾川县",
+          "cityCode": "4103",
+          "provinceCode": "41",
+          "lng": 111.609734,
+          "lat": 33.78732
+        },
+        {
+          "code": "410325",
+          "name": "嵩县",
+          "cityCode": "4103",
+          "provinceCode": "41",
+          "lng": 112.079691,
+          "lat": 34.135643
+        },
+        {
+          "code": "410326",
+          "name": "汝阳县",
+          "cityCode": "4103",
+          "provinceCode": "41",
+          "lng": 112.466854,
+          "lat": 34.155234
+        },
+        {
+          "code": "410327",
+          "name": "宜阳县",
+          "cityCode": "4103",
+          "provinceCode": "41",
+          "lng": 112.172979,
+          "lat": 34.51578
+        },
+        {
+          "code": "410328",
+          "name": "洛宁县",
+          "cityCode": "4103",
+          "provinceCode": "41",
+          "lng": 111.646932,
+          "lat": 34.391144
+        },
+        {
+          "code": "410329",
+          "name": "伊川县",
+          "cityCode": "4103",
+          "provinceCode": "41",
+          "lng": 112.419351,
+          "lat": 34.422603
+        },
+        {
+          "code": "410371",
+          "name": "洛阳高新技术产业开发区",
+          "cityCode": "4103",
+          "provinceCode": "41",
+          "lng": 112.37198,
+          "lat": 34.609615
+        }
+      ],
+      "lng": 112.446748,
+      "lat": 34.619024
+    },
+    {
+      "code": "4104",
+      "name": "平顶山市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "410402",
+          "name": "新华区",
+          "cityCode": "4104",
+          "provinceCode": "41",
+          "lng": 113.288128,
+          "lat": 33.738244
+        },
+        {
+          "code": "410403",
+          "name": "卫东区",
+          "cityCode": "4104",
+          "provinceCode": "41",
+          "lng": 113.328882,
+          "lat": 33.736117
+        },
+        {
+          "code": "410404",
+          "name": "石龙区",
+          "cityCode": "4104",
+          "provinceCode": "41",
+          "lng": 112.892975,
+          "lat": 33.900592
+        },
+        {
+          "code": "410411",
+          "name": "湛河区",
+          "cityCode": "4104",
+          "provinceCode": "41",
+          "lng": 113.237798,
+          "lat": 33.681415
+        },
+        {
+          "code": "410421",
+          "name": "宝丰县",
+          "cityCode": "4104",
+          "provinceCode": "41",
+          "lng": 113.048564,
+          "lat": 33.869905
+        },
+        {
+          "code": "410422",
+          "name": "叶县",
+          "cityCode": "4104",
+          "provinceCode": "41",
+          "lng": 113.350624,
+          "lat": 33.628084
+        },
+        {
+          "code": "410423",
+          "name": "鲁山县",
+          "cityCode": "4104",
+          "provinceCode": "41",
+          "lng": 112.902127,
+          "lat": 33.740304
+        },
+        {
+          "code": "410425",
+          "name": "郏县",
+          "cityCode": "4104",
+          "provinceCode": "41",
+          "lng": 113.206744,
+          "lat": 33.973221
+        },
+        {
+          "code": "410471",
+          "name": "平顶山高新技术产业开发区",
+          "cityCode": "4104",
+          "provinceCode": "41",
+          "lng": 113.381179,
+          "lat": 33.733588
+        },
+        {
+          "code": "410472",
+          "name": "平顶山市城乡一体化示范区",
+          "cityCode": "4104",
+          "provinceCode": "41",
+          "lng": 113.328882,
+          "lat": 33.736117
+        },
+        {
+          "code": "410481",
+          "name": "舞钢市",
+          "cityCode": "4104",
+          "provinceCode": "41",
+          "lng": 113.510206,
+          "lat": 33.315874
+        },
+        {
+          "code": "410482",
+          "name": "汝州市",
+          "cityCode": "4104",
+          "provinceCode": "41",
+          "lng": 112.838632,
+          "lat": 34.16871
+        }
+      ],
+      "lng": 113.186225,
+      "lat": 33.768022
+    },
+    {
+      "code": "4105",
+      "name": "安阳市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "410502",
+          "name": "文峰区",
+          "cityCode": "4105",
+          "provinceCode": "41",
+          "lng": 114.351008,
+          "lat": 36.090795
+        },
+        {
+          "code": "410503",
+          "name": "北关区",
+          "cityCode": "4105",
+          "provinceCode": "41",
+          "lng": 114.34968,
+          "lat": 36.107524
+        },
+        {
+          "code": "410505",
+          "name": "殷都区",
+          "cityCode": "4105",
+          "provinceCode": "41",
+          "lng": 114.297522,
+          "lat": 36.109854
+        },
+        {
+          "code": "410506",
+          "name": "龙安区",
+          "cityCode": "4105",
+          "provinceCode": "41",
+          "lng": 114.29503,
+          "lat": 36.07707
+        },
+        {
+          "code": "410522",
+          "name": "安阳县",
+          "cityCode": "4105",
+          "provinceCode": "41",
+          "lng": 114.464405,
+          "lat": 36.082246
+        },
+        {
+          "code": "410523",
+          "name": "汤阴县",
+          "cityCode": "4105",
+          "provinceCode": "41",
+          "lng": 114.351571,
+          "lat": 35.924498
+        },
+        {
+          "code": "410526",
+          "name": "滑县",
+          "cityCode": "4105",
+          "provinceCode": "41",
+          "lng": 114.513311,
+          "lat": 35.575447
+        },
+        {
+          "code": "410527",
+          "name": "内黄县",
+          "cityCode": "4105",
+          "provinceCode": "41",
+          "lng": 114.895852,
+          "lat": 35.972073
+        },
+        {
+          "code": "410571",
+          "name": "安阳高新技术产业开发区",
+          "cityCode": "4105",
+          "provinceCode": "41",
+          "lng": 114.464412,
+          "lat": 36.082255
+        },
+        {
+          "code": "410581",
+          "name": "林州市",
+          "cityCode": "4105",
+          "provinceCode": "41",
+          "lng": 113.813071,
+          "lat": 36.083483
+        }
+      ],
+      "lng": 114.355843,
+      "lat": 36.104517
+    },
+    {
+      "code": "4106",
+      "name": "鹤壁市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "410602",
+          "name": "鹤山区",
+          "cityCode": "4106",
+          "provinceCode": "41",
+          "lng": 114.156867,
+          "lat": 35.954436
+        },
+        {
+          "code": "410603",
+          "name": "山城区",
+          "cityCode": "4106",
+          "provinceCode": "41",
+          "lng": 114.17838,
+          "lat": 35.897709
+        },
+        {
+          "code": "410611",
+          "name": "淇滨区",
+          "cityCode": "4106",
+          "provinceCode": "41",
+          "lng": 114.292556,
+          "lat": 35.742027
+        },
+        {
+          "code": "410621",
+          "name": "浚县",
+          "cityCode": "4106",
+          "provinceCode": "41",
+          "lng": 114.545408,
+          "lat": 35.67647
+        },
+        {
+          "code": "410622",
+          "name": "淇县",
+          "cityCode": "4106",
+          "provinceCode": "41",
+          "lng": 114.203036,
+          "lat": 35.621439
+        },
+        {
+          "code": "410671",
+          "name": "鹤壁经济技术开发区",
+          "cityCode": "4106",
+          "provinceCode": "41",
+          "lng": 114.30372,
+          "lat": 35.760847
+        }
+      ],
+      "lng": 114.291281,
+      "lat": 35.748372
+    },
+    {
+      "code": "4107",
+      "name": "新乡市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "410702",
+          "name": "红旗区",
+          "cityCode": "4107",
+          "provinceCode": "41",
+          "lng": 113.869284,
+          "lat": 35.304337
+        },
+        {
+          "code": "410703",
+          "name": "卫滨区",
+          "cityCode": "4107",
+          "provinceCode": "41",
+          "lng": 113.859743,
+          "lat": 35.302524
+        },
+        {
+          "code": "410704",
+          "name": "凤泉区",
+          "cityCode": "4107",
+          "provinceCode": "41",
+          "lng": 113.900148,
+          "lat": 35.372276
+        },
+        {
+          "code": "410711",
+          "name": "牧野区",
+          "cityCode": "4107",
+          "provinceCode": "41",
+          "lng": 113.902706,
+          "lat": 35.316492
+        },
+        {
+          "code": "410721",
+          "name": "新乡县",
+          "cityCode": "4107",
+          "provinceCode": "41",
+          "lng": 113.807649,
+          "lat": 35.171112
+        },
+        {
+          "code": "410724",
+          "name": "获嘉县",
+          "cityCode": "4107",
+          "provinceCode": "41",
+          "lng": 113.650857,
+          "lat": 35.260182
+        },
+        {
+          "code": "410725",
+          "name": "原阳县",
+          "cityCode": "4107",
+          "provinceCode": "41",
+          "lng": 113.934108,
+          "lat": 35.066315
+        },
+        {
+          "code": "410726",
+          "name": "延津县",
+          "cityCode": "4107",
+          "provinceCode": "41",
+          "lng": 114.199077,
+          "lat": 35.142437
+        },
+        {
+          "code": "410727",
+          "name": "封丘县",
+          "cityCode": "4107",
+          "provinceCode": "41",
+          "lng": 114.413042,
+          "lat": 35.041702
+        },
+        {
+          "code": "410771",
+          "name": "新乡高新技术产业开发区",
+          "cityCode": "4107",
+          "provinceCode": "41",
+          "lng": 113.79887,
+          "lat": 35.191382
+        },
+        {
+          "code": "410772",
+          "name": "新乡经济技术开发区",
+          "cityCode": "4107",
+          "provinceCode": "41",
+          "lng": 113.789243,
+          "lat": 35.180162
+        },
+        {
+          "code": "410773",
+          "name": "新乡市平原城乡一体化示范区",
+          "cityCode": "4107",
+          "provinceCode": "41",
+          "lng": 113.843184,
+          "lat": 35.255705
+        },
+        {
+          "code": "410781",
+          "name": "卫辉市",
+          "cityCode": "4107",
+          "provinceCode": "41",
+          "lng": 114.057756,
+          "lat": 35.39861
+        },
+        {
+          "code": "410782",
+          "name": "辉县市",
+          "cityCode": "4107",
+          "provinceCode": "41",
+          "lng": 113.799557,
+          "lat": 35.463036
+        },
+        {
+          "code": "410783",
+          "name": "长垣市",
+          "cityCode": "4107",
+          "provinceCode": "41",
+          "lng": 114.663277,
+          "lat": 35.202186
+        }
+      ],
+      "lng": 113.920916,
+      "lat": 35.304269
+    },
+    {
+      "code": "4108",
+      "name": "焦作市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "410802",
+          "name": "解放区",
+          "cityCode": "4108",
+          "provinceCode": "41",
+          "lng": 113.224627,
+          "lat": 35.241081
+        },
+        {
+          "code": "410803",
+          "name": "中站区",
+          "cityCode": "4108",
+          "provinceCode": "41",
+          "lng": 113.176422,
+          "lat": 35.237425
+        },
+        {
+          "code": "410804",
+          "name": "马村区",
+          "cityCode": "4108",
+          "provinceCode": "41",
+          "lng": 113.315525,
+          "lat": 35.256489
+        },
+        {
+          "code": "410811",
+          "name": "山阳区",
+          "cityCode": "4108",
+          "provinceCode": "41",
+          "lng": 113.247635,
+          "lat": 35.214714
+        },
+        {
+          "code": "410821",
+          "name": "修武县",
+          "cityCode": "4108",
+          "provinceCode": "41",
+          "lng": 113.44147,
+          "lat": 35.223964
+        },
+        {
+          "code": "410822",
+          "name": "博爱县",
+          "cityCode": "4108",
+          "provinceCode": "41",
+          "lng": 113.058249,
+          "lat": 35.170698
+        },
+        {
+          "code": "410823",
+          "name": "武陟县",
+          "cityCode": "4108",
+          "provinceCode": "41",
+          "lng": 113.395421,
+          "lat": 35.099949
+        },
+        {
+          "code": "410825",
+          "name": "温县",
+          "cityCode": "4108",
+          "provinceCode": "41",
+          "lng": 113.073487,
+          "lat": 34.94094
+        },
+        {
+          "code": "410871",
+          "name": "焦作城乡一体化示范区",
+          "cityCode": "4108",
+          "provinceCode": "41",
+          "lng": 113.246896,
+          "lat": 35.176127
+        },
+        {
+          "code": "410882",
+          "name": "沁阳市",
+          "cityCode": "4108",
+          "provinceCode": "41",
+          "lng": 112.944493,
+          "lat": 35.088389
+        },
+        {
+          "code": "410883",
+          "name": "孟州市",
+          "cityCode": "4108",
+          "provinceCode": "41",
+          "lng": 112.785345,
+          "lat": 34.908449
+        }
+      ],
+      "lng": 113.235635,
+      "lat": 35.215612
+    },
+    {
+      "code": "4109",
+      "name": "濮阳市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "410902",
+          "name": "华龙区",
+          "cityCode": "4109",
+          "provinceCode": "41",
+          "lng": 115.068301,
+          "lat": 35.778306
+        },
+        {
+          "code": "410922",
+          "name": "清丰县",
+          "cityCode": "4109",
+          "provinceCode": "41",
+          "lng": 115.098473,
+          "lat": 35.886446
+        },
+        {
+          "code": "410923",
+          "name": "南乐县",
+          "cityCode": "4109",
+          "provinceCode": "41",
+          "lng": 115.199102,
+          "lat": 36.069663
+        },
+        {
+          "code": "410926",
+          "name": "范县",
+          "cityCode": "4109",
+          "provinceCode": "41",
+          "lng": 115.498349,
+          "lat": 35.852966
+        },
+        {
+          "code": "410927",
+          "name": "台前县",
+          "cityCode": "4109",
+          "provinceCode": "41",
+          "lng": 115.866123,
+          "lat": 35.969987
+        },
+        {
+          "code": "410928",
+          "name": "濮阳县",
+          "cityCode": "4109",
+          "provinceCode": "41",
+          "lng": 115.023298,
+          "lat": 35.71297
+        },
+        {
+          "code": "410971",
+          "name": "河南濮阳工业园区",
+          "cityCode": "4109",
+          "provinceCode": "41",
+          "lng": 115.023116,
+          "lat": 35.712224
+        },
+        {
+          "code": "410972",
+          "name": "濮阳经济技术开发区",
+          "cityCode": "4109",
+          "provinceCode": "41",
+          "lng": 115.023116,
+          "lat": 35.712224
+        }
+      ],
+      "lng": 115.023298,
+      "lat": 35.71297
+    },
+    {
+      "code": "4110",
+      "name": "许昌市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "411002",
+          "name": "魏都区",
+          "cityCode": "4110",
+          "provinceCode": "41",
+          "lng": 113.825043,
+          "lat": 34.049017
+        },
+        {
+          "code": "411003",
+          "name": "建安区",
+          "cityCode": "4110",
+          "provinceCode": "41",
+          "lng": 113.816897,
+          "lat": 34.126276
+        },
+        {
+          "code": "411024",
+          "name": "鄢陵县",
+          "cityCode": "4110",
+          "provinceCode": "41",
+          "lng": 114.172126,
+          "lat": 34.104023
+        },
+        {
+          "code": "411025",
+          "name": "襄城县",
+          "cityCode": "4110",
+          "provinceCode": "41",
+          "lng": 113.500816,
+          "lat": 33.853073
+        },
+        {
+          "code": "411071",
+          "name": "许昌经济技术开发区",
+          "cityCode": "4110",
+          "provinceCode": "41",
+          "lng": 113.796781,
+          "lat": 33.998339
+        },
+        {
+          "code": "411081",
+          "name": "禹州市",
+          "cityCode": "4110",
+          "provinceCode": "41",
+          "lng": 113.482445,
+          "lat": 34.143585
+        },
+        {
+          "code": "411082",
+          "name": "长葛市",
+          "cityCode": "4110",
+          "provinceCode": "41",
+          "lng": 113.808047,
+          "lat": 34.197274
+        }
+      ],
+      "lng": 113.846241,
+      "lat": 34.038602
+    },
+    {
+      "code": "4111",
+      "name": "漯河市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "411102",
+          "name": "源汇区",
+          "cityCode": "4111",
+          "provinceCode": "41",
+          "lng": 113.978312,
+          "lat": 33.57393
+        },
+        {
+          "code": "411103",
+          "name": "郾城区",
+          "cityCode": "4111",
+          "provinceCode": "41",
+          "lng": 114.001101,
+          "lat": 33.588613
+        },
+        {
+          "code": "411104",
+          "name": "召陵区",
+          "cityCode": "4111",
+          "provinceCode": "41",
+          "lng": 114.087973,
+          "lat": 33.587749
+        },
+        {
+          "code": "411121",
+          "name": "舞阳县",
+          "cityCode": "4111",
+          "provinceCode": "41",
+          "lng": 113.603414,
+          "lat": 33.439402
+        },
+        {
+          "code": "411122",
+          "name": "临颍县",
+          "cityCode": "4111",
+          "provinceCode": "41",
+          "lng": 113.925372,
+          "lat": 33.829662
+        },
+        {
+          "code": "411171",
+          "name": "漯河经济技术开发区",
+          "cityCode": "4111",
+          "provinceCode": "41",
+          "lng": 114.043829,
+          "lat": 33.55221
+        }
+      ],
+      "lng": 114.00073,
+      "lat": 33.589245
+    },
+    {
+      "code": "4112",
+      "name": "三门峡市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "411202",
+          "name": "湖滨区",
+          "cityCode": "4112",
+          "provinceCode": "41",
+          "lng": 111.182618,
+          "lat": 34.772186
+        },
+        {
+          "code": "411203",
+          "name": "陕州区",
+          "cityCode": "4112",
+          "provinceCode": "41",
+          "lng": 111.097866,
+          "lat": 34.722831
+        },
+        {
+          "code": "411221",
+          "name": "渑池县",
+          "cityCode": "4112",
+          "provinceCode": "41",
+          "lng": 111.755807,
+          "lat": 34.768429
+        },
+        {
+          "code": "411224",
+          "name": "卢氏县",
+          "cityCode": "4112",
+          "provinceCode": "41",
+          "lng": 111.041942,
+          "lat": 34.055716
+        },
+        {
+          "code": "411271",
+          "name": "河南三门峡经济开发区",
+          "cityCode": "4112",
+          "provinceCode": "41",
+          "lng": 111.155912,
+          "lat": 34.792779
+        },
+        {
+          "code": "411281",
+          "name": "义马市",
+          "cityCode": "4112",
+          "provinceCode": "41",
+          "lng": 111.868506,
+          "lat": 34.748464
+        },
+        {
+          "code": "411282",
+          "name": "灵宝市",
+          "cityCode": "4112",
+          "provinceCode": "41",
+          "lng": 110.888595,
+          "lat": 34.518344
+        }
+      ],
+      "lng": 111.194978,
+      "lat": 34.774374
+    },
+    {
+      "code": "4113",
+      "name": "南阳市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "411302",
+          "name": "宛城区",
+          "cityCode": "4113",
+          "provinceCode": "41",
+          "lng": 112.533768,
+          "lat": 33.005909
+        },
+        {
+          "code": "411303",
+          "name": "卧龙区",
+          "cityCode": "4113",
+          "provinceCode": "41",
+          "lng": 112.528599,
+          "lat": 32.988048
+        },
+        {
+          "code": "411321",
+          "name": "南召县",
+          "cityCode": "4113",
+          "provinceCode": "41",
+          "lng": 112.422814,
+          "lat": 33.491335
+        },
+        {
+          "code": "411322",
+          "name": "方城县",
+          "cityCode": "4113",
+          "provinceCode": "41",
+          "lng": 113.006344,
+          "lat": 33.256182
+        },
+        {
+          "code": "411323",
+          "name": "西峡县",
+          "cityCode": "4113",
+          "provinceCode": "41",
+          "lng": 111.46765,
+          "lat": 33.308637
+        },
+        {
+          "code": "411324",
+          "name": "镇平县",
+          "cityCode": "4113",
+          "provinceCode": "41",
+          "lng": 112.228722,
+          "lat": 33.035784
+        },
+        {
+          "code": "411325",
+          "name": "内乡县",
+          "cityCode": "4113",
+          "provinceCode": "41",
+          "lng": 111.843319,
+          "lat": 33.046757
+        },
+        {
+          "code": "411326",
+          "name": "淅川县",
+          "cityCode": "4113",
+          "provinceCode": "41",
+          "lng": 111.484918,
+          "lat": 33.13963
+        },
+        {
+          "code": "411327",
+          "name": "社旗县",
+          "cityCode": "4113",
+          "provinceCode": "41",
+          "lng": 112.942306,
+          "lat": 33.058218
+        },
+        {
+          "code": "411328",
+          "name": "唐河县",
+          "cityCode": "4113",
+          "provinceCode": "41",
+          "lng": 112.80208,
+          "lat": 32.684145
+        },
+        {
+          "code": "411329",
+          "name": "新野县",
+          "cityCode": "4113",
+          "provinceCode": "41",
+          "lng": 112.35393,
+          "lat": 32.522807
+        },
+        {
+          "code": "411330",
+          "name": "桐柏县",
+          "cityCode": "4113",
+          "provinceCode": "41",
+          "lng": 113.421728,
+          "lat": 32.381088
+        },
+        {
+          "code": "411371",
+          "name": "南阳高新技术产业开发区",
+          "cityCode": "4113",
+          "provinceCode": "41",
+          "lng": 112.518539,
+          "lat": 33.036829
+        },
+        {
+          "code": "411372",
+          "name": "南阳市城乡一体化示范区",
+          "cityCode": "4113",
+          "provinceCode": "41",
+          "lng": 112.585102,
+          "lat": 32.977648
+        },
+        {
+          "code": "411381",
+          "name": "邓州市",
+          "cityCode": "4113",
+          "provinceCode": "41",
+          "lng": 112.081289,
+          "lat": 32.689635
+        }
+      ],
+      "lng": 112.522743,
+      "lat": 32.992476
+    },
+    {
+      "code": "4114",
+      "name": "商丘市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "411402",
+          "name": "梁园区",
+          "cityCode": "4114",
+          "provinceCode": "41",
+          "lng": 115.608545,
+          "lat": 34.445206
+        },
+        {
+          "code": "411403",
+          "name": "睢阳区",
+          "cityCode": "4114",
+          "provinceCode": "41",
+          "lng": 115.647799,
+          "lat": 34.390779
+        },
+        {
+          "code": "411421",
+          "name": "民权县",
+          "cityCode": "4114",
+          "provinceCode": "41",
+          "lng": 115.169095,
+          "lat": 34.649097
+        },
+        {
+          "code": "411422",
+          "name": "睢县",
+          "cityCode": "4114",
+          "provinceCode": "41",
+          "lng": 115.066135,
+          "lat": 34.446365
+        },
+        {
+          "code": "411423",
+          "name": "宁陵县",
+          "cityCode": "4114",
+          "provinceCode": "41",
+          "lng": 115.308218,
+          "lat": 34.461453
+        },
+        {
+          "code": "411424",
+          "name": "柘城县",
+          "cityCode": "4114",
+          "provinceCode": "41",
+          "lng": 115.300273,
+          "lat": 34.092428
+        },
+        {
+          "code": "411425",
+          "name": "虞城县",
+          "cityCode": "4114",
+          "provinceCode": "41",
+          "lng": 115.823043,
+          "lat": 34.402293
+        },
+        {
+          "code": "411426",
+          "name": "夏邑县",
+          "cityCode": "4114",
+          "provinceCode": "41",
+          "lng": 116.125361,
+          "lat": 34.238657
+        },
+        {
+          "code": "411471",
+          "name": "豫东综合物流产业聚集区",
+          "cityCode": "4114",
+          "provinceCode": "41",
+          "lng": 115.810511,
+          "lat": 34.385598
+        },
+        {
+          "code": "411472",
+          "name": "河南商丘经济开发区",
+          "cityCode": "4114",
+          "provinceCode": "41",
+          "lng": 115.650492,
+          "lat": 34.415468
+        },
+        {
+          "code": "411481",
+          "name": "永城市",
+          "cityCode": "4114",
+          "provinceCode": "41",
+          "lng": 116.444028,
+          "lat": 33.931024
+        }
+      ],
+      "lng": 115.650737,
+      "lat": 34.416644
+    },
+    {
+      "code": "4115",
+      "name": "信阳市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "411502",
+          "name": "浉河区",
+          "cityCode": "4115",
+          "provinceCode": "41",
+          "lng": 114.053129,
+          "lat": 32.118872
+        },
+        {
+          "code": "411503",
+          "name": "平桥区",
+          "cityCode": "4115",
+          "provinceCode": "41",
+          "lng": 114.1198,
+          "lat": 32.103269
+        },
+        {
+          "code": "411521",
+          "name": "罗山县",
+          "cityCode": "4115",
+          "provinceCode": "41",
+          "lng": 114.507614,
+          "lat": 32.205371
+        },
+        {
+          "code": "411522",
+          "name": "光山县",
+          "cityCode": "4115",
+          "provinceCode": "41",
+          "lng": 114.913963,
+          "lat": 32.013133
+        },
+        {
+          "code": "411523",
+          "name": "新县",
+          "cityCode": "4115",
+          "provinceCode": "41",
+          "lng": 114.873844,
+          "lat": 31.6461
+        },
+        {
+          "code": "411524",
+          "name": "商城县",
+          "cityCode": "4115",
+          "provinceCode": "41",
+          "lng": 115.401337,
+          "lat": 31.800248
+        },
+        {
+          "code": "411525",
+          "name": "固始县",
+          "cityCode": "4115",
+          "provinceCode": "41",
+          "lng": 115.648708,
+          "lat": 32.170335
+        },
+        {
+          "code": "411526",
+          "name": "潢川县",
+          "cityCode": "4115",
+          "provinceCode": "41",
+          "lng": 115.046403,
+          "lat": 32.133472
+        },
+        {
+          "code": "411527",
+          "name": "淮滨县",
+          "cityCode": "4115",
+          "provinceCode": "41",
+          "lng": 115.414345,
+          "lat": 32.475407
+        },
+        {
+          "code": "411528",
+          "name": "息县",
+          "cityCode": "4115",
+          "provinceCode": "41",
+          "lng": 114.735591,
+          "lat": 32.344939
+        },
+        {
+          "code": "411571",
+          "name": "信阳高新技术产业开发区",
+          "cityCode": "4115",
+          "provinceCode": "41",
+          "lng": 114.191703,
+          "lat": 32.143282
+        }
+      ],
+      "lng": 114.085304,
+      "lat": 32.150583
+    },
+    {
+      "code": "4116",
+      "name": "周口市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "411602",
+          "name": "川汇区",
+          "cityCode": "4116",
+          "provinceCode": "41",
+          "lng": 114.645148,
+          "lat": 33.648591
+        },
+        {
+          "code": "411603",
+          "name": "淮阳区",
+          "cityCode": "4116",
+          "provinceCode": "41",
+          "lng": 114.847527,
+          "lat": 33.732931
+        },
+        {
+          "code": "411621",
+          "name": "扶沟县",
+          "cityCode": "4116",
+          "provinceCode": "41",
+          "lng": 114.389145,
+          "lat": 34.061271
+        },
+        {
+          "code": "411622",
+          "name": "西华县",
+          "cityCode": "4116",
+          "provinceCode": "41",
+          "lng": 114.524225,
+          "lat": 33.769727
+        },
+        {
+          "code": "411623",
+          "name": "商水县",
+          "cityCode": "4116",
+          "provinceCode": "41",
+          "lng": 114.606683,
+          "lat": 33.544323
+        },
+        {
+          "code": "411624",
+          "name": "沈丘县",
+          "cityCode": "4116",
+          "provinceCode": "41",
+          "lng": 115.093216,
+          "lat": 33.410913
+        },
+        {
+          "code": "411625",
+          "name": "郸城县",
+          "cityCode": "4116",
+          "provinceCode": "41",
+          "lng": 115.171298,
+          "lat": 33.64611
+        },
+        {
+          "code": "411627",
+          "name": "太康县",
+          "cityCode": "4116",
+          "provinceCode": "41",
+          "lng": 114.832518,
+          "lat": 34.065938
+        },
+        {
+          "code": "411628",
+          "name": "鹿邑县",
+          "cityCode": "4116",
+          "provinceCode": "41",
+          "lng": 115.478305,
+          "lat": 33.862783
+        },
+        {
+          "code": "411671",
+          "name": "周口临港开发区",
+          "cityCode": "4116",
+          "provinceCode": "41",
+          "lng": 114.672153,
+          "lat": 33.588245
+        },
+        {
+          "code": "411681",
+          "name": "项城市",
+          "cityCode": "4116",
+          "provinceCode": "41",
+          "lng": 114.869676,
+          "lat": 33.468843
+        }
+      ],
+      "lng": 114.696038,
+      "lat": 33.63843
+    },
+    {
+      "code": "4117",
+      "name": "驻马店市",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "411702",
+          "name": "驿城区",
+          "cityCode": "4117",
+          "provinceCode": "41",
+          "lng": 113.988012,
+          "lat": 32.97516
+        },
+        {
+          "code": "411721",
+          "name": "西平县",
+          "cityCode": "4117",
+          "provinceCode": "41",
+          "lng": 114.015582,
+          "lat": 33.389243
+        },
+        {
+          "code": "411722",
+          "name": "上蔡县",
+          "cityCode": "4117",
+          "provinceCode": "41",
+          "lng": 114.258344,
+          "lat": 33.264097
+        },
+        {
+          "code": "411723",
+          "name": "平舆县",
+          "cityCode": "4117",
+          "provinceCode": "41",
+          "lng": 114.613732,
+          "lat": 32.963877
+        },
+        {
+          "code": "411724",
+          "name": "正阳县",
+          "cityCode": "4117",
+          "provinceCode": "41",
+          "lng": 114.387001,
+          "lat": 32.607681
+        },
+        {
+          "code": "411725",
+          "name": "确山县",
+          "cityCode": "4117",
+          "provinceCode": "41",
+          "lng": 114.010042,
+          "lat": 32.822154
+        },
+        {
+          "code": "411726",
+          "name": "泌阳县",
+          "cityCode": "4117",
+          "provinceCode": "41",
+          "lng": 113.320779,
+          "lat": 32.725975
+        },
+        {
+          "code": "411727",
+          "name": "汝南县",
+          "cityCode": "4117",
+          "provinceCode": "41",
+          "lng": 114.357247,
+          "lat": 33.00852
+        },
+        {
+          "code": "411728",
+          "name": "遂平县",
+          "cityCode": "4117",
+          "provinceCode": "41",
+          "lng": 114.007453,
+          "lat": 33.148022
+        },
+        {
+          "code": "411729",
+          "name": "新蔡县",
+          "cityCode": "4117",
+          "provinceCode": "41",
+          "lng": 114.9601,
+          "lat": 32.747116
+        },
+        {
+          "code": "411771",
+          "name": "河南驻马店经济开发区",
+          "cityCode": "4117",
+          "provinceCode": "41",
+          "lng": 113.996014,
+          "lat": 33.019485
+        }
+      ],
+      "lng": 114.0161,
+      "lat": 33.015878
+    },
+    {
+      "code": "4190",
+      "name": "省直辖县级行政区划",
+      "provinceCode": "41",
+      "areas": [
+        {
+          "code": "419001",
+          "name": "济源市",
+          "cityCode": "4190",
+          "provinceCode": "41",
+          "lng": 112.596303,
+          "lat": 35.06803
+        }
+      ],
+      "lng": 113.288128,
+      "lat": 33.738244
+    }
+  ]
+}

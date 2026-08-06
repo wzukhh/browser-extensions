@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Translator 设置</title>
+    <style>
+      body {
+        width: 320px;
+        margin: 0;
+        padding: 16px;
+        font-family:
+          -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-size: 13px;
+        color: #1f2328;
+        background: #fff;
+      }
+      h1 {
+        font-size: 15px;
+        margin: 0 0 14px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      label {
+        display: block;
+        margin: 10px 0 4px;
+        font-weight: 600;
+        color: #57606a;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 6px 8px;
+        border: 1px solid #d0d7de;
+        border-radius: 6px;
+        font-size: 13px;
+        box-sizing: border-box;
+      }
+      #apiKey {
+        padding-right: 30px; /* 给右侧眼睛按钮让位，长文本不遮挡 */
+      }
+      input:focus,
+      select:focus {
+        outline: 2px solid #cfe0ff;
+        border-color: #4a6cf7;
+      }
+      .hint {
+        color: #8b949e;
+        font-size: 11px;
+        margin-top: 4px;
+        line-height: 1.5;
+      }
+      .row {
+        display: flex;
+        gap: 8px;
+      }
+      .row > div {
+        flex: 1;
+      }
+      .refresh {
+        cursor: pointer;
+        width: 13px;
+        height: 13px;
+        margin-left: 4px;
+        user-select: none;
+        vertical-align: -2px;
+      }
+      .title-icon {
+        width: 18px;
+        height: 18px;
+      }
+      .label-icon {
+        width: 14px;
+        height: 14px;
+        margin-right: 2px;
+        vertical-align: -2px;
+      }
+      .refresh:hover {
+        opacity: 0.7;
+      }
+      button {
+        margin-top: 14px;
+        width: 100%;
+        padding: 8px;
+        border: none;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .save {
+        background: #4a6cf7;
+        color: #fff;
+      }
+      .save:hover {
+        background: #3b5de7;
+      }
+      .test {
+        background: #f6f8fa;
+        color: #4a6cf7;
+        margin-top: 8px;
+      }
+      .test:hover {
+        background: #eef1fe;
+      }
+      #status {
+        margin-top: 10px;
+        font-size: 12px;
+        min-height: 16px;
+        text-align: center;
+      }
+      .ok {
+        color: #1a7f37;
+      }
+      .err {
+        color: #cf222e;
+      }
+      .key-row {
+        position: relative;
+      }
+      .toggle-eye {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #8b949e;
+        user-select: none;
+        font-size: 14px;
+        line-height: 1;
+      }
+      .toggle-eye:hover {
+        color: #57606a;
+      }
+      .checkbox-row {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 14px;
+        font-weight: 400;
+        color: #24292f;
+        cursor: pointer;
+      }
+      .checkbox-row input[type="checkbox"] {
+        width: auto;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <img src="../icons/translate.svg" alt="" class="title-icon" />
+      划词翻译-DeepSeek版 设置
+    </h1>
+
+    <label for="apiKey">DeepSeek API Key</label>
+    <div class="key-row">
+      <input type="password" id="apiKey" placeholder="sk-..." />
+      <span
+        class="toggle-eye"
+        id="toggleEye"
+        title="显示/隐藏"
+        aria-hidden="true"
+      >
+        <!-- 睁眼：密码隐藏时显示，点击可查看 -->
+        <span class="eye-open">👁</span>
+        <!-- 闭眼：密码可见时显示，点击可隐藏 -->
+        <span class="eye-closed" style="display: none">😑</span>
+      </span>
+    </div>
+    <div class="hint">
+      在
+      <a href="https://platform.deepseek.com/api_keys" target="_blank"
+        >platform.deepseek.com</a
+      >
+      申请
+    </div>
+
+    <div class="row">
+      <div>
+        <label for="model">
+          <img src="../icons/model.svg" alt="" class="label-icon" />模型
+          <img
+            src="../icons/refresh.svg"
+            class="refresh"
+            id="refreshModels"
+            title="重新拉取模型列表"
+        /></label>
+        <select id="model">
+          <option value="" disabled selected>加载中…</option>
+        </select>
+      </div>
+      <div>
+        <label for="targetLang">目标语言</label>
+        <select id="targetLang">
+          <option value="zh-CN">简体中文</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+    </div>
+
+    <label for="baseUrl">API 地址（一般不用改）</label>
+    <input type="text" id="baseUrl" placeholder="https://api.deepseek.com" />
+
+    <label class="checkbox-row">
+      <input type="checkbox" id="showAuthor" checked />
+      卡片页脚显示作者信息
+    </label>
+
+    <button class="save" id="saveBtn">保存</button>
+    <button class="test" id="testBtn">测试连接</button>
+    <div id="status"></div>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

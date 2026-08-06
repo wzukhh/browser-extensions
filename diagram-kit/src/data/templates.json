@@ -1,0 +1,52 @@
+[
+  {
+    "name": "流程图 - 基础",
+    "category": "流程图",
+    "content": "graph TD\n  A[开始] --> B{判断}\n  B -->|是| C[处理]\n  B -->|否| D[结束]\n  C --> D"
+  },
+  {
+    "name": "流程图 - 左右布局",
+    "category": "流程图",
+    "content": "graph LR\n  A[需求] --> B[设计]\n  B --> C[开发]\n  C --> D[测试]\n  D --> E[发布]"
+  },
+  {
+    "name": "时序图 - 用户登录",
+    "category": "时序图",
+    "content": "sequenceDiagram\n  participant U as 用户\n  participant F as 前端\n  participant B as 后端\n  participant D as 数据库\n\n  U->>F: 输入账号密码\n  F->>B: POST /api/login\n  B->>D: 查询用户\n  D-->>B: 返回用户信息\n  B-->>F: 返回 Token\n  F-->>U: 登录成功"
+  },
+  {
+    "name": "甘特图 - 项目计划",
+    "category": "甘特图",
+    "content": "gantt\n  title 项目开发计划\n  dateFormat  YYYY-MM-DD\n  section 需求\n  需求分析          :done, a1, 2024-01-01, 7d\n  需求评审          :done, a2, after a1, 3d\n  section 开发\n  前端开发          :active, b1, after a2, 10d\n  后端开发          :b2, after a2, 10d\n  section 测试\n  集成测试          :c1, after b1, 5d\n  性能测试          :c2, after b2, 5d\n  section 发布\n  上线部署          :d1, after c1, 2d"
+  },
+  {
+    "name": "类图 - 电商系统",
+    "category": "类图",
+    "content": "classDiagram\n  class User {\n    +String name\n    +String email\n    +login()\n    +logout()\n  }\n  class Order {\n    +int id\n    +Date date\n    +float total\n    +getItems()\n  }\n  class Product {\n    +String sku\n    +float price\n    +int stock\n  }\n  User \"1\" --> \"*\" Order : 下单\n  Order \"*\" --> \"*\" Product : 包含"
+  },
+  {
+    "name": "状态图 - 订单状态",
+    "category": "状态图",
+    "content": "stateDiagram-v2\n  [*] --> 待支付\n  待支付 --> 已支付: 支付成功\n  待支付 --> 已取消: 取消订单\n  已支付 --> 已发货: 发货\n  已发货 --> 已签收: 签收\n  已签收 --> 已完成: 确认收货\n  已完成 --> [*]\n  已支付 --> 退款中: 申请退款\n  退款中 --> 已退款: 退款完成\n  已退款 --> [*]"
+  },
+  {
+    "name": "饼图 - 技术栈占比",
+    "category": "饼图",
+    "content": "pie title 团队技术栈占比\n  \"Vue.js\" : 35\n  \"React\" : 25\n  \"Node.js\" : 20\n  \"Python\" : 12\n  \"Go\" : 8"
+  },
+  {
+    "name": "ER 图 - 用户关系",
+    "category": "ER 图",
+    "content": "erDiagram\n  USER ||--o{ POST : writes\n  USER ||--o{ COMMENT : comments\n  POST ||--o{ COMMENT : contains\n  USER ||--|| PROFILE : has\n  USER {\n    int id PK\n    string name\n    string email\n  }\n  POST {\n    int id PK\n    string title\n    text content\n    datetime created_at\n  }\n  COMMENT {\n    int id PK\n    text content\n    datetime created_at\n  }"
+  },
+  {
+    "name": "购物旅程图",
+    "category": "旅程图",
+    "content": "journey\n  title 用户购物体验\n  section 浏览商品\n    打开应用: 5: 用户\n    浏览分类: 3: 用户\n    查看商品详情: 4: 用户\n  section 下单支付\n    加入购物车: 4: 用户\n    填写地址: 2: 用户\n    支付: 3: 用户, 系统\n  section 收货\n    查看物流: 3: 用户\n    签收商品: 5: 用户\n    评价晒图: 4: 用户"
+  },
+  {
+    "name": "Git 图 - 分支流程",
+    "category": "Git 图",
+    "content": "gitGraph\n  commit id: \"初始化\"\n  branch develop\n  commit id: \"添加登录\"\n  commit id: \"添加注册\"\n  branch feature/search\n  commit id: \"搜索功能\"\n  checkout develop\n  commit id: \"修复bug\"\n  merge feature/search\n  commit id: \"准备发布\"\n  checkout main\n  merge develop tag: \"v1.0\""
+  }
+]

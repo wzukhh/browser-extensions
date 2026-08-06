@@ -1,0 +1,1092 @@
+{
+  "province": {
+    "code": "34",
+    "name": "安徽省"
+  },
+  "cities": [
+    {
+      "code": "3401",
+      "name": "合肥市",
+      "provinceCode": "34",
+      "areas": [
+        {
+          "code": "340102",
+          "name": "瑶海区",
+          "cityCode": "3401",
+          "provinceCode": "34",
+          "lng": 117.303661,
+          "lat": 31.860226
+        },
+        {
+          "code": "340103",
+          "name": "庐阳区",
+          "cityCode": "3401",
+          "provinceCode": "34",
+          "lng": 117.259179,
+          "lat": 31.880695
+        },
+        {
+          "code": "340104",
+          "name": "蜀山区",
+          "cityCode": "3401",
+          "provinceCode": "34",
+          "lng": 117.25451,
+          "lat": 31.853212
+        },
+        {
+          "code": "340111",
+          "name": "包河区",
+          "cityCode": "3401",
+          "provinceCode": "34",
+          "lng": 117.304428,
+          "lat": 31.795542
+        },
+        {
+          "code": "340121",
+          "name": "长丰县",
+          "cityCode": "3401",
+          "provinceCode": "34",
+          "lng": 117.161976,
+          "lat": 32.479938
+        },
+        {
+          "code": "340122",
+          "name": "肥东县",
+          "cityCode": "3401",
+          "provinceCode": "34",
+          "lng": 117.472709,
+          "lat": 31.878497
+        },
+        {
+          "code": "340123",
+          "name": "肥西县",
+          "cityCode": "3401",
+          "provinceCode": "34",
+          "lng": 117.152738,
+          "lat": 31.708899
+        },
+        {
+          "code": "340124",
+          "name": "庐江县",
+          "cityCode": "3401",
+          "provinceCode": "34",
+          "lng": 117.28316,
+          "lat": 31.258823
+        },
+        {
+          "code": "340176",
+          "name": "合肥高新技术产业开发区",
+          "cityCode": "3401",
+          "provinceCode": "34"
+        },
+        {
+          "code": "340177",
+          "name": "合肥经济技术开发区",
+          "cityCode": "3401",
+          "provinceCode": "34"
+        },
+        {
+          "code": "340178",
+          "name": "合肥新站高新技术产业开发区",
+          "cityCode": "3401",
+          "provinceCode": "34"
+        },
+        {
+          "code": "340181",
+          "name": "巢湖市",
+          "cityCode": "3401",
+          "provinceCode": "34",
+          "lng": 117.883765,
+          "lat": 31.625461
+        }
+      ],
+      "lng": 117.221517,
+      "lat": 31.8223
+    },
+    {
+      "code": "3402",
+      "name": "芜湖市",
+      "provinceCode": "34",
+      "areas": [
+        {
+          "code": "340202",
+          "name": "镜湖区",
+          "cityCode": "3402",
+          "provinceCode": "34",
+          "lng": 118.358969,
+          "lat": 31.348475
+        },
+        {
+          "code": "340207",
+          "name": "鸠江区",
+          "cityCode": "3402",
+          "provinceCode": "34",
+          "lng": 118.385584,
+          "lat": 31.371927
+        },
+        {
+          "code": "340209",
+          "name": "弋江区",
+          "cityCode": "3402",
+          "provinceCode": "34"
+        },
+        {
+          "code": "340210",
+          "name": "湾沚区",
+          "cityCode": "3402",
+          "provinceCode": "34"
+        },
+        {
+          "code": "340212",
+          "name": "繁昌区",
+          "cityCode": "3402",
+          "provinceCode": "34"
+        },
+        {
+          "code": "340223",
+          "name": "南陵县",
+          "cityCode": "3402",
+          "provinceCode": "34",
+          "lng": 118.328739,
+          "lat": 30.91693
+        },
+        {
+          "code": "340271",
+          "name": "芜湖经济技术开发区",
+          "cityCode": "3402",
+          "provinceCode": "34",
+          "lng": 118.368494,
+          "lat": 31.41037
+        },
+        {
+          "code": "340272",
+          "name": "安徽芜湖三山经济开发区",
+          "cityCode": "3402",
+          "provinceCode": "34",
+          "lng": 118.367473,
+          "lat": 31.387819
+        },
+        {
+          "code": "340281",
+          "name": "无为市",
+          "cityCode": "3402",
+          "provinceCode": "34",
+          "lng": 117.897173,
+          "lat": 31.306515
+        }
+      ],
+      "lng": 118.427655,
+      "lat": 31.354463
+    },
+    {
+      "code": "3403",
+      "name": "蚌埠市",
+      "provinceCode": "34",
+      "areas": [
+        {
+          "code": "340302",
+          "name": "龙子湖区",
+          "cityCode": "3403",
+          "provinceCode": "34",
+          "lng": 117.387147,
+          "lat": 32.944387
+        },
+        {
+          "code": "340303",
+          "name": "蚌山区",
+          "cityCode": "3403",
+          "provinceCode": "34",
+          "lng": 117.36751,
+          "lat": 32.917954
+        },
+        {
+          "code": "340304",
+          "name": "禹会区",
+          "cityCode": "3403",
+          "provinceCode": "34",
+          "lng": 117.336237,
+          "lat": 32.93086
+        },
+        {
+          "code": "340311",
+          "name": "淮上区",
+          "cityCode": "3403",
+          "provinceCode": "34",
+          "lng": 117.353465,
+          "lat": 32.967204
+        },
+        {
+          "code": "340321",
+          "name": "怀远县",
+          "cityCode": "3403",
+          "provinceCode": "34",
+          "lng": 117.199454,
+          "lat": 32.972726
+        },
+        {
+          "code": "340322",
+          "name": "五河县",
+          "cityCode": "3403",
+          "provinceCode": "34",
+          "lng": 117.876037,
+          "lat": 33.12852
+        },
+        {
+          "code": "340323",
+          "name": "固镇县",
+          "cityCode": "3403",
+          "provinceCode": "34",
+          "lng": 117.311262,
+          "lat": 33.319041
+        },
+        {
+          "code": "340371",
+          "name": "蚌埠市高新技术开发区",
+          "cityCode": "3403",
+          "provinceCode": "34",
+          "lng": 117.383153,
+          "lat": 32.917207
+        },
+        {
+          "code": "340372",
+          "name": "蚌埠市经济开发区",
+          "cityCode": "3403",
+          "provinceCode": "34",
+          "lng": 117.383153,
+          "lat": 32.917207
+        }
+      ],
+      "lng": 117.383153,
+      "lat": 32.917207
+    },
+    {
+      "code": "3404",
+      "name": "淮南市",
+      "provinceCode": "34",
+      "areas": [
+        {
+          "code": "340402",
+          "name": "大通区",
+          "cityCode": "3404",
+          "provinceCode": "34",
+          "lng": 117.047725,
+          "lat": 32.633397
+        },
+        {
+          "code": "340403",
+          "name": "田家庵区",
+          "cityCode": "3404",
+          "provinceCode": "34",
+          "lng": 117.042427,
+          "lat": 32.667817
+        },
+        {
+          "code": "340404",
+          "name": "谢家集区",
+          "cityCode": "3404",
+          "provinceCode": "34",
+          "lng": 116.854251,
+          "lat": 32.601915
+        },
+        {
+          "code": "340405",
+          "name": "八公山区",
+          "cityCode": "3404",
+          "provinceCode": "34",
+          "lng": 116.828378,
+          "lat": 32.633574
+        },
+        {
+          "code": "340406",
+          "name": "潘集区",
+          "cityCode": "3404",
+          "provinceCode": "34",
+          "lng": 116.829404,
+          "lat": 32.773698
+        },
+        {
+          "code": "340421",
+          "name": "凤台县",
+          "cityCode": "3404",
+          "provinceCode": "34",
+          "lng": 116.705717,
+          "lat": 32.712516
+        },
+        {
+          "code": "340422",
+          "name": "寿县",
+          "cityCode": "3404",
+          "provinceCode": "34",
+          "lng": 116.793737,
+          "lat": 32.557819
+        }
+      ],
+      "lng": 116.994572,
+      "lat": 32.62755
+    },
+    {
+      "code": "3405",
+      "name": "马鞍山市",
+      "provinceCode": "34",
+      "areas": [
+        {
+          "code": "340503",
+          "name": "花山区",
+          "cityCode": "3405",
+          "provinceCode": "34",
+          "lng": 118.506613,
+          "lat": 31.702004
+        },
+        {
+          "code": "340504",
+          "name": "雨山区",
+          "cityCode": "3405",
+          "provinceCode": "34",
+          "lng": 118.493321,
+          "lat": 31.684092
+        },
+        {
+          "code": "340506",
+          "name": "博望区",
+          "cityCode": "3405",
+          "provinceCode": "34",
+          "lng": 118.836649,
+          "lat": 31.560186
+        },
+        {
+          "code": "340521",
+          "name": "当涂县",
+          "cityCode": "3405",
+          "provinceCode": "34",
+          "lng": 118.492797,
+          "lat": 31.572966
+        },
+        {
+          "code": "340522",
+          "name": "含山县",
+          "cityCode": "3405",
+          "provinceCode": "34",
+          "lng": 118.095893,
+          "lat": 31.737255
+        },
+        {
+          "code": "340523",
+          "name": "和县",
+          "cityCode": "3405",
+          "provinceCode": "34",
+          "lng": 118.348255,
+          "lat": 31.744406
+        }
+      ],
+      "lng": 118.501704,
+      "lat": 31.670815
+    },
+    {
+      "code": "3406",
+      "name": "淮北市",
+      "provinceCode": "34",
+      "areas": [
+        {
+          "code": "340602",
+          "name": "杜集区",
+          "cityCode": "3406",
+          "provinceCode": "34",
+          "lng": 116.822679,
+          "lat": 33.99288
+        },
+        {
+          "code": "340603",
+          "name": "相山区",
+          "cityCode": "3406",
+          "provinceCode": "34",
+          "lng": 116.788837,
+          "lat": 33.961401
+        },
+        {
+          "code": "340604",
+          "name": "烈山区",
+          "cityCode": "3406",
+          "provinceCode": "34",
+          "lng": 116.807899,
+          "lat": 33.896971
+        },
+        {
+          "code": "340621",
+          "name": "濉溪县",
+          "cityCode": "3406",
+          "provinceCode": "34",
+          "lng": 116.760772,
+          "lat": 33.917043
+        }
+      ],
+      "lng": 116.792603,
+      "lat": 33.957228
+    },
+    {
+      "code": "3407",
+      "name": "铜陵市",
+      "provinceCode": "34",
+      "areas": [
+        {
+          "code": "340705",
+          "name": "铜官区",
+          "cityCode": "3407",
+          "provinceCode": "34",
+          "lng": 117.850817,
+          "lat": 30.938529
+        },
+        {
+          "code": "340706",
+          "name": "义安区",
+          "cityCode": "3407",
+          "provinceCode": "34",
+          "lng": 117.932404,
+          "lat": 30.953057
+        },
+        {
+          "code": "340711",
+          "name": "郊区",
+          "cityCode": "3407",
+          "provinceCode": "34",
+          "lng": 117.762546,
+          "lat": 30.823801
+        },
+        {
+          "code": "340722",
+          "name": "枞阳县",
+          "cityCode": "3407",
+          "provinceCode": "34",
+          "lng": 117.244626,
+          "lat": 30.707995
+        }
+      ],
+      "lng": 117.80587,
+      "lat": 30.947485
+    },
+    {
+      "code": "3408",
+      "name": "安庆市",
+      "provinceCode": "34",
+      "areas": [
+        {
+          "code": "340802",
+          "name": "迎江区",
+          "cityCode": "3408",
+          "provinceCode": "34",
+          "lng": 117.085597,
+          "lat": 30.513837
+        },
+        {
+          "code": "340803",
+          "name": "大观区",
+          "cityCode": "3408",
+          "provinceCode": "34",
+          "lng": 117.008176,
+          "lat": 30.556093
+        },
+        {
+          "code": "340811",
+          "name": "宜秀区",
+          "cityCode": "3408",
+          "provinceCode": "34",
+          "lng": 116.982218,
+          "lat": 30.615645
+        },
+        {
+          "code": "340822",
+          "name": "怀宁县",
+          "cityCode": "3408",
+          "provinceCode": "34",
+          "lng": 116.824689,
+          "lat": 30.736269
+        },
+        {
+          "code": "340825",
+          "name": "太湖县",
+          "cityCode": "3408",
+          "provinceCode": "34",
+          "lng": 116.303624,
+          "lat": 30.45669
+        },
+        {
+          "code": "340826",
+          "name": "宿松县",
+          "cityCode": "3408",
+          "provinceCode": "34",
+          "lng": 116.123736,
+          "lat": 30.156152
+        },
+        {
+          "code": "340827",
+          "name": "望江县",
+          "cityCode": "3408",
+          "provinceCode": "34",
+          "lng": 116.70168,
+          "lat": 30.130794
+        },
+        {
+          "code": "340828",
+          "name": "岳西县",
+          "cityCode": "3408",
+          "provinceCode": "34",
+          "lng": 116.354753,
+          "lat": 30.851555
+        },
+        {
+          "code": "340871",
+          "name": "安徽安庆经济开发区",
+          "cityCode": "3408",
+          "provinceCode": "34",
+          "lng": 117.159514,
+          "lat": 30.541866
+        },
+        {
+          "code": "340881",
+          "name": "桐城市",
+          "cityCode": "3408",
+          "provinceCode": "34",
+          "lng": 116.932012,
+          "lat": 31.037798
+        },
+        {
+          "code": "340882",
+          "name": "潜山市",
+          "cityCode": "3408",
+          "provinceCode": "34",
+          "lng": 116.576142,
+          "lat": 30.633693
+        }
+      ],
+      "lng": 117.109357,
+      "lat": 30.535147
+    },
+    {
+      "code": "3410",
+      "name": "黄山市",
+      "provinceCode": "34",
+      "areas": [
+        {
+          "code": "341002",
+          "name": "屯溪区",
+          "cityCode": "3410",
+          "provinceCode": "34",
+          "lng": 118.309889,
+          "lat": 29.699011
+        },
+        {
+          "code": "341003",
+          "name": "黄山区",
+          "cityCode": "3410",
+          "provinceCode": "34",
+          "lng": 118.136423,
+          "lat": 30.275396
+        },
+        {
+          "code": "341004",
+          "name": "徽州区",
+          "cityCode": "3410",
+          "provinceCode": "34",
+          "lng": 118.331345,
+          "lat": 29.829646
+        },
+        {
+          "code": "341021",
+          "name": "歙县",
+          "cityCode": "3410",
+          "provinceCode": "34",
+          "lng": 118.409727,
+          "lat": 29.862511
+        },
+        {
+          "code": "341022",
+          "name": "休宁县",
+          "cityCode": "3410",
+          "provinceCode": "34",
+          "lng": 118.188433,
+          "lat": 29.78697
+        },
+        {
+          "code": "341023",
+          "name": "黟县",
+          "cityCode": "3410",
+          "provinceCode": "34",
+          "lng": 117.933088,
+          "lat": 29.92738
+        },
+        {
+          "code": "341024",
+          "name": "祁门县",
+          "cityCode": "3410",
+          "provinceCode": "34",
+          "lng": 117.711676,
+          "lat": 29.856522
+        }
+      ],
+      "lng": 118.332178,
+      "lat": 29.717015
+    },
+    {
+      "code": "3411",
+      "name": "滁州市",
+      "provinceCode": "34",
+      "areas": [
+        {
+          "code": "341102",
+          "name": "琅琊区",
+          "cityCode": "3411",
+          "provinceCode": "34",
+          "lng": 118.300619,
+          "lat": 32.296627
+        },
+        {
+          "code": "341103",
+          "name": "南谯区",
+          "cityCode": "3411",
+          "provinceCode": "34",
+          "lng": 118.411516,
+          "lat": 32.201889
+        },
+        {
+          "code": "341122",
+          "name": "来安县",
+          "cityCode": "3411",
+          "provinceCode": "34",
+          "lng": 118.426952,
+          "lat": 32.424409
+        },
+        {
+          "code": "341124",
+          "name": "全椒县",
+          "cityCode": "3411",
+          "provinceCode": "34",
+          "lng": 118.268677,
+          "lat": 32.088239
+        },
+        {
+          "code": "341125",
+          "name": "定远县",
+          "cityCode": "3411",
+          "provinceCode": "34",
+          "lng": 117.692458,
+          "lat": 32.533016
+        },
+        {
+          "code": "341126",
+          "name": "凤阳县",
+          "cityCode": "3411",
+          "provinceCode": "34",
+          "lng": 117.526462,
+          "lat": 32.877305
+        },
+        {
+          "code": "341171",
+          "name": "中新苏滁高新技术产业开发区",
+          "cityCode": "3411",
+          "provinceCode": "34",
+          "lng": 118.411259,
+          "lat": 32.309816
+        },
+        {
+          "code": "341172",
+          "name": "滁州经济技术开发区",
+          "cityCode": "3411",
+          "provinceCode": "34",
+          "lng": 118.327574,
+          "lat": 32.256972
+        },
+        {
+          "code": "341181",
+          "name": "天长市",
+          "cityCode": "3411",
+          "provinceCode": "34",
+          "lng": 118.999481,
+          "lat": 32.669356
+        },
+        {
+          "code": "341182",
+          "name": "明光市",
+          "cityCode": "3411",
+          "provinceCode": "34",
+          "lng": 118.012668,
+          "lat": 32.783774
+        }
+      ],
+      "lng": 118.327574,
+      "lat": 32.256972
+    },
+    {
+      "code": "3412",
+      "name": "阜阳市",
+      "provinceCode": "34",
+      "areas": [
+        {
+          "code": "341202",
+          "name": "颍州区",
+          "cityCode": "3412",
+          "provinceCode": "34",
+          "lng": 115.801612,
+          "lat": 32.88529
+        },
+        {
+          "code": "341203",
+          "name": "颍东区",
+          "cityCode": "3412",
+          "provinceCode": "34",
+          "lng": 115.851939,
+          "lat": 32.913364
+        },
+        {
+          "code": "341204",
+          "name": "颍泉区",
+          "cityCode": "3412",
+          "provinceCode": "34",
+          "lng": 115.801748,
+          "lat": 32.927495
+        },
+        {
+          "code": "341221",
+          "name": "临泉县",
+          "cityCode": "3412",
+          "provinceCode": "34",
+          "lng": 115.257223,
+          "lat": 33.042077
+        },
+        {
+          "code": "341222",
+          "name": "太和县",
+          "cityCode": "3412",
+          "provinceCode": "34",
+          "lng": 115.616582,
+          "lat": 33.1622
+        },
+        {
+          "code": "341225",
+          "name": "阜南县",
+          "cityCode": "3412",
+          "provinceCode": "34",
+          "lng": 115.5908,
+          "lat": 32.661822
+        },
+        {
+          "code": "341226",
+          "name": "颍上县",
+          "cityCode": "3412",
+          "provinceCode": "34",
+          "lng": 116.251546,
+          "lat": 32.655231
+        },
+        {
+          "code": "341271",
+          "name": "阜阳合肥现代产业园区",
+          "cityCode": "3412",
+          "provinceCode": "34",
+          "lng": 115.903718,
+          "lat": 32.805474
+        },
+        {
+          "code": "341272",
+          "name": "阜阳经济技术开发区",
+          "cityCode": "3412",
+          "provinceCode": "34",
+          "lng": 115.851482,
+          "lat": 32.866457
+        },
+        {
+          "code": "341282",
+          "name": "界首市",
+          "cityCode": "3412",
+          "provinceCode": "34",
+          "lng": 115.368941,
+          "lat": 33.25921
+        }
+      ],
+      "lng": 115.808913,
+      "lat": 32.892412
+    },
+    {
+      "code": "3413",
+      "name": "宿州市",
+      "provinceCode": "34",
+      "areas": [
+        {
+          "code": "341302",
+          "name": "埇桥区",
+          "cityCode": "3413",
+          "provinceCode": "34",
+          "lng": 116.971569,
+          "lat": 33.641533
+        },
+        {
+          "code": "341321",
+          "name": "砀山县",
+          "cityCode": "3413",
+          "provinceCode": "34",
+          "lng": 116.360406,
+          "lat": 34.443554
+        },
+        {
+          "code": "341322",
+          "name": "萧县",
+          "cityCode": "3413",
+          "provinceCode": "34",
+          "lng": 116.94162,
+          "lat": 34.190063
+        },
+        {
+          "code": "341323",
+          "name": "灵璧县",
+          "cityCode": "3413",
+          "provinceCode": "34",
+          "lng": 117.552465,
+          "lat": 33.543741
+        },
+        {
+          "code": "341324",
+          "name": "泗县",
+          "cityCode": "3413",
+          "provinceCode": "34",
+          "lng": 117.904603,
+          "lat": 33.484696
+        },
+        {
+          "code": "341371",
+          "name": "宿州马鞍山现代产业园区",
+          "cityCode": "3413",
+          "provinceCode": "34",
+          "lng": 117.231844,
+          "lat": 33.67786
+        },
+        {
+          "code": "341372",
+          "name": "宿州经济技术开发区",
+          "cityCode": "3413",
+          "provinceCode": "34",
+          "lng": 116.947422,
+          "lat": 33.589096
+        }
+      ],
+      "lng": 116.958617,
+      "lat": 33.647765
+    },
+    {
+      "code": "3415",
+      "name": "六安市",
+      "provinceCode": "34",
+      "areas": [
+        {
+          "code": "341502",
+          "name": "金安区",
+          "cityCode": "3415",
+          "provinceCode": "34",
+          "lng": 116.534305,
+          "lat": 31.752389
+        },
+        {
+          "code": "341503",
+          "name": "裕安区",
+          "cityCode": "3415",
+          "provinceCode": "34",
+          "lng": 116.474652,
+          "lat": 31.739771
+        },
+        {
+          "code": "341504",
+          "name": "叶集区",
+          "cityCode": "3415",
+          "provinceCode": "34",
+          "lng": 115.920098,
+          "lat": 31.865645
+        },
+        {
+          "code": "341522",
+          "name": "霍邱县",
+          "cityCode": "3415",
+          "provinceCode": "34",
+          "lng": 116.272763,
+          "lat": 32.35511
+        },
+        {
+          "code": "341523",
+          "name": "舒城县",
+          "cityCode": "3415",
+          "provinceCode": "34",
+          "lng": 116.943613,
+          "lat": 31.465766
+        },
+        {
+          "code": "341524",
+          "name": "金寨县",
+          "cityCode": "3415",
+          "provinceCode": "34",
+          "lng": 115.929148,
+          "lat": 31.729471
+        },
+        {
+          "code": "341525",
+          "name": "霍山县",
+          "cityCode": "3415",
+          "provinceCode": "34",
+          "lng": 116.342417,
+          "lat": 31.411812
+        }
+      ],
+      "lng": 116.514754,
+      "lat": 31.737952
+    },
+    {
+      "code": "3416",
+      "name": "亳州市",
+      "provinceCode": "34",
+      "areas": [
+        {
+          "code": "341602",
+          "name": "谯城区",
+          "cityCode": "3416",
+          "provinceCode": "34",
+          "lng": 115.773458,
+          "lat": 33.877937
+        },
+        {
+          "code": "341621",
+          "name": "涡阳县",
+          "cityCode": "3416",
+          "provinceCode": "34",
+          "lng": 116.209631,
+          "lat": 33.494416
+        },
+        {
+          "code": "341622",
+          "name": "蒙城县",
+          "cityCode": "3416",
+          "provinceCode": "34",
+          "lng": 116.559894,
+          "lat": 33.267722
+        },
+        {
+          "code": "341623",
+          "name": "利辛县",
+          "cityCode": "3416",
+          "provinceCode": "34",
+          "lng": 116.203651,
+          "lat": 33.146392
+        }
+      ],
+      "lng": 115.773068,
+      "lat": 33.846496
+    },
+    {
+      "code": "3417",
+      "name": "池州市",
+      "provinceCode": "34",
+      "areas": [
+        {
+          "code": "341702",
+          "name": "贵池区",
+          "cityCode": "3417",
+          "provinceCode": "34",
+          "lng": 117.562749,
+          "lat": 30.690439
+        },
+        {
+          "code": "341721",
+          "name": "东至县",
+          "cityCode": "3417",
+          "provinceCode": "34",
+          "lng": 117.022338,
+          "lat": 30.113633
+        },
+        {
+          "code": "341722",
+          "name": "石台县",
+          "cityCode": "3417",
+          "provinceCode": "34",
+          "lng": 117.480555,
+          "lat": 30.212654
+        },
+        {
+          "code": "341723",
+          "name": "青阳县",
+          "cityCode": "3417",
+          "provinceCode": "34",
+          "lng": 117.841776,
+          "lat": 30.641821
+        }
+      ],
+      "lng": 117.490205,
+      "lat": 30.676673
+    },
+    {
+      "code": "3418",
+      "name": "宣城市",
+      "provinceCode": "34",
+      "areas": [
+        {
+          "code": "341802",
+          "name": "宣州区",
+          "cityCode": "3418",
+          "provinceCode": "34",
+          "lng": 118.780634,
+          "lat": 30.94632
+        },
+        {
+          "code": "341821",
+          "name": "郎溪县",
+          "cityCode": "3418",
+          "provinceCode": "34",
+          "lng": 119.179007,
+          "lat": 31.145295
+        },
+        {
+          "code": "341823",
+          "name": "泾县",
+          "cityCode": "3418",
+          "provinceCode": "34",
+          "lng": 118.414264,
+          "lat": 30.690837
+        },
+        {
+          "code": "341824",
+          "name": "绩溪县",
+          "cityCode": "3418",
+          "provinceCode": "34",
+          "lng": 118.574152,
+          "lat": 30.069761
+        },
+        {
+          "code": "341825",
+          "name": "旌德县",
+          "cityCode": "3418",
+          "provinceCode": "34",
+          "lng": 118.535054,
+          "lat": 30.288889
+        },
+        {
+          "code": "341871",
+          "name": "宣城市经济开发区",
+          "cityCode": "3418",
+          "provinceCode": "34",
+          "lng": 118.753877,
+          "lat": 30.943019
+        },
+        {
+          "code": "341881",
+          "name": "宁国市",
+          "cityCode": "3418",
+          "provinceCode": "34",
+          "lng": 118.977938,
+          "lat": 30.636129
+        },
+        {
+          "code": "341882",
+          "name": "广德市",
+          "cityCode": "3418",
+          "provinceCode": "34",
+          "lng": 119.415262,
+          "lat": 30.879818
+        }
+      ],
+      "lng": 118.753954,
+      "lat": 30.94171
+    }
+  ]
+}

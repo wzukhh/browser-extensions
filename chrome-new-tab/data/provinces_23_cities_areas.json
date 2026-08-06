@@ -1,0 +1,1133 @@
+{
+  "province": {
+    "code": "23",
+    "name": "黑龙江省"
+  },
+  "cities": [
+    {
+      "code": "2301",
+      "name": "哈尔滨市",
+      "provinceCode": "23",
+      "areas": [
+        {
+          "code": "230102",
+          "name": "道里区",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 126.610919,
+          "lat": 45.753851
+        },
+        {
+          "code": "230103",
+          "name": "南岗区",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 126.662851,
+          "lat": 45.758001
+        },
+        {
+          "code": "230104",
+          "name": "道外区",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 126.643993,
+          "lat": 45.790463
+        },
+        {
+          "code": "230108",
+          "name": "平房区",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 126.631164,
+          "lat": 45.595807
+        },
+        {
+          "code": "230109",
+          "name": "松北区",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 126.510537,
+          "lat": 45.792931
+        },
+        {
+          "code": "230110",
+          "name": "香坊区",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 126.657059,
+          "lat": 45.705659
+        },
+        {
+          "code": "230111",
+          "name": "呼兰区",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 126.581875,
+          "lat": 45.887858
+        },
+        {
+          "code": "230112",
+          "name": "阿城区",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 126.951841,
+          "lat": 45.546565
+        },
+        {
+          "code": "230113",
+          "name": "双城区",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 126.306523,
+          "lat": 45.380645
+        },
+        {
+          "code": "230123",
+          "name": "依兰县",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 129.560742,
+          "lat": 46.322875
+        },
+        {
+          "code": "230124",
+          "name": "方正县",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 128.822559,
+          "lat": 45.849846
+        },
+        {
+          "code": "230125",
+          "name": "宾县",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 127.46033,
+          "lat": 45.744181
+        },
+        {
+          "code": "230126",
+          "name": "巴彦县",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 127.396749,
+          "lat": 46.0842
+        },
+        {
+          "code": "230127",
+          "name": "木兰县",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 128.036516,
+          "lat": 45.94797
+        },
+        {
+          "code": "230128",
+          "name": "通河县",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 128.738619,
+          "lat": 45.988523
+        },
+        {
+          "code": "230129",
+          "name": "延寿县",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 128.304589,
+          "lat": 45.443671
+        },
+        {
+          "code": "230183",
+          "name": "尚志市",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 128.002533,
+          "lat": 45.207315
+        },
+        {
+          "code": "230184",
+          "name": "五常市",
+          "cityCode": "2301",
+          "provinceCode": "23",
+          "lng": 127.16114,
+          "lat": 44.929976
+        }
+      ],
+      "lng": 126.529228,
+      "lat": 45.801004
+    },
+    {
+      "code": "2302",
+      "name": "齐齐哈尔市",
+      "provinceCode": "23",
+      "areas": [
+        {
+          "code": "230202",
+          "name": "龙沙区",
+          "cityCode": "2302",
+          "provinceCode": "23",
+          "lng": 123.951007,
+          "lat": 47.315332
+        },
+        {
+          "code": "230203",
+          "name": "建华区",
+          "cityCode": "2302",
+          "provinceCode": "23",
+          "lng": 123.949128,
+          "lat": 47.352314
+        },
+        {
+          "code": "230204",
+          "name": "铁锋区",
+          "cityCode": "2302",
+          "provinceCode": "23",
+          "lng": 123.971759,
+          "lat": 47.338471
+        },
+        {
+          "code": "230205",
+          "name": "昂昂溪区",
+          "cityCode": "2302",
+          "provinceCode": "23",
+          "lng": 123.816323,
+          "lat": 47.153049
+        },
+        {
+          "code": "230206",
+          "name": "富拉尔基区",
+          "cityCode": "2302",
+          "provinceCode": "23",
+          "lng": 123.623422,
+          "lat": 47.207508
+        },
+        {
+          "code": "230207",
+          "name": "碾子山区",
+          "cityCode": "2302",
+          "provinceCode": "23",
+          "lng": 122.88165,
+          "lat": 47.514941
+        },
+        {
+          "code": "230208",
+          "name": "梅里斯达斡尔族区",
+          "cityCode": "2302",
+          "provinceCode": "23",
+          "lng": 123.746163,
+          "lat": 47.307402
+        },
+        {
+          "code": "230221",
+          "name": "龙江县",
+          "cityCode": "2302",
+          "provinceCode": "23",
+          "lng": 123.198671,
+          "lat": 47.336492
+        },
+        {
+          "code": "230223",
+          "name": "依安县",
+          "cityCode": "2302",
+          "provinceCode": "23",
+          "lng": 125.298664,
+          "lat": 47.891261
+        },
+        {
+          "code": "230224",
+          "name": "泰来县",
+          "cityCode": "2302",
+          "provinceCode": "23",
+          "lng": 123.409781,
+          "lat": 46.39091
+        },
+        {
+          "code": "230225",
+          "name": "甘南县",
+          "cityCode": "2302",
+          "provinceCode": "23",
+          "lng": 123.501068,
+          "lat": 47.919576
+        },
+        {
+          "code": "230227",
+          "name": "富裕县",
+          "cityCode": "2302",
+          "provinceCode": "23",
+          "lng": 124.467156,
+          "lat": 47.7717
+        },
+        {
+          "code": "230229",
+          "name": "克山县",
+          "cityCode": "2302",
+          "provinceCode": "23",
+          "lng": 125.868874,
+          "lat": 48.034945
+        },
+        {
+          "code": "230230",
+          "name": "克东县",
+          "cityCode": "2302",
+          "provinceCode": "23",
+          "lng": 126.242225,
+          "lat": 48.039435
+        },
+        {
+          "code": "230231",
+          "name": "拜泉县",
+          "cityCode": "2302",
+          "provinceCode": "23",
+          "lng": 126.092885,
+          "lat": 47.593184
+        },
+        {
+          "code": "230281",
+          "name": "讷河市",
+          "cityCode": "2302",
+          "provinceCode": "23",
+          "lng": 124.875864,
+          "lat": 48.464798
+        }
+      ],
+      "lng": 123.911581,
+      "lat": 47.352173
+    },
+    {
+      "code": "2303",
+      "name": "鸡西市",
+      "provinceCode": "23",
+      "areas": [
+        {
+          "code": "230302",
+          "name": "鸡冠区",
+          "cityCode": "2303",
+          "provinceCode": "23",
+          "lng": 130.973331,
+          "lat": 45.301922
+        },
+        {
+          "code": "230303",
+          "name": "恒山区",
+          "cityCode": "2303",
+          "provinceCode": "23",
+          "lng": 130.897417,
+          "lat": 45.209266
+        },
+        {
+          "code": "230304",
+          "name": "滴道区",
+          "cityCode": "2303",
+          "provinceCode": "23",
+          "lng": 130.836987,
+          "lat": 45.346922
+        },
+        {
+          "code": "230305",
+          "name": "梨树区",
+          "cityCode": "2303",
+          "provinceCode": "23",
+          "lng": 130.689582,
+          "lat": 45.089944
+        },
+        {
+          "code": "230306",
+          "name": "城子河区",
+          "cityCode": "2303",
+          "provinceCode": "23",
+          "lng": 131.004006,
+          "lat": 45.336111
+        },
+        {
+          "code": "230307",
+          "name": "麻山区",
+          "cityCode": "2303",
+          "provinceCode": "23",
+          "lng": 130.470349,
+          "lat": 45.20996
+        },
+        {
+          "code": "230321",
+          "name": "鸡东县",
+          "cityCode": "2303",
+          "provinceCode": "23",
+          "lng": 131.116162,
+          "lat": 45.258055
+        },
+        {
+          "code": "230381",
+          "name": "虎林市",
+          "cityCode": "2303",
+          "provinceCode": "23",
+          "lng": 132.929919,
+          "lat": 45.761103
+        },
+        {
+          "code": "230382",
+          "name": "密山市",
+          "cityCode": "2303",
+          "provinceCode": "23",
+          "lng": 131.839607,
+          "lat": 45.527544
+        }
+      ],
+      "lng": 130.961545,
+      "lat": 45.293038
+    },
+    {
+      "code": "2304",
+      "name": "鹤岗市",
+      "provinceCode": "23",
+      "areas": [
+        {
+          "code": "230402",
+          "name": "向阳区",
+          "cityCode": "2304",
+          "provinceCode": "23",
+          "lng": 130.286439,
+          "lat": 47.340171
+        },
+        {
+          "code": "230403",
+          "name": "工农区",
+          "cityCode": "2304",
+          "provinceCode": "23",
+          "lng": 130.267015,
+          "lat": 47.316314
+        },
+        {
+          "code": "230404",
+          "name": "南山区",
+          "cityCode": "2304",
+          "provinceCode": "23",
+          "lng": 130.278168,
+          "lat": 47.312705
+        },
+        {
+          "code": "230405",
+          "name": "兴安区",
+          "cityCode": "2304",
+          "provinceCode": "23",
+          "lng": 130.231455,
+          "lat": 47.250494
+        },
+        {
+          "code": "230406",
+          "name": "东山区",
+          "cityCode": "2304",
+          "provinceCode": "23",
+          "lng": 130.309072,
+          "lat": 47.336068
+        },
+        {
+          "code": "230407",
+          "name": "兴山区",
+          "cityCode": "2304",
+          "provinceCode": "23",
+          "lng": 130.29573,
+          "lat": 47.355297
+        },
+        {
+          "code": "230421",
+          "name": "萝北县",
+          "cityCode": "2304",
+          "provinceCode": "23",
+          "lng": 130.821171,
+          "lat": 47.57504
+        },
+        {
+          "code": "230422",
+          "name": "绥滨县",
+          "cityCode": "2304",
+          "provinceCode": "23",
+          "lng": 131.845143,
+          "lat": 47.286852
+        }
+      ],
+      "lng": 130.290124,
+      "lat": 47.347655
+    },
+    {
+      "code": "2305",
+      "name": "双鸭山市",
+      "provinceCode": "23",
+      "areas": [
+        {
+          "code": "230502",
+          "name": "尖山区",
+          "cityCode": "2305",
+          "provinceCode": "23",
+          "lng": 131.150079,
+          "lat": 46.643811
+        },
+        {
+          "code": "230503",
+          "name": "岭东区",
+          "cityCode": "2305",
+          "provinceCode": "23",
+          "lng": 131.157076,
+          "lat": 46.590419
+        },
+        {
+          "code": "230505",
+          "name": "四方台区",
+          "cityCode": "2305",
+          "provinceCode": "23",
+          "lng": 131.329483,
+          "lat": 46.594968
+        },
+        {
+          "code": "230506",
+          "name": "宝山区",
+          "cityCode": "2305",
+          "provinceCode": "23",
+          "lng": 131.393539,
+          "lat": 46.574986
+        },
+        {
+          "code": "230521",
+          "name": "集贤县",
+          "cityCode": "2305",
+          "provinceCode": "23",
+          "lng": 131.133127,
+          "lat": 46.726146
+        },
+        {
+          "code": "230522",
+          "name": "友谊县",
+          "cityCode": "2305",
+          "provinceCode": "23",
+          "lng": 131.799573,
+          "lat": 46.766319
+        },
+        {
+          "code": "230523",
+          "name": "宝清县",
+          "cityCode": "2305",
+          "provinceCode": "23",
+          "lng": 132.189476,
+          "lat": 46.324747
+        },
+        {
+          "code": "230524",
+          "name": "饶河县",
+          "cityCode": "2305",
+          "provinceCode": "23",
+          "lng": 134.006563,
+          "lat": 46.795359
+        }
+      ],
+      "lng": 131.133411,
+      "lat": 46.673891
+    },
+    {
+      "code": "2306",
+      "name": "大庆市",
+      "provinceCode": "23",
+      "areas": [
+        {
+          "code": "230602",
+          "name": "萨尔图区",
+          "cityCode": "2306",
+          "provinceCode": "23",
+          "lng": 125.119953,
+          "lat": 46.6309
+        },
+        {
+          "code": "230603",
+          "name": "龙凤区",
+          "cityCode": "2306",
+          "provinceCode": "23",
+          "lng": 125.126975,
+          "lat": 46.559527
+        },
+        {
+          "code": "230604",
+          "name": "让胡路区",
+          "cityCode": "2306",
+          "provinceCode": "23",
+          "lng": 124.883278,
+          "lat": 46.640715
+        },
+        {
+          "code": "230605",
+          "name": "红岗区",
+          "cityCode": "2306",
+          "provinceCode": "23",
+          "lng": 124.88464,
+          "lat": 46.396968
+        },
+        {
+          "code": "230606",
+          "name": "大同区",
+          "cityCode": "2306",
+          "provinceCode": "23",
+          "lng": 124.805795,
+          "lat": 46.038027
+        },
+        {
+          "code": "230621",
+          "name": "肇州县",
+          "cityCode": "2306",
+          "provinceCode": "23",
+          "lng": 125.261777,
+          "lat": 45.69752
+        },
+        {
+          "code": "230622",
+          "name": "肇源县",
+          "cityCode": "2306",
+          "provinceCode": "23",
+          "lng": 125.071107,
+          "lat": 45.516027
+        },
+        {
+          "code": "230623",
+          "name": "林甸县",
+          "cityCode": "2306",
+          "provinceCode": "23",
+          "lng": 124.857999,
+          "lat": 47.169558
+        },
+        {
+          "code": "230624",
+          "name": "杜尔伯特蒙古族自治县",
+          "cityCode": "2306",
+          "provinceCode": "23",
+          "lng": 124.436179,
+          "lat": 46.860247
+        },
+        {
+          "code": "230671",
+          "name": "大庆高新技术产业开发区",
+          "cityCode": "2306",
+          "provinceCode": "23",
+          "lng": 125.143742,
+          "lat": 46.578938
+        }
+      ],
+      "lng": 125.071107,
+      "lat": 45.516027
+    },
+    {
+      "code": "2307",
+      "name": "伊春市",
+      "provinceCode": "23",
+      "areas": [
+        {
+          "code": "230717",
+          "name": "伊美区",
+          "cityCode": "2307",
+          "provinceCode": "23",
+          "lng": 128.900364,
+          "lat": 47.725735
+        },
+        {
+          "code": "230718",
+          "name": "乌翠区",
+          "cityCode": "2307",
+          "provinceCode": "23",
+          "lng": 128.663059,
+          "lat": 47.72452
+        },
+        {
+          "code": "230719",
+          "name": "友好区",
+          "cityCode": "2307",
+          "provinceCode": "23",
+          "lng": 128.829836,
+          "lat": 47.838879
+        },
+        {
+          "code": "230722",
+          "name": "嘉荫县",
+          "cityCode": "2307",
+          "provinceCode": "23",
+          "lng": 130.394587,
+          "lat": 48.886516
+        },
+        {
+          "code": "230723",
+          "name": "汤旺县",
+          "cityCode": "2307",
+          "provinceCode": "23",
+          "lng": 129.56317,
+          "lat": 48.45066
+        },
+        {
+          "code": "230724",
+          "name": "丰林县",
+          "cityCode": "2307",
+          "provinceCode": "23",
+          "lng": 129.52574,
+          "lat": 48.288362
+        },
+        {
+          "code": "230725",
+          "name": "大箐山县",
+          "cityCode": "2307",
+          "provinceCode": "23",
+          "lng": 129.013617,
+          "lat": 47.026113
+        },
+        {
+          "code": "230726",
+          "name": "南岔县",
+          "cityCode": "2307",
+          "provinceCode": "23",
+          "lng": 129.276239,
+          "lat": 47.136115
+        },
+        {
+          "code": "230751",
+          "name": "金林区",
+          "cityCode": "2307",
+          "provinceCode": "23",
+          "lng": 129.42083,
+          "lat": 47.410455
+        },
+        {
+          "code": "230781",
+          "name": "铁力市",
+          "cityCode": "2307",
+          "provinceCode": "23",
+          "lng": 128.02513,
+          "lat": 46.984336
+        }
+      ],
+      "lng": 128.900364,
+      "lat": 47.725735
+    },
+    {
+      "code": "2308",
+      "name": "佳木斯市",
+      "provinceCode": "23",
+      "areas": [
+        {
+          "code": "230803",
+          "name": "向阳区",
+          "cityCode": "2308",
+          "provinceCode": "23",
+          "lng": 130.357562,
+          "lat": 46.805431
+        },
+        {
+          "code": "230804",
+          "name": "前进区",
+          "cityCode": "2308",
+          "provinceCode": "23",
+          "lng": 130.36732,
+          "lat": 46.811769
+        },
+        {
+          "code": "230805",
+          "name": "东风区",
+          "cityCode": "2308",
+          "provinceCode": "23",
+          "lng": 130.395683,
+          "lat": 46.820263
+        },
+        {
+          "code": "230811",
+          "name": "郊区",
+          "cityCode": "2308",
+          "provinceCode": "23",
+          "lng": 130.319377,
+          "lat": 46.807842
+        },
+        {
+          "code": "230822",
+          "name": "桦南县",
+          "cityCode": "2308",
+          "provinceCode": "23",
+          "lng": 130.546012,
+          "lat": 46.237655
+        },
+        {
+          "code": "230826",
+          "name": "桦川县",
+          "cityCode": "2308",
+          "provinceCode": "23",
+          "lng": 130.711203,
+          "lat": 47.02075
+        },
+        {
+          "code": "230828",
+          "name": "汤原县",
+          "cityCode": "2308",
+          "provinceCode": "23",
+          "lng": 129.897488,
+          "lat": 46.72876
+        },
+        {
+          "code": "230881",
+          "name": "同江市",
+          "cityCode": "2308",
+          "provinceCode": "23",
+          "lng": 132.502529,
+          "lat": 47.640001
+        },
+        {
+          "code": "230882",
+          "name": "富锦市",
+          "cityCode": "2308",
+          "provinceCode": "23",
+          "lng": 132.030074,
+          "lat": 47.247575
+        },
+        {
+          "code": "230883",
+          "name": "抚远市",
+          "cityCode": "2308",
+          "provinceCode": "23",
+          "lng": 134.300135,
+          "lat": 48.362461
+        }
+      ],
+      "lng": 130.31122,
+      "lat": 46.797766
+    },
+    {
+      "code": "2309",
+      "name": "七台河市",
+      "provinceCode": "23",
+      "areas": [
+        {
+          "code": "230902",
+          "name": "新兴区",
+          "cityCode": "2309",
+          "provinceCode": "23",
+          "lng": 130.924618,
+          "lat": 45.813936
+        },
+        {
+          "code": "230903",
+          "name": "桃山区",
+          "cityCode": "2309",
+          "provinceCode": "23",
+          "lng": 131.012208,
+          "lat": 45.763388
+        },
+        {
+          "code": "230904",
+          "name": "茄子河区",
+          "cityCode": "2309",
+          "provinceCode": "23",
+          "lng": 131.06004,
+          "lat": 45.782821
+        },
+        {
+          "code": "230921",
+          "name": "勃利县",
+          "cityCode": "2309",
+          "provinceCode": "23",
+          "lng": 130.584757,
+          "lat": 45.752975
+        }
+      ],
+      "lng": 130.995287,
+      "lat": 45.76895
+    },
+    {
+      "code": "2310",
+      "name": "牡丹江市",
+      "provinceCode": "23",
+      "areas": [
+        {
+          "code": "231002",
+          "name": "东安区",
+          "cityCode": "2310",
+          "provinceCode": "23",
+          "lng": 129.619607,
+          "lat": 44.579352
+        },
+        {
+          "code": "231003",
+          "name": "阳明区",
+          "cityCode": "2310",
+          "provinceCode": "23",
+          "lng": 129.62856,
+          "lat": 44.593918
+        },
+        {
+          "code": "231004",
+          "name": "爱民区",
+          "cityCode": "2310",
+          "provinceCode": "23",
+          "lng": 129.584539,
+          "lat": 44.594256
+        },
+        {
+          "code": "231005",
+          "name": "西安区",
+          "cityCode": "2310",
+          "provinceCode": "23",
+          "lng": 129.60905,
+          "lat": 44.575688
+        },
+        {
+          "code": "231025",
+          "name": "林口县",
+          "cityCode": "2310",
+          "provinceCode": "23",
+          "lng": 130.275238,
+          "lat": 45.276593
+        },
+        {
+          "code": "231081",
+          "name": "绥芬河市",
+          "cityCode": "2310",
+          "provinceCode": "23",
+          "lng": 131.144611,
+          "lat": 44.410347
+        },
+        {
+          "code": "231083",
+          "name": "海林市",
+          "cityCode": "2310",
+          "provinceCode": "23",
+          "lng": 129.373568,
+          "lat": 44.591409
+        },
+        {
+          "code": "231084",
+          "name": "宁安市",
+          "cityCode": "2310",
+          "provinceCode": "23",
+          "lng": 129.475505,
+          "lat": 44.338695
+        },
+        {
+          "code": "231085",
+          "name": "穆棱市",
+          "cityCode": "2310",
+          "provinceCode": "23",
+          "lng": 130.516768,
+          "lat": 44.916803
+        },
+        {
+          "code": "231086",
+          "name": "东宁市",
+          "cityCode": "2310",
+          "provinceCode": "23",
+          "lng": 131.116566,
+          "lat": 44.088325
+        }
+      ],
+      "lng": 129.625923,
+      "lat": 44.548334
+    },
+    {
+      "code": "2311",
+      "name": "黑河市",
+      "provinceCode": "23",
+      "areas": [
+        {
+          "code": "231102",
+          "name": "爱辉区",
+          "cityCode": "2311",
+          "provinceCode": "23",
+          "lng": 127.493486,
+          "lat": 50.250776
+        },
+        {
+          "code": "231123",
+          "name": "逊克县",
+          "cityCode": "2311",
+          "provinceCode": "23",
+          "lng": 128.471299,
+          "lat": 49.562046
+        },
+        {
+          "code": "231124",
+          "name": "孙吴县",
+          "cityCode": "2311",
+          "provinceCode": "23",
+          "lng": 127.328856,
+          "lat": 49.423238
+        },
+        {
+          "code": "231181",
+          "name": "北安市",
+          "cityCode": "2311",
+          "provinceCode": "23",
+          "lng": 126.484338,
+          "lat": 48.239175
+        },
+        {
+          "code": "231182",
+          "name": "五大连池市",
+          "cityCode": "2311",
+          "provinceCode": "23",
+          "lng": 126.198987,
+          "lat": 48.514934
+        },
+        {
+          "code": "231183",
+          "name": "嫩江市",
+          "cityCode": "2311",
+          "provinceCode": "23",
+          "lng": 125.213403,
+          "lat": 49.183791
+        }
+      ],
+      "lng": 127.520981,
+      "lat": 50.243306
+    },
+    {
+      "code": "2312",
+      "name": "绥化市",
+      "provinceCode": "23",
+      "areas": [
+        {
+          "code": "231202",
+          "name": "北林区",
+          "cityCode": "2312",
+          "provinceCode": "23",
+          "lng": 126.979262,
+          "lat": 46.635355
+        },
+        {
+          "code": "231221",
+          "name": "望奎县",
+          "cityCode": "2312",
+          "provinceCode": "23",
+          "lng": 126.479578,
+          "lat": 46.830708
+        },
+        {
+          "code": "231222",
+          "name": "兰西县",
+          "cityCode": "2312",
+          "provinceCode": "23",
+          "lng": 126.281511,
+          "lat": 46.25044
+        },
+        {
+          "code": "231223",
+          "name": "青冈县",
+          "cityCode": "2312",
+          "provinceCode": "23",
+          "lng": 126.092107,
+          "lat": 46.701421
+        },
+        {
+          "code": "231224",
+          "name": "庆安县",
+          "cityCode": "2312",
+          "provinceCode": "23",
+          "lng": 127.50087,
+          "lat": 46.878118
+        },
+        {
+          "code": "231225",
+          "name": "明水县",
+          "cityCode": "2312",
+          "provinceCode": "23",
+          "lng": 125.899549,
+          "lat": 47.171613
+        },
+        {
+          "code": "231226",
+          "name": "绥棱县",
+          "cityCode": "2312",
+          "provinceCode": "23",
+          "lng": 127.107979,
+          "lat": 47.233547
+        },
+        {
+          "code": "231281",
+          "name": "安达市",
+          "cityCode": "2312",
+          "provinceCode": "23",
+          "lng": 125.339147,
+          "lat": 46.4176
+        },
+        {
+          "code": "231282",
+          "name": "肇东市",
+          "cityCode": "2312",
+          "provinceCode": "23",
+          "lng": 125.956142,
+          "lat": 46.049105
+        },
+        {
+          "code": "231283",
+          "name": "海伦市",
+          "cityCode": "2312",
+          "provinceCode": "23",
+          "lng": 126.923673,
+          "lat": 47.448738
+        }
+      ],
+      "lng": 126.962676,
+      "lat": 46.651796
+    },
+    {
+      "code": "2327",
+      "name": "大兴安岭地区",
+      "provinceCode": "23",
+      "areas": [
+        {
+          "code": "232701",
+          "name": "漠河市",
+          "cityCode": "2327",
+          "provinceCode": "23",
+          "lng": 122.533191,
+          "lat": 52.971462
+        },
+        {
+          "code": "232721",
+          "name": "呼玛县",
+          "cityCode": "2327",
+          "provinceCode": "23",
+          "lng": 126.645296,
+          "lat": 51.724368
+        },
+        {
+          "code": "232722",
+          "name": "塔河县",
+          "cityCode": "2327",
+          "provinceCode": "23",
+          "lng": 124.701918,
+          "lat": 52.332916
+        },
+        {
+          "code": "232761",
+          "name": "加格达奇区",
+          "cityCode": "2327",
+          "provinceCode": "23",
+          "lng": 124.131983,
+          "lat": 50.406956
+        },
+        {
+          "code": "232762",
+          "name": "松岭区",
+          "cityCode": "2327",
+          "provinceCode": "23",
+          "lng": 124.293471,
+          "lat": 50.793143
+        },
+        {
+          "code": "232763",
+          "name": "新林区",
+          "cityCode": "2327",
+          "provinceCode": "23",
+          "lng": 124.387139,
+          "lat": 51.67194
+        },
+        {
+          "code": "232764",
+          "name": "呼中区",
+          "cityCode": "2327",
+          "provinceCode": "23",
+          "lng": 123.591815,
+          "lat": 52.033766
+        }
+      ],
+      "lng": 124.138717,
+      "lat": 50.412719
+    }
+  ]
+}

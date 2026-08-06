@@ -1,0 +1,21 @@
+# Root-level compiled binary (produced by bare `go build .`)
+/lan-file-transfer
+/lan-file-transfer.exe
+
+# Dev build output (flat, from `make build` — not a platform distribution dir)
+/build/lan-file-transfer
+/build/lan-file-transfer.exe
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Go test binaries
+*.test
+
+# Chrome development profile
+chrome-profile/
+
+# IDE
+.vscode/
+.idea/

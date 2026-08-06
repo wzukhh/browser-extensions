@@ -1,0 +1,330 @@
+{
+  "province": {
+    "code": "50",
+    "name": "重庆市"
+  },
+  "cities": [
+    {
+      "code": "5001",
+      "name": "市辖区",
+      "provinceCode": "50",
+      "areas": [
+        {
+          "code": "500101",
+          "name": "万州区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 108.404371,
+          "lat": 30.809136
+        },
+        {
+          "code": "500102",
+          "name": "涪陵区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 107.242205,
+          "lat": 29.754954
+        },
+        {
+          "code": "500103",
+          "name": "渝中区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 106.56522,
+          "lat": 29.555512
+        },
+        {
+          "code": "500104",
+          "name": "大渡口区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 106.478413,
+          "lat": 29.487197
+        },
+        {
+          "code": "500105",
+          "name": "江北区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 106.570216,
+          "lat": 29.609183
+        },
+        {
+          "code": "500106",
+          "name": "沙坪坝区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 106.454037,
+          "lat": 29.543603
+        },
+        {
+          "code": "500107",
+          "name": "九龙坡区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 106.506648,
+          "lat": 29.505102
+        },
+        {
+          "code": "500108",
+          "name": "南岸区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 106.640404,
+          "lat": 29.503751
+        },
+        {
+          "code": "500109",
+          "name": "北碚区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 106.391672,
+          "lat": 29.807828
+        },
+        {
+          "code": "500110",
+          "name": "綦江区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 106.647588,
+          "lat": 29.030911
+        },
+        {
+          "code": "500111",
+          "name": "大足区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 105.718106,
+          "lat": 29.709776
+        },
+        {
+          "code": "500112",
+          "name": "渝北区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 106.627407,
+          "lat": 29.72096
+        },
+        {
+          "code": "500113",
+          "name": "巴南区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 106.536783,
+          "lat": 29.404802
+        },
+        {
+          "code": "500114",
+          "name": "黔江区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 108.766507,
+          "lat": 29.536273
+        },
+        {
+          "code": "500115",
+          "name": "长寿区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 107.076514,
+          "lat": 29.860364
+        },
+        {
+          "code": "500116",
+          "name": "江津区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 106.260603,
+          "lat": 29.322812
+        },
+        {
+          "code": "500117",
+          "name": "合川区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 106.272352,
+          "lat": 29.97468
+        },
+        {
+          "code": "500118",
+          "name": "永川区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 105.923265,
+          "lat": 29.359549
+        },
+        {
+          "code": "500119",
+          "name": "南川区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 107.094695,
+          "lat": 29.160637
+        },
+        {
+          "code": "500120",
+          "name": "璧山区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 106.201388,
+          "lat": 29.580055
+        },
+        {
+          "code": "500151",
+          "name": "铜梁区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 106.052155,
+          "lat": 29.847391
+        },
+        {
+          "code": "500152",
+          "name": "潼南区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 105.836849,
+          "lat": 30.194035
+        },
+        {
+          "code": "500153",
+          "name": "荣昌区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 105.608422,
+          "lat": 29.419902
+        },
+        {
+          "code": "500154",
+          "name": "开州区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 108.388773,
+          "lat": 31.16251
+        },
+        {
+          "code": "500155",
+          "name": "梁平区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 107.765171,
+          "lat": 30.656799
+        },
+        {
+          "code": "500156",
+          "name": "武隆区",
+          "cityCode": "5001",
+          "provinceCode": "50",
+          "lng": 107.755509,
+          "lat": 29.328244
+        }
+      ],
+      "lng": 106.548283,
+      "lat": 29.56555
+    },
+    {
+      "code": "5002",
+      "name": "县",
+      "provinceCode": "50",
+      "areas": [
+        {
+          "code": "500229",
+          "name": "城口县",
+          "cityCode": "5002",
+          "provinceCode": "50",
+          "lng": 108.659799,
+          "lat": 31.94983
+        },
+        {
+          "code": "500230",
+          "name": "丰都县",
+          "cityCode": "5002",
+          "provinceCode": "50",
+          "lng": 107.726483,
+          "lat": 29.866156
+        },
+        {
+          "code": "500231",
+          "name": "垫江县",
+          "cityCode": "5002",
+          "provinceCode": "50",
+          "lng": 107.328022,
+          "lat": 30.330117
+        },
+        {
+          "code": "500233",
+          "name": "忠县",
+          "cityCode": "5002",
+          "provinceCode": "50",
+          "lng": 108.033012,
+          "lat": 30.302385
+        },
+        {
+          "code": "500235",
+          "name": "云阳县",
+          "cityCode": "5002",
+          "provinceCode": "50",
+          "lng": 108.693097,
+          "lat": 30.933002
+        },
+        {
+          "code": "500236",
+          "name": "奉节县",
+          "cityCode": "5002",
+          "provinceCode": "50",
+          "lng": 109.459004,
+          "lat": 31.020707
+        },
+        {
+          "code": "500237",
+          "name": "巫山县",
+          "cityCode": "5002",
+          "provinceCode": "50",
+          "lng": 109.874261,
+          "lat": 31.077145
+        },
+        {
+          "code": "500238",
+          "name": "巫溪县",
+          "cityCode": "5002",
+          "provinceCode": "50",
+          "lng": 109.565258,
+          "lat": 31.400902
+        },
+        {
+          "code": "500240",
+          "name": "石柱土家族自治县",
+          "cityCode": "5002",
+          "provinceCode": "50",
+          "lng": 108.109422,
+          "lat": 30.002251
+        },
+        {
+          "code": "500241",
+          "name": "秀山土家族苗族自治县",
+          "cityCode": "5002",
+          "provinceCode": "50",
+          "lng": 109.002966,
+          "lat": 28.451463
+        },
+        {
+          "code": "500242",
+          "name": "酉阳土家族苗族自治县",
+          "cityCode": "5002",
+          "provinceCode": "50",
+          "lng": 108.763441,
+          "lat": 28.844434
+        },
+        {
+          "code": "500243",
+          "name": "彭水苗族土家族自治县",
+          "cityCode": "5002",
+          "provinceCode": "50",
+          "lng": 108.16122,
+          "lat": 29.296523
+        }
+      ],
+      "lng": 106.548283,
+      "lat": 29.56555
+    }
+  ]
+}

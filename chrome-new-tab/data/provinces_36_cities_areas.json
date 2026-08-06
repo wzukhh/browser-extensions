@@ -1,0 +1,907 @@
+{
+  "province": {
+    "code": "36",
+    "name": "江西省"
+  },
+  "cities": [
+    {
+      "code": "3601",
+      "name": "南昌市",
+      "provinceCode": "36",
+      "areas": [
+        {
+          "code": "360102",
+          "name": "东湖区",
+          "cityCode": "3601",
+          "provinceCode": "36",
+          "lng": 115.88511,
+          "lat": 28.684877
+        },
+        {
+          "code": "360103",
+          "name": "西湖区",
+          "cityCode": "3601",
+          "provinceCode": "36",
+          "lng": 115.872299,
+          "lat": 28.661019
+        },
+        {
+          "code": "360104",
+          "name": "青云谱区",
+          "cityCode": "3601",
+          "provinceCode": "36",
+          "lng": 115.920163,
+          "lat": 28.624289
+        },
+        {
+          "code": "360111",
+          "name": "青山湖区",
+          "cityCode": "3601",
+          "provinceCode": "36",
+          "lng": 115.957099,
+          "lat": 28.68509
+        },
+        {
+          "code": "360112",
+          "name": "新建区",
+          "cityCode": "3601",
+          "provinceCode": "36",
+          "lng": 115.81058,
+          "lat": 28.69636
+        },
+        {
+          "code": "360113",
+          "name": "红谷滩区",
+          "cityCode": "3601",
+          "provinceCode": "36",
+          "lng": 115.853321,
+          "lat": 28.701692
+        },
+        {
+          "code": "360121",
+          "name": "南昌县",
+          "cityCode": "3601",
+          "provinceCode": "36",
+          "lng": 115.928696,
+          "lat": 28.56124
+        },
+        {
+          "code": "360123",
+          "name": "安义县",
+          "cityCode": "3601",
+          "provinceCode": "36",
+          "lng": 115.543624,
+          "lat": 28.849197
+        },
+        {
+          "code": "360124",
+          "name": "进贤县",
+          "cityCode": "3601",
+          "provinceCode": "36",
+          "lng": 116.237605,
+          "lat": 28.380962
+        }
+      ],
+      "lng": 115.853062,
+      "lat": 28.686346
+    },
+    {
+      "code": "3602",
+      "name": "景德镇市",
+      "provinceCode": "36",
+      "areas": [
+        {
+          "code": "360202",
+          "name": "昌江区",
+          "cityCode": "3602",
+          "provinceCode": "36",
+          "lng": 117.177824,
+          "lat": 29.276537
+        },
+        {
+          "code": "360203",
+          "name": "珠山区",
+          "cityCode": "3602",
+          "provinceCode": "36",
+          "lng": 117.265816,
+          "lat": 29.308037
+        },
+        {
+          "code": "360222",
+          "name": "浮梁县",
+          "cityCode": "3602",
+          "provinceCode": "36",
+          "lng": 117.209728,
+          "lat": 29.354349
+        },
+        {
+          "code": "360281",
+          "name": "乐平市",
+          "cityCode": "3602",
+          "provinceCode": "36",
+          "lng": 117.146129,
+          "lat": 28.981389
+        }
+      ],
+      "lng": 117.178993,
+      "lat": 29.278621
+    },
+    {
+      "code": "3603",
+      "name": "萍乡市",
+      "provinceCode": "36",
+      "areas": [
+        {
+          "code": "360302",
+          "name": "安源区",
+          "cityCode": "3603",
+          "provinceCode": "36",
+          "lng": 113.865332,
+          "lat": 27.618973
+        },
+        {
+          "code": "360313",
+          "name": "湘东区",
+          "cityCode": "3603",
+          "provinceCode": "36",
+          "lng": 113.727363,
+          "lat": 27.643563
+        },
+        {
+          "code": "360321",
+          "name": "莲花县",
+          "cityCode": "3603",
+          "provinceCode": "36",
+          "lng": 113.956365,
+          "lat": 27.131943
+        },
+        {
+          "code": "360322",
+          "name": "上栗县",
+          "cityCode": "3603",
+          "provinceCode": "36",
+          "lng": 113.789519,
+          "lat": 27.883838
+        },
+        {
+          "code": "360323",
+          "name": "芦溪县",
+          "cityCode": "3603",
+          "provinceCode": "36",
+          "lng": 114.023922,
+          "lat": 27.634456
+        }
+      ],
+      "lng": 113.882035,
+      "lat": 27.661886
+    },
+    {
+      "code": "3604",
+      "name": "九江市",
+      "provinceCode": "36",
+      "areas": [
+        {
+          "code": "360402",
+          "name": "濂溪区",
+          "cityCode": "3604",
+          "provinceCode": "36",
+          "lng": 115.987688,
+          "lat": 29.670763
+        },
+        {
+          "code": "360403",
+          "name": "浔阳区",
+          "cityCode": "3604",
+          "provinceCode": "36",
+          "lng": 115.996175,
+          "lat": 29.708038
+        },
+        {
+          "code": "360404",
+          "name": "柴桑区",
+          "cityCode": "3604",
+          "provinceCode": "36",
+          "lng": 115.906438,
+          "lat": 29.611203
+        },
+        {
+          "code": "360423",
+          "name": "武宁县",
+          "cityCode": "3604",
+          "provinceCode": "36",
+          "lng": 115.087325,
+          "lat": 29.248618
+        },
+        {
+          "code": "360424",
+          "name": "修水县",
+          "cityCode": "3604",
+          "provinceCode": "36",
+          "lng": 114.54158,
+          "lat": 29.029275
+        },
+        {
+          "code": "360425",
+          "name": "永修县",
+          "cityCode": "3604",
+          "provinceCode": "36",
+          "lng": 115.827041,
+          "lat": 29.015089
+        },
+        {
+          "code": "360426",
+          "name": "德安县",
+          "cityCode": "3604",
+          "provinceCode": "36",
+          "lng": 115.762283,
+          "lat": 29.301534
+        },
+        {
+          "code": "360428",
+          "name": "都昌县",
+          "cityCode": "3604",
+          "provinceCode": "36",
+          "lng": 116.199183,
+          "lat": 29.276325
+        },
+        {
+          "code": "360429",
+          "name": "湖口县",
+          "cityCode": "3604",
+          "provinceCode": "36",
+          "lng": 116.24709,
+          "lat": 29.733566
+        },
+        {
+          "code": "360430",
+          "name": "彭泽县",
+          "cityCode": "3604",
+          "provinceCode": "36",
+          "lng": 116.559033,
+          "lat": 29.880071
+        },
+        {
+          "code": "360481",
+          "name": "瑞昌市",
+          "cityCode": "3604",
+          "provinceCode": "36",
+          "lng": 115.676093,
+          "lat": 29.678658
+        },
+        {
+          "code": "360482",
+          "name": "共青城市",
+          "cityCode": "3604",
+          "provinceCode": "36",
+          "lng": 115.809949,
+          "lat": 29.24533
+        },
+        {
+          "code": "360483",
+          "name": "庐山市",
+          "cityCode": "3604",
+          "provinceCode": "36",
+          "lng": 116.03981,
+          "lat": 29.450708
+        }
+      ],
+      "lng": 115.948632,
+      "lat": 29.663837
+    },
+    {
+      "code": "3605",
+      "name": "新余市",
+      "provinceCode": "36",
+      "areas": [
+        {
+          "code": "360502",
+          "name": "渝水区",
+          "cityCode": "3605",
+          "provinceCode": "36",
+          "lng": 114.939792,
+          "lat": 27.80324
+        },
+        {
+          "code": "360521",
+          "name": "分宜县",
+          "cityCode": "3605",
+          "provinceCode": "36",
+          "lng": 114.687029,
+          "lat": 27.818037
+        }
+      ],
+      "lng": 114.912568,
+      "lat": 27.822125
+    },
+    {
+      "code": "3606",
+      "name": "鹰潭市",
+      "provinceCode": "36",
+      "areas": [
+        {
+          "code": "360602",
+          "name": "月湖区",
+          "cityCode": "3606",
+          "provinceCode": "36",
+          "lng": 117.097306,
+          "lat": 28.270048
+        },
+        {
+          "code": "360603",
+          "name": "余江区",
+          "cityCode": "3606",
+          "provinceCode": "36",
+          "lng": 116.849803,
+          "lat": 28.203251
+        },
+        {
+          "code": "360681",
+          "name": "贵溪市",
+          "cityCode": "3606",
+          "provinceCode": "36",
+          "lng": 117.240069,
+          "lat": 28.295699
+        }
+      ],
+      "lng": 117.240069,
+      "lat": 28.295699
+    },
+    {
+      "code": "3607",
+      "name": "赣州市",
+      "provinceCode": "36",
+      "areas": [
+        {
+          "code": "360702",
+          "name": "章贡区",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 114.916294,
+          "lat": 25.821089
+        },
+        {
+          "code": "360703",
+          "name": "南康区",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 114.760378,
+          "lat": 25.66426
+        },
+        {
+          "code": "360704",
+          "name": "赣县区",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 115.007058,
+          "lat": 25.863502
+        },
+        {
+          "code": "360722",
+          "name": "信丰县",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 114.917932,
+          "lat": 25.390068
+        },
+        {
+          "code": "360723",
+          "name": "大余县",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 114.357382,
+          "lat": 25.404417
+        },
+        {
+          "code": "360724",
+          "name": "上犹县",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 114.547247,
+          "lat": 25.787934
+        },
+        {
+          "code": "360725",
+          "name": "崇义县",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 114.302938,
+          "lat": 25.684882
+        },
+        {
+          "code": "360726",
+          "name": "安远县",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 115.389209,
+          "lat": 25.139633
+        },
+        {
+          "code": "360728",
+          "name": "定南县",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 115.023062,
+          "lat": 24.786883
+        },
+        {
+          "code": "360729",
+          "name": "全南县",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 114.525251,
+          "lat": 24.745405
+        },
+        {
+          "code": "360730",
+          "name": "宁都县",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 116.004306,
+          "lat": 26.474213
+        },
+        {
+          "code": "360731",
+          "name": "于都县",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 115.409826,
+          "lat": 25.954715
+        },
+        {
+          "code": "360732",
+          "name": "兴国县",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 115.358184,
+          "lat": 26.341332
+        },
+        {
+          "code": "360733",
+          "name": "会昌县",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 115.804719,
+          "lat": 25.590163
+        },
+        {
+          "code": "360734",
+          "name": "寻乌县",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 115.642287,
+          "lat": 24.966476
+        },
+        {
+          "code": "360735",
+          "name": "石城县",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 116.343007,
+          "lat": 26.31802
+        },
+        {
+          "code": "360781",
+          "name": "瑞金市",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 116.022222,
+          "lat": 25.888977
+        },
+        {
+          "code": "360783",
+          "name": "龙南市",
+          "cityCode": "3607",
+          "provinceCode": "36",
+          "lng": 114.799912,
+          "lat": 24.905057
+        }
+      ],
+      "lng": 114.929274,
+      "lat": 25.832282
+    },
+    {
+      "code": "3608",
+      "name": "吉安市",
+      "provinceCode": "36",
+      "areas": [
+        {
+          "code": "360802",
+          "name": "吉州区",
+          "cityCode": "3608",
+          "provinceCode": "36",
+          "lng": 114.989994,
+          "lat": 27.147562
+        },
+        {
+          "code": "360803",
+          "name": "青原区",
+          "cityCode": "3608",
+          "provinceCode": "36",
+          "lng": 115.010109,
+          "lat": 27.085334
+        },
+        {
+          "code": "360821",
+          "name": "吉安县",
+          "cityCode": "3608",
+          "provinceCode": "36",
+          "lng": 114.903337,
+          "lat": 27.042925
+        },
+        {
+          "code": "360822",
+          "name": "吉水县",
+          "cityCode": "3608",
+          "provinceCode": "36",
+          "lng": 115.131294,
+          "lat": 27.232728
+        },
+        {
+          "code": "360823",
+          "name": "峡江县",
+          "cityCode": "3608",
+          "provinceCode": "36",
+          "lng": 115.31126,
+          "lat": 27.586172
+        },
+        {
+          "code": "360824",
+          "name": "新干县",
+          "cityCode": "3608",
+          "provinceCode": "36",
+          "lng": 115.381611,
+          "lat": 27.74324
+        },
+        {
+          "code": "360825",
+          "name": "永丰县",
+          "cityCode": "3608",
+          "provinceCode": "36",
+          "lng": 115.416263,
+          "lat": 27.320244
+        },
+        {
+          "code": "360826",
+          "name": "泰和县",
+          "cityCode": "3608",
+          "provinceCode": "36",
+          "lng": 114.918307,
+          "lat": 26.805689
+        },
+        {
+          "code": "360827",
+          "name": "遂川县",
+          "cityCode": "3608",
+          "provinceCode": "36",
+          "lng": 114.51591,
+          "lat": 26.316841
+        },
+        {
+          "code": "360828",
+          "name": "万安县",
+          "cityCode": "3608",
+          "provinceCode": "36",
+          "lng": 114.754816,
+          "lat": 26.460207
+        },
+        {
+          "code": "360829",
+          "name": "安福县",
+          "cityCode": "3608",
+          "provinceCode": "36",
+          "lng": 114.615008,
+          "lat": 27.396811
+        },
+        {
+          "code": "360830",
+          "name": "永新县",
+          "cityCode": "3608",
+          "provinceCode": "36",
+          "lng": 114.237694,
+          "lat": 26.948536
+        },
+        {
+          "code": "360881",
+          "name": "井冈山市",
+          "cityCode": "3608",
+          "provinceCode": "36",
+          "lng": 114.284412,
+          "lat": 26.751471
+        }
+      ],
+      "lng": 115.010109,
+      "lat": 27.085334
+    },
+    {
+      "code": "3609",
+      "name": "宜春市",
+      "provinceCode": "36",
+      "areas": [
+        {
+          "code": "360902",
+          "name": "袁州区",
+          "cityCode": "3609",
+          "provinceCode": "36",
+          "lng": 114.422713,
+          "lat": 27.800009
+        },
+        {
+          "code": "360921",
+          "name": "奉新县",
+          "cityCode": "3609",
+          "provinceCode": "36",
+          "lng": 115.395155,
+          "lat": 28.69134
+        },
+        {
+          "code": "360922",
+          "name": "万载县",
+          "cityCode": "3609",
+          "provinceCode": "36",
+          "lng": 114.440315,
+          "lat": 28.109286
+        },
+        {
+          "code": "360923",
+          "name": "上高县",
+          "cityCode": "3609",
+          "provinceCode": "36",
+          "lng": 114.94309,
+          "lat": 28.242011
+        },
+        {
+          "code": "360924",
+          "name": "宜丰县",
+          "cityCode": "3609",
+          "provinceCode": "36",
+          "lng": 114.797981,
+          "lat": 28.397934
+        },
+        {
+          "code": "360925",
+          "name": "靖安县",
+          "cityCode": "3609",
+          "provinceCode": "36",
+          "lng": 115.356899,
+          "lat": 28.864536
+        },
+        {
+          "code": "360926",
+          "name": "铜鼓县",
+          "cityCode": "3609",
+          "provinceCode": "36",
+          "lng": 114.348567,
+          "lat": 28.515822
+        },
+        {
+          "code": "360981",
+          "name": "丰城市",
+          "cityCode": "3609",
+          "provinceCode": "36",
+          "lng": 115.766186,
+          "lat": 28.164081
+        },
+        {
+          "code": "360982",
+          "name": "樟树市",
+          "cityCode": "3609",
+          "provinceCode": "36",
+          "lng": 115.541024,
+          "lat": 28.059335
+        },
+        {
+          "code": "360983",
+          "name": "高安市",
+          "cityCode": "3609",
+          "provinceCode": "36",
+          "lng": 115.355209,
+          "lat": 28.444196
+        }
+      ],
+      "lng": 114.411461,
+      "lat": 27.819077
+    },
+    {
+      "code": "3610",
+      "name": "抚州市",
+      "provinceCode": "36",
+      "areas": [
+        {
+          "code": "361002",
+          "name": "临川区",
+          "cityCode": "3610",
+          "provinceCode": "36",
+          "lng": 116.307083,
+          "lat": 27.937716
+        },
+        {
+          "code": "361003",
+          "name": "东乡区",
+          "cityCode": "3610",
+          "provinceCode": "36",
+          "lng": 116.598333,
+          "lat": 28.251591
+        },
+        {
+          "code": "361021",
+          "name": "南城县",
+          "cityCode": "3610",
+          "provinceCode": "36",
+          "lng": 116.632889,
+          "lat": 27.573319
+        },
+        {
+          "code": "361022",
+          "name": "黎川县",
+          "cityCode": "3610",
+          "provinceCode": "36",
+          "lng": 116.902978,
+          "lat": 27.285804
+        },
+        {
+          "code": "361023",
+          "name": "南丰县",
+          "cityCode": "3610",
+          "provinceCode": "36",
+          "lng": 116.521094,
+          "lat": 27.221602
+        },
+        {
+          "code": "361024",
+          "name": "崇仁县",
+          "cityCode": "3610",
+          "provinceCode": "36",
+          "lng": 116.07128,
+          "lat": 27.757552
+        },
+        {
+          "code": "361025",
+          "name": "乐安县",
+          "cityCode": "3610",
+          "provinceCode": "36",
+          "lng": 115.826182,
+          "lat": 27.431983
+        },
+        {
+          "code": "361026",
+          "name": "宜黄县",
+          "cityCode": "3610",
+          "provinceCode": "36",
+          "lng": 116.231336,
+          "lat": 27.558142
+        },
+        {
+          "code": "361027",
+          "name": "金溪县",
+          "cityCode": "3610",
+          "provinceCode": "36",
+          "lng": 116.750083,
+          "lat": 27.922894
+        },
+        {
+          "code": "361028",
+          "name": "资溪县",
+          "cityCode": "3610",
+          "provinceCode": "36",
+          "lng": 117.054791,
+          "lat": 27.709285
+        },
+        {
+          "code": "361030",
+          "name": "广昌县",
+          "cityCode": "3610",
+          "provinceCode": "36",
+          "lng": 116.331669,
+          "lat": 26.847327
+        }
+      ],
+      "lng": 116.352995,
+      "lat": 27.952234
+    },
+    {
+      "code": "3611",
+      "name": "上饶市",
+      "provinceCode": "36",
+      "areas": [
+        {
+          "code": "361102",
+          "name": "信州区",
+          "cityCode": "3611",
+          "provinceCode": "36",
+          "lng": 117.960417,
+          "lat": 28.433586
+        },
+        {
+          "code": "361103",
+          "name": "广丰区",
+          "cityCode": "3611",
+          "provinceCode": "36",
+          "lng": 118.18481,
+          "lat": 28.467092
+        },
+        {
+          "code": "361104",
+          "name": "广信区",
+          "cityCode": "3611",
+          "provinceCode": "36",
+          "lng": 117.902913,
+          "lat": 28.451892
+        },
+        {
+          "code": "361123",
+          "name": "玉山县",
+          "cityCode": "3611",
+          "provinceCode": "36",
+          "lng": 118.23964,
+          "lat": 28.685391
+        },
+        {
+          "code": "361124",
+          "name": "铅山县",
+          "cityCode": "3611",
+          "provinceCode": "36",
+          "lng": 117.704814,
+          "lat": 28.318519
+        },
+        {
+          "code": "361125",
+          "name": "横峰县",
+          "cityCode": "3611",
+          "provinceCode": "36",
+          "lng": 117.591398,
+          "lat": 28.410789
+        },
+        {
+          "code": "361126",
+          "name": "弋阳县",
+          "cityCode": "3611",
+          "provinceCode": "36",
+          "lng": 117.444006,
+          "lat": 28.381261
+        },
+        {
+          "code": "361127",
+          "name": "余干县",
+          "cityCode": "3611",
+          "provinceCode": "36",
+          "lng": 116.690914,
+          "lat": 28.705802
+        },
+        {
+          "code": "361128",
+          "name": "鄱阳县",
+          "cityCode": "3611",
+          "provinceCode": "36",
+          "lng": 116.698803,
+          "lat": 29.008686
+        },
+        {
+          "code": "361129",
+          "name": "万年县",
+          "cityCode": "3611",
+          "provinceCode": "36",
+          "lng": 117.05308,
+          "lat": 28.697675
+        },
+        {
+          "code": "361130",
+          "name": "婺源县",
+          "cityCode": "3611",
+          "provinceCode": "36",
+          "lng": 117.856848,
+          "lat": 29.250793
+        },
+        {
+          "code": "361181",
+          "name": "德兴市",
+          "cityCode": "3611",
+          "provinceCode": "36",
+          "lng": 117.589559,
+          "lat": 28.933627
+        }
+      ],
+      "lng": 117.93836,
+      "lat": 28.458277
+    }
+  ]
+}

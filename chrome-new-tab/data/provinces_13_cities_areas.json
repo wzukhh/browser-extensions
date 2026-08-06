@@ -1,0 +1,1627 @@
+{
+  "province": {
+    "code": "13",
+    "name": "河北省"
+  },
+  "cities": [
+    {
+      "code": "1301",
+      "name": "石家庄市",
+      "provinceCode": "13",
+      "areas": [
+        {
+          "code": "130102",
+          "name": "长安区",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.498743,
+          "lat": 38.046723
+        },
+        {
+          "code": "130104",
+          "name": "桥西区",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.443892,
+          "lat": 38.024357
+        },
+        {
+          "code": "130105",
+          "name": "新华区",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.458241,
+          "lat": 38.050055
+        },
+        {
+          "code": "130107",
+          "name": "井陉矿区",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.055486,
+          "lat": 38.064094
+        },
+        {
+          "code": "130108",
+          "name": "裕华区",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.526222,
+          "lat": 38.006563
+        },
+        {
+          "code": "130109",
+          "name": "藁城区",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.847985,
+          "lat": 38.021623
+        },
+        {
+          "code": "130110",
+          "name": "鹿泉区",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.307382,
+          "lat": 38.08578
+        },
+        {
+          "code": "130111",
+          "name": "栾城区",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.642147,
+          "lat": 37.900027
+        },
+        {
+          "code": "130121",
+          "name": "井陉县",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.138575,
+          "lat": 38.031499
+        },
+        {
+          "code": "130123",
+          "name": "正定县",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.564596,
+          "lat": 38.14656
+        },
+        {
+          "code": "130125",
+          "name": "行唐县",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.546985,
+          "lat": 38.43774
+        },
+        {
+          "code": "130126",
+          "name": "灵寿县",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.376658,
+          "lat": 38.307702
+        },
+        {
+          "code": "130127",
+          "name": "高邑县",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.606271,
+          "lat": 37.615062
+        },
+        {
+          "code": "130128",
+          "name": "深泽县",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 115.194566,
+          "lat": 38.183583
+        },
+        {
+          "code": "130129",
+          "name": "赞皇县",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.379591,
+          "lat": 37.665139
+        },
+        {
+          "code": "130130",
+          "name": "无极县",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.970343,
+          "lat": 38.178316
+        },
+        {
+          "code": "130131",
+          "name": "平山县",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.189478,
+          "lat": 38.247229
+        },
+        {
+          "code": "130132",
+          "name": "元氏县",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.519667,
+          "lat": 37.766601
+        },
+        {
+          "code": "130133",
+          "name": "赵县",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.770324,
+          "lat": 37.755638
+        },
+        {
+          "code": "130171",
+          "name": "石家庄高新技术产业开发区",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.615821,
+          "lat": 38.03611
+        },
+        {
+          "code": "130172",
+          "name": "石家庄循环化工园区",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.688836,
+          "lat": 37.996133
+        },
+        {
+          "code": "130181",
+          "name": "辛集市",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 115.211003,
+          "lat": 37.943409
+        },
+        {
+          "code": "130183",
+          "name": "晋州市",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 115.037806,
+          "lat": 38.032802
+        },
+        {
+          "code": "130184",
+          "name": "新乐市",
+          "cityCode": "1301",
+          "provinceCode": "13",
+          "lng": 114.678058,
+          "lat": 38.342845
+        }
+      ],
+      "lng": 114.509027,
+      "lat": 38.041782
+    },
+    {
+      "code": "1302",
+      "name": "唐山市",
+      "provinceCode": "13",
+      "areas": [
+        {
+          "code": "130202",
+          "name": "路南区",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 118.147952,
+          "lat": 39.623682
+        },
+        {
+          "code": "130203",
+          "name": "路北区",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 118.193778,
+          "lat": 39.623028
+        },
+        {
+          "code": "130204",
+          "name": "古冶区",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 118.44077,
+          "lat": 39.732558
+        },
+        {
+          "code": "130205",
+          "name": "开平区",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 118.255853,
+          "lat": 39.670258
+        },
+        {
+          "code": "130207",
+          "name": "丰南区",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 118.077547,
+          "lat": 39.573804
+        },
+        {
+          "code": "130208",
+          "name": "丰润区",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 118.155642,
+          "lat": 39.831132
+        },
+        {
+          "code": "130209",
+          "name": "曹妃甸区",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 118.453833,
+          "lat": 39.271886
+        },
+        {
+          "code": "130224",
+          "name": "滦南县",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 118.677652,
+          "lat": 39.519176
+        },
+        {
+          "code": "130225",
+          "name": "乐亭县",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 118.907196,
+          "lat": 39.4246
+        },
+        {
+          "code": "130227",
+          "name": "迁西县",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 118.307731,
+          "lat": 40.140157
+        },
+        {
+          "code": "130229",
+          "name": "玉田县",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 117.732361,
+          "lat": 39.899512
+        },
+        {
+          "code": "130271",
+          "name": "河北唐山芦台经济开发区",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 118.159512,
+          "lat": 39.631907
+        },
+        {
+          "code": "130272",
+          "name": "唐山市汉沽管理区",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 117.87489,
+          "lat": 39.361494
+        },
+        {
+          "code": "130273",
+          "name": "唐山高新技术产业开发区",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 118.171906,
+          "lat": 39.674825
+        },
+        {
+          "code": "130274",
+          "name": "河北唐山海港经济开发区",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 118.997214,
+          "lat": 39.231022
+        },
+        {
+          "code": "130281",
+          "name": "遵化市",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 117.959435,
+          "lat": 40.188063
+        },
+        {
+          "code": "130283",
+          "name": "迁安市",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 118.693967,
+          "lat": 39.996768
+        },
+        {
+          "code": "130284",
+          "name": "滦州市",
+          "cityCode": "1302",
+          "provinceCode": "13",
+          "lng": 118.697571,
+          "lat": 39.739501
+        }
+      ],
+      "lng": 118.173914,
+      "lat": 39.629419
+    },
+    {
+      "code": "1303",
+      "name": "秦皇岛市",
+      "provinceCode": "13",
+      "areas": [
+        {
+          "code": "130302",
+          "name": "海港区",
+          "cityCode": "1303",
+          "provinceCode": "13",
+          "lng": 119.558855,
+          "lat": 39.946427
+        },
+        {
+          "code": "130303",
+          "name": "山海关区",
+          "cityCode": "1303",
+          "provinceCode": "13",
+          "lng": 119.770132,
+          "lat": 39.976913
+        },
+        {
+          "code": "130304",
+          "name": "北戴河区",
+          "cityCode": "1303",
+          "provinceCode": "13",
+          "lng": 119.47836,
+          "lat": 39.833821
+        },
+        {
+          "code": "130306",
+          "name": "抚宁区",
+          "cityCode": "1303",
+          "provinceCode": "13",
+          "lng": 119.238877,
+          "lat": 39.874217
+        },
+        {
+          "code": "130321",
+          "name": "青龙满族自治县",
+          "cityCode": "1303",
+          "provinceCode": "13",
+          "lng": 118.944006,
+          "lat": 40.405585
+        },
+        {
+          "code": "130322",
+          "name": "昌黎县",
+          "cityCode": "1303",
+          "provinceCode": "13",
+          "lng": 119.193407,
+          "lat": 39.699618
+        },
+        {
+          "code": "130324",
+          "name": "卢龙县",
+          "cityCode": "1303",
+          "provinceCode": "13",
+          "lng": 118.886923,
+          "lat": 39.890848
+        },
+        {
+          "code": "130371",
+          "name": "秦皇岛市经济技术开发区",
+          "cityCode": "1303",
+          "provinceCode": "13",
+          "lng": 119.513602,
+          "lat": 39.887134
+        },
+        {
+          "code": "130372",
+          "name": "北戴河新区",
+          "cityCode": "1303",
+          "provinceCode": "13",
+          "lng": 119.420791,
+          "lat": 39.857997
+        }
+      ],
+      "lng": 119.513608,
+      "lat": 39.887084
+    },
+    {
+      "code": "1304",
+      "name": "邯郸市",
+      "provinceCode": "13",
+      "areas": [
+        {
+          "code": "130402",
+          "name": "邯山区",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 114.525276,
+          "lat": 36.594347
+        },
+        {
+          "code": "130403",
+          "name": "丛台区",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 114.487095,
+          "lat": 36.636184
+        },
+        {
+          "code": "130404",
+          "name": "复兴区",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 114.45611,
+          "lat": 36.63886
+        },
+        {
+          "code": "130406",
+          "name": "峰峰矿区",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 114.206959,
+          "lat": 36.419494
+        },
+        {
+          "code": "130407",
+          "name": "肥乡区",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 114.794222,
+          "lat": 36.547891
+        },
+        {
+          "code": "130408",
+          "name": "永年区",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 114.531113,
+          "lat": 36.742019
+        },
+        {
+          "code": "130423",
+          "name": "临漳县",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 114.580181,
+          "lat": 36.323262
+        },
+        {
+          "code": "130424",
+          "name": "成安县",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 114.664301,
+          "lat": 36.444097
+        },
+        {
+          "code": "130425",
+          "name": "大名县",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 115.141951,
+          "lat": 36.286208
+        },
+        {
+          "code": "130426",
+          "name": "涉县",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 113.684652,
+          "lat": 36.58491
+        },
+        {
+          "code": "130427",
+          "name": "磁县",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 114.367716,
+          "lat": 36.374483
+        },
+        {
+          "code": "130430",
+          "name": "邱县",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 115.180986,
+          "lat": 36.810714
+        },
+        {
+          "code": "130431",
+          "name": "鸡泽县",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 114.884391,
+          "lat": 36.911094
+        },
+        {
+          "code": "130432",
+          "name": "广平县",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 114.943024,
+          "lat": 36.483913
+        },
+        {
+          "code": "130433",
+          "name": "馆陶县",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 115.274972,
+          "lat": 36.548078
+        },
+        {
+          "code": "130434",
+          "name": "魏县",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 114.933359,
+          "lat": 36.360082
+        },
+        {
+          "code": "130435",
+          "name": "曲周县",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 114.951819,
+          "lat": 36.765903
+        },
+        {
+          "code": "130471",
+          "name": "邯郸经济技术开发区",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 114.533272,
+          "lat": 36.625521
+        },
+        {
+          "code": "130473",
+          "name": "邯郸冀南新区",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 114.459006,
+          "lat": 36.464287
+        },
+        {
+          "code": "130481",
+          "name": "武安市",
+          "cityCode": "1304",
+          "provinceCode": "13",
+          "lng": 114.197925,
+          "lat": 36.696495
+        }
+      ],
+      "lng": 114.533439,
+      "lat": 36.625724
+    },
+    {
+      "code": "1305",
+      "name": "邢台市",
+      "provinceCode": "13",
+      "areas": [
+        {
+          "code": "130502",
+          "name": "襄都区",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 114.50104,
+          "lat": 37.072376
+        },
+        {
+          "code": "130503",
+          "name": "信都区",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 114.462308,
+          "lat": 37.093163
+        },
+        {
+          "code": "130505",
+          "name": "任泽区",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 114.666223,
+          "lat": 37.120564
+        },
+        {
+          "code": "130506",
+          "name": "南和区",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 114.677823,
+          "lat": 37.004613
+        },
+        {
+          "code": "130522",
+          "name": "临城县",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 114.493029,
+          "lat": 37.443912
+        },
+        {
+          "code": "130523",
+          "name": "内丘县",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 114.5061,
+          "lat": 37.286314
+        },
+        {
+          "code": "130524",
+          "name": "柏乡县",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 114.68765,
+          "lat": 37.481977
+        },
+        {
+          "code": "130525",
+          "name": "隆尧县",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 114.76409,
+          "lat": 37.349552
+        },
+        {
+          "code": "130528",
+          "name": "宁晋县",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 114.913257,
+          "lat": 37.619253
+        },
+        {
+          "code": "130529",
+          "name": "巨鹿县",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 115.031758,
+          "lat": 37.220312
+        },
+        {
+          "code": "130530",
+          "name": "新河县",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 115.245005,
+          "lat": 37.520195
+        },
+        {
+          "code": "130531",
+          "name": "广宗县",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 115.136475,
+          "lat": 37.073976
+        },
+        {
+          "code": "130532",
+          "name": "平乡县",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 115.024052,
+          "lat": 37.063163
+        },
+        {
+          "code": "130533",
+          "name": "威县",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 115.261031,
+          "lat": 36.975453
+        },
+        {
+          "code": "130534",
+          "name": "清河县",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 115.659372,
+          "lat": 37.04473
+        },
+        {
+          "code": "130535",
+          "name": "临西县",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 115.4956,
+          "lat": 36.870921
+        },
+        {
+          "code": "130571",
+          "name": "河北邢台经济开发区",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 114.52805,
+          "lat": 37.063883
+        },
+        {
+          "code": "130581",
+          "name": "南宫市",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 115.402421,
+          "lat": 37.357918
+        },
+        {
+          "code": "130582",
+          "name": "沙河市",
+          "cityCode": "1305",
+          "provinceCode": "13",
+          "lng": 114.497434,
+          "lat": 36.854672
+        }
+      ],
+      "lng": 114.499096,
+      "lat": 37.070123
+    },
+    {
+      "code": "1306",
+      "name": "保定市",
+      "provinceCode": "13",
+      "areas": [
+        {
+          "code": "130602",
+          "name": "竞秀区",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.452446,
+          "lat": 38.876588
+        },
+        {
+          "code": "130606",
+          "name": "莲池区",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.490961,
+          "lat": 38.882646
+        },
+        {
+          "code": "130607",
+          "name": "满城区",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.315696,
+          "lat": 38.948177
+        },
+        {
+          "code": "130608",
+          "name": "清苑区",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.483693,
+          "lat": 38.764537
+        },
+        {
+          "code": "130609",
+          "name": "徐水区",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.649722,
+          "lat": 39.018024
+        },
+        {
+          "code": "130623",
+          "name": "涞水县",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.707835,
+          "lat": 39.393325
+        },
+        {
+          "code": "130624",
+          "name": "阜平县",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 114.188629,
+          "lat": 38.848789
+        },
+        {
+          "code": "130626",
+          "name": "定兴县",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.801933,
+          "lat": 39.262119
+        },
+        {
+          "code": "130627",
+          "name": "唐县",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 114.976953,
+          "lat": 38.747226
+        },
+        {
+          "code": "130628",
+          "name": "高阳县",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.772849,
+          "lat": 38.700386
+        },
+        {
+          "code": "130629",
+          "name": "容城县",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.855712,
+          "lat": 39.042491
+        },
+        {
+          "code": "130630",
+          "name": "涞源县",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 114.688311,
+          "lat": 39.359373
+        },
+        {
+          "code": "130631",
+          "name": "望都县",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.148332,
+          "lat": 38.694653
+        },
+        {
+          "code": "130632",
+          "name": "安新县",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.929805,
+          "lat": 38.935282
+        },
+        {
+          "code": "130633",
+          "name": "易县",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.490744,
+          "lat": 39.348317
+        },
+        {
+          "code": "130634",
+          "name": "曲阳县",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 114.738936,
+          "lat": 38.621631
+        },
+        {
+          "code": "130635",
+          "name": "蠡县",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.578106,
+          "lat": 38.487625
+        },
+        {
+          "code": "130636",
+          "name": "顺平县",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.128642,
+          "lat": 38.836671
+        },
+        {
+          "code": "130637",
+          "name": "博野县",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.457731,
+          "lat": 38.456549
+        },
+        {
+          "code": "130638",
+          "name": "雄县",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 116.101798,
+          "lat": 38.993432
+        },
+        {
+          "code": "130671",
+          "name": "保定高新技术产业开发区",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 116.038548,
+          "lat": 39.483822
+        },
+        {
+          "code": "130672",
+          "name": "保定白沟新城",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 116.055699,
+          "lat": 39.14422
+        },
+        {
+          "code": "130681",
+          "name": "涿州市",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.969006,
+          "lat": 39.484334
+        },
+        {
+          "code": "130682",
+          "name": "定州市",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 114.984566,
+          "lat": 38.516052
+        },
+        {
+          "code": "130683",
+          "name": "安国市",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.320748,
+          "lat": 38.417766
+        },
+        {
+          "code": "130684",
+          "name": "高碑店市",
+          "cityCode": "1306",
+          "provinceCode": "13",
+          "lng": 115.867925,
+          "lat": 39.325648
+        }
+      ],
+      "lng": 115.458411,
+      "lat": 38.873547
+    },
+    {
+      "code": "1307",
+      "name": "张家口市",
+      "provinceCode": "13",
+      "areas": [
+        {
+          "code": "130702",
+          "name": "桥东区",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 114.887892,
+          "lat": 40.787306
+        },
+        {
+          "code": "130703",
+          "name": "桥西区",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 114.863866,
+          "lat": 40.818262
+        },
+        {
+          "code": "130705",
+          "name": "宣化区",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 115.092915,
+          "lat": 40.607912
+        },
+        {
+          "code": "130706",
+          "name": "下花园区",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 115.28101,
+          "lat": 40.501234
+        },
+        {
+          "code": "130708",
+          "name": "万全区",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 114.734306,
+          "lat": 40.765892
+        },
+        {
+          "code": "130709",
+          "name": "崇礼区",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 115.276072,
+          "lat": 40.97288
+        },
+        {
+          "code": "130722",
+          "name": "张北县",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 114.713639,
+          "lat": 41.157288
+        },
+        {
+          "code": "130723",
+          "name": "康保县",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 114.593943,
+          "lat": 41.850963
+        },
+        {
+          "code": "130724",
+          "name": "沽源县",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 115.682366,
+          "lat": 41.667771
+        },
+        {
+          "code": "130725",
+          "name": "尚义县",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 113.962668,
+          "lat": 41.074452
+        },
+        {
+          "code": "130726",
+          "name": "蔚县",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 114.582981,
+          "lat": 39.83973
+        },
+        {
+          "code": "130727",
+          "name": "阳原县",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 114.143785,
+          "lat": 40.103105
+        },
+        {
+          "code": "130728",
+          "name": "怀安县",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 114.379043,
+          "lat": 40.672733
+        },
+        {
+          "code": "130730",
+          "name": "怀来县",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 115.511693,
+          "lat": 40.41328
+        },
+        {
+          "code": "130731",
+          "name": "涿鹿县",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 115.19859,
+          "lat": 40.378211
+        },
+        {
+          "code": "130732",
+          "name": "赤城县",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 115.825062,
+          "lat": 40.911777
+        },
+        {
+          "code": "130771",
+          "name": "张家口经济开发区",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 114.878538,
+          "lat": 40.773081
+        },
+        {
+          "code": "130772",
+          "name": "张家口市察北管理区",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 115.054129,
+          "lat": 41.488248
+        },
+        {
+          "code": "130773",
+          "name": "张家口市塞北管理区",
+          "cityCode": "1307",
+          "provinceCode": "13",
+          "lng": 115.808169,
+          "lat": 41.856256
+        }
+      ],
+      "lng": 114.879784,
+      "lat": 40.767705
+    },
+    {
+      "code": "1308",
+      "name": "承德市",
+      "provinceCode": "13",
+      "areas": [
+        {
+          "code": "130802",
+          "name": "双桥区",
+          "cityCode": "1308",
+          "provinceCode": "13",
+          "lng": 117.936716,
+          "lat": 40.973045
+        },
+        {
+          "code": "130803",
+          "name": "双滦区",
+          "cityCode": "1308",
+          "provinceCode": "13",
+          "lng": 117.793005,
+          "lat": 40.95785
+        },
+        {
+          "code": "130804",
+          "name": "鹰手营子矿区",
+          "cityCode": "1308",
+          "provinceCode": "13",
+          "lng": 117.652971,
+          "lat": 40.54516
+        },
+        {
+          "code": "130821",
+          "name": "承德县",
+          "cityCode": "1308",
+          "provinceCode": "13",
+          "lng": 118.167553,
+          "lat": 40.766671
+        },
+        {
+          "code": "130822",
+          "name": "兴隆县",
+          "cityCode": "1308",
+          "provinceCode": "13",
+          "lng": 117.49443,
+          "lat": 40.415971
+        },
+        {
+          "code": "130824",
+          "name": "滦平县",
+          "cityCode": "1308",
+          "provinceCode": "13",
+          "lng": 117.325947,
+          "lat": 40.939874
+        },
+        {
+          "code": "130825",
+          "name": "隆化县",
+          "cityCode": "1308",
+          "provinceCode": "13",
+          "lng": 117.732283,
+          "lat": 41.311766
+        },
+        {
+          "code": "130826",
+          "name": "丰宁满族自治县",
+          "cityCode": "1308",
+          "provinceCode": "13",
+          "lng": 116.63998,
+          "lat": 41.207275
+        },
+        {
+          "code": "130827",
+          "name": "宽城满族自治县",
+          "cityCode": "1308",
+          "provinceCode": "13",
+          "lng": 118.478752,
+          "lat": 40.609918
+        },
+        {
+          "code": "130828",
+          "name": "围场满族蒙古族自治县",
+          "cityCode": "1308",
+          "provinceCode": "13",
+          "lng": 117.75238,
+          "lat": 41.936321
+        },
+        {
+          "code": "130871",
+          "name": "承德高新技术产业开发区",
+          "cityCode": "1308",
+          "provinceCode": "13",
+          "lng": 118.167553,
+          "lat": 40.766671
+        },
+        {
+          "code": "130881",
+          "name": "平泉市",
+          "cityCode": "1308",
+          "provinceCode": "13",
+          "lng": 118.695778,
+          "lat": 41.016778
+        }
+      ],
+      "lng": 117.955972,
+      "lat": 40.97976
+    },
+    {
+      "code": "1309",
+      "name": "沧州市",
+      "provinceCode": "13",
+      "areas": [
+        {
+          "code": "130902",
+          "name": "新华区",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 116.860429,
+          "lat": 38.31369
+        },
+        {
+          "code": "130903",
+          "name": "运河区",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 116.826197,
+          "lat": 38.310228
+        },
+        {
+          "code": "130921",
+          "name": "沧县",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 116.872263,
+          "lat": 38.292599
+        },
+        {
+          "code": "130922",
+          "name": "青县",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 116.798114,
+          "lat": 38.58205
+        },
+        {
+          "code": "130923",
+          "name": "东光县",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 116.531444,
+          "lat": 37.887817
+        },
+        {
+          "code": "130924",
+          "name": "海兴县",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 117.491516,
+          "lat": 38.142154
+        },
+        {
+          "code": "130925",
+          "name": "盐山县",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 117.224858,
+          "lat": 38.057277
+        },
+        {
+          "code": "130926",
+          "name": "肃宁县",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 115.824095,
+          "lat": 38.422346
+        },
+        {
+          "code": "130927",
+          "name": "南皮县",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 116.703199,
+          "lat": 38.038819
+        },
+        {
+          "code": "130928",
+          "name": "吴桥县",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 116.385409,
+          "lat": 37.627078
+        },
+        {
+          "code": "130929",
+          "name": "献县",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 116.116915,
+          "lat": 38.189257
+        },
+        {
+          "code": "130930",
+          "name": "孟村回族自治县",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 117.097703,
+          "lat": 38.052701
+        },
+        {
+          "code": "130971",
+          "name": "河北沧州经济开发区",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 116.833211,
+          "lat": 38.303841
+        },
+        {
+          "code": "130972",
+          "name": "沧州高新技术产业开发区",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 116.795753,
+          "lat": 38.338896
+        },
+        {
+          "code": "130973",
+          "name": "沧州渤海新区",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 117.749333,
+          "lat": 38.275783
+        },
+        {
+          "code": "130981",
+          "name": "泊头市",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 116.572703,
+          "lat": 38.083846
+        },
+        {
+          "code": "130982",
+          "name": "任丘市",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 116.078512,
+          "lat": 38.685369
+        },
+        {
+          "code": "130983",
+          "name": "黄骅市",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 117.323729,
+          "lat": 38.3715
+        },
+        {
+          "code": "130984",
+          "name": "河间市",
+          "cityCode": "1309",
+          "provinceCode": "13",
+          "lng": 116.093489,
+          "lat": 38.445893
+        }
+      ],
+      "lng": 116.833211,
+      "lat": 38.303841
+    },
+    {
+      "code": "1310",
+      "name": "廊坊市",
+      "provinceCode": "13",
+      "areas": [
+        {
+          "code": "131002",
+          "name": "安次区",
+          "cityCode": "1310",
+          "provinceCode": "13",
+          "lng": 116.697036,
+          "lat": 39.51937
+        },
+        {
+          "code": "131003",
+          "name": "广阳区",
+          "cityCode": "1310",
+          "provinceCode": "13",
+          "lng": 116.704899,
+          "lat": 39.522333
+        },
+        {
+          "code": "131022",
+          "name": "固安县",
+          "cityCode": "1310",
+          "provinceCode": "13",
+          "lng": 116.292987,
+          "lat": 39.437126
+        },
+        {
+          "code": "131023",
+          "name": "永清县",
+          "cityCode": "1310",
+          "provinceCode": "13",
+          "lng": 116.493061,
+          "lat": 39.320615
+        },
+        {
+          "code": "131024",
+          "name": "香河县",
+          "cityCode": "1310",
+          "provinceCode": "13",
+          "lng": 116.999763,
+          "lat": 39.760359
+        },
+        {
+          "code": "131025",
+          "name": "大城县",
+          "cityCode": "1310",
+          "provinceCode": "13",
+          "lng": 116.648266,
+          "lat": 38.703986
+        },
+        {
+          "code": "131026",
+          "name": "文安县",
+          "cityCode": "1310",
+          "provinceCode": "13",
+          "lng": 116.45223,
+          "lat": 38.872358
+        },
+        {
+          "code": "131028",
+          "name": "大厂回族自治县",
+          "cityCode": "1310",
+          "provinceCode": "13",
+          "lng": 116.983819,
+          "lat": 39.8847
+        },
+        {
+          "code": "131071",
+          "name": "廊坊经济技术开发区",
+          "cityCode": "1310",
+          "provinceCode": "13",
+          "lng": 116.755427,
+          "lat": 39.580313
+        },
+        {
+          "code": "131081",
+          "name": "霸州市",
+          "cityCode": "1310",
+          "provinceCode": "13",
+          "lng": 116.385363,
+          "lat": 39.124126
+        },
+        {
+          "code": "131082",
+          "name": "三河市",
+          "cityCode": "1310",
+          "provinceCode": "13",
+          "lng": 117.071773,
+          "lat": 39.981396
+        }
+      ],
+      "lng": 116.678083,
+      "lat": 39.5365
+    },
+    {
+      "code": "1311",
+      "name": "衡水市",
+      "provinceCode": "13",
+      "areas": [
+        {
+          "code": "131102",
+          "name": "桃城区",
+          "cityCode": "1311",
+          "provinceCode": "13",
+          "lng": 115.669101,
+          "lat": 37.734649
+        },
+        {
+          "code": "131103",
+          "name": "冀州区",
+          "cityCode": "1311",
+          "provinceCode": "13",
+          "lng": 115.573588,
+          "lat": 37.550295
+        },
+        {
+          "code": "131121",
+          "name": "枣强县",
+          "cityCode": "1311",
+          "provinceCode": "13",
+          "lng": 115.718261,
+          "lat": 37.512722
+        },
+        {
+          "code": "131122",
+          "name": "武邑县",
+          "cityCode": "1311",
+          "provinceCode": "13",
+          "lng": 115.882298,
+          "lat": 37.801243
+        },
+        {
+          "code": "131123",
+          "name": "武强县",
+          "cityCode": "1311",
+          "provinceCode": "13",
+          "lng": 115.976683,
+          "lat": 38.040557
+        },
+        {
+          "code": "131124",
+          "name": "饶阳县",
+          "cityCode": "1311",
+          "provinceCode": "13",
+          "lng": 115.719963,
+          "lat": 38.234656
+        },
+        {
+          "code": "131125",
+          "name": "安平县",
+          "cityCode": "1311",
+          "provinceCode": "13",
+          "lng": 115.513087,
+          "lat": 38.233874
+        },
+        {
+          "code": "131126",
+          "name": "故城县",
+          "cityCode": "1311",
+          "provinceCode": "13",
+          "lng": 115.96028,
+          "lat": 37.347019
+        },
+        {
+          "code": "131127",
+          "name": "景县",
+          "cityCode": "1311",
+          "provinceCode": "13",
+          "lng": 116.265227,
+          "lat": 37.691739
+        },
+        {
+          "code": "131128",
+          "name": "阜城县",
+          "cityCode": "1311",
+          "provinceCode": "13",
+          "lng": 116.170082,
+          "lat": 37.861678
+        },
+        {
+          "code": "131171",
+          "name": "河北衡水高新技术产业开发区",
+          "cityCode": "1311",
+          "provinceCode": "13",
+          "lng": 115.639241,
+          "lat": 37.736832
+        },
+        {
+          "code": "131172",
+          "name": "衡水滨湖新区",
+          "cityCode": "1311",
+          "provinceCode": "13",
+          "lng": 115.693882,
+          "lat": 37.694737
+        },
+        {
+          "code": "131182",
+          "name": "深州市",
+          "cityCode": "1311",
+          "provinceCode": "13",
+          "lng": 115.55396,
+          "lat": 38.000613
+        }
+      ],
+      "lng": 115.663107,
+      "lat": 37.738762
+    }
+  ]
+}
