@@ -1,5 +1,7 @@
 # 📁 LAN 文件传输 - Chrome 扩展
 
+> [English](./README.en.md) | 简体中文
+
 扫码即可在电脑和手机之间互相传输文件，**所有数据仅在局域网内传输，不上传互联网**。
 
 支持**多设备隔离**：多台手机可同时使用，每台设备只能看到自己的数据。
@@ -8,8 +10,8 @@
 
 ```bash
 # 1. 克隆项目
-git clone https://github.com/wzukhh/browser-plugin.git
-cd browser-plugin/lan-file-transfer
+git clone https://github.com/wzukhh/browser-extensions.git
+cd browser-extensions/lan-file-transfer
 
 # 2. 安装 Native Host（选择你的平台）
 # macOS / Linux

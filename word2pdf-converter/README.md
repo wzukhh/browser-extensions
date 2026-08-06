@@ -1,5 +1,7 @@
 # Word → PDF 转换器
 
+> [English](./README.en.md) | 简体中文
+
 将 Word 文档批量转换为 PDF 的 Chrome/Edge 浏览器扩展。**仅支持 Windows 系统**（通过 COM 接口调用本地 Office/WPS）。
 
 ## 工作原理

@@ -1,5 +1,7 @@
 # Browser Plugin
 
+> [English](./README.en.md) | 简体中文
+
 浏览器插件集合。
 
 ## 插件列表

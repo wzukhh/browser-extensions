@@ -1,5 +1,7 @@
 # DiagramKit
 
+> [English](./README.en.md) | 简体中文
+
 Chrome / Edge 浏览器插件 — Mermaid 与 Markmap 图形编辑工具。
 
 点击扩展图标打开全屏页面，支持 Mermaid 图表和 Markmap 脑图编辑、实时渲染预览、导出渲染图。

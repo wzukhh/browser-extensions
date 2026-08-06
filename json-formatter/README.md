@@ -1,5 +1,7 @@
 # JSON Formatter
 
+> [English](./README.en.md) | 简体中文
+
 > 离线 JSON 处理工具 — 格式化、压缩、树形浏览、格式互转、代码生成
 
 ## 使用
