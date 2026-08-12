@@ -384,6 +384,25 @@ button:hover { background: var(--accent); color: #fff; border-color: var(--accen
   vertical-align: -2px;
   margin-right: 3px;
 }
+/* 编辑器底部状态条：最多 2 行，与编辑区隔离 */
+.editor-status {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  flex-shrink: 0;
+  max-height: 44px; /* 2 行 × 18px 行高 + 8px 内边距 */
+  padding: 4px 12px;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--text);
+  background: var(--panel-header);
+  border-top: 2px solid var(--border);
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+.editor-status .status-icon { margin-top: 2px; }
+
 /* 斜杠镜像：去转义 */
 .icon-flip { transform: scaleX(-1); }
 

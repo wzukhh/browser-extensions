@@ -28953,8 +28953,10 @@ function updateStatus(msg) {
   if (!el) return;
   if (!msg) {
     el.textContent = "";
+    el.hidden = true;
     return;
   }
+  el.hidden = false;
   const match = msg.match(/^(✅|❌)\s*/);
   if (match) {
     el.innerHTML = STATUS_ICONS[match[1]];
