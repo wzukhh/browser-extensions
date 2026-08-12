@@ -252,10 +252,11 @@ button:hover { background: var(--accent); color: #fff; border-color: var(--accen
   font-size: 12px;
   padding: 3px 8px;
 }
-.tool-result-preview {
+.output-area.tool-result-preview {
   flex: 1;
-  max-height: none;
   min-height: 60px;
+  /* 组合选择器提高特异性：覆盖 .output-area 的 max-height: 200px */
+  max-height: none;
 }
 
 /* 工具结果大弹窗 */
@@ -373,7 +374,7 @@ button:hover { background: var(--accent); color: #fff; border-color: var(--accen
 }
 .modal-actions { display: flex; gap: 8px; justify-content: flex-end; }
 
-/* 历史和输出区域 */
+/* 输出区域 */
 .output-area {
   background: var(--bg-tertiary);
   padding: 8px;
