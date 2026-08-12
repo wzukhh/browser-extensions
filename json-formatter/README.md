@@ -27,7 +27,7 @@
 | 🔑 JWT 解码 | 在线解码 JWT token |
 | 🔗 URL 编解码 | URL encode / decode（query 参数场景） |
 | 🔤 Base64 编解码 | Base64 encode / decode（UTF-8 安全） |
-| 📂 打开文件 / 🌐 URL 导入 | 从文件或 URL 加载 JSON |
+| 📂 打开文件 / 🌐 URL 导入 | 编辑器标题栏：从文件或 URL 加载 JSON |
 | 💾 下载 / 📋 复制 | 导出结果 |
 
 ### 右键菜单

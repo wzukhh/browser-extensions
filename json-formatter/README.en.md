@@ -27,7 +27,7 @@
 | 🔑 JWT decode | Decode JWT tokens |
 | 🔗 URL encode/decode | URL percent-encoding (query parameter use case) |
 | 🔤 Base64 encode/decode | UTF-8 safe Base64 |
-| 📂 Open file / 🌐 URL import | Load JSON from a file or URL |
+| 📂 Open file / 🌐 URL import | Editor header: load JSON from a file or URL |
 | 💾 Download / 📋 Copy | Export results |
 
 ### Context menu
