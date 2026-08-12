@@ -14,7 +14,6 @@ import {
 import { getNextTheme, normalizeTheme } from './theme.js'
 import { validateJSON, escapeJSON, unescapeJSON, sortJSON, formatJSON } from './json-utils.js'
 import { analyzeTreeRender } from './tree-guard.js'
-import { isHistorySaveCandidate } from './history-save.js'
 import { highlightSyntax } from './syntax-highlight.js'
 import { undo, redo } from '@codemirror/commands'
 
@@ -27,7 +26,6 @@ let editor = null
 let currentJSON = null
 let isWrapEnabled = false
 let isBottomPanelExpanded = DEFAULT_BOTTOM_PANEL_EXPANDED
-let isRestoringHistory = false
 const toolResults = new Map()
 let activeResultKey = null
 
@@ -44,11 +42,13 @@ const CONVERT_RESULT_LANGUAGES = {
 let renderTree = () => {}
 let expandAll = () => {}
 let collapseAll = () => {}
-let addHistoryItem = async () => {}
-let clearHistory = async () => {}
 let convertJSON = () => ({ success: false, error: '格式转换模块不可用' })
 let generateCode = () => '// 代码生成模块不可用'
 let decodeJWT = () => ({ success: false, error: 'JWT 解码模块不可用' })
+let encodeURL = () => ({ success: false, error: 'URL 编解码模块不可用' })
+let decodeURL = () => ({ success: false, error: 'URL 编解码模块不可用' })
+let encodeBase64 = () => ({ success: false, error: 'Base64 编解码模块不可用' })
+let decodeBase64 = () => ({ success: false, error: 'Base64 编解码模块不可用' })
 
 // ──────────────────────────────────────────────
 // Default settings (fallback when settings.js absent)
@@ -104,12 +104,6 @@ async function loadDynamicModules() {
   } catch (_) { /* settings.js not yet created (Task 9) */ }
 
   try {
-    const history = await import('./history.js')
-    addHistoryItem = history.addHistoryItem || addHistoryItem
-    clearHistory = history.clearHistory || clearHistory
-  } catch (_) { /* history.js not yet created (Task 9) */ }
-
-  try {
     const converters = await import('./format-converters.js')
     convertJSON = converters.convertJSON || convertJSON
   } catch (_) { /* format-converters.js not yet created (Task 6) */ }
@@ -123,6 +117,18 @@ async function loadDynamicModules() {
     const jwt = await import('./jwt-decoder.js')
     decodeJWT = jwt.decodeJWT || decodeJWT
   } catch (_) { /* jwt-decoder.js not yet created (Task 8) */ }
+
+  try {
+    const urlCodec = await import('./url-codec.js')
+    encodeURL = urlCodec.encodeURL || encodeURL
+    decodeURL = urlCodec.decodeURL || decodeURL
+  } catch (_) { /* url-codec.js not yet created */ }
+
+  try {
+    const base64Codec = await import('./base64-codec.js')
+    encodeBase64 = base64Codec.encodeBase64 || encodeBase64
+    decodeBase64 = base64Codec.decodeBase64 || decodeBase64
+  } catch (_) { /* base64-codec.js not yet created */ }
 }
 
 // ──────────────────────────────────────────────
@@ -150,16 +156,6 @@ async function init() {
   bindSettings()
   bindKeyboardShortcuts()
   checkURLParams()
-
-  // Listen for restore events from history module
-  window.addEventListener('jsonfmt-restore', (e) => {
-    const { content } = e.detail || {}
-    if (content !== undefined) {
-      isRestoringHistory = true
-      setEditorContent(editor, content)
-      isRestoringHistory = false
-    }
-  })
 }
 
 // ──────────────────────────────────────────────
@@ -182,9 +178,6 @@ function onEditorChange(value) {
       currentJSON = JSON.parse(trimmed)
       renderTreeWithGuard(currentJSON, trimmed)
       updateStatus('✅ 有效 JSON')
-      if (!isRestoringHistory) {
-        scheduleHistorySave(trimmed)
-      }
     } catch (e) {
       updateStatus('❌ 解析错误')
     }
@@ -198,24 +191,6 @@ function onEditorChange(value) {
 function updateStatus(msg) {
   const el = document.getElementById('statusBar')
   if (el) el.textContent = msg
-}
-
-const scheduleHistorySave = debounce(async (content) => {
-  if (!isHistorySaveCandidate(content)) return
-  try {
-    await addHistoryItem(content.trim())
-  } catch {
-    // History persistence should not interrupt editing.
-  }
-}, 1000)
-
-async function saveHistoryNow(content) {
-  if (!isHistorySaveCandidate(content)) return
-  try {
-    await addHistoryItem(content.trim())
-  } catch {
-    // History persistence should not interrupt user-triggered operations.
-  }
 }
 
 function renderTreeWithGuard(data, sourceText) {
@@ -300,7 +275,6 @@ function bindToolbar() {
     const result = formatContent(editor, indent)
     if (result.success) {
       updateStatus('✅ 格式化完成')
-      saveHistoryNow(getEditorContent(editor))
     } else {
       updateStatus(`❌ 格式化失败: ${result.error}`)
     }
@@ -310,7 +284,6 @@ function bindToolbar() {
     const result = compressContent(editor)
     if (result.success) {
       updateStatus('✅ 压缩完成')
-      saveHistoryNow(getEditorContent(editor))
     } else {
       updateStatus(`❌ 压缩失败: ${result.error}`)
     }
@@ -322,7 +295,6 @@ function bindToolbar() {
       const sorted = sortJSON(content)
       setEditorContent(editor, sorted)
       updateStatus('✅ 排序完成')
-      saveHistoryNow(sorted)
     } catch (e) {
       updateStatus(`❌ 排序失败: ${e.message}`)
     }
@@ -533,7 +505,6 @@ function bindBottomPanel() {
     reader.onload = (ev) => {
       const content = ev.target.result
       setEditorContent(editor, content)
-      saveHistoryNow(content)
       updateStatus(`✅ 已加载: ${file.name}`)
     }
     reader.readAsText(file)
@@ -618,11 +589,62 @@ function bindBottomPanel() {
     }
   }
 
-  // Clear history
-  document.getElementById('btnClearHistory').onclick = async () => {
-    await clearHistory()
-    document.getElementById('historyList').innerHTML = '<div class="history-item">暂无历史记录</div>'
-    updateStatus('✅ 历史已清空')
+  // URL encode / decode
+  document.getElementById('btnEncodeURL').onclick = () => {
+    const text = document.getElementById('urlInput').value.trim()
+    if (!text) {
+      showToolResult('url', 'URL 处理结果', '请先输入要编码的文本')
+      return
+    }
+    const result = encodeURL(text)
+    if (result && result.success) {
+      showToolResult('url', 'URL 编码结果', result.content)
+    } else {
+      showToolResult('url', 'URL 处理结果', `错误: ${(result && result.error) || '模块不可用'}`)
+    }
+  }
+
+  document.getElementById('btnDecodeURL').onclick = () => {
+    const text = document.getElementById('urlInput').value.trim()
+    if (!text) {
+      showToolResult('url', 'URL 处理结果', '请先输入要解码的文本')
+      return
+    }
+    const result = decodeURL(text)
+    if (result && result.success) {
+      showToolResult('url', 'URL 解码结果', result.content)
+    } else {
+      showToolResult('url', 'URL 处理结果', `错误: ${(result && result.error) || '模块不可用'}`)
+    }
+  }
+
+  // Base64 encode / decode
+  document.getElementById('btnEncodeBase64').onclick = () => {
+    const text = document.getElementById('base64Input').value.trim()
+    if (!text) {
+      showToolResult('base64', 'Base64 处理结果', '请先输入要编码的文本')
+      return
+    }
+    const result = encodeBase64(text)
+    if (result && result.success) {
+      showToolResult('base64', 'Base64 编码结果', result.content)
+    } else {
+      showToolResult('base64', 'Base64 处理结果', `错误: ${(result && result.error) || '模块不可用'}`)
+    }
+  }
+
+  document.getElementById('btnDecodeBase64').onclick = () => {
+    const text = document.getElementById('base64Input').value.trim()
+    if (!text) {
+      showToolResult('base64', 'Base64 处理结果', '请先输入要解码的文本')
+      return
+    }
+    const result = decodeBase64(text)
+    if (result && result.success) {
+      showToolResult('base64', 'Base64 解码结果', result.content)
+    } else {
+      showToolResult('base64', 'Base64 处理结果', `错误: ${(result && result.error) || '模块不可用'}`)
+    }
   }
 
   bindToolResultActions()
@@ -695,7 +717,6 @@ async function importFromURL(url) {
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`)
     const text = await resp.text()
     setEditorContent(editor, text)
-    saveHistoryNow(text)
   } catch (e) {
     updateStatus(`❌ 导入失败: ${e.message}`)
   }
@@ -710,7 +731,6 @@ function checkURLParams() {
       try {
         const formatted = formatJSON(data)
         setEditorContent(editor, formatted)
-        saveHistoryNow(formatted)
         updateStatus('✅ URL 数据已加载')
       } catch (e) {
         setEditorContent(editor, data)
@@ -758,7 +778,6 @@ document.addEventListener('paste', (e) => {
     const indent = parseInt(getSetting('indentSize'), 10)
     const formatted = formatJSON(trimmed, indent)
     setEditorContent(editor, formatted)
-    saveHistoryNow(formatted)
     updateStatus('✅ 格式化完成')
   }
 })
@@ -788,7 +807,6 @@ editorContainer.addEventListener('drop', (e) => {
     reader.onload = (ev) => {
       const content = ev.target.result
       setEditorContent(editor, content)
-      saveHistoryNow(content)
     }
     reader.readAsText(file)
   }
