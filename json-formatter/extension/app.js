@@ -25262,104 +25262,6 @@ var init_settings = __esm({
   }
 });
 
-// src/history.js
-var history_exports = {};
-__export(history_exports, {
-  addHistoryItem: () => addHistoryItem,
-  clearHistory: () => clearHistory,
-  loadHistory: () => loadHistory,
-  removeHistoryItem: () => removeHistoryItem
-});
-async function loadHistory() {
-  const result = await chrome.storage.local.get("history");
-  return result.history || [];
-}
-function renderHistory(items) {
-  const container = document.getElementById("historyList");
-  if (!container) return;
-  if (!items || items.length === 0) {
-    container.innerHTML = '<div class="history-item">\u6682\u65E0\u5386\u53F2\u8BB0\u5F55</div>';
-    return;
-  }
-  container.innerHTML = items.map(
-    (item) => `<div class="history-item" data-id="${escapeHtml2(item.id)}">
-          <div class="history-preview">${escapeHtml2(item.label || item.preview || "")}</div>
-          <div class="history-meta">${formatTimestamp(item.timestamp)}</div>
-        </div>`
-  ).join("");
-  container.querySelectorAll(".history-item").forEach((el) => {
-    el.addEventListener("click", async () => {
-      const id = el.dataset.id;
-      const all = await loadHistory();
-      const found = all.find((i) => i.id === id);
-      if (!found) return;
-      window.dispatchEvent(
-        new CustomEvent("jsonfmt-restore", { detail: { content: found.content } })
-      );
-    });
-  });
-}
-function escapeHtml2(str) {
-  const div = document.createElement("div");
-  div.appendChild(document.createTextNode(str));
-  return div.innerHTML;
-}
-function formatTimestamp(ts) {
-  try {
-    const d = new Date(ts);
-    const pad = (n) => String(n).padStart(2, "0");
-    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
-  } catch {
-    return String(ts);
-  }
-}
-async function addHistoryItem(content2) {
-  if (!content2 || typeof content2 !== "string") return;
-  const items = await loadHistory();
-  if (items.length > 0 && items[0].content === content2) {
-    items[0].timestamp = Date.now();
-    await chrome.storage.local.set({ history: items });
-    renderHistory(items);
-    return items;
-  }
-  const label = content2.length > PREVIEW_LENGTH ? content2.slice(0, PREVIEW_LENGTH) + "\u2026" : content2;
-  const item = {
-    id: Date.now().toString(36),
-    timestamp: Date.now(),
-    label,
-    content: content2
-  };
-  items.unshift(item);
-  if (items.length > MAX_ITEMS) {
-    items.length = MAX_ITEMS;
-  }
-  await chrome.storage.local.set({ history: items });
-  renderHistory(items);
-  return items;
-}
-async function clearHistory() {
-  await chrome.storage.local.set({ history: [] });
-  renderHistory([]);
-}
-async function removeHistoryItem(id) {
-  let items = await loadHistory();
-  items = items.filter((item) => item.id !== id);
-  await chrome.storage.local.set({ history: items });
-  renderHistory(items);
-  return items;
-}
-var MAX_ITEMS, PREVIEW_LENGTH;
-var init_history = __esm({
-  "src/history.js"() {
-    MAX_ITEMS = 50;
-    PREVIEW_LENGTH = 80;
-    document.addEventListener("DOMContentLoaded", async () => {
-      const items = await loadHistory();
-      renderHistory(items);
-    });
-  }
-});
-
 // node_modules/smol-toml/dist/date.js
 var init_date = __esm({
   "node_modules/smol-toml/dist/date.js"() {
@@ -28437,6 +28339,164 @@ var init_jwt_decoder = __esm({
   }
 });
 
+// src/url-codec.js
+var url_codec_exports = {};
+__export(url_codec_exports, {
+  decodeURL: () => decodeURL,
+  encodeURL: () => encodeURL
+});
+function encodeURL(text) {
+  const input = String(text ?? "");
+  if (!input) return { success: false, error: "\u8BF7\u8F93\u5165\u8981\u7F16\u7801\u7684\u6587\u672C" };
+  return { success: true, content: encodeURIComponent(input) };
+}
+function decodeURL(text) {
+  const input = String(text ?? "");
+  if (!input) return { success: false, error: "\u8BF7\u8F93\u5165\u8981\u89E3\u7801\u7684\u6587\u672C" };
+  try {
+    return { success: true, content: decodeURIComponent(input) };
+  } catch {
+    try {
+      return { success: true, content: decodeURI(input) };
+    } catch {
+      return { success: false, error: "URL \u89E3\u7801\u5931\u8D25: \u5B58\u5728\u975E\u6CD5\u7684 % \u8F6C\u4E49\u5E8F\u5217" };
+    }
+  }
+}
+var init_url_codec = __esm({
+  "src/url-codec.js"() {
+  }
+});
+
+// src/vendor/js-base64.mjs
+var _hasBuffer, _TD, _TE, b64ch, b64chs, b64tab, b64re, _fromCC, _U8Afrom, _mkUriSafe, _tidyB64, btoaPolyfill, _btoa, _fromUint8Array, cb_utob, re_utob, utob, _encode, encode, re_btou, cb_btou, btou, atobPolyfill, _atob, _toUint8Array, _decode, _unURI, decode, isValid;
+var init_js_base64 = __esm({
+  "src/vendor/js-base64.mjs"() {
+    _hasBuffer = typeof Buffer === "function";
+    _TD = typeof TextDecoder === "function" ? new TextDecoder() : void 0;
+    _TE = typeof TextEncoder === "function" ? new TextEncoder() : void 0;
+    b64ch = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+    b64chs = Array.prototype.slice.call(b64ch);
+    b64tab = ((a) => {
+      let tab = {};
+      a.forEach((c, i) => tab[c] = i);
+      return tab;
+    })(b64chs);
+    b64re = /^(?:[A-Za-z\d+\/]{4})*?(?:[A-Za-z\d+\/]{2}(?:==)?|[A-Za-z\d+\/]{3}=?)?$/;
+    _fromCC = String.fromCharCode.bind(String);
+    _U8Afrom = typeof Uint8Array.from === "function" ? Uint8Array.from.bind(Uint8Array) : (it) => new Uint8Array(Array.prototype.slice.call(it, 0));
+    _mkUriSafe = (src) => src.replace(/=/g, "").replace(/[+\/]/g, (m0) => m0 == "+" ? "-" : "_");
+    _tidyB64 = (s) => s.replace(/[^A-Za-z0-9\+\/]/g, "");
+    btoaPolyfill = (bin) => {
+      let u32, c0, c1, c2, asc = "";
+      const pad = bin.length % 3;
+      for (let i = 0; i < bin.length; ) {
+        if ((c0 = bin.charCodeAt(i++)) > 255 || (c1 = bin.charCodeAt(i++)) > 255 || (c2 = bin.charCodeAt(i++)) > 255)
+          throw new TypeError("invalid character found");
+        u32 = c0 << 16 | c1 << 8 | c2;
+        asc += b64chs[u32 >> 18 & 63] + b64chs[u32 >> 12 & 63] + b64chs[u32 >> 6 & 63] + b64chs[u32 & 63];
+      }
+      return pad ? asc.slice(0, pad - 3) + "===".substring(pad) : asc;
+    };
+    _btoa = typeof btoa === "function" ? (bin) => btoa(bin) : _hasBuffer ? (bin) => Buffer.from(bin, "binary").toString("base64") : btoaPolyfill;
+    _fromUint8Array = _hasBuffer ? (u8a) => Buffer.from(u8a).toString("base64") : (u8a) => {
+      const maxargs = 4096;
+      let strs = [];
+      for (let i = 0, l = u8a.length; i < l; i += maxargs) {
+        strs.push(_fromCC.apply(null, u8a.subarray(i, i + maxargs)));
+      }
+      return _btoa(strs.join(""));
+    };
+    cb_utob = (c) => {
+      if (c.length < 2) {
+        var cc = c.charCodeAt(0);
+        return cc < 128 ? c : cc < 2048 ? _fromCC(192 | cc >>> 6) + _fromCC(128 | cc & 63) : _fromCC(224 | cc >>> 12 & 15) + _fromCC(128 | cc >>> 6 & 63) + _fromCC(128 | cc & 63);
+      } else {
+        var cc = 65536 + (c.charCodeAt(0) - 55296) * 1024 + (c.charCodeAt(1) - 56320);
+        return _fromCC(240 | cc >>> 18 & 7) + _fromCC(128 | cc >>> 12 & 63) + _fromCC(128 | cc >>> 6 & 63) + _fromCC(128 | cc & 63);
+      }
+    };
+    re_utob = /[\uD800-\uDBFF][\uDC00-\uDFFFF]|[^\x00-\x7F]/g;
+    utob = (u) => u.replace(re_utob, cb_utob);
+    _encode = _hasBuffer ? (s) => Buffer.from(s, "utf8").toString("base64") : _TE ? (s) => _fromUint8Array(_TE.encode(s)) : (s) => _btoa(utob(s));
+    encode = (src, urlsafe = false) => urlsafe ? _mkUriSafe(_encode(src)) : _encode(src);
+    re_btou = /[\xC0-\xDF][\x80-\xBF]|[\xE0-\xEF][\x80-\xBF]{2}|[\xF0-\xF7][\x80-\xBF]{3}/g;
+    cb_btou = (cccc) => {
+      switch (cccc.length) {
+        case 4:
+          var cp = (7 & cccc.charCodeAt(0)) << 18 | (63 & cccc.charCodeAt(1)) << 12 | (63 & cccc.charCodeAt(2)) << 6 | 63 & cccc.charCodeAt(3), offset = cp - 65536;
+          return _fromCC((offset >>> 10) + 55296) + _fromCC((offset & 1023) + 56320);
+        case 3:
+          return _fromCC((15 & cccc.charCodeAt(0)) << 12 | (63 & cccc.charCodeAt(1)) << 6 | 63 & cccc.charCodeAt(2));
+        default:
+          return _fromCC((31 & cccc.charCodeAt(0)) << 6 | 63 & cccc.charCodeAt(1));
+      }
+    };
+    btou = (b) => b.replace(re_btou, cb_btou);
+    atobPolyfill = (asc) => {
+      asc = asc.replace(/\s+/g, "");
+      if (!b64re.test(asc))
+        throw new TypeError("malformed base64.");
+      asc += "==".slice(2 - (asc.length & 3));
+      let u24, r1, r2;
+      let binArray = [];
+      for (let i = 0; i < asc.length; ) {
+        u24 = b64tab[asc.charAt(i++)] << 18 | b64tab[asc.charAt(i++)] << 12 | (r1 = b64tab[asc.charAt(i++)]) << 6 | (r2 = b64tab[asc.charAt(i++)]);
+        if (r1 === 64) {
+          binArray.push(_fromCC(u24 >> 16 & 255));
+        } else if (r2 === 64) {
+          binArray.push(_fromCC(u24 >> 16 & 255, u24 >> 8 & 255));
+        } else {
+          binArray.push(_fromCC(u24 >> 16 & 255, u24 >> 8 & 255, u24 & 255));
+        }
+      }
+      return binArray.join("");
+    };
+    _atob = typeof atob === "function" ? (asc) => atob(_tidyB64(asc)) : _hasBuffer ? (asc) => Buffer.from(asc, "base64").toString("binary") : atobPolyfill;
+    _toUint8Array = _hasBuffer ? (a) => _U8Afrom(Buffer.from(a, "base64")) : (a) => _U8Afrom(_atob(a).split("").map((c) => c.charCodeAt(0)));
+    _decode = _hasBuffer ? (a) => Buffer.from(a, "base64").toString("utf8") : _TD ? (a) => _TD.decode(_toUint8Array(a)) : (a) => btou(_atob(a));
+    _unURI = (a) => _tidyB64(a.replace(/[-_]/g, (m0) => m0 == "-" ? "+" : "/"));
+    decode = (src) => _decode(_unURI(src));
+    isValid = (src) => {
+      if (typeof src !== "string")
+        return false;
+      const s = src.replace(/\s+/g, "").replace(/={0,2}$/, "");
+      return !/[^\s0-9a-zA-Z\+/]/.test(s) || !/[^\s0-9a-zA-Z\-_]/.test(s);
+    };
+  }
+});
+
+// src/base64-codec.js
+var base64_codec_exports = {};
+__export(base64_codec_exports, {
+  decodeBase64: () => decodeBase64,
+  encodeBase64: () => encodeBase64
+});
+function encodeBase64(text) {
+  const input = String(text ?? "");
+  if (!input) return { success: false, error: "\u8BF7\u8F93\u5165\u8981\u7F16\u7801\u7684\u6587\u672C" };
+  try {
+    return { success: true, content: encode(input) };
+  } catch (e) {
+    return { success: false, error: `Base64 \u7F16\u7801\u5931\u8D25: ${e.message}` };
+  }
+}
+function decodeBase64(text) {
+  const input = String(text ?? "").trim();
+  if (!input) return { success: false, error: "\u8BF7\u8F93\u5165\u8981\u89E3\u7801\u7684\u6587\u672C" };
+  if (!isValid(input)) return { success: false, error: "Base64 \u89E3\u7801\u5931\u8D25: \u8F93\u5165\u4E0D\u662F\u6709\u6548\u7684 Base64" };
+  try {
+    return { success: true, content: decode(input) };
+  } catch {
+    return { success: false, error: "Base64 \u89E3\u7801\u5931\u8D25: \u8F93\u5165\u4E0D\u662F\u6709\u6548\u7684 Base64" };
+  }
+}
+var init_base64_codec = __esm({
+  "src/base64-codec.js"() {
+    init_js_base64();
+  }
+});
+
 // src/app.js
 init_editor();
 
@@ -28498,19 +28558,6 @@ function countNodes(value, maxNodes) {
     }
   }
   return count;
-}
-
-// src/history-save.js
-function isHistorySaveCandidate(content2) {
-  if (typeof content2 !== "string") return false;
-  const trimmed = content2.trim();
-  if (!trimmed) return false;
-  try {
-    JSON.parse(trimmed);
-    return true;
-  } catch {
-    return false;
-  }
 }
 
 // src/syntax-highlight.js
@@ -28764,7 +28811,6 @@ var editor = null;
 var currentJSON = null;
 var isWrapEnabled = false;
 var isBottomPanelExpanded = DEFAULT_BOTTOM_PANEL_EXPANDED;
-var isRestoringHistory = false;
 var toolResults = /* @__PURE__ */ new Map();
 var activeResultKey = null;
 var CONVERT_RESULT_LANGUAGES = {
@@ -28778,13 +28824,13 @@ var expandAll2 = () => {
 };
 var collapseAll2 = () => {
 };
-var addHistoryItem2 = async () => {
-};
-var clearHistory2 = async () => {
-};
 var convertJSON2 = () => ({ success: false, error: "\u683C\u5F0F\u8F6C\u6362\u6A21\u5757\u4E0D\u53EF\u7528" });
 var generateCode2 = () => "// \u4EE3\u7801\u751F\u6210\u6A21\u5757\u4E0D\u53EF\u7528";
 var decodeJWT2 = () => ({ success: false, error: "JWT \u89E3\u7801\u6A21\u5757\u4E0D\u53EF\u7528" });
+var encodeURL2 = () => ({ success: false, error: "URL \u7F16\u89E3\u7801\u6A21\u5757\u4E0D\u53EF\u7528" });
+var decodeURL2 = () => ({ success: false, error: "URL \u7F16\u89E3\u7801\u6A21\u5757\u4E0D\u53EF\u7528" });
+var encodeBase642 = () => ({ success: false, error: "Base64 \u7F16\u89E3\u7801\u6A21\u5757\u4E0D\u53EF\u7528" });
+var decodeBase642 = () => ({ success: false, error: "Base64 \u7F16\u89E3\u7801\u6A21\u5757\u4E0D\u53EF\u7528" });
 function getDefaultSettings() {
   return {
     indentSize: "2",
@@ -28827,12 +28873,6 @@ async function loadDynamicModules() {
   } catch (_) {
   }
   try {
-    const history3 = await Promise.resolve().then(() => (init_history(), history_exports));
-    addHistoryItem2 = history3.addHistoryItem || addHistoryItem2;
-    clearHistory2 = history3.clearHistory || clearHistory2;
-  } catch (_) {
-  }
-  try {
     const converters = await Promise.resolve().then(() => (init_format_converters(), format_converters_exports));
     convertJSON2 = converters.convertJSON || convertJSON2;
   } catch (_) {
@@ -28845,6 +28885,18 @@ async function loadDynamicModules() {
   try {
     const jwt = await Promise.resolve().then(() => (init_jwt_decoder(), jwt_decoder_exports));
     decodeJWT2 = jwt.decodeJWT || decodeJWT2;
+  } catch (_) {
+  }
+  try {
+    const urlCodec = await Promise.resolve().then(() => (init_url_codec(), url_codec_exports));
+    encodeURL2 = urlCodec.encodeURL || encodeURL2;
+    decodeURL2 = urlCodec.decodeURL || decodeURL2;
+  } catch (_) {
+  }
+  try {
+    const base64Codec = await Promise.resolve().then(() => (init_base64_codec(), base64_codec_exports));
+    encodeBase642 = base64Codec.encodeBase64 || encodeBase642;
+    decodeBase642 = base64Codec.decodeBase64 || decodeBase642;
   } catch (_) {
   }
 }
@@ -28866,14 +28918,6 @@ async function init() {
   bindSettings();
   bindKeyboardShortcuts();
   checkURLParams();
-  window.addEventListener("jsonfmt-restore", (e) => {
-    const { content: content2 } = e.detail || {};
-    if (content2 !== void 0) {
-      isRestoringHistory = true;
-      setEditorContent(editor, content2);
-      isRestoringHistory = false;
-    }
-  });
 }
 function onEditorChange(value) {
   const trimmed = value.trim();
@@ -28889,9 +28933,6 @@ function onEditorChange(value) {
       currentJSON = JSON.parse(trimmed);
       renderTreeWithGuard(currentJSON, trimmed);
       updateStatus("\u2705 \u6709\u6548 JSON");
-      if (!isRestoringHistory) {
-        scheduleHistorySave(trimmed);
-      }
     } catch (e) {
       updateStatus("\u274C \u89E3\u6790\u9519\u8BEF");
     }
@@ -28904,20 +28945,6 @@ function onEditorChange(value) {
 function updateStatus(msg) {
   const el = document.getElementById("statusBar");
   if (el) el.textContent = msg;
-}
-var scheduleHistorySave = debounce(async (content2) => {
-  if (!isHistorySaveCandidate(content2)) return;
-  try {
-    await addHistoryItem2(content2.trim());
-  } catch {
-  }
-}, 1e3);
-async function saveHistoryNow(content2) {
-  if (!isHistorySaveCandidate(content2)) return;
-  try {
-    await addHistoryItem2(content2.trim());
-  } catch {
-  }
 }
 function renderTreeWithGuard(data, sourceText) {
   const analysis = analyzeTreeRender(data, sourceText);
@@ -28977,7 +29004,6 @@ function bindToolbar() {
     const result = formatContent(editor, indent);
     if (result.success) {
       updateStatus("\u2705 \u683C\u5F0F\u5316\u5B8C\u6210");
-      saveHistoryNow(getEditorContent(editor));
     } else {
       updateStatus(`\u274C \u683C\u5F0F\u5316\u5931\u8D25: ${result.error}`);
     }
@@ -28986,7 +29012,6 @@ function bindToolbar() {
     const result = compressContent(editor);
     if (result.success) {
       updateStatus("\u2705 \u538B\u7F29\u5B8C\u6210");
-      saveHistoryNow(getEditorContent(editor));
     } else {
       updateStatus(`\u274C \u538B\u7F29\u5931\u8D25: ${result.error}`);
     }
@@ -28997,7 +29022,6 @@ function bindToolbar() {
       const sorted = sortJSON(content2);
       setEditorContent(editor, sorted);
       updateStatus("\u2705 \u6392\u5E8F\u5B8C\u6210");
-      saveHistoryNow(sorted);
     } catch (e) {
       updateStatus(`\u274C \u6392\u5E8F\u5931\u8D25: ${e.message}`);
     }
@@ -29166,7 +29190,6 @@ function bindBottomPanel() {
     reader.onload = (ev) => {
       const content2 = ev.target.result;
       setEditorContent(editor, content2);
-      saveHistoryNow(content2);
       updateStatus(`\u2705 \u5DF2\u52A0\u8F7D: ${file.name}`);
     };
     reader.readAsText(file);
@@ -29237,10 +29260,57 @@ function bindBottomPanel() {
       showToolResult("jwt", "JWT \u89E3\u7801\u7ED3\u679C", `\u9519\u8BEF: ${result && result.error || "\u6A21\u5757\u4E0D\u53EF\u7528"}`);
     }
   };
-  document.getElementById("btnClearHistory").onclick = async () => {
-    await clearHistory2();
-    document.getElementById("historyList").innerHTML = '<div class="history-item">\u6682\u65E0\u5386\u53F2\u8BB0\u5F55</div>';
-    updateStatus("\u2705 \u5386\u53F2\u5DF2\u6E05\u7A7A");
+  document.getElementById("btnEncodeURL").onclick = () => {
+    const text = document.getElementById("urlInput").value.trim();
+    if (!text) {
+      showToolResult("url", "URL \u5904\u7406\u7ED3\u679C", "\u8BF7\u5148\u8F93\u5165\u8981\u7F16\u7801\u7684\u6587\u672C");
+      return;
+    }
+    const result = encodeURL2(text);
+    if (result && result.success) {
+      showToolResult("url", "URL \u7F16\u7801\u7ED3\u679C", result.content);
+    } else {
+      showToolResult("url", "URL \u5904\u7406\u7ED3\u679C", `\u9519\u8BEF: ${result && result.error || "\u6A21\u5757\u4E0D\u53EF\u7528"}`);
+    }
+  };
+  document.getElementById("btnDecodeURL").onclick = () => {
+    const text = document.getElementById("urlInput").value.trim();
+    if (!text) {
+      showToolResult("url", "URL \u5904\u7406\u7ED3\u679C", "\u8BF7\u5148\u8F93\u5165\u8981\u89E3\u7801\u7684\u6587\u672C");
+      return;
+    }
+    const result = decodeURL2(text);
+    if (result && result.success) {
+      showToolResult("url", "URL \u89E3\u7801\u7ED3\u679C", result.content);
+    } else {
+      showToolResult("url", "URL \u5904\u7406\u7ED3\u679C", `\u9519\u8BEF: ${result && result.error || "\u6A21\u5757\u4E0D\u53EF\u7528"}`);
+    }
+  };
+  document.getElementById("btnEncodeBase64").onclick = () => {
+    const text = document.getElementById("base64Input").value.trim();
+    if (!text) {
+      showToolResult("base64", "Base64 \u5904\u7406\u7ED3\u679C", "\u8BF7\u5148\u8F93\u5165\u8981\u7F16\u7801\u7684\u6587\u672C");
+      return;
+    }
+    const result = encodeBase642(text);
+    if (result && result.success) {
+      showToolResult("base64", "Base64 \u7F16\u7801\u7ED3\u679C", result.content);
+    } else {
+      showToolResult("base64", "Base64 \u5904\u7406\u7ED3\u679C", `\u9519\u8BEF: ${result && result.error || "\u6A21\u5757\u4E0D\u53EF\u7528"}`);
+    }
+  };
+  document.getElementById("btnDecodeBase64").onclick = () => {
+    const text = document.getElementById("base64Input").value.trim();
+    if (!text) {
+      showToolResult("base64", "Base64 \u5904\u7406\u7ED3\u679C", "\u8BF7\u5148\u8F93\u5165\u8981\u89E3\u7801\u7684\u6587\u672C");
+      return;
+    }
+    const result = decodeBase642(text);
+    if (result && result.success) {
+      showToolResult("base64", "Base64 \u89E3\u7801\u7ED3\u679C", result.content);
+    } else {
+      showToolResult("base64", "Base64 \u5904\u7406\u7ED3\u679C", `\u9519\u8BEF: ${result && result.error || "\u6A21\u5757\u4E0D\u53EF\u7528"}`);
+    }
   };
   bindToolResultActions();
 }
@@ -29286,7 +29356,6 @@ async function importFromURL(url) {
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const text = await resp.text();
     setEditorContent(editor, text);
-    saveHistoryNow(text);
   } catch (e) {
     updateStatus(`\u274C \u5BFC\u5165\u5931\u8D25: ${e.message}`);
   }
@@ -29299,7 +29368,6 @@ function checkURLParams() {
       try {
         const formatted = formatJSON(data);
         setEditorContent(editor, formatted);
-        saveHistoryNow(formatted);
         updateStatus("\u2705 URL \u6570\u636E\u5DF2\u52A0\u8F7D");
       } catch (e) {
         setEditorContent(editor, data);
@@ -29333,7 +29401,6 @@ document.addEventListener("paste", (e) => {
     const indent = parseInt(getSetting2("indentSize"), 10);
     const formatted = formatJSON(trimmed, indent);
     setEditorContent(editor, formatted);
-    saveHistoryNow(formatted);
     updateStatus("\u2705 \u683C\u5F0F\u5316\u5B8C\u6210");
   }
 });
@@ -29358,7 +29425,6 @@ editorContainer.addEventListener("drop", (e) => {
     reader.onload = (ev) => {
       const content2 = ev.target.result;
       setEditorContent(editor, content2);
-      saveHistoryNow(content2);
     };
     reader.readAsText(file);
   }

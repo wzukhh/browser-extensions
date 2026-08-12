@@ -364,17 +364,6 @@ button:hover { background: var(--accent); color: #fff; border-color: var(--accen
   overflow: auto;
   width: 100%;
 }
-#historyList { max-height: 150px; overflow-y: auto; width: 100%; }
-.history-item {
-  padding: 4px 8px;
-  cursor: pointer;
-  font-size: 12px;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  justify-content: space-between;
-}
-.history-item:hover { background: var(--bg-tertiary); }
-
 /* 作者信息 */
 .app-author {
   position: fixed;
