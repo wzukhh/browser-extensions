@@ -88,10 +88,18 @@ button:hover { background: var(--accent); color: #fff; border-color: var(--accen
   border-bottom: 1px solid var(--border);
   flex-shrink: 0;
 }
+.panel-header .panel-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  overflow: hidden;
+}
 .panel-header .panel-actions {
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-shrink: 0;
 }
 .panel-header .panel-actions button {
   display: inline-flex;
