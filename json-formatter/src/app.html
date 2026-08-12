@@ -71,7 +71,8 @@
       <button class="tab" data-tab="convert">🔄 格式转换</button>
       <button class="tab" data-tab="codegen">📄 代码生成</button>
       <button class="tab" data-tab="jwt">🔑 JWT</button>
-      <button class="tab" data-tab="history">📚 历史</button>
+      <button class="tab" data-tab="url">🔗 URL</button>
+      <button class="tab" data-tab="base64">🔤 Base64</button>
     </div>
     <div id="bottomPanelBody" class="bottom-panel-body" hidden>
       <div class="tab-content" id="tabInput">
@@ -134,9 +135,39 @@
           <pre id="jwtOutput" class="output-area tool-result-preview" data-result-preview="jwt"></pre>
         </div>
       </div>
-      <div class="tab-content" id="tabHistory" hidden>
-        <div id="historyList"></div>
-        <button id="btnClearHistory">🗑️ 清空历史</button>
+      <div class="tab-content" id="tabUrl" hidden>
+        <div class="tool-tab-actions url-actions">
+          <textarea id="urlInput" placeholder="粘贴待编码/解码的文本..." rows="3"></textarea>
+          <button id="btnEncodeURL">🔒 编码</button>
+          <button id="btnDecodeURL">🔓 解码</button>
+        </div>
+        <div class="tool-result-panel" data-result-panel="url" hidden>
+          <div class="tool-result-header">
+            <span data-result-title="url">URL 处理结果</span>
+            <div class="tool-result-actions">
+              <button data-result-copy="url">复制结果</button>
+              <button data-result-open="url">展开查看</button>
+            </div>
+          </div>
+          <pre class="output-area tool-result-preview" data-result-preview="url"></pre>
+        </div>
+      </div>
+      <div class="tab-content" id="tabBase64" hidden>
+        <div class="tool-tab-actions base64-actions">
+          <textarea id="base64Input" placeholder="粘贴待编码/解码的文本..." rows="3"></textarea>
+          <button id="btnEncodeBase64">🔒 编码</button>
+          <button id="btnDecodeBase64">🔓 解码</button>
+        </div>
+        <div class="tool-result-panel" data-result-panel="base64" hidden>
+          <div class="tool-result-header">
+            <span data-result-title="base64">Base64 处理结果</span>
+            <div class="tool-result-actions">
+              <button data-result-copy="base64">复制结果</button>
+              <button data-result-open="base64">展开查看</button>
+            </div>
+          </div>
+          <pre class="output-area tool-result-preview" data-result-preview="base64"></pre>
+        </div>
       </div>
     </div>
   </div>
