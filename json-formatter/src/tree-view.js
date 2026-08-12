@@ -123,11 +123,14 @@ function createTreeHTML(data, path, depth) {
   return wrapper
 }
 
+const STATS_ICON = `<svg class="status-icon" viewBox="0 0 1024 1024" aria-hidden="true"><path d="M870.4 755.2H156.8c-38.4 0-70.4-32-70.4-70.4V230.4C86.4 192 118.4 160 156.8 160h713.6c38.4 0 70.4 32 70.4 70.4v454.4c0 38.4-32 70.4-70.4 70.4z" fill="#EDEDED"></path><path d="M262.4 675.2H211.2c-9.6 0-19.2-6.4-19.2-19.2V236.8c0-9.6 6.4-19.2 19.2-19.2h54.4c9.6 0 19.2 6.4 19.2 19.2v422.4c-3.2 9.6-12.8 16-22.4 16z" fill="#5B8FD9"></path><path d="M393.6 675.2h-54.4c-9.6 0-19.2-6.4-19.2-19.2V384c0-9.6 6.4-19.2 19.2-19.2h54.4c9.6 0 19.2 6.4 19.2 19.2v272c0 12.8-9.6 19.2-19.2 19.2z" fill="#FE6D68"></path><path d="M534.4 675.2H480c-9.6 0-19.2-6.4-19.2-19.2v-320c0-9.6 6.4-19.2 19.2-19.2h54.4c9.6 0 19.2 6.4 19.2 19.2v320c0 12.8-9.6 19.2-19.2 19.2z" fill="#5B8FD9"></path><path d="M678.4 675.2h-54.4c-9.6 0-19.2-6.4-19.2-19.2v-169.6c0-9.6 6.4-19.2 19.2-19.2h54.4c9.6 0 19.2 6.4 19.2 19.2v169.6c-3.2 12.8-9.6 19.2-19.2 19.2z" fill="#68D279"></path><path d="M812.8 675.2h-54.4c-9.6 0-19.2-6.4-19.2-19.2v-236.8c0-9.6 6.4-19.2 19.2-19.2h54.4c9.6 0 19.2 6.4 19.2 19.2v236.8c0 12.8-9.6 19.2-19.2 19.2z" fill="#F9D65D"></path><path d="M899.2 867.2H118.4c-19.2 0-32-16-32-32 0-19.2 16-32 32-32H896c19.2 0 32 16 32 32 3.2 19.2-12.8 32-28.8 32z" fill="#5B8FD9"></path></svg>`
+
 function createStats(data) {
   const stats = document.createElement('div')
   stats.className = 'tree-stats'
   const counts = countNodes(data)
-  stats.textContent = `\u{1F4CA} 节点: ${counts.total} | 深度: ${counts.depth} | 字符串: ${counts.string} | 数字: ${counts.number} | 布尔: ${counts.boolean} | null: ${counts.null}`
+  stats.innerHTML = STATS_ICON
+  stats.appendChild(document.createTextNode(` 节点: ${counts.total} | 深度: ${counts.depth} | 字符串: ${counts.string} | 数字: ${counts.number} | 布尔: ${counts.boolean} | null: ${counts.null}`))
   return stats
 }
 
