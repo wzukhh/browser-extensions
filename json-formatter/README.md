@@ -25,7 +25,8 @@
 | 🔄 格式转换 | JSON ↔ YAML / XML / TOML |
 | 📄 代码生成 | JSON 转 TypeScript / Go / Python / Java / C# / Rust 类型定义 |
 | 🔑 JWT 解码 | 在线解码 JWT token |
-| 📚 历史记录 | 自动保存编辑历史 |
+| 🔗 URL 编解码 | URL encode / decode（query 参数场景） |
+| 🔤 Base64 编解码 | Base64 encode / decode（UTF-8 安全） |
 | 📂 打开文件 / 🌐 URL 导入 | 从文件或 URL 加载 JSON |
 | 💾 下载 / 📋 复制 | 导出结果 |
 

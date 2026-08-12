@@ -25,7 +25,8 @@
 | 🔄 Convert | JSON ↔ YAML / XML / TOML |
 | 📄 Code generation | JSON → TypeScript / Go / Python / Java / C# / Rust type definitions |
 | 🔑 JWT decode | Decode JWT tokens |
-| 📚 History | Auto-saved edit history |
+| 🔗 URL encode/decode | URL percent-encoding (query parameter use case) |
+| 🔤 Base64 encode/decode | UTF-8 safe Base64 |
 | 📂 Open file / 🌐 URL import | Load JSON from a file or URL |
 | 💾 Download / 📋 Copy | Export results |
 
