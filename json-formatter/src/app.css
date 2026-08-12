@@ -194,10 +194,10 @@ button:hover { background: var(--accent); color: #fff; border-color: var(--accen
 .tab-content {
   padding: 10px 16px;
   display: none;
+  /* 纵向布局：操作区顶部，结果面板 flex:1 撑满剩余空间到底 */
+  flex-direction: column;
   gap: 8px;
-  align-items: flex-start;
-  align-content: flex-start;
-  flex-wrap: wrap;
+  align-items: stretch;
   flex: 1;
   min-height: 0;
   overflow-y: auto;
