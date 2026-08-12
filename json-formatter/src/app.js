@@ -150,7 +150,6 @@ async function init() {
   })
 
   applyEditorSettings(settings)
-  mountStatusBar()
   bindToolbar()
   bindTabs()
   bindBottomPanel()
@@ -189,32 +188,9 @@ function onEditorChange(value) {
   }
 }
 
-// 状态条挂载到 CodeMirror 内容区（.cm-content）底部，不占用面板外部布局空间
-function mountStatusBar() {
-  const statusBarEl = document.createElement('div')
-  statusBarEl.id = 'statusBar'
-  statusBarEl.className = 'editor-status'
-  statusBarEl.hidden = true
-  editor.contentDOM.appendChild(statusBarEl)
-}
-
-const STATUS_ICONS = {
-  '✅': `<svg class="status-icon" viewBox="0 0 1050 1024" aria-hidden="true"><path d="M0.040958 673.137212l282.054116-187.237406 139.808572 253.609103S668.406616 229.915165 1021.583505 0.061436c0 0 2.355059 286.702798 28.424535 369.744216 0 0-338.944143 265.466312-599.659381 654.194348 0 0-49.783893-47.469792-450.307701-350.862788z" fill="#07C228"></path></svg>`,
-  '❌': `<svg class="status-icon" viewBox="0 0 1024 1024" aria-hidden="true"><path d="M780.885333 200.618667l44.672 26.752c-101.162667 46.208-194.304 115.541333-279.424 207.957333 98.048 77.226667 203.093333 178.858667 315.221334 304.810667-61.098667 29.994667-110.464 66.389333-148.053334 109.184-62.336-134.528-138.794667-248.021333-229.376-340.48-73.642667 94.464-140.629333 207.957333-201.045333 340.48-32.896-39.168-70.314667-68.309333-112.213333-87.381334C254.933333 640 339.029333 536.533333 422.869333 451.584a955.221333 955.221333 0 0 0-226.133333-145.109333l40.874667-40.576c76.757333 20.181333 159.701333 61.738667 248.832 124.757333 98.432-88.874667 196.608-152.234667 294.442666-190.037333z" fill="#FF6D5E"></path></svg>`,
-}
-
-function updateStatus(msg) {
-  const el = document.getElementById('statusBar')
-  if (!el) return
-  if (!msg) { el.textContent = ''; el.hidden = true; return }
-  el.hidden = false
-  const match = msg.match(/^(✅|❌)\s*/)
-  if (match) {
-    el.innerHTML = STATUS_ICONS[match[1]]
-    el.appendChild(document.createTextNode(msg.slice(match[0].length)))
-  } else {
-    el.textContent = msg
-  }
+function updateStatus() {
+  // 状态提示已移除（2026-08-12）：错误提示由编辑器内悬浮提示（jsonParseLinter）承担。
+  // 保留函数以兼容调用点，未来如需恢复状态条可在编辑区底部重新挂载。
 }
 
 function renderTreeWithGuard(data, sourceText) {
@@ -273,7 +249,6 @@ function applyTheme(theme) {
         fontSize: getSetting('fontSize'),
         fontFamily: getSetting('fontFamily'),
       })
-      mountStatusBar()
     })
   }
 }

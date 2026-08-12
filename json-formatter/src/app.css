@@ -387,27 +387,6 @@ button:hover { background: var(--accent); color: #fff; border-color: var(--accen
   vertical-align: -2px;
   margin-right: 3px;
 }
-/* 编辑区内状态条：挂在 .cm-content 底部，最多 2 行，与文本区域区分 */
-.editor-status {
-  display: flex;
-  align-items: flex-start;
-  gap: 4px;
-  flex-shrink: 0;
-  max-height: 44px; /* 2 行 × 18px 行高 + 8px 内边距 */
-  padding: 4px 12px;
-  font-size: 12px;
-  line-height: 18px;
-  color: var(--text);
-  background: var(--bg-secondary);
-  border-top: 1px solid var(--border);
-  overflow: hidden;
-  white-space: pre-wrap;
-  word-break: break-all;
-}
-.editor-status .status-icon { margin-top: 2px; }
-/* 修复：display:flex 会覆盖 hidden 属性的 UA 样式，空状态必须零占位 */
-.editor-status[hidden] { display: none; }
-
 /* 斜杠镜像：去转义 */
 .icon-flip { transform: scaleX(-1); }
 
