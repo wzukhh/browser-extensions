@@ -196,6 +196,7 @@ button:hover { background: var(--accent); color: #fff; border-color: var(--accen
   display: none;
   gap: 8px;
   align-items: flex-start;
+  align-content: flex-start;
   flex-wrap: wrap;
   flex: 1;
   min-height: 0;
@@ -226,6 +227,12 @@ button:hover { background: var(--accent); color: #fff; border-color: var(--accen
 .tool-result-panel {
   width: 100%;
   min-width: 0;
+  /* 顶部紧贴操作区，底部延伸到功能区底部（padding 留间距） */
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  flex: 1;
 }
 .tool-result-header {
   display: flex;
@@ -246,7 +253,9 @@ button:hover { background: var(--accent); color: #fff; border-color: var(--accen
   padding: 3px 8px;
 }
 .tool-result-preview {
-  max-height: 82px;
+  flex: 1;
+  max-height: none;
+  min-height: 60px;
 }
 
 /* 工具结果大弹窗 */
