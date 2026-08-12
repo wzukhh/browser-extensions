@@ -41,12 +41,12 @@ chrome.action.onClicked.addListener(() => {
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     id: "format-json",
-    title: "\u{1F4CB} \u683C\u5F0F\u5316\u9009\u4E2D JSON",
+    title: "\u683C\u5F0F\u5316\u9009\u4E2D JSON",
     contexts: ["selection"]
   });
   chrome.contextMenus.create({
     id: "sniff-json",
-    title: "\u{1F50D} \u63D0\u53D6\u9875\u9762 JSON \u6570\u636E",
+    title: "\u63D0\u53D6\u9875\u9762 JSON \u6570\u636E",
     contexts: ["page"]
   });
 });

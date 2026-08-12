@@ -364,6 +364,24 @@ button:hover { background: var(--accent); color: #fff; border-color: var(--accen
   overflow: auto;
   width: 100%;
 }
+/* SVG 图标 */
+.btn-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: -2px;
+}
+.status-icon {
+  width: 13px;
+  height: 13px;
+  vertical-align: -2px;
+  margin-right: 3px;
+}
+/* 斜杠镜像：去转义 */
+.icon-flip { transform: scaleX(-1); }
+
+/* 暗色主题下提亮深色单色图标（内联 SVG 的 fill 表现属性可被 CSS 覆盖） */
+[data-theme="dark"] .icon-themeable path { fill: #d0d4d9; }
+
 /* 作者信息 */
 .app-author {
   position: fixed;

@@ -25169,7 +25169,8 @@ function createStats(data) {
   const stats = document.createElement("div");
   stats.className = "tree-stats";
   const counts = countNodes2(data);
-  stats.textContent = `\u{1F4CA} \u8282\u70B9: ${counts.total} | \u6DF1\u5EA6: ${counts.depth} | \u5B57\u7B26\u4E32: ${counts.string} | \u6570\u5B57: ${counts.number} | \u5E03\u5C14: ${counts.boolean} | null: ${counts.null}`;
+  stats.innerHTML = STATS_ICON;
+  stats.appendChild(document.createTextNode(` \u8282\u70B9: ${counts.total} | \u6DF1\u5EA6: ${counts.depth} | \u5B57\u7B26\u4E32: ${counts.string} | \u6570\u5B57: ${counts.number} | \u5E03\u5C14: ${counts.boolean} | null: ${counts.null}`));
   return stats;
 }
 function countNodes2(data, depth = 0) {
@@ -25221,11 +25222,12 @@ function destroyTree() {
   }
   expandedNodes.clear();
 }
-var expandedNodes, contextMenuBoundContainers;
+var expandedNodes, contextMenuBoundContainers, STATS_ICON;
 var init_tree_view = __esm({
   "src/tree-view.js"() {
     expandedNodes = /* @__PURE__ */ new Set();
     contextMenuBoundContainers = /* @__PURE__ */ new WeakSet();
+    STATS_ICON = `<svg class="status-icon" viewBox="0 0 1024 1024" aria-hidden="true"><path d="M870.4 755.2H156.8c-38.4 0-70.4-32-70.4-70.4V230.4C86.4 192 118.4 160 156.8 160h713.6c38.4 0 70.4 32 70.4 70.4v454.4c0 38.4-32 70.4-70.4 70.4z" fill="#EDEDED"></path><path d="M262.4 675.2H211.2c-9.6 0-19.2-6.4-19.2-19.2V236.8c0-9.6 6.4-19.2 19.2-19.2h54.4c9.6 0 19.2 6.4 19.2 19.2v422.4c-3.2 9.6-12.8 16-22.4 16z" fill="#5B8FD9"></path><path d="M393.6 675.2h-54.4c-9.6 0-19.2-6.4-19.2-19.2V384c0-9.6 6.4-19.2 19.2-19.2h54.4c9.6 0 19.2 6.4 19.2 19.2v272c0 12.8-9.6 19.2-19.2 19.2z" fill="#FE6D68"></path><path d="M534.4 675.2H480c-9.6 0-19.2-6.4-19.2-19.2v-320c0-9.6 6.4-19.2 19.2-19.2h54.4c9.6 0 19.2 6.4 19.2 19.2v320c0 12.8-9.6 19.2-19.2 19.2z" fill="#5B8FD9"></path><path d="M678.4 675.2h-54.4c-9.6 0-19.2-6.4-19.2-19.2v-169.6c0-9.6 6.4-19.2 19.2-19.2h54.4c9.6 0 19.2 6.4 19.2 19.2v169.6c-3.2 12.8-9.6 19.2-19.2 19.2z" fill="#68D279"></path><path d="M812.8 675.2h-54.4c-9.6 0-19.2-6.4-19.2-19.2v-236.8c0-9.6 6.4-19.2 19.2-19.2h54.4c9.6 0 19.2 6.4 19.2 19.2v236.8c0 12.8-9.6 19.2-19.2 19.2z" fill="#F9D65D"></path><path d="M899.2 867.2H118.4c-19.2 0-32-16-32-32 0-19.2 16-32 32-32H896c19.2 0 32 16 32 32 3.2 19.2-12.8 32-28.8 32z" fill="#5B8FD9"></path></svg>`;
   }
 });
 
@@ -28942,9 +28944,24 @@ function onEditorChange(value) {
     updateStatus(`\u274C \u7B2C ${line} \u884C\u7B2C ${col} \u5217: ${result.error}`);
   }
 }
+var STATUS_ICONS = {
+  "\u2705": `<svg class="status-icon" viewBox="0 0 1050 1024" aria-hidden="true"><path d="M0.040958 673.137212l282.054116-187.237406 139.808572 253.609103S668.406616 229.915165 1021.583505 0.061436c0 0 2.355059 286.702798 28.424535 369.744216 0 0-338.944143 265.466312-599.659381 654.194348 0 0-49.783893-47.469792-450.307701-350.862788z" fill="#07C228"></path></svg>`,
+  "\u274C": `<svg class="status-icon" viewBox="0 0 1024 1024" aria-hidden="true"><path d="M780.885333 200.618667l44.672 26.752c-101.162667 46.208-194.304 115.541333-279.424 207.957333 98.048 77.226667 203.093333 178.858667 315.221334 304.810667-61.098667 29.994667-110.464 66.389333-148.053334 109.184-62.336-134.528-138.794667-248.021333-229.376-340.48-73.642667 94.464-140.629333 207.957333-201.045333 340.48-32.896-39.168-70.314667-68.309333-112.213333-87.381334C254.933333 640 339.029333 536.533333 422.869333 451.584a955.221333 955.221333 0 0 0-226.133333-145.109333l40.874667-40.576c76.757333 20.181333 159.701333 61.738667 248.832 124.757333 98.432-88.874667 196.608-152.234667 294.442666-190.037333z" fill="#FF6D5E"></path></svg>`
+};
 function updateStatus(msg) {
   const el = document.getElementById("statusBar");
-  if (el) el.textContent = msg;
+  if (!el) return;
+  if (!msg) {
+    el.textContent = "";
+    return;
+  }
+  const match = msg.match(/^(✅|❌)\s*/);
+  if (match) {
+    el.innerHTML = STATUS_ICONS[match[1]];
+    el.appendChild(document.createTextNode(msg.slice(match[0].length)));
+  } else {
+    el.textContent = msg;
+  }
 }
 function renderTreeWithGuard(data, sourceText) {
   const analysis = analyzeTreeRender(data, sourceText);
