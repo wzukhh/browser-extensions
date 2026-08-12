@@ -9,12 +9,12 @@ chrome.action.onClicked.addListener(() => {
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     id: 'format-json',
-    title: '📋 格式化选中 JSON',
+    title: '格式化选中 JSON',
     contexts: ['selection'],
   })
   chrome.contextMenus.create({
     id: 'sniff-json',
-    title: '🔍 提取页面 JSON 数据',
+    title: '提取页面 JSON 数据',
     contexts: ['page'],
   })
 })
