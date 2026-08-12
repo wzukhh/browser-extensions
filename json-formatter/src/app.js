@@ -150,6 +150,7 @@ async function init() {
   })
 
   applyEditorSettings(settings)
+  mountStatusBar()
   bindToolbar()
   bindTabs()
   bindBottomPanel()
@@ -186,6 +187,15 @@ function onEditorChange(value) {
     const col = result.position ? result.position.col : '?'
     updateStatus(`❌ 第 ${line} 行第 ${col} 列: ${result.error}`)
   }
+}
+
+// 状态条挂载到 CodeMirror 内容区（.cm-content）底部，不占用面板外部布局空间
+function mountStatusBar() {
+  const statusBarEl = document.createElement('div')
+  statusBarEl.id = 'statusBar'
+  statusBarEl.className = 'editor-status'
+  statusBarEl.hidden = true
+  editor.contentDOM.appendChild(statusBarEl)
 }
 
 const STATUS_ICONS = {
@@ -263,6 +273,7 @@ function applyTheme(theme) {
         fontSize: getSetting('fontSize'),
         fontFamily: getSetting('fontFamily'),
       })
+      mountStatusBar()
     })
   }
 }

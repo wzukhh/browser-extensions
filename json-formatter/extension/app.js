@@ -28914,6 +28914,7 @@ async function init() {
     onChange: debounce(onEditorChange, 300)
   });
   applyEditorSettings(settings);
+  mountStatusBar();
   bindToolbar();
   bindTabs();
   bindBottomPanel();
@@ -28943,6 +28944,13 @@ function onEditorChange(value) {
     const col = result.position ? result.position.col : "?";
     updateStatus(`\u274C \u7B2C ${line} \u884C\u7B2C ${col} \u5217: ${result.error}`);
   }
+}
+function mountStatusBar() {
+  const statusBarEl = document.createElement("div");
+  statusBarEl.id = "statusBar";
+  statusBarEl.className = "editor-status";
+  statusBarEl.hidden = true;
+  editor.contentDOM.appendChild(statusBarEl);
 }
 var STATUS_ICONS = {
   "\u2705": `<svg class="status-icon" viewBox="0 0 1050 1024" aria-hidden="true"><path d="M0.040958 673.137212l282.054116-187.237406 139.808572 253.609103S668.406616 229.915165 1021.583505 0.061436c0 0 2.355059 286.702798 28.424535 369.744216 0 0-338.944143 265.466312-599.659381 654.194348 0 0-49.783893-47.469792-450.307701-350.862788z" fill="#07C228"></path></svg>`,
@@ -29007,6 +29015,7 @@ function applyTheme(theme2) {
         fontSize: getSetting2("fontSize"),
         fontFamily: getSetting2("fontFamily")
       });
+      mountStatusBar();
     });
   }
 }

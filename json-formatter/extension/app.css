@@ -387,7 +387,7 @@ button:hover { background: var(--accent); color: #fff; border-color: var(--accen
   vertical-align: -2px;
   margin-right: 3px;
 }
-/* 编辑器底部状态条：最多 2 行，与编辑区隔离 */
+/* 编辑区内状态条：挂在 .cm-content 底部，最多 2 行，与文本区域区分 */
 .editor-status {
   display: flex;
   align-items: flex-start;
@@ -398,8 +398,8 @@ button:hover { background: var(--accent); color: #fff; border-color: var(--accen
   font-size: 12px;
   line-height: 18px;
   color: var(--text);
-  background: var(--panel-header);
-  border-top: 2px solid var(--border);
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
   overflow: hidden;
   white-space: pre-wrap;
   word-break: break-all;
