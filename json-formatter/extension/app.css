@@ -140,8 +140,8 @@ button:hover { background: var(--accent); color: #fff; border-color: var(--accen
 .bottom-panel-body {
   display: flex;
   flex-direction: column;
-  /* 展开内容超高时内部滚动，避免被视口裁切 */
-  max-height: 55vh;
+  /* 展开时功能区默认占半屏（tabs 行 42px + body） */
+  height: calc(50vh - 42px);
   overflow-y: auto;
 }
 .bottom-panel-body[hidden] {
@@ -197,7 +197,8 @@ button:hover { background: var(--accent); color: #fff; border-color: var(--accen
   gap: 8px;
   align-items: flex-start;
   flex-wrap: wrap;
-  height: 160px;
+  flex: 1;
+  min-height: 0;
   overflow-y: auto;
   scrollbar-width: thin;
 }
