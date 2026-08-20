@@ -41,7 +41,7 @@ import PreviewPanel from './components/PreviewPanel.vue'
 import TemplatePanel from './components/TemplatePanel.vue'
 import VersionHistory from './components/VersionHistory.vue'
 import DialogHost from './components/DialogHost.vue'
-import { exportPng, exportSvg, exportPdf } from './utils/export.js'
+import { exportPng, exportSvg } from './utils/export.js'
 import { useDialogStore } from './stores/dialogStore.js'
 
 const MarkmapPreview = defineAsyncComponent(() => import('./components/MarkmapPreview.vue'))
@@ -89,7 +89,6 @@ async function handleExport(fmt) {
   try {
     if (fmt === 'png') await exportPng(name)
     else if (fmt === 'svg') await exportSvg(name)
-    else if (fmt === 'pdf') await exportPdf(name)
     dialogStore.notify({ title: '导出成功', message: `${name}.${fmt} 已生成`, tone: 'success' })
   } catch (e) {
     dialogStore.notify({ title: '导出失败', message: e.message, tone: 'danger' })

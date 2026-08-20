@@ -15,7 +15,6 @@
     "@codemirror/state": "^6.4.0",
     "@codemirror/view": "^6.26.0",
     "html-to-image": "^1.11.0",
-    "jspdf": "^2.5.1",
     "markdown-it": "^14.3.0",
     "markdown-it-ins": "^4.0.0",
     "markdown-it-mark": "^4.0.0",

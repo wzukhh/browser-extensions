@@ -11,7 +11,7 @@ Chrome / Edge 浏览器插件 — Mermaid 与 Markmap 图形编辑工具。
 - **多工具切换** — 顶部切换 Mermaid / Markmap，各自保留标签页、模板和存档
 - **编辑器** — CodeMirror 6 编辑器，支持 Mermaid 语法和 Markmap Markdown 编辑
 - **实时预览** — Mermaid 输入即渲染；Markmap Markdown 实时生成脑图
-- **导出** — PNG / SVG / PDF 一键导出
+- **导出** — PNG / SVG 一键导出
 - **模板库** — Mermaid / Markmap 独立模板库，支持添加/编辑/删除/批量管理
 - **图表存档** — Ctrl+S 保存当前工具文档，最多 50 条，支持切换管理
 - **主题** — 4 套渲染主题（默认/清澈/暖茶/薄荷），可持久化保存

@@ -12,9 +12,6 @@
       <button class="tool-btn icon-btn" @click="emit('export', 'svg')" data-tip="导出 SVG">
         <img :src="svgIcon" class="tb-icon" alt="SVG">
       </button>
-      <button class="tool-btn icon-btn" @click="emit('export', 'pdf')" data-tip="导出 PDF">
-        <img :src="pdfIcon" class="tb-icon" alt="PDF">
-      </button>
 
       <div class="tb-sep"></div>
 
@@ -46,7 +43,6 @@ const uiStore = useUiStore()
 
 const pngIcon = '/icons/png.svg'
 const svgIcon = '/icons/SVG图标.svg'
-const pdfIcon = '/icons/pdf.svg'
 const tmplIcon = '/icons/模板库.svg'
 const saveIcon = '/icons/保存.svg'
 const histIcon = '/icons/历史.svg'

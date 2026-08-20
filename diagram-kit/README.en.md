@@ -11,7 +11,7 @@ Click the extension icon to open a full-screen page with Mermaid diagram and Mar
 - **Multi-tool switching** — Switch between Mermaid / Markmap from the top bar; each tool keeps its own tabs, templates and archives
 - **Editor** — CodeMirror 6 editor with Mermaid syntax and Markmap Markdown support
 - **Live preview** — Mermaid renders as you type; Markmap Markdown generates the mind map in real time
-- **Export** — One-click PNG / SVG / PDF export
+- **Export** — One-click PNG / SVG export
 - **Template library** — Independent Mermaid / Markmap libraries with add / edit / delete / batch management
 - **Diagram archive** — Ctrl+S saves the current document, up to 50 entries, with switching and management
 - **Themes** — 4 render themes (Default / Clear / Warm Tea / Mint), persistable
