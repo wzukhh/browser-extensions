@@ -17,9 +17,9 @@
         <button class="preview-btn" @click="fullscreen = true">⛶ 全屏</button>
       </div>
     </div>
-    <div class="preview-body" ref="bodyRef" :class="{ 'fit-mode': isFitMode, 'dragging': isDragging }" @dblclick="fullscreen = true">
-      <div class="mermaid-wrap" ref="wrapRef" @wheel.prevent="onWheel"
-        @mousedown.prevent="onDragStart">
+    <div class="preview-body" ref="bodyRef" :class="{ 'fit-mode': isFitMode, 'dragging': isDragging }" @dblclick="onBodyDblClick">
+      <div class="mermaid-wrap" ref="wrapRef" @wheel="onWheel"
+        @mousedown="onDragStart">
         <div v-if="errorMsg" class="preview-error">
           <div class="error-icon">⚠</div>
           <div class="error-title">渲染错误</div>
@@ -183,7 +183,14 @@ function autoFit() {
   svg.style.height = 'auto'
 }
 
+// 报错提示区域自成阅读区：保留原生滚轮，让堆栈能滚动
+function isInsideErrorPanel(target) {
+  return !!target?.closest?.('.preview-error')
+}
+
 function onWheel(e) {
+  if (isInsideErrorPanel(e.target)) return
+  e.preventDefault()
   const svg = getSvg()
   if (!svg) return
   isFitMode.value = false
@@ -223,6 +230,9 @@ function resetDrag(svg) {
 }
 
 function onDragStart(e) {
+  // 报错提示区域允许选中文本、拖动滚动条，不参与画布拖拽
+  if (errorMsg.value) return
+  e.preventDefault()
   if (isFitMode.value) return
   const svg = getSvg()
   if (!svg) return
@@ -248,6 +258,12 @@ function onDragEnd() {
   isDragging.value = false
   document.removeEventListener('mousemove', onDragMove)
   document.removeEventListener('mouseup', onDragEnd)
+}
+
+// 双击报错提示是想选中文字，不该弹出全屏（此时也没有图可看）
+function onBodyDblClick(e) {
+  if (isInsideErrorPanel(e.target)) return
+  fullscreen.value = true
 }
 
 async function renderDiagram(options = {}) {
@@ -340,12 +356,18 @@ onBeforeUnmount(() => {
 .preview-error {
   background: rgba(248, 81, 73, 0.1); border: 1px solid var(--accent-danger);
   border-radius: 8px; padding: 20px; max-width: 500px;
+  margin: auto;                 /* 用 auto margin 居中：靠 align-items 居中时溢出会被两头裁掉 */
+  max-height: 100%;             /* 不超出预览区，超出部分交给 .error-msg 滚动 */
+  display: flex; flex-direction: column;
+  overflow: hidden;
 }
-.error-icon { font-size: 24px; margin-bottom: 8px; }
-.error-title { font-weight: 700; color: var(--accent-danger); margin-bottom: 8px; }
+.error-icon { font-size: 24px; margin-bottom: 8px; flex-shrink: 0; }
+.error-title { font-weight: 700; color: var(--accent-danger); margin-bottom: 8px; flex-shrink: 0; }
 .error-msg {
   font-family: var(--code-font); font-size: 12px; color: var(--accent-danger);
   white-space: pre-wrap; word-break: break-all;
+  overflow: auto;               /* 堆栈可滚动 */
+  min-height: 0;                /* flex 子项默认不收缩，置 0 才会出现滚动条 */
 }
 .preview-empty { color: var(--text-muted); padding: 40px; text-align: center; }
 

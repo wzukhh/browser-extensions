@@ -160,12 +160,17 @@ onBeforeUnmount(() => {
   margin: auto;
   background: rgba(248, 81, 73, 0.1); border: 1px solid var(--accent-danger);
   border-radius: 8px; padding: 20px; max-width: 500px;
+  max-height: calc(100% - 20px); /* 不超出预览区，超出部分交给 .error-msg 滚动 */
+  display: flex; flex-direction: column;
+  overflow: hidden;
 }
-.error-icon { font-size: 24px; margin-bottom: 8px; }
-.error-title { font-weight: 700; color: var(--accent-danger); margin-bottom: 8px; }
+.error-icon { font-size: 24px; margin-bottom: 8px; flex-shrink: 0; }
+.error-title { font-weight: 700; color: var(--accent-danger); margin-bottom: 8px; flex-shrink: 0; }
 .error-msg {
   font-family: var(--code-font); font-size: 12px; color: var(--accent-danger);
   white-space: pre-wrap; word-break: break-all;
+  overflow: auto;                /* 堆栈可滚动 */
+  min-height: 0;                 /* flex 子项默认不收缩，置 0 才会出现滚动条 */
 }
 .preview-empty { color: var(--text-muted); padding: 40px; text-align: center; margin: auto; }
 </style>
