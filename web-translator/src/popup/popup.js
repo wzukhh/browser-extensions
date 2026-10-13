@@ -8,54 +8,63 @@ import { listModels } from "../lib/api.js";
 const DEFAULTS = {
 	apiKey: "",
 	baseUrl: "https://api.deepseek.com",
-	model: "deepseek-chat",
 	targetLang: "zh-CN",
 	showAuthor: true,
+	showSelectionButton: true,
 };
 
-/** 拉取失败 / 未配置 Key 时的兜底列表 */
-const FALLBACK_MODELS = ["deepseek-chat", "deepseek-reasoner"];
-
 const $ = (id) => document.getElementById(id);
+let modelRequestId = 0;
 
-/** 把模型数组填进下拉框，尽量保持当前选中项 */
-function populateModels(models, prevValue) {
+function showModelPlaceholder(label) {
 	const select = $("model");
 	select.replaceChildren();
+	const option = document.createElement("option");
+	option.value = "";
+	option.textContent = label;
+	option.disabled = true;
+	select.appendChild(option);
+	select.value = "";
+	select.disabled = true;
+}
+
+/** 仅恢复本次接口列表中仍存在的已保存/已选择模型 */
+function populateModels(models, preferredModel) {
+	showModelPlaceholder("请选择模型");
+	const select = $("model");
 	for (const id of models) {
 		const opt = document.createElement("option");
 		opt.value = id;
 		opt.textContent = id;
 		select.appendChild(opt);
 	}
-	if (prevValue && models.includes(prevValue)) {
-		select.value = prevValue;
-	} else if (models.includes(DEFAULTS.model)) {
-		select.value = DEFAULTS.model;
-	} else {
-		select.value = models[0] || "";
-	}
+	select.disabled = false;
+	select.value = preferredModel && models.includes(preferredModel) ? preferredModel : models[0];
 }
 
-/** 从表单读配置并拉取模型列表；失败则回落默认选项 */
-async function loadModels() {
+/** 每次打开弹窗和手动刷新时都实时请求模型列表 */
+async function loadModels(preferredModel = $("model").value) {
+	const requestId = ++modelRequestId;
 	const cfg = {
 		apiKey: $("apiKey").value.trim(),
 		baseUrl: $("baseUrl").value.trim() || DEFAULTS.baseUrl,
 	};
-	const prev = $("model").value;
+	showModelPlaceholder("加载中…");
 
 	if (!cfg.apiKey) {
-		populateModels(FALLBACK_MODELS, prev);
+		showModelPlaceholder("填写 API Key 后刷新模型");
+		setStatus("请先填写 API Key，再点击模型旁的刷新按钮", "err");
 		return;
 	}
 	try {
 		const models = await listModels(cfg);
+		if (requestId !== modelRequestId) return;
 		if (!models.length) throw new Error("接口返回空列表");
-		populateModels(models, prev);
+		populateModels(models, preferredModel);
 		setStatus(`✅ 已加载 ${models.length} 个模型`, "ok");
 	} catch (err) {
-		populateModels(FALLBACK_MODELS, prev);
+		if (requestId !== modelRequestId) return;
+		showModelPlaceholder("模型加载失败，请刷新");
 		setStatus(`❌ 加载模型失败：${err.message}`, "err");
 	}
 }
@@ -65,9 +74,9 @@ async function load() {
 	$("apiKey").value = cfg.apiKey || "";
 	$("baseUrl").value = cfg.baseUrl || DEFAULTS.baseUrl;
 	$("targetLang").value = cfg.targetLang || DEFAULTS.targetLang;
-	$("model").value = cfg.model || DEFAULTS.model;
 	$("showAuthor").checked = cfg.showAuthor !== false;
-	await loadModels();
+	$("showSelectionButton").checked = cfg.showSelectionButton !== false;
+	await loadModels(cfg.model || "");
 }
 
 function setStatus(text, cls) {
@@ -83,12 +92,17 @@ $("saveBtn").addEventListener("click", async () => {
 		model: $("model").value,
 		targetLang: $("targetLang").value,
 		showAuthor: $("showAuthor").checked,
+		showSelectionButton: $("showSelectionButton").checked,
 	};
+	if (!cfg.model) {
+		setStatus("请先加载并选择模型", "err");
+		return;
+	}
 	await chrome.storage.local.set(cfg);
 	setStatus("✅ 已保存", "ok");
 });
 
-$("refreshModels").addEventListener("click", loadModels);
+$("refreshModels").addEventListener("click", () => loadModels());
 
 $("testBtn").addEventListener("click", async () => {
 	const cfg = {
@@ -97,9 +111,14 @@ $("testBtn").addEventListener("click", async () => {
 		model: $("model").value,
 		targetLang: $("targetLang").value,
 		showAuthor: $("showAuthor").checked,
+		showSelectionButton: $("showSelectionButton").checked,
 	};
 	if (!cfg.apiKey) {
 		setStatus("⚠️ 请先填写 API Key", "err");
+		return;
+	}
+	if (!cfg.model) {
+		setStatus("请先加载并选择模型", "err");
 		return;
 	}
 	setStatus("⏳ 测试中…", "");

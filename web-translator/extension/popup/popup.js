@@ -25,46 +25,56 @@ async function listModels(config) {
 var DEFAULTS = {
   apiKey: "",
   baseUrl: "https://api.deepseek.com",
-  model: "deepseek-chat",
   targetLang: "zh-CN",
-  showAuthor: true
+  showAuthor: true,
+  showSelectionButton: true
 };
-var FALLBACK_MODELS = ["deepseek-chat", "deepseek-reasoner"];
 var $ = (id) => document.getElementById(id);
-function populateModels(models, prevValue) {
+var modelRequestId = 0;
+function showModelPlaceholder(label) {
   const select = $("model");
   select.replaceChildren();
+  const option = document.createElement("option");
+  option.value = "";
+  option.textContent = label;
+  option.disabled = true;
+  select.appendChild(option);
+  select.value = "";
+  select.disabled = true;
+}
+function populateModels(models, preferredModel) {
+  showModelPlaceholder("\u8BF7\u9009\u62E9\u6A21\u578B");
+  const select = $("model");
   for (const id of models) {
     const opt = document.createElement("option");
     opt.value = id;
     opt.textContent = id;
     select.appendChild(opt);
   }
-  if (prevValue && models.includes(prevValue)) {
-    select.value = prevValue;
-  } else if (models.includes(DEFAULTS.model)) {
-    select.value = DEFAULTS.model;
-  } else {
-    select.value = models[0] || "";
-  }
+  select.disabled = false;
+  select.value = preferredModel && models.includes(preferredModel) ? preferredModel : models[0];
 }
-async function loadModels() {
+async function loadModels(preferredModel = $("model").value) {
+  const requestId = ++modelRequestId;
   const cfg = {
     apiKey: $("apiKey").value.trim(),
     baseUrl: $("baseUrl").value.trim() || DEFAULTS.baseUrl
   };
-  const prev = $("model").value;
+  showModelPlaceholder("\u52A0\u8F7D\u4E2D\u2026");
   if (!cfg.apiKey) {
-    populateModels(FALLBACK_MODELS, prev);
+    showModelPlaceholder("\u586B\u5199 API Key \u540E\u5237\u65B0\u6A21\u578B");
+    setStatus("\u8BF7\u5148\u586B\u5199 API Key\uFF0C\u518D\u70B9\u51FB\u6A21\u578B\u65C1\u7684\u5237\u65B0\u6309\u94AE", "err");
     return;
   }
   try {
     const models = await listModels(cfg);
+    if (requestId !== modelRequestId) return;
     if (!models.length) throw new Error("\u63A5\u53E3\u8FD4\u56DE\u7A7A\u5217\u8868");
-    populateModels(models, prev);
+    populateModels(models, preferredModel);
     setStatus(`\u2705 \u5DF2\u52A0\u8F7D ${models.length} \u4E2A\u6A21\u578B`, "ok");
   } catch (err) {
-    populateModels(FALLBACK_MODELS, prev);
+    if (requestId !== modelRequestId) return;
+    showModelPlaceholder("\u6A21\u578B\u52A0\u8F7D\u5931\u8D25\uFF0C\u8BF7\u5237\u65B0");
     setStatus(`\u274C \u52A0\u8F7D\u6A21\u578B\u5931\u8D25\uFF1A${err.message}`, "err");
   }
 }
@@ -73,9 +83,9 @@ async function load() {
   $("apiKey").value = cfg.apiKey || "";
   $("baseUrl").value = cfg.baseUrl || DEFAULTS.baseUrl;
   $("targetLang").value = cfg.targetLang || DEFAULTS.targetLang;
-  $("model").value = cfg.model || DEFAULTS.model;
   $("showAuthor").checked = cfg.showAuthor !== false;
-  await loadModels();
+  $("showSelectionButton").checked = cfg.showSelectionButton !== false;
+  await loadModels(cfg.model || "");
 }
 function setStatus(text, cls) {
   const el = $("status");
@@ -88,22 +98,32 @@ $("saveBtn").addEventListener("click", async () => {
     baseUrl: $("baseUrl").value.trim() || DEFAULTS.baseUrl,
     model: $("model").value,
     targetLang: $("targetLang").value,
-    showAuthor: $("showAuthor").checked
+    showAuthor: $("showAuthor").checked,
+    showSelectionButton: $("showSelectionButton").checked
   };
+  if (!cfg.model) {
+    setStatus("\u8BF7\u5148\u52A0\u8F7D\u5E76\u9009\u62E9\u6A21\u578B", "err");
+    return;
+  }
   await chrome.storage.local.set(cfg);
   setStatus("\u2705 \u5DF2\u4FDD\u5B58", "ok");
 });
-$("refreshModels").addEventListener("click", loadModels);
+$("refreshModels").addEventListener("click", () => loadModels());
 $("testBtn").addEventListener("click", async () => {
   const cfg = {
     apiKey: $("apiKey").value.trim(),
     baseUrl: $("baseUrl").value.trim() || DEFAULTS.baseUrl,
     model: $("model").value,
     targetLang: $("targetLang").value,
-    showAuthor: $("showAuthor").checked
+    showAuthor: $("showAuthor").checked,
+    showSelectionButton: $("showSelectionButton").checked
   };
   if (!cfg.apiKey) {
     setStatus("\u26A0\uFE0F \u8BF7\u5148\u586B\u5199 API Key", "err");
+    return;
+  }
+  if (!cfg.model) {
+    setStatus("\u8BF7\u5148\u52A0\u8F7D\u5E76\u9009\u62E9\u6A21\u578B", "err");
     return;
   }
   setStatus("\u23F3 \u6D4B\u8BD5\u4E2D\u2026", "");

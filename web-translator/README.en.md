@@ -12,15 +12,15 @@ Selection-based translation browser extension. Select a word, sentence or paragr
 | Phrase | Fixed collocations / idioms / common phrases (model decides) | Overall meaning, usage notes, examples, usage scenarios |
 | Sentence | Complete sentences / clauses / multi-sentence runs / whole paragraphs (model decides) | Full translation, grammar annotations, unknown words (with phonetics), **in-sentence phrase/collocation explanations**, **necessary background knowledge** (memes / allusions / special meanings), tone |
 
-Granularity is not decided by word count: a single unified prompt lets the model judge by semantics and output JSON with a `type` field, which the frontend renders.
+Granularity is not decided by word count: a unified prompt lets the model judge by semantics and stream Markdown with a type marker and fixed sections. The card renders sections as they arrive.
 
 The deeper word/phrase content (roots, examples, etc.) lives in a "More" section — **expanded by default** and collapsible — so cards stay tight but informative. Word examples come with Chinese translations; explained words are bolded.
 
 ## Tech stack
 
 - Manifest V3, vanilla JS (bundled with esbuild, no runtime dependencies)
-- Translation engine: DeepSeek API (`response_format: json_object`, fixed JSON output structure)
-- Cache: `chrome.storage.session` session cache (valid for one browser session, cleared when the browser closes; 1000-entry LRU cap)
+- Translation engine: DeepSeek Chat Completions SSE stream; partial content remains visible if generation stops early
+- Every translation and retry requests the model again; translation results are not cached
 - UI: Shadow DOM floating card, styles isolated from the page
 
 ## Installation & usage
@@ -34,12 +34,13 @@ npm run watch        # dev mode
 1. Build, then open `chrome://extensions` (or `edge://extensions`)
 2. Enable "Developer mode" → "Load unpacked" → select the `extension/` directory
 3. Click the toolbar icon and enter a DeepSeek API Key (get one at <https://platform.deepseek.com/api_keys>)
-4. The model dropdown fetches the latest list from the `/models` API automatically (new DeepSeek models work without code changes); falls back to a default option if fetching fails
-5. Select text on any page → click the floating "📖 Translate" button
+4. The model dropdown fetches a fresh list from the `/models` API every time settings opens. It keeps the selected model if available, otherwise selects the first returned model. Use the refresh icon to retry failed loads
+5. Select text on any page → click the floating "Translate" button, or right-click the selection and choose "翻译选中文本"
 
 ## Shortcuts / interaction
 
-- Select text → "Translate" button floats **directly above the selection** (**no automatic translation**)
+- Select text → "Translate" button floats **directly above the selection** (can be disabled in settings; **no automatic translation**)
+- Right-click selected text → "翻译选中文本" (still works when the floating button is disabled)
 - Click the button → translation card appears (deep content expanded by default)
 - Close: click outside the card / ✕ / `Esc` (**scrolling the page does not close the card** — it floats in the viewport as you read)
 - ✋ Drag the card **by its top edge** → move it freely (once moved, it stops auto-positioning; new selections re-attach it)
@@ -59,13 +60,13 @@ npm run watch        # dev mode
 src/
 ├── manifest.json          # MV3 manifest
 ├── content/content.js     # Selection listener + popup lifecycle
-├── background/background.js  # Cache + API calls (service worker)
+├── background/background.js  # Streaming API calls (service worker)
 ├── popup/                 # Settings page
 └── lib/
-    ├── granularity.js     # Text granularity heuristics (cache key & type fallback only)
-    ├── prompt-builder.js  # ★ single big unified prompt: model judges granularity + JSON fallback (core)
+    ├── granularity.js     # Text granularity heuristics (type fallback)
+    ├── prompt-builder.js  # ★ unified prompt: model chooses granularity and Markdown sections
     ├── api.js             # DeepSeek calls (translate + listModels)
-    ├── cache.js           # Session cache (chrome.storage.session + 1000-entry LRU)
+    ├── markdown-card.js   # Streaming Markdown section parser
     └── renderer.js        # Shadow DOM card + translate button rendering
 ```
 

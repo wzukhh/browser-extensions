@@ -41,8 +41,72 @@ function svgIcon(paths, size = 14) {
   return svg;
 }
 
+// src/lib/markdown-card.js
+var TITLES = /* @__PURE__ */ new Map([
+  ["\u97F3\u6807", "\u97F3\u6807"],
+  ["\u91CA\u4E49", "\u91CA\u4E49"],
+  ["\u8BCD\u4E49", "\u91CA\u4E49"],
+  ["\u7FFB\u8BD1", "\u7FFB\u8BD1"],
+  ["\u8BD1\u6587", "\u7FFB\u8BD1"],
+  ["\u542B\u4E49", "\u7FFB\u8BD1"],
+  ["\u89E3\u91CA", "\u89E3\u91CA"],
+  ["\u4F8B\u53E5", "\u4F8B\u53E5"],
+  ["\u8BCD\u6839\u8BCD\u7F00", "\u8BCD\u6839\u8BCD\u7F00"],
+  ["\u8BB0\u5FC6\u70B9", "\u8BB0\u5FC6\u70B9"],
+  ["\u4F7F\u7528\u573A\u666F", "\u4F7F\u7528\u573A\u666F"],
+  ["\u7528\u6CD5", "\u4F7F\u7528\u573A\u666F"],
+  ["\u8BED\u6C14", "\u8BED\u6C14"],
+  ["\u8BED\u6CD5\u6279\u6CE8", "\u8BED\u6CD5\u6279\u6CE8"],
+  ["\u8BED\u6CD5", "\u8BED\u6CD5\u6279\u6CE8"],
+  ["\u751F\u8BCD", "\u751F\u8BCD"],
+  ["\u8BCD\u6C47", "\u751F\u8BCD"],
+  ["\u77ED\u8BED\u642D\u914D", "\u77ED\u8BED\u642D\u914D"],
+  ["\u77ED\u8BED", "\u77ED\u8BED\u642D\u914D"],
+  ["\u80CC\u666F\u77E5\u8BC6", "\u80CC\u666F\u77E5\u8BC6"],
+  ["\u80CC\u666F", "\u80CC\u666F\u77E5\u8BC6"]
+]);
+function parseCardMarkdown(markdown, fallbackType = "sentence") {
+  const lines = String(markdown || "").replace(/\r\n?/g, "\n").split("\n");
+  const sections = [];
+  let type = fallbackType;
+  let current = null;
+  for (const line of lines) {
+    const typeMatch = line.trim().match(/^(?:类型|type)\s*[:：]\s*(word|phrase|sentence)\s*$/i);
+    if (typeMatch) {
+      type = typeMatch[1].toLowerCase();
+      continue;
+    }
+    if (/^(?:类型|type)\s*[:：]/i.test(line.trim())) continue;
+    const heading = line.trim().match(/^#{1,3}\s*(.+?)\s*#*\s*$/);
+    if (heading) {
+      const title = heading[1].replace(/[：:]$/, "").trim();
+      current = { title: TITLES.get(title) || title, lines: [] };
+      sections.push(current);
+      continue;
+    }
+    if (/^\s*#/.test(line) || /^\s*```/.test(line)) continue;
+    if (!current) {
+      if (!line.trim()) continue;
+      current = { title: type === "word" ? "\u91CA\u4E49" : "\u7FFB\u8BD1", lines: [] };
+      sections.push(current);
+    }
+    current.lines.push(line);
+  }
+  return {
+    type: ["word", "phrase", "sentence"].includes(type) ? type : "sentence",
+    sections: sections.map(({ title, lines: lines2 }) => ({ title, lines: trimBlank(lines2) })).filter(({ lines: lines2 }) => lines2.some((line) => line.trim()))
+  };
+}
+function trimBlank(lines) {
+  let start = 0;
+  let end = lines.length;
+  while (start < end && !lines[start].trim()) start++;
+  while (end > start && !lines[end - 1].trim()) end--;
+  return lines.slice(start, end);
+}
+
 // src/lib/renderer.js
-var WIDTH = 380;
+var WIDTH = 440;
 var BADGE_LABELS = {
   word: "\u5355\u8BCD",
   phrase: "\u77ED\u8BED",
@@ -54,7 +118,8 @@ var STYLE = `
 * { box-sizing: border-box; margin: 0; padding: 0; }
 .wt-card {
   width: ${WIDTH}px;
-  max-height: 480px;
+  max-width: calc(100vw - 24px);
+  max-height: min(70vh, calc(100vh - 24px));
   overflow-y: auto;
   background: #ffffff;
   color: #1f2328;
@@ -102,6 +167,18 @@ var STYLE = `
 @keyframes wt-spin { to { transform: rotate(360deg); } }
 .wt-error { color: #cf222e; padding: 6px 0; }
 .wt-error .wt-retry { color: #4a6cf7; cursor: pointer; text-decoration: underline; margin-left: 8px; }
+.wt-stream-status { display: flex; align-items: center; gap: 7px; margin-top: 10px; color: #6e7781; font-size: 11px; }
+.wt-stream-status .wt-spinner { width: 12px; height: 12px; }
+.wt-stream-warning { margin-top: 10px; padding: 7px 9px; border-radius: 6px; background: #fff8e6; color: #7a5b00; font-size: 12px; }
+.wt-stream-warning .wt-retry { color: #4a6cf7; cursor: pointer; margin-left: 6px; }
+.wt-md p + p { margin-top: 6px; }
+.wt-md strong { color: #1f2328; font-weight: 700; }
+.wt-md em { font-style: italic; }
+.wt-md code { background: #f6f8fa; padding: 1px 3px; border-radius: 3px; }
+.wt-md blockquote { border-left: 2px solid #b8c5ff; padding-left: 8px; color: #57606a; margin: 5px 0; }
+.wt-md .wt-ul { margin: 3px 0; }
+.wt-md-primary { font-size: 15px; font-weight: 600; color: #0b1220; line-height: 1.6; }
+.wt-md-primary .wt-ul { font-size: 13px; font-weight: 400; }
 
 /* word */
 .wt-phonetic { color: #6e7781; font-size: 12px; margin-bottom: 6px; }
@@ -198,26 +275,6 @@ function section(title, ...children) {
   for (const c of children) s.appendChild(c);
   return s;
 }
-function ulList(rows) {
-  const ul = el("ul", "wt-ul");
-  for (const row of rows) {
-    const li = document.createElement("li");
-    if (typeof row === "string") {
-      li.textContent = row;
-    } else {
-      if (row.cls) li.className = row.cls;
-      for (const part of row.parts || []) {
-        if (part.sep) li.appendChild(document.createTextNode(part.sep));
-        const node = part.bold ? document.createElement("b") : document.createElement("span");
-        if (part.cls) node.className = part.cls;
-        if (part.text !== void 0) node.textContent = part.text;
-        li.appendChild(node);
-      }
-    }
-    ul.appendChild(li);
-  }
-  return ul;
-}
 function createTrigger({ onClick }) {
   const host = document.createElement("div");
   host.id = "wt-trigger-host";
@@ -247,7 +304,8 @@ function createCard(opts) {
   shadow.appendChild(style);
   const card2 = el("div", "wt-card");
   shadow.appendChild(card2);
-  const { sourceText, onClose, onPin, onRetry, onMove } = opts;
+  const { sourceText, onClose, onPin, onRetry, onMove, isActive } = opts;
+  let currentSourceText = sourceText;
   let granularity = opts.granularity;
   const header = el("div", "wt-header");
   header.appendChild(el("span", "wt-badge", BADGE_LABELS[granularity] || ""));
@@ -286,8 +344,13 @@ function createCard(opts) {
   }
   card2.addEventListener("scroll", updateFade, { passive: true });
   let pinned2 = false;
-  let lastData = null;
+  let streamMarkdown = null;
+  let moreOpen = true;
   const setPinned = (force) => {
+    if (isActive && !isActive()) {
+      onClose?.();
+      return;
+    }
     pinned2 = typeof force === "boolean" ? force : !pinned2;
     pinBtn.classList.toggle("wt-pinned", pinned2);
     onPin?.(pinned2);
@@ -300,9 +363,10 @@ function createCard(opts) {
       copyResult.className = "wt-copy-result";
     };
     try {
-      await navigator.clipboard.writeText(
-        buildCardMarkdown(sourceText, lastData?.type || granularity, lastData)
-      );
+      const markdown = `# ${BADGE_LABELS[granularity] || "\u7FFB\u8BD1"} \xB7 ${currentSourceText}
+
+${streamMarkdown || ""}`;
+      await navigator.clipboard.writeText(markdown);
       copyResult.textContent = "\u5DF2\u590D\u5236";
       copyResult.classList.add("wt-copy-ok");
     } catch {
@@ -357,13 +421,15 @@ function createCard(opts) {
     /** 更新粒度与原文（复用卡片时调用） */
     setContext(g, source) {
       granularity = g;
-      lastData = null;
+      currentSourceText = source;
+      streamMarkdown = null;
+      moreOpen = true;
       card2.querySelector(".wt-badge").textContent = BADGE_LABELS[g] || "";
       srcEl.textContent = source;
       srcEl.title = source;
     },
     updateLoading() {
-      lastData = null;
+      streamMarkdown = null;
       body.replaceChildren();
       const loading = el("div", "wt-loading");
       loading.appendChild(el("div", "wt-spinner"));
@@ -371,12 +437,27 @@ function createCard(opts) {
       body.appendChild(loading);
       updateFade();
     },
-    renderResult(data) {
-      lastData = data;
-      const type = normalizeType(data?.type, granularity);
-      card2.querySelector(".wt-badge").textContent = BADGE_LABELS[type] || "";
-      const frag = renderByGranularity(type, data);
-      body.replaceChildren(frag);
+    renderStream(markdown, { complete = false, warning = "" } = {}) {
+      streamMarkdown = markdown;
+      const parsed = parseCardMarkdown(markdown, granularity);
+      granularity = parsed.type;
+      card2.querySelector(".wt-badge").textContent = BADGE_LABELS[parsed.type] || "\u7FFB\u8BD1";
+      const view = renderMarkdownCard(parsed, () => moreOpen, (open) => {
+        moreOpen = open;
+      });
+      if (!complete && !warning) {
+        const status = el("div", "wt-stream-status");
+        status.append(el("span", "wt-spinner"), el("span", null, "\u6B63\u5728\u751F\u6210\u2026"));
+        view.appendChild(status);
+      }
+      if (warning) {
+        const notice = el("div", "wt-stream-warning", warning);
+        const retry = el("span", "wt-retry", "\u91CD\u8BD5");
+        retry.addEventListener("click", () => onRetry?.());
+        notice.appendChild(retry);
+        view.appendChild(notice);
+      }
+      body.replaceChildren(view);
       updateFade();
     },
     renderError(message) {
@@ -391,180 +472,111 @@ function createCard(opts) {
     }
   };
 }
-function normalizeType(type, fallback) {
-  const valid = [GRANULARITY.WORD, GRANULARITY.PHRASE, GRANULARITY.SENTENCE];
-  if (valid.includes(type)) return type;
-  if (valid.includes(fallback)) return fallback;
-  return GRANULARITY.SENTENCE;
-}
-function renderByGranularity(granularity, d) {
-  const wrap = document.createElement("div");
-  if (granularity === GRANULARITY.WORD) return renderWord(wrap, d);
-  if (granularity === GRANULARITY.PHRASE) return renderPhrase(wrap, d);
-  if (granularity === GRANULARITY.SENTENCE) return renderSentence(wrap, d);
+function renderMarkdownCard(parsed, getMoreOpen, setMoreOpen) {
+  const wrap = el("div", "wt-md");
+  const extras = [];
+  const primaryTitles = parsed.type === "word" ? ["\u97F3\u6807", "\u91CA\u4E49"] : parsed.type === "phrase" ? ["\u7FFB\u8BD1", "\u89E3\u91CA"] : ["\u7FFB\u8BD1", "\u8BED\u6C14"];
+  const hasKnownPrimary = parsed.sections.some((entry) => primaryTitles.includes(entry.title));
+  for (const [index, entry] of parsed.sections.entries()) {
+    const primary = primaryTitles.includes(entry.title) || !hasKnownPrimary && index === 0;
+    const block = parsed.type === "word" && entry.title === "\u91CA\u4E49" ? renderWordDefinitions(entry.lines) : renderMarkdownBlock(entry.lines);
+    if (primary) {
+      const cls = entry.title === "\u97F3\u6807" ? "wt-phonetic" : entry.title === "\u7FFB\u8BD1" ? "wt-md-primary" : entry.title === "\u89E3\u91CA" || entry.title === "\u8BED\u6C14" ? "wt-explanation" : entry.title === "\u91CA\u4E49" ? "wt-md-defs" : "wt-md-primary";
+      block.classList.add(cls);
+      wrap.appendChild(block);
+    } else {
+      if (entry.title === "\u80CC\u666F\u77E5\u8BC6") block.classList.add("wt-bg-note");
+      extras.push(section(entry.title, block));
+    }
+  }
+  if (extras.length) {
+    const btn = el("button", "wt-more-btn", getMoreOpen() ? "\u6536\u8D77 \u25B4" : "\u66F4\u591A \u25BE");
+    const more = el("div", getMoreOpen() ? "wt-more wt-open" : "wt-more");
+    for (const extra of extras) more.appendChild(extra);
+    btn.addEventListener("click", () => {
+      const open = more.classList.toggle("wt-open");
+      setMoreOpen(open);
+      btn.textContent = open ? "\u6536\u8D77 \u25B4" : "\u66F4\u591A \u25BE";
+    });
+    wrap.append(btn, more);
+  }
   return wrap;
 }
-function renderWord(wrap, d) {
-  if (d.phonetic) wrap.appendChild(el("div", "wt-phonetic", d.phonetic));
-  for (const item of d.pos || []) {
+function renderWordDefinitions(lines) {
+  const block = el("div");
+  for (const line of lines) {
+    const match = line.match(/^\s*[-*]\s+\*\*(.+?)\*\*\s*(.+)$/);
+    if (!match) {
+      block.appendChild(renderMarkdownBlock([line]));
+      continue;
+    }
     const row = el("div", "wt-pos-item");
-    row.appendChild(el("span", "wt-pos-tag", item.pos || ""));
-    row.appendChild(el("span", "wt-def", item.def || ""));
-    if (item.example) {
+    row.appendChild(el("span", "wt-pos-tag", match[1]));
+    const [definition, examplePart] = match[2].split(/例[:：]/, 2);
+    const def = el("span", "wt-def");
+    appendMarkdownInline(def, definition.trim());
+    row.appendChild(def);
+    if (examplePart) {
+      const [example, translation] = examplePart.split(/译[:：]/, 2);
       const ex = el("div", "wt-example");
       ex.appendChild(document.createTextNode("e.g. "));
-      appendFormatted(ex, item.example);
-      if (item.exampleZh) {
-        ex.appendChild(document.createTextNode(" \u2014\u2014 "));
-        ex.appendChild(el("span", "wt-example-zh", item.exampleZh));
-      }
+      appendMarkdownInline(ex, example.trim());
+      if (translation) ex.appendChild(el("span", "wt-example-zh", ` \u2014\u2014 ${translation.trim()}`));
       row.appendChild(ex);
     }
-    wrap.appendChild(row);
+    block.appendChild(row);
   }
-  const extra = [];
-  if (d.roots) extra.push(section("\u8BCD\u6839\u8BCD\u7F00", el("div", null, d.roots)));
-  if (d.memory) extra.push(section("\u8BB0\u5FC6\u70B9", el("div", null, d.memory)));
-  appendMore(wrap, extra);
-  return wrap;
+  return block;
 }
-function renderPhrase(wrap, d) {
-  wrap.appendChild(el("div", "wt-translation", d.translation || ""));
-  if (d.explanation)
-    wrap.appendChild(el("div", "wt-explanation", d.explanation));
-  const extra = [];
-  if (d.examples?.length) extra.push(section("\u4F8B\u53E5", ulList(d.examples)));
-  if (d.usage) extra.push(section("\u4F7F\u7528\u573A\u666F", el("div", null, d.usage)));
-  appendMore(wrap, extra);
-  return wrap;
-}
-function renderSentence(wrap, d) {
-  wrap.appendChild(el("div", "wt-translation", d.translation || ""));
-  if (d.tone) wrap.appendChild(el("div", "wt-explanation", d.tone));
-  const extra = [];
-  if (d.grammar?.length) extra.push(section("\u8BED\u6CD5\u6279\u6CE8", ulList(d.grammar)));
-  if (d.vocab?.length) {
-    extra.push(
-      section(
-        "\u751F\u8BCD",
-        ulList(
-          d.vocab.map((v) => ({
-            cls: "wt-vocab",
-            parts: [
-              { cls: "w", text: v.word || "" },
-              ...v.phonetic ? [{ cls: "ph", text: v.phonetic }] : [],
-              { sep: " \u2014 ", text: v.meaning || "" }
-            ]
-          }))
-        )
-      )
-    );
-  }
-  const phrases = d.phrases?.length ? d.phrases : d.idioms;
-  if (phrases?.length) {
-    extra.push(
-      section(
-        "\u77ED\u8BED\u642D\u914D",
-        ulList(
-          phrases.map((p) => ({
-            parts: [
-              { bold: true, text: p.phrase || "" },
-              { sep: " \u2014 ", text: p.meaning || "" }
-            ]
-          }))
-        )
-      )
-    );
-  }
-  if (d.background) {
-    extra.push(
-      section("\u80CC\u666F\u77E5\u8BC6", el("div", "wt-bg-note", `\u{1F4A1} ${d.background}`))
-    );
-  }
-  appendMore(wrap, extra);
-  return wrap;
-}
-function appendMore(wrap, sections) {
-  if (!sections?.length) return;
-  const btn = el("button", "wt-more-btn", "\u6536\u8D77 \u25B4");
-  const more = el("div", "wt-more wt-open");
-  for (const s of sections) more.appendChild(s);
-  btn.addEventListener("click", () => {
-    const open = more.classList.toggle("wt-open");
-    btn.textContent = open ? "\u6536\u8D77 \u25B4" : "\u66F4\u591A \u25BE";
-  });
-  wrap.appendChild(btn);
-  wrap.appendChild(more);
-}
-function appendFormatted(parent, text) {
-  const parts = String(text || "").split(/\*\*(.+?)\*\*/g);
-  for (let i = 0; i < parts.length; i++) {
-    const part = parts[i];
-    if (!part) continue;
-    if (i % 2 === 1) {
-      const b = document.createElement("b");
-      b.textContent = part;
-      parent.appendChild(b);
-    } else {
-      parent.appendChild(document.createTextNode(part));
+function renderMarkdownBlock(lines) {
+  const block = el("div");
+  let list = null;
+  let paragraph = null;
+  for (const line of lines) {
+    const value = line.trim();
+    if (!value) {
+      list = null;
+      paragraph = null;
+      continue;
     }
-  }
-}
-function buildCardMarkdown(sourceText, granularity, d) {
-  const badge = BADGE_LABELS[granularity] || "";
-  const lines = [`# ${badge} \xB7 ${sourceText}`];
-  if (!d) return lines.join("\n");
-  if (granularity === GRANULARITY.WORD) {
-    if (d.phonetic) lines.push(`
-**\u97F3\u6807**\uFF1A${d.phonetic}`);
-    for (const item of d.pos || []) {
-      lines.push(`
-**${item.pos || ""}** ${item.def || ""}`);
-      if (item.example) {
-        lines.push(
-          `> \u4F8B\uFF1A${item.example}${item.exampleZh ? ` \u2014\u2014 ${item.exampleZh}` : ""}`
-        );
+    const bullet = value.match(/^(?:[-*•]|\d+[.)])\s+(.+)$/);
+    if (bullet) {
+      paragraph = null;
+      if (!list) {
+        list = el("ul", "wt-ul");
+        block.appendChild(list);
       }
+      const item = el("li");
+      appendMarkdownInline(item, bullet[1]);
+      list.appendChild(item);
+      continue;
     }
-    if (d.roots) lines.push(`
-**\u8BCD\u6839\u8BCD\u7F00**\uFF1A${d.roots}`);
-    if (d.memory) lines.push(`
-**\u8BB0\u5FC6\u70B9**\uFF1A${d.memory}`);
-  } else if (granularity === GRANULARITY.PHRASE) {
-    lines.push(`
-**\u542B\u4E49**\uFF1A${d.translation || ""}`);
-    if (d.explanation) lines.push(`**\u89E3\u91CA**\uFF1A${d.explanation}`);
-    if (d.examples?.length) {
-      lines.push("\n**\u4F8B\u53E5**\uFF1A");
-      for (const e of d.examples) lines.push(`- ${e}`);
+    list = null;
+    if (value.startsWith("> ")) {
+      paragraph = null;
+      const quote = el("blockquote");
+      appendMarkdownInline(quote, value.slice(2));
+      block.appendChild(quote);
+      continue;
     }
-    if (d.usage) lines.push(`
-**\u4F7F\u7528\u573A\u666F**\uFF1A${d.usage}`);
-  } else if (granularity === GRANULARITY.SENTENCE) {
-    lines.push(`
-**\u7FFB\u8BD1**\uFF1A${d.translation || ""}`);
-    if (d.tone) lines.push(`**\u8BED\u6C14**\uFF1A${d.tone}`);
-    if (d.grammar?.length) {
-      lines.push("\n**\u8BED\u6CD5\u6279\u6CE8**\uFF1A");
-      for (const g of d.grammar) lines.push(`- ${g}`);
-    }
-    if (d.vocab?.length) {
-      lines.push("\n**\u751F\u8BCD**\uFF1A");
-      for (const v of d.vocab)
-        lines.push(
-          `- **${v.word || ""}**${v.phonetic ? ` ${v.phonetic}` : ""} \u2014 ${v.meaning || ""}`
-        );
-    }
-    const phrasesList = d.phrases?.length ? d.phrases : d.idioms;
-    if (phrasesList?.length) {
-      lines.push("\n**\u77ED\u8BED\u642D\u914D**\uFF1A");
-      for (const p of phrasesList)
-        lines.push(`- **${p.phrase || ""}** \u2014 ${p.meaning || ""}`);
-    }
-    if (d.background) lines.push(`
-**\u80CC\u666F\u77E5\u8BC6**\uFF1A\u{1F4A1} ${d.background}`);
+    if (!paragraph) {
+      paragraph = el("p");
+      block.appendChild(paragraph);
+    } else paragraph.appendChild(document.createTextNode(" "));
+    appendMarkdownInline(paragraph, value);
   }
-  return lines.join("\n");
+  return block;
+}
+function appendMarkdownInline(parent, value) {
+  const pattern = /(\*\*([^*]+)\*\*|__([^_]+)__|\*([^*]+)\*|`([^`]+)`)/g;
+  let start = 0;
+  for (const match of value.matchAll(pattern)) {
+    if (match.index > start) parent.appendChild(document.createTextNode(value.slice(start, match.index)));
+    const tag = match[2] || match[3] ? "strong" : match[4] ? "em" : "code";
+    parent.appendChild(el(tag, null, match[2] || match[3] || match[4] || match[5]));
+    start = match.index + match[0].length;
+  }
+  if (start < value.length) parent.appendChild(document.createTextNode(value.slice(start)));
 }
 
 // src/content/content.js
@@ -577,21 +589,51 @@ var dragged = false;
 var lastRect = null;
 var currentText = null;
 var requestId = 0;
+var activePort = null;
 var showAuthor = true;
+var showSelectionButton = true;
+function runtimeAvailable() {
+  try {
+    return !!(chrome?.runtime?.id && chrome.runtime.connect);
+  } catch {
+    return false;
+  }
+}
+function disconnectPort(port) {
+  if (!port) return;
+  try {
+    port.disconnect();
+  } catch {
+  }
+}
 if (chrome?.storage?.local) {
-  chrome.storage.local.get({ showAuthor: true }, (cfg) => {
+  chrome.storage.local.get({ showAuthor: true, showSelectionButton: true }, (cfg) => {
     showAuthor = !!cfg.showAuthor;
+    showSelectionButton = cfg.showSelectionButton !== false;
+    if (!showSelectionButton) hideTrigger();
   });
   chrome.storage.onChanged.addListener((changes, area) => {
-    if (area !== "local" || !("showAuthor" in changes)) return;
-    showAuthor = !!changes.showAuthor.newValue;
-    card?.setShowAuthor(showAuthor);
+    if (area !== "local") return;
+    if ("showAuthor" in changes) {
+      showAuthor = !!changes.showAuthor.newValue;
+      card?.setShowAuthor(showAuthor);
+    }
+    if ("showSelectionButton" in changes) {
+      showSelectionButton = changes.showSelectionButton.newValue !== false;
+      if (!showSelectionButton) hideTrigger();
+    }
   });
 }
 function onMouseUp(event) {
+  if (!runtimeAvailable()) {
+    hideAll();
+    return;
+  }
+  if (event.button !== 0 || !showSelectionButton) return;
   if (card && event.composedPath().includes(card.root)) return;
   if (trigger && event.composedPath().includes(trigger.root)) return;
   setTimeout(() => {
+    if (!showSelectionButton) return;
     const sel = window.getSelection();
     if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return;
     const raw = sel.toString();
@@ -647,8 +689,13 @@ function showCard(text, granularity, rect) {
       granularity,
       sourceText: text,
       showAuthor,
+      isActive: runtimeAvailable,
       onClose: hideCard,
       onPin: (p) => {
+        if (!runtimeAvailable()) {
+          hideCard();
+          return;
+        }
         pinned = p;
       },
       onRetry: () => requestTranslate(currentText),
@@ -660,43 +707,89 @@ function showCard(text, granularity, rect) {
   }
   dragged = false;
   card.setContext(granularity, text);
-  positionCard(rect);
   requestTranslate(text);
 }
 function requestTranslate(text) {
   if (!card) return;
-  if (!chrome?.runtime?.sendMessage) {
+  if (!runtimeAvailable()) {
     card.renderError(
       "\u65E0\u6CD5\u8C03\u7528\u6269\u5C55\u540E\u53F0\uFF1A\u8BF7\u5237\u65B0\u9875\u9762\u540E\u91CD\u8BD5\uFF08\u82E5\u521A\u91CD\u8F7D\u8FC7\u6269\u5C55\uFF0C\u5237\u65B0\u9875\u9762\u5373\u53EF\uFF09"
     );
     return;
   }
+  if (activePort) {
+    disconnectPort(activePort);
+    activePort = null;
+  }
   const id = ++requestId;
   card.updateLoading();
-  positionCard(lastRect);
   const granularity = detectGranularity(text);
-  chrome.runtime.sendMessage(
-    { type: "translate", text, granularity },
-    (resp) => {
-      if (id !== requestId) return;
-      if (chrome.runtime.lastError) {
-        card.renderError(chrome.runtime.lastError.message);
-      } else if (!resp?.ok) {
-        card.renderError(resp?.error || "\u7FFB\u8BD1\u5931\u8D25");
-      } else {
-        card.renderResult(resp.data);
-      }
-      positionCard(lastRect);
+  positionCard(lastRect, { expectGrowth: true });
+  let markdown = "";
+  let settled = false;
+  let port;
+  try {
+    port = chrome.runtime.connect({ name: "translate-stream" });
+  } catch (err) {
+    card.renderError(err.message || "\u65E0\u6CD5\u8FDE\u63A5\u6269\u5C55\u540E\u53F0");
+    return;
+  }
+  activePort = port;
+  port.onMessage.addListener((msg) => {
+    if (id !== requestId || !card) return;
+    if (!runtimeAvailable()) {
+      hideAll();
+      return;
     }
-  );
+    if (msg.type === "delta") {
+      markdown += msg.text || "";
+      card.renderStream(markdown);
+    } else if (msg.type === "done") {
+      settled = true;
+      if (msg.data?.format === "markdown") {
+        card.renderStream(msg.data.markdown, {
+          complete: true,
+          warning: msg.incomplete ? "\u56DE\u7B54\u8FBE\u5230\u957F\u5EA6\u4E0A\u9650\uFF0C\u4EE5\u4E0B\u5185\u5BB9\u53EF\u80FD\u672A\u5B8C\u6210\u3002" : ""
+        });
+      } else {
+        card.renderError("\u6536\u5230\u672A\u77E5\u54CD\u5E94\u683C\u5F0F\uFF0C\u8BF7\u91CD\u8BD5");
+      }
+      disconnectPort(port);
+      activePort = null;
+    } else if (msg.type === "error") {
+      settled = true;
+      if (markdown.trim()) card.renderStream(markdown, { complete: true, warning: `\u751F\u6210\u4E2D\u65AD\uFF1A${msg.error}` });
+      else card.renderError(msg.error || "\u7FFB\u8BD1\u5931\u8D25");
+      disconnectPort(port);
+      activePort = null;
+    }
+    positionCard(lastRect, { keepTop: true });
+  });
+  port.onDisconnect.addListener(() => {
+    if (id !== requestId || settled || !card) return;
+    activePort = null;
+    const reason = runtimeAvailable() ? "\u8FDE\u63A5\u4E2D\u65AD\uFF0C\u8BF7\u91CD\u8BD5\u3002" : "\u6269\u5C55\u5DF2\u91CD\u65B0\u52A0\u8F7D\uFF0C\u8BF7\u5237\u65B0\u6B64\u7F51\u9875\u540E\u91CD\u8BD5\u3002";
+    if (markdown.trim()) card.renderStream(markdown, { complete: true, warning: reason });
+    else card.renderError(reason);
+  });
+  try {
+    port.postMessage({ type: "translate", text, granularity });
+  } catch {
+    settled = true;
+    activePort = null;
+    disconnectPort(port);
+    card.renderError("\u6269\u5C55\u8FDE\u63A5\u5DF2\u5931\u6548\uFF0C\u8BF7\u5237\u65B0\u6B64\u7F51\u9875\u540E\u91CD\u8BD5");
+  }
 }
-function positionCard(rect) {
+function positionCard(rect, { expectGrowth = false, keepTop = false } = {}) {
   if (dragged) return;
   const margin = 12;
-  const w = card.el.offsetWidth || 380;
-  const h = card.el.offsetHeight || 200;
+  const w = card.el.offsetWidth || 440;
+  const actualHeight = card.el.offsetHeight || 200;
+  const maxHeight = Math.min(window.innerHeight * 0.7, window.innerHeight - 24);
+  const h = expectGrowth ? Math.max(actualHeight, maxHeight) : actualHeight;
   let x = (window.innerWidth - w) / 2;
-  let y = (window.innerHeight - h) / 2;
+  let y = keepTop ? Number.parseFloat(card.root.style.top) || margin : (window.innerHeight - h) / 2;
   x = Math.max(margin, Math.min(x, window.innerWidth - w - margin));
   y = Math.max(margin, Math.min(y, window.innerHeight - h - margin));
   card.root.style.position = "fixed";
@@ -705,6 +798,11 @@ function positionCard(rect) {
   card.root.style.zIndex = "2147483647";
 }
 function hideCard() {
+  requestId++;
+  if (activePort) {
+    disconnectPort(activePort);
+    activePort = null;
+  }
   if (card) {
     card.root.remove();
     card = null;
@@ -717,6 +815,22 @@ function hideAll() {
   hideCard();
 }
 document.addEventListener("mouseup", onMouseUp);
+chrome.runtime.onMessage.addListener((message) => {
+  if (message?.type !== "translate-selection" || !runtimeAvailable()) return;
+  const text = normalizeText(message.text || "");
+  if (text.length < MIN_LEN || text.length > MAX_LEN) return;
+  const selection = window.getSelection();
+  const rect = selection?.rangeCount && !selection.isCollapsed ? selection.getRangeAt(0).getBoundingClientRect() : {
+    left: window.innerWidth / 2,
+    right: window.innerWidth / 2,
+    top: window.innerHeight / 2,
+    bottom: window.innerHeight / 2
+  };
+  hideTrigger();
+  currentText = text;
+  lastRect = rect;
+  showCard(text, detectGranularity(text), rect);
+});
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && (card || trigger)) hideAll();
 });

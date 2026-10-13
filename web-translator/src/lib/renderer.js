@@ -1,5 +1,5 @@
 /**
- * 浮窗卡片渲染器：把 LLM 返回的分级 JSON 渲染成紧凑卡片。
+ * 浮窗卡片渲染器：把 LLM 流式 Markdown 渲染成紧凑卡片。
  * 使用 Shadow DOM 隔离样式，避免被页面 CSS 污染。
  *
  * 信息架构（"详细但不啰嗦"）：
@@ -9,10 +9,10 @@
  * 全部用 DOM API 构建节点（textContent），不用 innerHTML，杜绝注入面。
  */
 
-import { GRANULARITY } from "./granularity.js";
 import { svgIcon, PIN_ICON, COPY_ICON, TRANSLATE_ICON } from "./icons.js";
+import { parseCardMarkdown } from "./markdown-card.js";
 
-const WIDTH = 380;
+const WIDTH = 440;
 const BADGE_LABELS = {
 	word: "单词",
 	phrase: "短语",
@@ -25,7 +25,8 @@ const STYLE = `
 * { box-sizing: border-box; margin: 0; padding: 0; }
 .wt-card {
   width: ${WIDTH}px;
-  max-height: 480px;
+  max-width: calc(100vw - 24px);
+  max-height: min(70vh, calc(100vh - 24px));
   overflow-y: auto;
   background: #ffffff;
   color: #1f2328;
@@ -73,6 +74,18 @@ const STYLE = `
 @keyframes wt-spin { to { transform: rotate(360deg); } }
 .wt-error { color: #cf222e; padding: 6px 0; }
 .wt-error .wt-retry { color: #4a6cf7; cursor: pointer; text-decoration: underline; margin-left: 8px; }
+.wt-stream-status { display: flex; align-items: center; gap: 7px; margin-top: 10px; color: #6e7781; font-size: 11px; }
+.wt-stream-status .wt-spinner { width: 12px; height: 12px; }
+.wt-stream-warning { margin-top: 10px; padding: 7px 9px; border-radius: 6px; background: #fff8e6; color: #7a5b00; font-size: 12px; }
+.wt-stream-warning .wt-retry { color: #4a6cf7; cursor: pointer; margin-left: 6px; }
+.wt-md p + p { margin-top: 6px; }
+.wt-md strong { color: #1f2328; font-weight: 700; }
+.wt-md em { font-style: italic; }
+.wt-md code { background: #f6f8fa; padding: 1px 3px; border-radius: 3px; }
+.wt-md blockquote { border-left: 2px solid #b8c5ff; padding-left: 8px; color: #57606a; margin: 5px 0; }
+.wt-md .wt-ul { margin: 3px 0; }
+.wt-md-primary { font-size: 15px; font-weight: 600; color: #0b1220; line-height: 1.6; }
+.wt-md-primary .wt-ul { font-size: 13px; font-weight: 400; }
 
 /* word */
 .wt-phonetic { color: #6e7781; font-size: 12px; margin-bottom: 6px; }
@@ -177,34 +190,6 @@ function section(title, ...children) {
 }
 
 /**
- * 圆点列表。
- * row 可以是字符串（纯文本行），或 { cls, parts: [{ cls, text, bold, sep }] }：
- *  sep 为节点前的分隔文本；bold 用 <b> 渲染。
- */
-function ulList(rows) {
-	const ul = el("ul", "wt-ul");
-	for (const row of rows) {
-		const li = document.createElement("li");
-		if (typeof row === "string") {
-			li.textContent = row;
-		} else {
-			if (row.cls) li.className = row.cls;
-			for (const part of row.parts || []) {
-				if (part.sep) li.appendChild(document.createTextNode(part.sep));
-				const node = part.bold
-					? document.createElement("b")
-					: document.createElement("span");
-				if (part.cls) node.className = part.cls;
-				if (part.text !== undefined) node.textContent = part.text;
-				li.appendChild(node);
-			}
-		}
-		ul.appendChild(li);
-	}
-	return ul;
-}
-
-/**
  * 创建悬浮翻译按钮：划词后出现，点击才发起翻译。
  * @param {{ onClick: () => void }} opts
  * @returns {{ root: HTMLElement, el: HTMLElement }}
@@ -236,7 +221,7 @@ export function createTrigger({ onClick }) {
 /**
  * 创建浮窗卡片。
  * @param {object} opts { granularity, sourceText, onClose, onPin, onRetry, onMove, showAuthor }
- * @returns {{ root: HTMLElement, el: HTMLElement, setContext, updateLoading, renderResult, renderError }}
+ * @returns {{ root: HTMLElement, el: HTMLElement, setContext, updateLoading, renderStream, renderError }}
  */
 export function createCard(opts) {
 	const host = document.createElement("div");
@@ -249,7 +234,8 @@ export function createCard(opts) {
 	const card = el("div", "wt-card");
 	shadow.appendChild(card);
 
-	const { sourceText, onClose, onPin, onRetry, onMove } = opts;
+	const { sourceText, onClose, onPin, onRetry, onMove, isActive } = opts;
+	let currentSourceText = sourceText;
 	let granularity = opts.granularity; // 可变：复用卡片时由 setContext 更新
 
 	// 头部：徽章 + 原文 + 固定/复制/关闭
@@ -300,10 +286,12 @@ export function createCard(opts) {
 	card.addEventListener("scroll", updateFade, { passive: true });
 
 	let pinned = false;
-	let lastData = null; // 最近一次渲染的译文数据，供复制使用
+	let streamMarkdown = null;
+	let moreOpen = true;
 
 	// 固定/取消固定
 	const setPinned = (force) => {
+		if (isActive && !isActive()) { onClose?.(); return; }
 		pinned = typeof force === "boolean" ? force : !pinned;
 		pinBtn.classList.toggle("wt-pinned", pinned);
 		onPin?.(pinned);
@@ -317,9 +305,8 @@ export function createCard(opts) {
 			copyResult.className = "wt-copy-result";
 		};
 		try {
-			await navigator.clipboard.writeText(
-				buildCardMarkdown(sourceText, lastData?.type || granularity, lastData),
-			);
+			const markdown = `# ${BADGE_LABELS[granularity] || "翻译"} · ${currentSourceText}\n\n${streamMarkdown || ""}`;
+			await navigator.clipboard.writeText(markdown);
 			copyResult.textContent = "已复制";
 			copyResult.classList.add("wt-copy-ok");
 		} catch {
@@ -377,13 +364,15 @@ export function createCard(opts) {
 		/** 更新粒度与原文（复用卡片时调用） */
 		setContext(g, source) {
 			granularity = g;
-			lastData = null; // 新原文到来，旧译文失效
+			currentSourceText = source;
+			streamMarkdown = null;
+			moreOpen = true;
 			card.querySelector(".wt-badge").textContent = BADGE_LABELS[g] || "";
 			srcEl.textContent = source;
 			srcEl.title = source;
 		},
 		updateLoading() {
-			lastData = null;
+			streamMarkdown = null;
 			body.replaceChildren();
 			const loading = el("div", "wt-loading");
 			loading.appendChild(el("div", "wt-spinner"));
@@ -391,13 +380,25 @@ export function createCard(opts) {
 			body.appendChild(loading);
 			updateFade();
 		},
-		renderResult(data) {
-			lastData = data;
-			// 模型自行判断的粒度：同步徽章并按其渲染
-			const type = normalizeType(data?.type, granularity);
-			card.querySelector(".wt-badge").textContent = BADGE_LABELS[type] || "";
-			const frag = renderByGranularity(type, data);
-			body.replaceChildren(frag);
+		renderStream(markdown, { complete = false, warning = "" } = {}) {
+			streamMarkdown = markdown;
+			const parsed = parseCardMarkdown(markdown, granularity);
+			granularity = parsed.type;
+			card.querySelector(".wt-badge").textContent = BADGE_LABELS[parsed.type] || "翻译";
+			const view = renderMarkdownCard(parsed, () => moreOpen, (open) => { moreOpen = open; });
+			if (!complete && !warning) {
+				const status = el("div", "wt-stream-status");
+				status.append(el("span", "wt-spinner"), el("span", null, "正在生成…"));
+				view.appendChild(status);
+			}
+			if (warning) {
+				const notice = el("div", "wt-stream-warning", warning);
+				const retry = el("span", "wt-retry", "重试");
+				retry.addEventListener("click", () => onRetry?.());
+				notice.appendChild(retry);
+				view.appendChild(notice);
+			}
+			body.replaceChildren(view);
 			updateFade();
 		},
 		renderError(message) {
@@ -413,192 +414,108 @@ export function createCard(opts) {
 	};
 }
 
-/** 校验/归一化粒度：优先模型返回的 type，非法则回落客户端启发式 */
-function normalizeType(type, fallback) {
-	const valid = [GRANULARITY.WORD, GRANULARITY.PHRASE, GRANULARITY.SENTENCE];
-	if (valid.includes(type)) return type;
-	if (valid.includes(fallback)) return fallback;
-	return GRANULARITY.SENTENCE;
-}
-
-function renderByGranularity(granularity, d) {
-	const wrap = document.createElement("div");
-	if (granularity === GRANULARITY.WORD) return renderWord(wrap, d);
-	if (granularity === GRANULARITY.PHRASE) return renderPhrase(wrap, d);
-	if (granularity === GRANULARITY.SENTENCE) return renderSentence(wrap, d);
+/** 固定栏目负责版式；栏目内容只解析安全的 Markdown 子集。 */
+function renderMarkdownCard(parsed, getMoreOpen, setMoreOpen) {
+	const wrap = el("div", "wt-md");
+	const extras = [];
+	const primaryTitles = parsed.type === "word"
+		? ["音标", "释义"]
+		: parsed.type === "phrase" ? ["翻译", "解释"] : ["翻译", "语气"];
+	const hasKnownPrimary = parsed.sections.some((entry) => primaryTitles.includes(entry.title));
+	for (const [index, entry] of parsed.sections.entries()) {
+		const primary = primaryTitles.includes(entry.title) || (!hasKnownPrimary && index === 0);
+		const block = parsed.type === "word" && entry.title === "释义"
+			? renderWordDefinitions(entry.lines) : renderMarkdownBlock(entry.lines);
+		if (primary) {
+			const cls = entry.title === "音标" ? "wt-phonetic"
+				: entry.title === "翻译" ? "wt-md-primary"
+				: entry.title === "解释" || entry.title === "语气" ? "wt-explanation"
+				: entry.title === "释义" ? "wt-md-defs" : "wt-md-primary";
+			block.classList.add(cls);
+			wrap.appendChild(block);
+		} else {
+			if (entry.title === "背景知识") block.classList.add("wt-bg-note");
+			extras.push(section(entry.title, block));
+		}
+	}
+	if (extras.length) {
+		const btn = el("button", "wt-more-btn", getMoreOpen() ? "收起 ▴" : "更多 ▾");
+		const more = el("div", getMoreOpen() ? "wt-more wt-open" : "wt-more");
+		for (const extra of extras) more.appendChild(extra);
+		btn.addEventListener("click", () => {
+			const open = more.classList.toggle("wt-open");
+			setMoreOpen(open);
+			btn.textContent = open ? "收起 ▴" : "更多 ▾";
+		});
+		wrap.append(btn, more);
+	}
 	return wrap;
 }
 
-function renderWord(wrap, d) {
-	if (d.phonetic) wrap.appendChild(el("div", "wt-phonetic", d.phonetic));
-	for (const item of d.pos || []) {
+function renderWordDefinitions(lines) {
+	const block = el("div");
+	for (const line of lines) {
+		const match = line.match(/^\s*[-*]\s+\*\*(.+?)\*\*\s*(.+)$/);
+		if (!match) { block.appendChild(renderMarkdownBlock([line])); continue; }
 		const row = el("div", "wt-pos-item");
-		row.appendChild(el("span", "wt-pos-tag", item.pos || ""));
-		row.appendChild(el("span", "wt-def", item.def || ""));
-		if (item.example) {
+		row.appendChild(el("span", "wt-pos-tag", match[1]));
+		const [definition, examplePart] = match[2].split(/例[:：]/, 2);
+		const def = el("span", "wt-def");
+		appendMarkdownInline(def, definition.trim());
+		row.appendChild(def);
+		if (examplePart) {
+			const [example, translation] = examplePart.split(/译[:：]/, 2);
 			const ex = el("div", "wt-example");
 			ex.appendChild(document.createTextNode("e.g. "));
-			appendFormatted(ex, item.example); // **单词** 加粗展示
-			if (item.exampleZh) {
-				ex.appendChild(document.createTextNode(" —— "));
-				ex.appendChild(el("span", "wt-example-zh", item.exampleZh));
-			}
+			appendMarkdownInline(ex, example.trim());
+			if (translation) ex.appendChild(el("span", "wt-example-zh", ` —— ${translation.trim()}`));
 			row.appendChild(ex);
 		}
-		wrap.appendChild(row);
+		block.appendChild(row);
 	}
-	const extra = [];
-	if (d.roots) extra.push(section("词根词缀", el("div", null, d.roots)));
-	if (d.memory) extra.push(section("记忆点", el("div", null, d.memory)));
-	appendMore(wrap, extra);
-	return wrap;
+	return block;
 }
 
-function renderPhrase(wrap, d) {
-	wrap.appendChild(el("div", "wt-translation", d.translation || ""));
-	if (d.explanation)
-		wrap.appendChild(el("div", "wt-explanation", d.explanation));
-	const extra = [];
-	if (d.examples?.length) extra.push(section("例句", ulList(d.examples)));
-	if (d.usage) extra.push(section("使用场景", el("div", null, d.usage)));
-	appendMore(wrap, extra);
-	return wrap;
+function renderMarkdownBlock(lines) {
+	const block = el("div");
+	let list = null;
+	let paragraph = null;
+	for (const line of lines) {
+		const value = line.trim();
+		if (!value) { list = null; paragraph = null; continue; }
+		const bullet = value.match(/^(?:[-*•]|\d+[.)])\s+(.+)$/);
+		if (bullet) {
+			paragraph = null;
+			if (!list) { list = el("ul", "wt-ul"); block.appendChild(list); }
+			const item = el("li");
+			appendMarkdownInline(item, bullet[1]);
+			list.appendChild(item);
+			continue;
+		}
+		list = null;
+		if (value.startsWith("> ")) {
+			paragraph = null;
+			const quote = el("blockquote");
+			appendMarkdownInline(quote, value.slice(2));
+			block.appendChild(quote);
+			continue;
+		}
+		if (!paragraph) { paragraph = el("p"); block.appendChild(paragraph); }
+		else paragraph.appendChild(document.createTextNode(" "));
+		appendMarkdownInline(paragraph, value);
+	}
+	return block;
 }
 
-function renderSentence(wrap, d) {
-	wrap.appendChild(el("div", "wt-translation", d.translation || ""));
-	if (d.tone) wrap.appendChild(el("div", "wt-explanation", d.tone));
-	const extra = [];
-	if (d.grammar?.length) extra.push(section("语法批注", ulList(d.grammar)));
-	if (d.vocab?.length) {
-		extra.push(
-			section(
-				"生词",
-				ulList(
-					d.vocab.map((v) => ({
-						cls: "wt-vocab",
-						parts: [
-							{ cls: "w", text: v.word || "" },
-							...(v.phonetic ? [{ cls: "ph", text: v.phonetic }] : []),
-							{ sep: " — ", text: v.meaning || "" },
-						],
-					})),
-				),
-			),
-		);
+/** 只解释加粗、斜体、行内代码；其余文本始终走 textContent。 */
+function appendMarkdownInline(parent, value) {
+	const pattern = /(\*\*([^*]+)\*\*|__([^_]+)__|\*([^*]+)\*|`([^`]+)`)/g;
+	let start = 0;
+	for (const match of value.matchAll(pattern)) {
+		if (match.index > start) parent.appendChild(document.createTextNode(value.slice(start, match.index)));
+		const tag = match[2] || match[3] ? "strong" : match[4] ? "em" : "code";
+		parent.appendChild(el(tag, null, match[2] || match[3] || match[4] || match[5]));
+		start = match.index + match[0].length;
 	}
-	// 短语/固定搭配/习语（兼容旧字段 idioms）
-	const phrases = d.phrases?.length ? d.phrases : d.idioms;
-	if (phrases?.length) {
-		extra.push(
-			section(
-				"短语搭配",
-				ulList(
-					phrases.map((p) => ({
-						parts: [
-							{ bold: true, text: p.phrase || "" },
-							{ sep: " — ", text: p.meaning || "" },
-						],
-					})),
-				),
-			),
-		);
-	}
-	// 背景知识：文化梗/典故/特殊含义
-	if (d.background) {
-		extra.push(
-			section("背景知识", el("div", "wt-bg-note", `💡 ${d.background}`)),
-		);
-	}
-	appendMore(wrap, extra);
-	return wrap;
-}
-
-/** "更多"折叠区：默认展开，可手动收起 */
-function appendMore(wrap, sections) {
-	if (!sections?.length) return;
-	const btn = el("button", "wt-more-btn", "收起 ▴");
-	const more = el("div", "wt-more wt-open"); // 默认展开
-	for (const s of sections) more.appendChild(s);
-	btn.addEventListener("click", () => {
-		const open = more.classList.toggle("wt-open");
-		btn.textContent = open ? "收起 ▴" : "更多 ▾";
-	});
-	wrap.appendChild(btn);
-	wrap.appendChild(more);
-}
-
-/**
- * 把 **加粗** 标记的文本渲染进 parent（模型约定用 ** 包裹被解释的单词）。
- */
-function appendFormatted(parent, text) {
-	const parts = String(text || "").split(/\*\*(.+?)\*\*/g);
-	for (let i = 0; i < parts.length; i++) {
-		const part = parts[i];
-		if (!part) continue;
-		if (i % 2 === 1) {
-			const b = document.createElement("b");
-			b.textContent = part;
-			parent.appendChild(b);
-		} else {
-			parent.appendChild(document.createTextNode(part));
-		}
-	}
-}
-
-/**
- * 把整张卡片内容转成纯文本（供「复制译文」按钮使用）。
- */
-/**
- * 把整张卡片内容转成 Markdown（供「复制译文」按钮使用）。
- * 模型例句中的 **加粗** 标记即 Markdown 加粗，直接复用。
- */
-function buildCardMarkdown(sourceText, granularity, d) {
-	const badge = BADGE_LABELS[granularity] || "";
-	const lines = [`# ${badge} · ${sourceText}`];
-	if (!d) return lines.join("\n");
-	if (granularity === GRANULARITY.WORD) {
-		if (d.phonetic) lines.push(`\n**音标**：${d.phonetic}`);
-		for (const item of d.pos || []) {
-			lines.push(`\n**${item.pos || ""}** ${item.def || ""}`);
-			if (item.example) {
-				lines.push(
-					`> 例：${item.example}${item.exampleZh ? ` —— ${item.exampleZh}` : ""}`,
-				);
-			}
-		}
-		if (d.roots) lines.push(`\n**词根词缀**：${d.roots}`);
-		if (d.memory) lines.push(`\n**记忆点**：${d.memory}`);
-	} else if (granularity === GRANULARITY.PHRASE) {
-		lines.push(`\n**含义**：${d.translation || ""}`);
-		if (d.explanation) lines.push(`**解释**：${d.explanation}`);
-		if (d.examples?.length) {
-			lines.push("\n**例句**：");
-			for (const e of d.examples) lines.push(`- ${e}`);
-		}
-		if (d.usage) lines.push(`\n**使用场景**：${d.usage}`);
-	} else if (granularity === GRANULARITY.SENTENCE) {
-		lines.push(`\n**翻译**：${d.translation || ""}`);
-		if (d.tone) lines.push(`**语气**：${d.tone}`);
-		if (d.grammar?.length) {
-			lines.push("\n**语法批注**：");
-			for (const g of d.grammar) lines.push(`- ${g}`);
-		}
-		if (d.vocab?.length) {
-			lines.push("\n**生词**：");
-			for (const v of d.vocab)
-				lines.push(
-					`- **${v.word || ""}**${v.phonetic ? ` ${v.phonetic}` : ""} — ${v.meaning || ""}`,
-				);
-		}
-		// 短语/固定搭配/习语（兼容旧字段 idioms）
-		const phrasesList = d.phrases?.length ? d.phrases : d.idioms;
-		if (phrasesList?.length) {
-			lines.push("\n**短语搭配**：");
-			for (const p of phrasesList)
-				lines.push(`- **${p.phrase || ""}** — ${p.meaning || ""}`);
-		}
-		if (d.background) lines.push(`\n**背景知识**：💡 ${d.background}`);
-	}
-	return lines.join("\n");
+	if (start < value.length) parent.appendChild(document.createTextNode(value.slice(start)));
 }

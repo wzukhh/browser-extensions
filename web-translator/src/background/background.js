@@ -1,45 +1,80 @@
-/**
- * Service Worker：处理 content script 的翻译请求。
- * 流程：查缓存 → 命中直接返回；未命中 → 调 DeepSeek → 写缓存 → 返回。
- */
-
-import { buildSystemPrompt, sanitizeResult } from "../lib/prompt-builder.js";
-import { translate, getConfig } from "../lib/api.js";
-import { cacheKey, getCache, putCache } from "../lib/cache.js";
+/** Service Worker：每次请求模型，并经 Port 转发翻译流。 */
+import { buildSystemPrompt } from "../lib/prompt-builder.js";
+import { translateStream, getConfig } from "../lib/api.js";
 import { normalizeText, detectGranularity } from "../lib/granularity.js";
+import { parseCardMarkdown } from "../lib/markdown-card.js";
 
-chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
-	if (msg?.type !== "translate") return;
-
-	handleTranslate(msg).then(
-		(resp) => sendResponse(resp),
-		(err) => sendResponse({ ok: false, error: err.message || String(err) }),
-	);
-	return true; // 异步响应
+const CONTEXT_MENU_ID = "translate-selection";
+chrome.runtime.onInstalled.addListener(() => {
+	chrome.contextMenus.removeAll(() => {
+		chrome.contextMenus.create({
+			id: CONTEXT_MENU_ID,
+			title: "翻译选中文本",
+			contexts: ["selection"],
+		});
+	});
 });
 
-async function handleTranslate({ text, granularity }) {
-	const config = await getConfig();
-	const clean = normalizeText(text);
-	const g = granularity || detectGranularity(clean);
+chrome.contextMenus.onClicked.addListener((info, tab) => {
+	if (info.menuItemId !== CONTEXT_MENU_ID || !tab?.id || !info.selectionText) return;
+	chrome.tabs.sendMessage(tab.id, {
+		type: "translate-selection",
+		text: info.selectionText,
+	}, () => { void chrome.runtime.lastError; });
+});
 
-	const key = cacheKey(clean, g, config.targetLang);
-	const cached = await getCache(key);
-	if (cached) return { ok: true, data: cached, fromCache: true };
-
-	// 统一大而全提示词：模型自行判断粒度（g 仅作缓存键与 type 兑底）
-	const systemPrompt = buildSystemPrompt(clean, config.targetLang);
-	let raw;
-	try {
-		raw = await translate(systemPrompt, clean, config);
-	} catch (err) {
-		if (err.code === "NO_API_KEY") {
-			return { ok: false, error: err.message };
+chrome.runtime.onConnect.addListener((port) => {
+	if (port.name !== "translate-stream") return;
+	const controller = new AbortController();
+	let disconnected = false;
+	let started = false;
+	port.onDisconnect.addListener(() => {
+		disconnected = true;
+		controller.abort();
+	});
+	const send = (msg) => { if (!disconnected) port.postMessage(msg); };
+	port.onMessage.addListener(async (msg) => {
+		if (started || msg?.type !== "translate") return;
+		started = true;
+		try {
+			const config = await getConfig();
+			const clean = normalizeText(msg.text);
+			if (!clean) throw new Error("选中文本为空");
+			const g = msg.granularity || detectGranularity(clean);
+			if (disconnected) return;
+			let pending = "";
+			let timer = null;
+			const flush = () => {
+				if (timer) clearTimeout(timer);
+				timer = null;
+				if (pending) { send({ type: "delta", text: pending }); pending = ""; }
+			};
+			try {
+				const result = await translateStream(buildSystemPrompt(), clean, config, {
+					signal: controller.signal,
+					onDelta(delta) {
+						pending += delta;
+						if (pending.length >= 120) flush();
+						else if (!timer) timer = setTimeout(flush, 60);
+					},
+				});
+				flush();
+				if (!parseCardMarkdown(result.content, g).sections.length) {
+					throw new Error("模型没有返回可展示的译文，请重试");
+				}
+				const complete = result.finishReason === "stop";
+				const data = { format: "markdown", markdown: result.content };
+				send({ type: "done", data, incomplete: !complete });
+			} catch (err) {
+				flush(); // 中断时仍展示尚未达到批量阈值的最后几个字
+				throw err;
+			} finally {
+				if (timer) clearTimeout(timer);
+			}
+		} catch (err) {
+			if (!disconnected && err.name !== "AbortError") {
+				send({ type: "error", error: err.message || String(err) });
+			}
 		}
-		throw err;
-	}
-
-	const data = sanitizeResult(g, raw);
-	await putCache(key, data);
-	return { ok: true, data, fromCache: false };
-}
+	});
+});

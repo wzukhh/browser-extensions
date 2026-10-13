@@ -22,26 +22,50 @@ let dragged = false; // 用户手动拖拽移动过卡片后，不再自动定�
 let lastRect = null;
 let currentText = null;
 let requestId = 0; // 防止慢响应覆盖新请求结果
+let activePort = null;
 let showAuthor = true; // 页脚作者信息开关
+let showSelectionButton = true;
+
+function runtimeAvailable() {
+	try { return !!(chrome?.runtime?.id && chrome.runtime.connect); }
+	catch { return false; }
+}
+
+function disconnectPort(port) {
+	if (!port) return;
+	try { port.disconnect(); }
+	catch { /* 扩展重载后 Port 可能已经失效 */ }
+}
 
 // 读取设置并监听变更（设置页中途改开关，已打开的卡片实时生效）
 if (chrome?.storage?.local) {
-	chrome.storage.local.get({ showAuthor: true }, (cfg) => {
+	chrome.storage.local.get({ showAuthor: true, showSelectionButton: true }, (cfg) => {
 		showAuthor = !!cfg.showAuthor;
+		showSelectionButton = cfg.showSelectionButton !== false;
+		if (!showSelectionButton) hideTrigger();
 	});
 	chrome.storage.onChanged.addListener((changes, area) => {
-		if (area !== "local" || !("showAuthor" in changes)) return;
-		showAuthor = !!changes.showAuthor.newValue;
-		card?.setShowAuthor(showAuthor);
+		if (area !== "local") return;
+		if ("showAuthor" in changes) {
+			showAuthor = !!changes.showAuthor.newValue;
+			card?.setShowAuthor(showAuthor);
+		}
+		if ("showSelectionButton" in changes) {
+			showSelectionButton = changes.showSelectionButton.newValue !== false;
+			if (!showSelectionButton) hideTrigger();
+		}
 	});
 }
 
 function onMouseUp(event) {
+	if (!runtimeAvailable()) { hideAll(); return; }
+	if (event.button !== 0 || !showSelectionButton) return;
 	// 点击/划选了浮窗或按钮自身不处理（shadow DOM 内元素需用 composedPath 判定）
 	if (card && event.composedPath().includes(card.root)) return;
 	if (trigger && event.composedPath().includes(trigger.root)) return;
 	// 稍等 selection 稳定
 	setTimeout(() => {
+		if (!showSelectionButton) return;
 		const sel = window.getSelection();
 		if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return;
 
@@ -116,8 +140,10 @@ function showCard(text, granularity, rect) {
 			granularity,
 			sourceText: text,
 			showAuthor,
+			isActive: runtimeAvailable,
 			onClose: hideCard,
 			onPin: (p) => {
+				if (!runtimeAvailable()) { hideCard(); return; }
 				pinned = p;
 			},
 			onRetry: () => requestTranslate(currentText),
@@ -131,49 +157,83 @@ function showCard(text, granularity, rect) {
 	dragged = false;
 	// 复用卡片时同步更新原文、粒度徽章与渲染布局
 	card.setContext(granularity, text);
-	positionCard(rect);
 	requestTranslate(text);
 }
 
 function requestTranslate(text) {
 	if (!card) return;
-	// 防御：chrome.runtime 不可用（测试页环境 / 扩展重载后旧页面残留的 content script）
-	if (!chrome?.runtime?.sendMessage) {
+	// 防御：扩展重载后旧页面可能留下失效的 content script。
+	if (!runtimeAvailable()) {
 		card.renderError(
 			"无法调用扩展后台：请刷新页面后重试（若刚重载过扩展，刷新页面即可）",
 		);
 		return;
 	}
+	if (activePort) { disconnectPort(activePort); activePort = null; }
 	const id = ++requestId;
 	card.updateLoading();
-	positionCard(lastRect);
 	const granularity = detectGranularity(text);
-	chrome.runtime.sendMessage(
-		{ type: "translate", text, granularity },
-		(resp) => {
-			if (id !== requestId) return; // 过期响应丢弃
-			if (chrome.runtime.lastError) {
-				card.renderError(chrome.runtime.lastError.message);
-			} else if (!resp?.ok) {
-				card.renderError(resp?.error || "翻译失败");
+	positionCard(lastRect, { expectGrowth: true });
+	let markdown = "";
+	let settled = false;
+	let port;
+	try { port = chrome.runtime.connect({ name: "translate-stream" }); }
+	catch (err) { card.renderError(err.message || "无法连接扩展后台"); return; }
+	activePort = port;
+	port.onMessage.addListener((msg) => {
+		if (id !== requestId || !card) return;
+		if (!runtimeAvailable()) { hideAll(); return; }
+		if (msg.type === "delta") {
+			markdown += msg.text || "";
+			card.renderStream(markdown);
+		} else if (msg.type === "done") {
+			settled = true;
+			if (msg.data?.format === "markdown") {
+				card.renderStream(msg.data.markdown, {
+					complete: true,
+					warning: msg.incomplete ? "回答达到长度上限，以下内容可能未完成。" : "",
+				});
 			} else {
-				card.renderResult(resp.data);
+				card.renderError("收到未知响应格式，请重试");
 			}
-			// 结果渲染后卡片尺寸可能变化，重新定位避免溢出
-			positionCard(lastRect);
-		},
-	);
+			disconnectPort(port);
+			activePort = null;
+		} else if (msg.type === "error") {
+			settled = true;
+			if (markdown.trim()) card.renderStream(markdown, { complete: true, warning: `生成中断：${msg.error}` });
+			else card.renderError(msg.error || "翻译失败");
+			disconnectPort(port);
+			activePort = null;
+		}
+		positionCard(lastRect, { keepTop: true });
+	});
+	port.onDisconnect.addListener(() => {
+		if (id !== requestId || settled || !card) return;
+		activePort = null;
+		const reason = runtimeAvailable() ? "连接中断，请重试。" : "扩展已重新加载，请刷新此网页后重试。";
+		if (markdown.trim()) card.renderStream(markdown, { complete: true, warning: reason });
+		else card.renderError(reason);
+	});
+	try { port.postMessage({ type: "translate", text, granularity }); }
+	catch {
+		settled = true;
+		activePort = null;
+		disconnectPort(port);
+		card.renderError("扩展连接已失效，请刷新此网页后重试");
+	}
 }
 
-function positionCard(rect) {
+function positionCard(rect, { expectGrowth = false, keepTop = false } = {}) {
 	// 用户手动拖拽移动后不再自动定位（同一文本的渲染/重试都不挪动）
 	if (dragged) return;
 	const margin = 12;
-	const w = card.el.offsetWidth || 380; // 测量卡片本体，尺寸更准确
-	const h = card.el.offsetHeight || 200;
+	const w = card.el.offsetWidth || 440; // 测量卡片本体，尺寸更准确
+	const actualHeight = card.el.offsetHeight || 200;
+	const maxHeight = Math.min(window.innerHeight * 0.7, window.innerHeight - 24);
+	const h = expectGrowth ? Math.max(actualHeight, maxHeight) : actualHeight;
 	// 固定屏幕正中心，避免弹窗随选区位置跳动
 	let x = (window.innerWidth - w) / 2;
-	let y = (window.innerHeight - h) / 2;
+	let y = keepTop ? Number.parseFloat(card.root.style.top) || margin : (window.innerHeight - h) / 2;
 	// 钳制在视口内（超大卡片/窄视口兜底）
 	x = Math.max(margin, Math.min(x, window.innerWidth - w - margin));
 	y = Math.max(margin, Math.min(y, window.innerHeight - h - margin));
@@ -186,6 +246,8 @@ function positionCard(rect) {
 }
 
 function hideCard() {
+	requestId++;
+	if (activePort) { disconnectPort(activePort); activePort = null; }
 	if (card) {
 		card.root.remove();
 		card = null;
@@ -202,6 +264,21 @@ function hideAll() {
 // —— 事件绑定 ——
 
 document.addEventListener("mouseup", onMouseUp);
+
+chrome.runtime.onMessage.addListener((message) => {
+	if (message?.type !== "translate-selection" || !runtimeAvailable()) return;
+	const text = normalizeText(message.text || "");
+	if (text.length < MIN_LEN || text.length > MAX_LEN) return;
+	const selection = window.getSelection();
+	const rect = selection?.rangeCount && !selection.isCollapsed
+		? selection.getRangeAt(0).getBoundingClientRect()
+		: { left: window.innerWidth / 2, right: window.innerWidth / 2,
+			top: window.innerHeight / 2, bottom: window.innerHeight / 2 };
+	hideTrigger();
+	currentText = text;
+	lastRect = rect;
+	showCard(text, detectGranularity(text), rect);
+});
 
 document.addEventListener("keydown", (e) => {
 	if (e.key === "Escape" && (card || trigger)) hideAll();
