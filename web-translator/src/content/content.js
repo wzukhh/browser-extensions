@@ -227,9 +227,9 @@ function positionCard(rect, { expectGrowth = false, keepTop = false } = {}) {
 	// 用户手动拖拽移动后不再自动定位（同一文本的渲染/重试都不挪动）
 	if (dragged) return;
 	const margin = 12;
-	const w = card.el.offsetWidth || 440; // 测量卡片本体，尺寸更准确
+	const w = card.el.offsetWidth || 480; // 测量卡片本体，尺寸更准确
 	const actualHeight = card.el.offsetHeight || 200;
-	const maxHeight = Math.min(window.innerHeight * 0.7, window.innerHeight - 24);
+	const maxHeight = Math.min(window.innerHeight * 0.8, window.innerHeight - 24);
 	const h = expectGrowth ? Math.max(actualHeight, maxHeight) : actualHeight;
 	// 固定屏幕正中心，避免弹窗随选区位置跳动
 	let x = (window.innerWidth - w) / 2;

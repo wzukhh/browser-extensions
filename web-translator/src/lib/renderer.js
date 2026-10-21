@@ -11,8 +11,10 @@
 
 import { svgIcon, PIN_ICON, COPY_ICON, TRANSLATE_ICON } from "./icons.js";
 import { parseCardMarkdown } from "./markdown-card.js";
+import html2canvas from "html2canvas";
 
-const WIDTH = 440;
+const WIDTH = 480;
+const IMAGE_ICON = [{ d: "M96 128h832v768H96z M160 192v640h704V192z M216 744l180-215 132 136 120-161 160 240z M688 280a72 72 0 1 0 0 144 72 72 0 0 0 0-144z", fill: "#6b7fc9" }];
 const BADGE_LABELS = {
 	word: "单词",
 	phrase: "短语",
@@ -26,7 +28,7 @@ const STYLE = `
 .wt-card {
   width: ${WIDTH}px;
   max-width: calc(100vw - 24px);
-  max-height: min(70vh, calc(100vh - 24px));
+  max-height: min(80vh, calc(100vh - 24px));
   overflow-y: auto;
   background: #ffffff;
   color: #1f2328;
@@ -51,9 +53,17 @@ const STYLE = `
   background: #4a6cf7; border-radius: 4px; padding: 1px 6px;
   flex-shrink: 0;
 }
+.wt-header-label { flex: 1; color: #57606a; font-size: 12px; font-weight: 600; }
 .wt-src {
-  flex: 1; font-size: 12px; color: #57606a;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  padding: 10px 12px; border-bottom: 1px solid #f0f0f0;
+  background: #fafbff;
+}
+.wt-src-label { margin-bottom: 6px; color: #8b949e; font-size: 11px; font-weight: 600; }
+.wt-src-text {
+  padding: 6px 10px; border-left: 3px solid #b8c5ff;
+  border-radius: 0 6px 6px 0; background: #fff;
+  color: #57606a; font-size: 12px; line-height: 1.6;
+  white-space: pre-wrap; overflow-wrap: anywhere;
 }
 .wt-btn {
   border: none; background: transparent; cursor: pointer;
@@ -62,6 +72,17 @@ const STYLE = `
   display: inline-flex; align-items: center; justify-content: center;
 }
 .wt-btn:hover { background: #f0f2f5; color: #1f2328; }
+.wt-btn:disabled { cursor: default; opacity: .45; }
+.wt-btn:disabled:hover { background: transparent; color: #8b949e; }
+.wt-btn[data-tooltip] { position: relative; }
+.wt-btn[data-tooltip]:not(:disabled):is(:hover, :focus-visible)::after {
+  content: attr(data-tooltip);
+  position: absolute; top: calc(100% + 9px); right: 0;
+  width: max-content; padding: 5px 8px; border-radius: 5px;
+  background: #24292f; color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.18);
+  font-size: 11px; font-weight: 400; line-height: 1.3;
+  white-space: nowrap; pointer-events: none; z-index: 3;
+}
 .wt-btn:focus-visible, .wt-more-btn:focus-visible { outline: 2px solid #4a6cf7; outline-offset: 1px; }
 .wt-btn.wt-pinned { color: #4a6cf7; }
 .wt-body { padding: 10px 12px 12px; }
@@ -181,6 +202,10 @@ function el(tag, cls, text) {
 	return node;
 }
 
+function quoteSource(text) {
+	return String(text || "").replace(/\r\n?/g, "\n").split("\n").map((line) => `> ${line}`).join("\n");
+}
+
 /** 折叠区小节：标题 + 内容节点 */
 function section(title, ...children) {
 	const s = el("div", "wt-section");
@@ -238,27 +263,35 @@ export function createCard(opts) {
 	let currentSourceText = sourceText;
 	let granularity = opts.granularity; // 可变：复用卡片时由 setContext 更新
 
-	// 头部：徽章 + 原文 + 固定/复制/关闭
+	// 头部保留操作；原文单独成区，按原样换行展示
 	const header = el("div", "wt-header");
 	header.appendChild(el("span", "wt-badge", BADGE_LABELS[granularity] || ""));
-	const srcEl = el("span", "wt-src", sourceText);
-	srcEl.title = sourceText;
-	header.appendChild(srcEl);
+	header.appendChild(el("span", "wt-header-label", "翻译结果"));
 	const pinBtn = el("button", "wt-btn wt-pin");
 	pinBtn.type = "button";
-	pinBtn.title = "固定";
+	pinBtn.dataset.tooltip = "固定卡片";
 	pinBtn.setAttribute("aria-label", "固定卡片");
 	pinBtn.appendChild(svgIcon(PIN_ICON, 14));
 	const copyBtn = el("button", "wt-btn wt-copy-btn");
 	copyBtn.type = "button";
-	copyBtn.title = "复制译文";
-	copyBtn.setAttribute("aria-label", "复制译文");
+	copyBtn.dataset.tooltip = "复制文本";
+	copyBtn.setAttribute("aria-label", "复制文本");
 	copyBtn.appendChild(svgIcon(COPY_ICON, 14));
+	const imageBtn = el("button", "wt-btn wt-image-btn");
+	imageBtn.type = "button";
+	imageBtn.dataset.tooltip = "复制 PNG 图片";
+	imageBtn.setAttribute("aria-label", "复制 PNG 图片");
+	imageBtn.appendChild(svgIcon(IMAGE_ICON, 14));
+	imageBtn.disabled = true;
 	const closeBtn = el("button", "wt-btn wt-close", "✕");
 	closeBtn.type = "button";
 	closeBtn.title = "关闭 (Esc)";
 	closeBtn.setAttribute("aria-label", "关闭卡片");
-	header.append(pinBtn, copyBtn, closeBtn);
+	header.append(pinBtn, copyBtn, imageBtn, closeBtn);
+	const source = el("div", "wt-src");
+	source.append(el("div", "wt-src-label", "原文"));
+	const srcEl = el("blockquote", "wt-src-text", sourceText);
+	source.appendChild(srcEl);
 
 	const body = el("div", "wt-body");
 
@@ -270,11 +303,11 @@ export function createCard(opts) {
 	const copyResult = el("span", "wt-copy-result");
 	footer.appendChild(copyResult);
 	// 作者信息（设置页可开关）
-	const author = el("span", "wt-author", "作者 wzukhh | wzukhh@163.com");
+	const author = el("span", "wt-author", "作者 wzukhh@163.com");
 	if (opts.showAuthor === false) author.style.display = "none";
 	footer.appendChild(author);
 
-	card.append(header, body, fade, footer);
+	card.append(header, source, body, fade, footer);
 
 	// 渐隐遮罩：仅当内容可滚动且未滚到底时显示
 	function updateFade() {
@@ -288,32 +321,54 @@ export function createCard(opts) {
 	let pinned = false;
 	let streamMarkdown = null;
 	let moreOpen = true;
+	let streamComplete = false;
 
 	// 固定/取消固定
 	const setPinned = (force) => {
 		if (isActive && !isActive()) { onClose?.(); return; }
 		pinned = typeof force === "boolean" ? force : !pinned;
 		pinBtn.classList.toggle("wt-pinned", pinned);
+		pinBtn.dataset.tooltip = pinned ? "取消固定" : "固定卡片";
+		pinBtn.setAttribute("aria-label", pinBtn.dataset.tooltip);
 		onPin?.(pinned);
 	};
 
 	closeBtn.addEventListener("click", () => onClose?.());
 	pinBtn.addEventListener("click", () => setPinned());
 	copyBtn.addEventListener("click", async () => {
-		const clear = () => {
+		try {
+			const result = (streamMarkdown || "").replace(
+				/^[ \t]*(?:类型|type)[ \t]*[:：][ \t]*(word|phrase|sentence|paragraph)[ \t]*$/im,
+				(_line, type) => `类型：${BADGE_LABELS[type.toLowerCase()]}`,
+			);
+			const markdown = `**原文**\n\n${quoteSource(currentSourceText)}\n\n---\n\n${result}`;
+			await navigator.clipboard.writeText(markdown);
+			showCopyResult("文本已复制", true);
+		} catch {
+			showCopyResult("复制失败", false);
+		}
+	});
+	let feedbackTimer;
+	function showCopyResult(message, success) {
+		clearTimeout(feedbackTimer);
+		copyResult.textContent = message;
+		copyResult.className = `wt-copy-result ${success ? "wt-copy-ok" : "wt-copy-err"}`;
+		feedbackTimer = setTimeout(() => {
 			copyResult.textContent = "";
 			copyResult.className = "wt-copy-result";
-		};
+		}, 2000);
+	}
+	imageBtn.addEventListener("click", async () => {
+		if (!streamComplete || !streamMarkdown?.trim()) return;
 		try {
-			const markdown = `# ${BADGE_LABELS[granularity] || "翻译"} · ${currentSourceText}\n\n${streamMarkdown || ""}`;
-			await navigator.clipboard.writeText(markdown);
-			copyResult.textContent = "已复制";
-			copyResult.classList.add("wt-copy-ok");
-		} catch {
-			copyResult.textContent = "复制失败";
-			copyResult.classList.add("wt-copy-err");
+			// 立刻调用 write，保留点击时的用户激活；PNG Promise 可以随后完成。
+			const png = cardToPng(card);
+			await navigator.clipboard.write([new ClipboardItem({ "image/png": png })]);
+			showCopyResult("PNG 已复制", true);
+		} catch (err) {
+			console.warn("PNG 复制失败", err);
+			showCopyResult("PNG 复制失败", false);
 		}
-		setTimeout(clear, 1500);
 	});
 
 	// —— 拖拽移动：按住头部拖动整卡 ——
@@ -366,13 +421,16 @@ export function createCard(opts) {
 			granularity = g;
 			currentSourceText = source;
 			streamMarkdown = null;
+			streamComplete = false;
+			imageBtn.disabled = true;
 			moreOpen = true;
 			card.querySelector(".wt-badge").textContent = BADGE_LABELS[g] || "";
 			srcEl.textContent = source;
-			srcEl.title = source;
 		},
 		updateLoading() {
 			streamMarkdown = null;
+			streamComplete = false;
+			imageBtn.disabled = true;
 			body.replaceChildren();
 			const loading = el("div", "wt-loading");
 			loading.appendChild(el("div", "wt-spinner"));
@@ -382,6 +440,8 @@ export function createCard(opts) {
 		},
 		renderStream(markdown, { complete = false, warning = "" } = {}) {
 			streamMarkdown = markdown;
+			streamComplete = complete;
+			imageBtn.disabled = !complete || !markdown?.trim();
 			const parsed = parseCardMarkdown(markdown, granularity);
 			granularity = parsed.type;
 			card.querySelector(".wt-badge").textContent = BADGE_LABELS[parsed.type] || "翻译";
@@ -402,6 +462,8 @@ export function createCard(opts) {
 			updateFade();
 		},
 		renderError(message) {
+			streamComplete = false;
+			imageBtn.disabled = true;
 			body.replaceChildren();
 			const err = el("div", "wt-error");
 			err.appendChild(document.createTextNode(`⚠️ ${message}`));
@@ -412,6 +474,152 @@ export function createCard(opts) {
 			updateFade();
 		},
 	};
+}
+
+/** 用相同 DOM 和样式生成完整卡片图片，不受屏幕滚动位置与折叠状态影响。 */
+async function cardToPng(card) {
+	const clone = card.cloneNode(true);
+	const width = Math.ceil(card.getBoundingClientRect().width);
+	if (!width) throw new Error("卡片尺寸无效");
+	clone.style.cssText = `width:${width}px;max-width:none;max-height:none;overflow:visible`;
+	clone.querySelector(".wt-header").style.position = "static";
+	clone.querySelectorAll(".wt-btn, .wt-fade, .wt-copy-result, .wt-stream-status").forEach((node) => node.remove());
+	clone.querySelectorAll(".wt-more").forEach((node) => node.classList.add("wt-open"));
+	clone.querySelectorAll(".wt-more-btn").forEach((node) => node.remove());
+	const padding = 0;
+	const imageWidth = width + padding * 2;
+	// 单独的空白文档隔离网页自身的图片、Canvas 和 CSS。
+	const iframe = el("iframe");
+	iframe.setAttribute("aria-hidden", "true");
+	iframe.style.cssText = `position:fixed;left:-10000px;top:0;width:${imageWidth}px;height:1px;border:0;pointer-events:none`;
+	document.documentElement.appendChild(iframe);
+	try {
+		const exportDoc = iframe.contentDocument;
+		if (!exportDoc) throw new Error("无法创建图片文档");
+		const style = exportDoc.createElement("style");
+		style.textContent = STYLE;
+		exportDoc.head.appendChild(style);
+		exportDoc.documentElement.style.cssText = "margin:0;padding:0";
+		exportDoc.body.style.cssText = "margin:0;padding:0";
+		const frame = exportDoc.createElement("div");
+		frame.style.cssText = `width:${imageWidth}px;padding:${padding}px;box-sizing:border-box`;
+		frame.appendChild(exportDoc.importNode(clone, true));
+		exportDoc.body.appendChild(frame);
+		await exportDoc.fonts.ready;
+		const imageHeight = Math.ceil(frame.getBoundingClientRect().height);
+		if (!imageHeight) throw new Error("卡片尺寸无效");
+		iframe.style.height = `${imageHeight}px`;
+		const scale = Math.min(2, 16384 / imageWidth, 16384 / imageHeight, Math.sqrt(16000000 / (imageWidth * imageHeight)));
+		try {
+			const canvas = await html2canvas(frame, {
+				backgroundColor: null,
+				foreignObjectRendering: false,
+				allowTaint: false,
+				useCORS: false,
+				logging: false,
+				width: imageWidth,
+				height: imageHeight,
+				scale,
+			});
+			return await canvasToPng(canvas);
+		} catch (error) {
+			if (error?.name !== "SecurityError") throw error;
+			// 某些页面仍会让绘图库的画布受污染；只绘制纯色和文字作为兜底。
+			return canvasToPng(drawCleanCard(frame, imageWidth, imageHeight, scale));
+		}
+	} finally {
+		iframe.remove();
+	}
+}
+
+function canvasToPng(canvas) {
+	return new Promise((resolve, reject) => {
+		canvas.toBlob((blob) => blob ? resolve(blob) : reject(new Error("PNG 编码失败")), "image/png");
+	});
+}
+
+/** 不读取网页图片：只用纯色、线条和文字绘制，保证兜底画布可导出。 */
+function drawCleanCard(frame, width, height, scale) {
+	const doc = frame.ownerDocument;
+	const canvas = doc.createElement("canvas");
+	canvas.width = Math.max(1, Math.floor(width * scale));
+	canvas.height = Math.max(1, Math.floor(height * scale));
+	const ctx = canvas.getContext("2d");
+	if (!ctx) throw new Error("无法创建图片画布");
+	ctx.scale(scale, scale);
+	const origin = frame.getBoundingClientRect();
+	const visibleColor = (color) => color && color !== "transparent" && !/rgba\([^)]*,\s*0(?:\.0+)?\)$/.test(color);
+	function drawBoxes(node) {
+		if (node.nodeType !== 1) return;
+		const style = doc.defaultView.getComputedStyle(node);
+		if (style.display === "none" || style.visibility === "hidden") return;
+		const rect = node.getBoundingClientRect();
+		const x = rect.left - origin.left;
+		const y = rect.top - origin.top;
+		if (rect.width && rect.height) {
+			if (visibleColor(style.backgroundColor)) {
+				ctx.save();
+				ctx.fillStyle = style.backgroundColor;
+				const radius = Math.min(parseFloat(style.borderTopLeftRadius) || 0, rect.width / 2, rect.height / 2);
+				if (radius) {
+					ctx.beginPath();
+					ctx.roundRect(x, y, rect.width, rect.height, radius);
+					ctx.fill();
+				} else ctx.fillRect(x, y, rect.width, rect.height);
+				ctx.restore();
+			}
+			for (const side of ["Top", "Bottom", "Left", "Right"]) {
+				const thickness = parseFloat(style[`border${side}Width`]) || 0;
+				const color = style[`border${side}Color`];
+				if (!thickness || !visibleColor(color)) continue;
+				ctx.save();
+				ctx.strokeStyle = color;
+				ctx.lineWidth = thickness;
+				ctx.setLineDash(style[`border${side}Style`] === "dashed" ? [5, 4] : []);
+				ctx.beginPath();
+				if (side === "Top") { ctx.moveTo(x, y + thickness / 2); ctx.lineTo(x + rect.width, y + thickness / 2); }
+				if (side === "Bottom") { ctx.moveTo(x, y + rect.height - thickness / 2); ctx.lineTo(x + rect.width, y + rect.height - thickness / 2); }
+				if (side === "Left") { ctx.moveTo(x + thickness / 2, y); ctx.lineTo(x + thickness / 2, y + rect.height); }
+				if (side === "Right") { ctx.moveTo(x + rect.width - thickness / 2, y); ctx.lineTo(x + rect.width - thickness / 2, y + rect.height); }
+				ctx.stroke();
+				ctx.restore();
+			}
+		}
+		for (const child of node.children) drawBoxes(child);
+	}
+	drawBoxes(frame);
+
+	const walker = doc.createTreeWalker(frame, NodeFilter.SHOW_TEXT);
+	const range = doc.createRange();
+	while (walker.nextNode()) {
+		const node = walker.currentNode;
+		const parent = node.parentElement;
+		if (!parent || !node.data.trim()) continue;
+		const style = doc.defaultView.getComputedStyle(parent);
+		if (style.display === "none" || style.visibility === "hidden") continue;
+		ctx.font = `${style.fontStyle} ${style.fontWeight} ${style.fontSize} ${style.fontFamily}`;
+		ctx.fillStyle = style.color;
+		ctx.textBaseline = "alphabetic";
+		let offset = 0;
+		for (const char of node.data) {
+			const next = offset + char.length;
+			if (!/\s/.test(char)) {
+				range.setStart(node, offset);
+				range.setEnd(node, next);
+				const rect = range.getBoundingClientRect();
+				if (rect.width && rect.height) ctx.fillText(char, rect.left - origin.left, rect.top - origin.top + rect.height * .8);
+			}
+			offset = next;
+		}
+	}
+	for (const item of frame.querySelectorAll(".wt-ul li")) {
+		const rect = item.getBoundingClientRect();
+		ctx.fillStyle = "#4a6cf7";
+		ctx.beginPath();
+		ctx.arc(rect.left - origin.left + 5, rect.top - origin.top + 10, 2, 0, Math.PI * 2);
+		ctx.fill();
+	}
+	return canvas;
 }
 
 /** 固定栏目负责版式；栏目内容只解析安全的 Markdown 子集。 */
