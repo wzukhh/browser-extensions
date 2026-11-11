@@ -26,7 +26,9 @@ export async function translateStream(systemPrompt, text, config, { signal, onDe
 		throw err;
 	}
 	if (!model) {
-		throw new Error("未选择模型，请打开设置加载并选择模型");
+		const err = new Error("未选择模型");
+		err.code = "NO_MODEL";
+		throw err;
 	}
 
 	const resp = await fetch(`${baseUrl.replace(/\/$/, "")}/chat/completions`, {
@@ -49,15 +51,17 @@ export async function translateStream(systemPrompt, text, config, { signal, onDe
 	});
 
 	if (!resp.ok) {
-		const body = await resp.text().catch(() => "");
-		const err = new Error(
-			`API 请求失败 (${resp.status}): ${body.slice(0, 200)}`,
-		);
+		const err = new Error(`API 请求失败（HTTP ${resp.status}）`);
 		err.code = `HTTP_${resp.status}`;
+		err.status = resp.status;
 		throw err;
 	}
 
-	if (!resp.body) throw new Error("API 未提供可读取的响应流");
+	if (!resp.body) {
+		const err = new Error("API 未提供可读取的响应流");
+		err.code = "BAD_STREAM";
+		throw err;
+	}
 	const reader = resp.body.getReader();
 	const decoder = new TextDecoder();
 	let buffer = "";
@@ -71,8 +75,16 @@ export async function translateStream(systemPrompt, text, config, { signal, onDe
 		if (data === "[DONE]") { done = true; return; }
 		let chunk;
 		try { chunk = JSON.parse(data); }
-		catch { throw new Error("API 流事件格式错误"); }
-		if (chunk.error) throw new Error(chunk.error.message || "API 流返回错误");
+		catch {
+			const err = new Error("API 流事件格式错误");
+			err.code = "BAD_STREAM";
+			throw err;
+		}
+		if (chunk.error) {
+			const err = new Error("API 流返回错误");
+			err.code = "BAD_STREAM";
+			throw err;
+		}
 		const choice = chunk.choices?.[0];
 		if (choice?.finish_reason) finishReason = choice.finish_reason;
 		const delta = choice?.delta?.content;
@@ -97,8 +109,16 @@ export async function translateStream(systemPrompt, text, config, { signal, onDe
 		if (done) await reader.cancel().catch(() => {});
 		reader.releaseLock();
 	}
-	if (!done) throw new Error("API 连接提前结束");
-	if (!content.trim()) throw new Error("API 返回为空");
+	if (!done) {
+		const err = new Error("API 连接提前结束");
+		err.code = "STREAM_INTERRUPTED";
+		throw err;
+	}
+	if (!content.trim()) {
+		const err = new Error("API 返回为空");
+		err.code = "EMPTY_RESPONSE";
+		throw err;
+	}
 	return { content, finishReason };
 }
 
@@ -121,11 +141,9 @@ export async function listModels(config) {
 	});
 
 	if (!resp.ok) {
-		const body = await resp.text().catch(() => "");
-		const err = new Error(
-			`获取模型列表失败 (${resp.status}): ${body.slice(0, 120)}`,
-		);
+		const err = new Error(`获取模型列表失败（HTTP ${resp.status}）`);
 		err.code = `HTTP_${resp.status}`;
+		err.status = resp.status;
 		throw err;
 	}
 

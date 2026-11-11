@@ -8774,7 +8774,7 @@ function requestTranslate(text) {
       if (msg.data?.format === "markdown") {
         card.renderStream(msg.data.markdown, {
           complete: true,
-          warning: msg.incomplete ? "\u56DE\u7B54\u8FBE\u5230\u957F\u5EA6\u4E0A\u9650\uFF0C\u4EE5\u4E0B\u5185\u5BB9\u53EF\u80FD\u672A\u5B8C\u6210\u3002" : ""
+          warning: msg.finishReason === "length" ? "\u56DE\u7B54\u8FBE\u5230\u957F\u5EA6\u4E0A\u9650\uFF0C\u8BD1\u6587\u53EF\u80FD\u672A\u5B8C\u6210\u3002\u53EF\u7F29\u77ED\u539F\u6587\u540E\u91CD\u8BD5\u3002" : msg.incomplete ? "\u6A21\u578B\u672A\u6B63\u5E38\u7ED3\u675F\uFF0C\u8BD1\u6587\u53EF\u80FD\u672A\u5B8C\u6210\u3002\u8BF7\u91CD\u8BD5\u3002" : ""
         });
       } else {
         card.renderError("\u6536\u5230\u672A\u77E5\u54CD\u5E94\u683C\u5F0F\uFF0C\u8BF7\u91CD\u8BD5");

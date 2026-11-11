@@ -191,7 +191,9 @@ function requestTranslate(text) {
 			if (msg.data?.format === "markdown") {
 				card.renderStream(msg.data.markdown, {
 					complete: true,
-					warning: msg.incomplete ? "回答达到长度上限，以下内容可能未完成。" : "",
+					warning: msg.finishReason === "length"
+						? "回答达到长度上限，译文可能未完成。可缩短原文后重试。"
+						: msg.incomplete ? "模型未正常结束，译文可能未完成。请重试。" : "",
 				});
 			} else {
 				card.renderError("收到未知响应格式，请重试");

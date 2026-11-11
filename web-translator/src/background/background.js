@@ -3,6 +3,7 @@ import { buildSystemPrompt } from "../lib/prompt-builder.js";
 import { translateStream, getConfig } from "../lib/api.js";
 import { normalizeText, detectGranularity } from "../lib/granularity.js";
 import { parseCardMarkdown } from "../lib/markdown-card.js";
+import { friendlyError } from "../lib/error-messages.js";
 
 const CONTEXT_MENU_ID = "translate-selection";
 chrome.runtime.onInstalled.addListener(() => {
@@ -50,7 +51,7 @@ chrome.runtime.onConnect.addListener((port) => {
 				if (pending) { send({ type: "delta", text: pending }); pending = ""; }
 			};
 			try {
-				const result = await translateStream(buildSystemPrompt(), clean, config, {
+				const result = await translateStream(buildSystemPrompt(config), clean, config, {
 					signal: controller.signal,
 					onDelta(delta) {
 						pending += delta;
@@ -64,7 +65,7 @@ chrome.runtime.onConnect.addListener((port) => {
 				}
 				const complete = result.finishReason === "stop";
 				const data = { format: "markdown", markdown: result.content };
-				send({ type: "done", data, incomplete: !complete });
+				send({ type: "done", data, incomplete: !complete, finishReason: result.finishReason });
 			} catch (err) {
 				flush(); // 中断时仍展示尚未达到批量阈值的最后几个字
 				throw err;
@@ -73,7 +74,7 @@ chrome.runtime.onConnect.addListener((port) => {
 			}
 		} catch (err) {
 			if (!disconnected && err.name !== "AbortError") {
-				send({ type: "error", error: err.message || String(err) });
+				send({ type: "error", error: friendlyError(err) });
 			}
 		}
 	});

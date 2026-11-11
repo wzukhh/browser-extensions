@@ -4,6 +4,7 @@
  */
 
 import { listModels } from "../lib/api.js";
+import { friendlyError } from "../lib/error-messages.js";
 
 const DEFAULTS = {
 	apiKey: "",
@@ -65,11 +66,13 @@ async function loadModels(preferredModel = $("model").value) {
 	} catch (err) {
 		if (requestId !== modelRequestId) return;
 		showModelPlaceholder("模型加载失败，请刷新");
-		setStatus(`❌ 加载模型失败：${err.message}`, "err");
+		setStatus(`❌ 加载模型失败：${friendlyError(err)}`, "err");
 	}
 }
 
 async function load() {
+	// 旧版术语偏好已移除，打开设置时清理遗留数据。
+	await chrome.storage.local.remove("terminology");
 	const cfg = await chrome.storage.local.get(DEFAULTS);
 	$("apiKey").value = cfg.apiKey || "";
 	$("baseUrl").value = cfg.baseUrl || DEFAULTS.baseUrl;
@@ -139,15 +142,14 @@ $("testBtn").addEventListener("click", async () => {
 			},
 		);
 		if (!resp.ok) {
-			const body = await resp.text().catch(() => "");
-			setStatus(`❌ HTTP ${resp.status}: ${body.slice(0, 80)}`, "err");
+			setStatus(`❌ ${friendlyError({ status: resp.status })}`, "err");
 			return;
 		}
 		await chrome.storage.local.set(cfg);
 		setStatus("✅ 连接成功，已保存", "ok");
 		await loadModels(); // 连接成功顺便刷新模型列表
 	} catch (err) {
-		setStatus(`❌ ${err.message}`, "err");
+		setStatus(`❌ ${friendlyError(err)}`, "err");
 	}
 });
 
